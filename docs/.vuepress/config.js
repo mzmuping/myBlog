@@ -1,7 +1,7 @@
 module.exports = {
     head: [
-        ['meta', {name: 'viewport', content: 'width=device-width,initial-scale=1,user-scalable=no'}],
-        ['link', {rel: 'icon', href: 'favicon.ico'}]
+        ['meta', { name: 'viewport', content: 'width=device-width,initial-scale=1,user-scalable=no' }],
+        ['link', { rel: 'icon', href: 'favicon.ico' }]
     ],
     base: '/myBlog/', // 部署到GitHub相关的配置
     title: 'myBlog',
@@ -18,30 +18,32 @@ module.exports = {
         valineConfig: {
             appId: '20uttEi9BN7qb7fMVhJwCEoc-gzGzoHsz',// your appId
             appKey: 'W2mkX4DhUukTDsfQeHi7mzQu', // your appKey
-            notify:false,
-            verify:false,
-            avatar:'mp',
+            notify: false,
+            verify: false,
+            avatar: 'mp',
             placeholder: '填写邮箱可以收到回复提醒哦',
             visitor: true // 阅读量统计
         },
         nav: [
-            {text: 'Home', link: '/'},
-            {text: '前端', link: '/web/', items: [
-                    {text: 'es6', link: '/web/es6/'},
-                    {text: 'vue', link: '/web/vue/'},
-                    {text: 'H5', link: '/web/H5/'},
-                    {text: 'React', link: '/web/React/'},
-                ]},
-            {text: 'nodejs', link: '/node/'},
-            {text: 'java', link: '/java/'},
-            {text: '时间线', link: '/timeLine/', icon: 'reco-date'},
-            {text: '友链', link: '/friendLink/'},
-            {text: '关于', link: '/nested/',icon: 'account_circle'},
+            { text: 'Home', link: '/' },
+            {
+                text: '前端', link: '/web/', items: [
+                    { text: 'es6', link: '/web/es6/' },
+                    { text: 'vue', link: '/web/vue/' },
+                    { text: 'H5', link: '/web/H5/' },
+                    { text: 'React', link: '/web/React/' },
+                ]
+            },
+            { text: 'nodejs', link: '/node/' },
+            { text: 'java', link: '/java/' },
+            { text: '时间线', link: '/timeLine/', icon: 'reco-date' },
+            { text: '友链', link: '/friendLink/' },
+            { text: '关于', link: '/nested/', icon: 'account_circle' },
         ],
         sidebar: {
-            '/web/es6/': ['es7_decorator','ArrayBuffer','ts_config'],
+            '/web/es6/': ['es7_decorator', 'ArrayBuffer', 'ts_config', 'front_end_modul'],
             '/web/vue/': ['vuePress_deploy'],
-            '/web/H5/' : ['svg'],
+            '/web/H5/': ['svg'],
             '/web/React/': ['chess']
         },
         // 博客设置

@@ -62,14 +62,6 @@ export const siteData = {
       "lastUpdated": "3/6/2021, 4:40:28 PM"
     },
     {
-      "frontmatter": {},
-      "regularPath": "/guide/",
-      "relativePath": "guide/README.md",
-      "key": "v-e66ed5dc",
-      "path": "/guide/",
-      "lastUpdated": "3/6/2021, 4:40:28 PM"
-    },
-    {
       "title": "es7之修饰器",
       "frontmatter": {
         "title": "es7之修饰器",
@@ -82,6 +74,93 @@ export const siteData = {
       "key": "v-e395db88",
       "path": "/guide/JS/test.html",
       "lastUpdated": "3/6/2021, 4:40:28 PM"
+    },
+    {
+      "frontmatter": {},
+      "regularPath": "/guide/",
+      "relativePath": "guide/README.md",
+      "key": "v-e66ed5dc",
+      "path": "/guide/",
+      "lastUpdated": "3/6/2021, 4:40:28 PM"
+    },
+    {
+      "frontmatter": {
+        "actionText": "快速上手 →",
+        "actionLink": "/zh/guide/"
+      },
+      "regularPath": "/java/",
+      "relativePath": "java/README.md",
+      "key": "v-da26df3c",
+      "path": "/java/",
+      "lastUpdated": "3/6/2021, 4:40:28 PM"
+    },
+    {
+      "title": "创建数据库",
+      "frontmatter": {
+        "actionText": "创建数据库 →",
+        "actionLink": "/mysql/"
+      },
+      "regularPath": "/mysql/",
+      "relativePath": "mysql/readme.md",
+      "key": "v-4964e974",
+      "path": "/mysql/",
+      "headers": [
+        {
+          "level": 3,
+          "title": "创建数据库",
+          "slug": "创建数据库"
+        }
+      ]
+    },
+    {
+      "title": "简介",
+      "frontmatter": {},
+      "regularPath": "/mysql/src/introduce.html",
+      "relativePath": "mysql/src/introduce.md",
+      "key": "v-d9e02d7c",
+      "path": "/mysql/src/introduce.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "简介",
+          "slug": "简介"
+        },
+        {
+          "level": 3,
+          "title": "数据库技术构成",
+          "slug": "数据库技术构成"
+        }
+      ]
+    },
+    {
+      "title": "MySQL安装及基本使用教程",
+      "frontmatter": {},
+      "regularPath": "/mysql/src/dowloadAndinstall.html",
+      "relativePath": "mysql/src/dowloadAndinstall.md",
+      "key": "v-14fd7122",
+      "path": "/mysql/src/dowloadAndinstall.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "MySQL安装及基本使用教程",
+          "slug": "mysql安装及基本使用教程"
+        },
+        {
+          "level": 3,
+          "title": "下载MySQL",
+          "slug": "下载mysql"
+        },
+        {
+          "level": 2,
+          "title": "测试msyql",
+          "slug": "测试msyql"
+        },
+        {
+          "level": 3,
+          "title": "连接Navicat 报错",
+          "slug": "连接navicat-报错"
+        }
+      ]
     },
     {
       "frontmatter": {
@@ -119,17 +198,6 @@ export const siteData = {
         "actionText": "快速上手 →",
         "actionLink": "/zh/guide/"
       },
-      "regularPath": "/java/",
-      "relativePath": "java/README.md",
-      "key": "v-da26df3c",
-      "path": "/java/",
-      "lastUpdated": "3/6/2021, 4:40:28 PM"
-    },
-    {
-      "frontmatter": {
-        "actionText": "快速上手 →",
-        "actionLink": "/zh/guide/"
-      },
       "regularPath": "/node/",
       "relativePath": "node/README.md",
       "key": "v-3d2d673c",
@@ -153,6 +221,15 @@ export const siteData = {
       "lastUpdated": "3/6/2021, 4:40:28 PM"
     },
     {
+      "title": "React",
+      "frontmatter": {},
+      "regularPath": "/web/React/",
+      "relativePath": "web/React/README.md",
+      "key": "v-05a5bba2",
+      "path": "/web/React/",
+      "lastUpdated": "3/6/2021, 4:40:28 PM"
+    },
+    {
       "title": "svg",
       "frontmatter": {
         "title": "svg",
@@ -169,15 +246,6 @@ export const siteData = {
       "relativePath": "web/H5/svg.md",
       "key": "v-5bc2f40e",
       "path": "/web/H5/svg.html",
-      "lastUpdated": "3/6/2021, 4:40:28 PM"
-    },
-    {
-      "title": "React",
-      "frontmatter": {},
-      "regularPath": "/web/React/",
-      "relativePath": "web/React/README.md",
-      "key": "v-05a5bba2",
-      "path": "/web/React/",
       "lastUpdated": "3/6/2021, 4:40:28 PM"
     },
     {
@@ -234,15 +302,6 @@ export const siteData = {
           "slug": "收尾"
         }
       ],
-      "lastUpdated": "3/6/2021, 4:40:28 PM"
-    },
-    {
-      "title": "当你凝望大神的时候，大神也在凝望你",
-      "frontmatter": {},
-      "regularPath": "/web/es6/",
-      "relativePath": "web/es6/README.md",
-      "key": "v-766fc85d",
-      "path": "/web/es6/",
       "lastUpdated": "3/6/2021, 4:40:28 PM"
     },
     {
@@ -314,6 +373,15 @@ export const siteData = {
           "slug": "用于整段的复制-复制a的内容到b"
         }
       ],
+      "lastUpdated": "11/9/2021, 5:39:03 PM"
+    },
+    {
+      "title": "当你凝望大神的时候，大神也在凝望你",
+      "frontmatter": {},
+      "regularPath": "/web/es6/",
+      "relativePath": "web/es6/README.md",
+      "key": "v-766fc85d",
+      "path": "/web/es6/",
       "lastUpdated": "3/6/2021, 4:40:28 PM"
     },
     {
@@ -404,7 +472,8 @@ export const siteData = {
           "title": "服务端",
           "slug": "服务端"
         }
-      ]
+      ],
+      "lastUpdated": "11/9/2021, 5:39:03 PM"
     },
     {
       "title": "让你的项目使用Ts吧",
@@ -475,22 +544,6 @@ export const siteData = {
       "lastUpdated": "3/6/2021, 4:40:28 PM"
     },
     {
-      "title": "文档说明",
-      "frontmatter": {},
-      "regularPath": "/zh/guide/",
-      "relativePath": "zh/guide/README.md",
-      "key": "v-4ab03f75",
-      "path": "/zh/guide/",
-      "headers": [
-        {
-          "level": 3,
-          "title": "文档说明",
-          "slug": "文档说明"
-        }
-      ],
-      "lastUpdated": "10/25/2021, 3:10:19 PM"
-    },
-    {
       "title": "vuePress部署到Github Page",
       "frontmatter": {
         "title": "vuePress部署到Github Page",
@@ -525,6 +578,22 @@ export const siteData = {
         }
       ],
       "lastUpdated": "3/6/2021, 4:40:28 PM"
+    },
+    {
+      "title": "文档说明",
+      "frontmatter": {},
+      "regularPath": "/zh/guide/",
+      "relativePath": "zh/guide/README.md",
+      "key": "v-4ab03f75",
+      "path": "/zh/guide/",
+      "headers": [
+        {
+          "level": 3,
+          "title": "文档说明",
+          "slug": "文档说明"
+        }
+      ],
+      "lastUpdated": "10/25/2021, 3:10:19 PM"
     }
   ],
   "themeConfig": {
@@ -570,6 +639,10 @@ export const siteData = {
       {
         "text": "nodejs",
         "link": "/node/"
+      },
+      {
+        "text": "mysql",
+        "link": "/mysql/"
       },
       {
         "text": "java",

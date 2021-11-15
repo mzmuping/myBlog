@@ -35,6 +35,7 @@ module.exports = {
                 ]
             },
             { text: 'nodejs', link: '/node/' },
+            { text: 'mysql', link: '/mysql/' },
             { text: 'java', link: '/java/' },
             { text: '时间线', link: '/timeLine/', icon: 'reco-date' },
             { text: '友链', link: '/friendLink/' },

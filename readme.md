@@ -20,3 +20,5 @@ npm deploy-gh
 ```
 
 [线上文档](https://mzmuping.github.io/myBlog/)
+
+github token: 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

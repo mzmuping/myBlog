@@ -1,10 +1,12 @@
 ### 本地开发
+
 ```
 npm docs:dev
 
 ```
 
 ### 构建
+
 ```
 npm docs:build
 
@@ -16,3 +18,5 @@ npm docs:build
 npm deploy-gh
 
 ```
+
+[线上文档](https://mzmuping.github.io/myBlog/)

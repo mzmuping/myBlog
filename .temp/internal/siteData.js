@@ -49,7 +49,7 @@ export const siteData = {
       },
       "regularPath": "/",
       "relativePath": "README.md",
-      "key": "v-82487002",
+      "key": "v-48e5b0c2",
       "path": "/",
       "lastUpdated": "3/6/2021, 4:40:28 PM"
     },
@@ -57,7 +57,7 @@ export const siteData = {
       "frontmatter": {},
       "regularPath": "/friendLink/",
       "relativePath": "friendLink/README.md",
-      "key": "v-70b2b9a2",
+      "key": "v-a1b6df9c",
       "path": "/friendLink/",
       "lastUpdated": "3/6/2021, 4:40:28 PM"
     },
@@ -71,7 +71,7 @@ export const siteData = {
       },
       "regularPath": "/guide/JS/test.html",
       "relativePath": "guide/JS/test.md",
-      "key": "v-e395db88",
+      "key": "v-5a905df9",
       "path": "/guide/JS/test.html",
       "lastUpdated": "3/6/2021, 4:40:28 PM"
     },
@@ -79,7 +79,7 @@ export const siteData = {
       "frontmatter": {},
       "regularPath": "/guide/",
       "relativePath": "guide/README.md",
-      "key": "v-e66ed5dc",
+      "key": "v-e1af29b0",
       "path": "/guide/",
       "lastUpdated": "3/6/2021, 4:40:28 PM"
     },
@@ -90,7 +90,7 @@ export const siteData = {
       },
       "regularPath": "/java/",
       "relativePath": "java/README.md",
-      "key": "v-da26df3c",
+      "key": "v-2976bd9c",
       "path": "/java/",
       "lastUpdated": "3/6/2021, 4:40:28 PM"
     },
@@ -102,7 +102,7 @@ export const siteData = {
       },
       "regularPath": "/mysql/",
       "relativePath": "mysql/readme.md",
-      "key": "v-4964e974",
+      "key": "v-44a53d48",
       "path": "/mysql/",
       "headers": [
         {
@@ -110,34 +110,15 @@ export const siteData = {
           "title": "创建数据库",
           "slug": "创建数据库"
         }
-      ]
-    },
-    {
-      "title": "简介",
-      "frontmatter": {},
-      "regularPath": "/mysql/src/introduce.html",
-      "relativePath": "mysql/src/introduce.md",
-      "key": "v-d9e02d7c",
-      "path": "/mysql/src/introduce.html",
-      "headers": [
-        {
-          "level": 2,
-          "title": "简介",
-          "slug": "简介"
-        },
-        {
-          "level": 3,
-          "title": "数据库技术构成",
-          "slug": "数据库技术构成"
-        }
-      ]
+      ],
+      "lastUpdated": "11/15/2021, 5:55:41 PM"
     },
     {
       "title": "MySQL安装及基本使用教程",
       "frontmatter": {},
       "regularPath": "/mysql/src/dowloadAndinstall.html",
       "relativePath": "mysql/src/dowloadAndinstall.md",
-      "key": "v-14fd7122",
+      "key": "v-a078ac4e",
       "path": "/mysql/src/dowloadAndinstall.html",
       "headers": [
         {
@@ -160,6 +141,48 @@ export const siteData = {
           "title": "连接Navicat 报错",
           "slug": "连接navicat-报错"
         }
+      ],
+      "lastUpdated": "11/15/2021, 5:55:41 PM"
+    },
+    {
+      "title": "简介",
+      "frontmatter": {},
+      "regularPath": "/mysql/src/introduce.html",
+      "relativePath": "mysql/src/introduce.md",
+      "key": "v-62346ff9",
+      "path": "/mysql/src/introduce.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "简介",
+          "slug": "简介"
+        },
+        {
+          "level": 3,
+          "title": "数据库技术构成",
+          "slug": "数据库技术构成"
+        }
+      ],
+      "lastUpdated": "11/15/2021, 5:55:41 PM"
+    },
+    {
+      "title": "数据库操作步骤",
+      "frontmatter": {},
+      "regularPath": "/mysql/src/%E6%95%B0%E6%8D%AE%E5%BA%93%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C.html",
+      "relativePath": "mysql/src/数据库基本操作.md",
+      "key": "v-03495a6c",
+      "path": "/mysql/src/%E6%95%B0%E6%8D%AE%E5%BA%93%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C.html",
+      "headers": [
+        {
+          "level": 3,
+          "title": "数据库操作步骤",
+          "slug": "数据库操作步骤"
+        },
+        {
+          "level": 3,
+          "title": "数据表基本操作",
+          "slug": "数据表基本操作"
+        }
       ]
     },
     {
@@ -169,8 +192,19 @@ export const siteData = {
       },
       "regularPath": "/nested/",
       "relativePath": "nested/README.md",
-      "key": "v-1c4118c2",
+      "key": "v-c15b9e5c",
       "path": "/nested/",
+      "lastUpdated": "3/6/2021, 4:40:28 PM"
+    },
+    {
+      "frontmatter": {
+        "actionText": "快速上手 →",
+        "actionLink": "/zh/guide/"
+      },
+      "regularPath": "/node/",
+      "relativePath": "node/README.md",
+      "key": "v-39c15d32",
+      "path": "/node/",
       "lastUpdated": "3/6/2021, 4:40:28 PM"
     },
     {
@@ -182,7 +216,7 @@ export const siteData = {
       },
       "regularPath": "/timeLine/",
       "relativePath": "timeLine/README.md",
-      "key": "v-d8ffd67c",
+      "key": "v-6735c412",
       "path": "/timeLine/",
       "headers": [
         {
@@ -194,22 +228,11 @@ export const siteData = {
       "lastUpdated": "3/6/2021, 4:40:28 PM"
     },
     {
-      "frontmatter": {
-        "actionText": "快速上手 →",
-        "actionLink": "/zh/guide/"
-      },
-      "regularPath": "/node/",
-      "relativePath": "node/README.md",
-      "key": "v-3d2d673c",
-      "path": "/node/",
-      "lastUpdated": "3/6/2021, 4:40:28 PM"
-    },
-    {
       "title": "H5",
       "frontmatter": {},
       "regularPath": "/web/H5/",
       "relativePath": "web/H5/README.md",
-      "key": "v-92fb9f62",
+      "key": "v-02b020b2",
       "path": "/web/H5/",
       "headers": [
         {
@@ -218,15 +241,6 @@ export const siteData = {
           "slug": "h5"
         }
       ],
-      "lastUpdated": "3/6/2021, 4:40:28 PM"
-    },
-    {
-      "title": "React",
-      "frontmatter": {},
-      "regularPath": "/web/React/",
-      "relativePath": "web/React/README.md",
-      "key": "v-05a5bba2",
-      "path": "/web/React/",
       "lastUpdated": "3/6/2021, 4:40:28 PM"
     },
     {
@@ -244,8 +258,17 @@ export const siteData = {
       },
       "regularPath": "/web/H5/svg.html",
       "relativePath": "web/H5/svg.md",
-      "key": "v-5bc2f40e",
+      "key": "v-508a6cea",
       "path": "/web/H5/svg.html",
+      "lastUpdated": "3/6/2021, 4:40:28 PM"
+    },
+    {
+      "title": "React",
+      "frontmatter": {},
+      "regularPath": "/web/React/",
+      "relativePath": "web/React/README.md",
+      "key": "v-1592f1d8",
+      "path": "/web/React/",
       "lastUpdated": "3/6/2021, 4:40:28 PM"
     },
     {
@@ -263,7 +286,7 @@ export const siteData = {
       },
       "regularPath": "/web/React/chess.html",
       "relativePath": "web/React/chess.md",
-      "key": "v-01e106c2",
+      "key": "v-320fc539",
       "path": "/web/React/chess.html",
       "headers": [
         {
@@ -319,7 +342,7 @@ export const siteData = {
       },
       "regularPath": "/web/es6/ArrayBuffer.html",
       "relativePath": "web/es6/ArrayBuffer.md",
-      "key": "v-511ddc7c",
+      "key": "v-7b1399f9",
       "path": "/web/es6/ArrayBuffer.html",
       "headers": [
         {
@@ -380,7 +403,7 @@ export const siteData = {
       "frontmatter": {},
       "regularPath": "/web/es6/",
       "relativePath": "web/es6/README.md",
-      "key": "v-766fc85d",
+      "key": "v-013aa874",
       "path": "/web/es6/",
       "lastUpdated": "3/6/2021, 4:40:28 PM"
     },
@@ -399,7 +422,7 @@ export const siteData = {
       },
       "regularPath": "/web/es6/es7_decorator.html",
       "relativePath": "web/es6/es7_decorator.md",
-      "key": "v-a8d476fc",
+      "key": "v-2dbb5939",
       "path": "/web/es6/es7_decorator.html",
       "lastUpdated": "3/6/2021, 4:40:28 PM"
     },
@@ -419,7 +442,7 @@ export const siteData = {
       },
       "regularPath": "/web/es6/front_end_modul.html",
       "relativePath": "web/es6/front_end_modul.md",
-      "key": "v-0c94ce02",
+      "key": "v-23e32f39",
       "path": "/web/es6/front_end_modul.html",
       "headers": [
         {
@@ -489,7 +512,7 @@ export const siteData = {
       },
       "regularPath": "/web/es6/ts_config.html",
       "relativePath": "web/es6/ts_config.md",
-      "key": "v-6fc3fde2",
+      "key": "v-b72d8cce",
       "path": "/web/es6/ts_config.html",
       "headers": [
         {
@@ -539,7 +562,7 @@ export const siteData = {
       "frontmatter": {},
       "regularPath": "/web/vue/",
       "relativePath": "web/vue/README.md",
-      "key": "v-05413ae1",
+      "key": "v-e397c36c",
       "path": "/web/vue/",
       "lastUpdated": "3/6/2021, 4:40:28 PM"
     },
@@ -558,7 +581,7 @@ export const siteData = {
       },
       "regularPath": "/web/vue/vuePress_deploy.html",
       "relativePath": "web/vue/vuePress_deploy.md",
-      "key": "v-b37131fc",
+      "key": "v-84d46f8e",
       "path": "/web/vue/vuePress_deploy.html",
       "headers": [
         {
@@ -584,7 +607,7 @@ export const siteData = {
       "frontmatter": {},
       "regularPath": "/zh/guide/",
       "relativePath": "zh/guide/README.md",
-      "key": "v-4ab03f75",
+      "key": "v-699b5b5c",
       "path": "/zh/guide/",
       "headers": [
         {

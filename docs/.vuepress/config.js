@@ -45,7 +45,8 @@ module.exports = {
             '/web/es6/': ['es7_decorator', 'ArrayBuffer', 'ts_config', 'front_end_modul'],
             '/web/vue/': ['vuePress_deploy'],
             '/web/H5/': ['svg'],
-            '/web/React/': ['chess']
+            '/web/React/': ['chess'],
+            '/mysql/': ['introduce', 'dowloadAndinstall', 'db_base_table', 'date_type', 'select_add'],
         },
         // 博客设置
         blogConfig: {

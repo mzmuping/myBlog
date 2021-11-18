@@ -49,7 +49,7 @@ export const siteData = {
       },
       "regularPath": "/",
       "relativePath": "README.md",
-      "key": "v-48e5b0c2",
+      "key": "v-82487002",
       "path": "/",
       "lastUpdated": "3/6/2021, 4:40:28 PM"
     },
@@ -57,7 +57,7 @@ export const siteData = {
       "frontmatter": {},
       "regularPath": "/friendLink/",
       "relativePath": "friendLink/README.md",
-      "key": "v-a1b6df9c",
+      "key": "v-70b2b9a2",
       "path": "/friendLink/",
       "lastUpdated": "3/6/2021, 4:40:28 PM"
     },
@@ -71,7 +71,7 @@ export const siteData = {
       },
       "regularPath": "/guide/JS/test.html",
       "relativePath": "guide/JS/test.md",
-      "key": "v-5a905df9",
+      "key": "v-e395db88",
       "path": "/guide/JS/test.html",
       "lastUpdated": "3/6/2021, 4:40:28 PM"
     },
@@ -79,7 +79,7 @@ export const siteData = {
       "frontmatter": {},
       "regularPath": "/guide/",
       "relativePath": "guide/README.md",
-      "key": "v-e1af29b0",
+      "key": "v-e66ed5dc",
       "path": "/guide/",
       "lastUpdated": "3/6/2021, 4:40:28 PM"
     },
@@ -90,36 +90,37 @@ export const siteData = {
       },
       "regularPath": "/java/",
       "relativePath": "java/README.md",
-      "key": "v-2976bd9c",
+      "key": "v-da26df3c",
       "path": "/java/",
       "lastUpdated": "3/6/2021, 4:40:28 PM"
     },
     {
-      "title": "创建数据库",
-      "frontmatter": {
-        "actionText": "创建数据库 →",
-        "actionLink": "/mysql/"
-      },
-      "regularPath": "/mysql/",
-      "relativePath": "mysql/readme.md",
-      "key": "v-44a53d48",
-      "path": "/mysql/",
+      "title": "数据库数据类型",
+      "frontmatter": {},
+      "regularPath": "/mysql/date_type.html",
+      "relativePath": "mysql/date_type.md",
+      "key": "v-7f5ae9a2",
+      "path": "/mysql/date_type.html",
       "headers": [
         {
+          "level": 2,
+          "title": "数据库数据类型",
+          "slug": "数据库数据类型"
+        },
+        {
           "level": 3,
-          "title": "创建数据库",
-          "slug": "创建数据库"
+          "title": "数值类",
+          "slug": "数值类"
         }
-      ],
-      "lastUpdated": "11/15/2021, 5:55:41 PM"
+      ]
     },
     {
       "title": "MySQL安装及基本使用教程",
       "frontmatter": {},
-      "regularPath": "/mysql/src/dowloadAndinstall.html",
-      "relativePath": "mysql/src/dowloadAndinstall.md",
-      "key": "v-a078ac4e",
-      "path": "/mysql/src/dowloadAndinstall.html",
+      "regularPath": "/mysql/dowloadAndinstall.html",
+      "relativePath": "mysql/dowloadAndinstall.md",
+      "key": "v-f60c83e2",
+      "path": "/mysql/dowloadAndinstall.html",
       "headers": [
         {
           "level": 2,
@@ -141,16 +142,15 @@ export const siteData = {
           "title": "连接Navicat 报错",
           "slug": "连接navicat-报错"
         }
-      ],
-      "lastUpdated": "11/15/2021, 5:55:41 PM"
+      ]
     },
     {
       "title": "简介",
       "frontmatter": {},
-      "regularPath": "/mysql/src/introduce.html",
-      "relativePath": "mysql/src/introduce.md",
-      "key": "v-62346ff9",
-      "path": "/mysql/src/introduce.html",
+      "regularPath": "/mysql/introduce.html",
+      "relativePath": "mysql/introduce.md",
+      "key": "v-7a1547af",
+      "path": "/mysql/introduce.html",
       "headers": [
         {
           "level": 2,
@@ -162,16 +162,34 @@ export const siteData = {
           "title": "数据库技术构成",
           "slug": "数据库技术构成"
         }
+      ]
+    },
+    {
+      "title": "创建数据库",
+      "frontmatter": {
+        "actionText": "创建数据库 →",
+        "actionLink": "/mysql/"
+      },
+      "regularPath": "/mysql/",
+      "relativePath": "mysql/readme.md",
+      "key": "v-4964e974",
+      "path": "/mysql/",
+      "headers": [
+        {
+          "level": 3,
+          "title": "创建数据库",
+          "slug": "创建数据库"
+        }
       ],
       "lastUpdated": "11/15/2021, 5:55:41 PM"
     },
     {
       "title": "数据库操作步骤",
       "frontmatter": {},
-      "regularPath": "/mysql/src/%E6%95%B0%E6%8D%AE%E5%BA%93%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C.html",
-      "relativePath": "mysql/src/数据库基本操作.md",
-      "key": "v-03495a6c",
-      "path": "/mysql/src/%E6%95%B0%E6%8D%AE%E5%BA%93%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C.html",
+      "regularPath": "/mysql/db_base_table.html",
+      "relativePath": "mysql/db_base_table.md",
+      "key": "v-e2bde822",
+      "path": "/mysql/db_base_table.html",
       "headers": [
         {
           "level": 3,
@@ -179,9 +197,94 @@ export const siteData = {
           "slug": "数据库操作步骤"
         },
         {
-          "level": 3,
+          "level": 2,
           "title": "数据表基本操作",
           "slug": "数据表基本操作"
+        },
+        {
+          "level": 3,
+          "title": "1、创建表的语法形式",
+          "slug": "_1、创建表的语法形式"
+        },
+        {
+          "level": 3,
+          "title": "2、使用主键约束",
+          "slug": "_2、使用主键约束"
+        },
+        {
+          "level": 3,
+          "title": "3、使用外键约束",
+          "slug": "_3、使用外键约束"
+        },
+        {
+          "level": 3,
+          "title": "4、使用非空约束",
+          "slug": "_4、使用非空约束"
+        },
+        {
+          "level": 3,
+          "title": "5、使用唯一性约束",
+          "slug": "_5、使用唯一性约束"
+        },
+        {
+          "level": 3,
+          "title": "5、使用默认值约束",
+          "slug": "_5、使用默认值约束"
+        },
+        {
+          "level": 3,
+          "title": "6、设置表属性值自动增加",
+          "slug": "_6、设置表属性值自动增加"
+        },
+        {
+          "level": 2,
+          "title": "操作数据表",
+          "slug": "操作数据表"
+        },
+        {
+          "level": 3,
+          "title": "查看数据表定义信息",
+          "slug": "查看数据表定义信息"
+        },
+        {
+          "level": 3,
+          "title": "修改表名",
+          "slug": "修改表名"
+        },
+        {
+          "level": 3,
+          "title": "修改字段的数据类型",
+          "slug": "修改字段的数据类型"
+        },
+        {
+          "level": 3,
+          "title": "修改字段名称",
+          "slug": "修改字段名称"
+        },
+        {
+          "level": 3,
+          "title": "添加字段名",
+          "slug": "添加字段名"
+        },
+        {
+          "level": 3,
+          "title": "删除数据表字段",
+          "slug": "删除数据表字段"
+        },
+        {
+          "level": 3,
+          "title": "调整字段位置",
+          "slug": "调整字段位置"
+        },
+        {
+          "level": 3,
+          "title": "删除外键约束",
+          "slug": "删除外键约束"
+        },
+        {
+          "level": 3,
+          "title": "删除数据表",
+          "slug": "删除数据表"
         }
       ]
     },
@@ -192,20 +295,34 @@ export const siteData = {
       },
       "regularPath": "/nested/",
       "relativePath": "nested/README.md",
-      "key": "v-c15b9e5c",
+      "key": "v-1c4118c2",
       "path": "/nested/",
       "lastUpdated": "3/6/2021, 4:40:28 PM"
     },
     {
-      "frontmatter": {
-        "actionText": "快速上手 →",
-        "actionLink": "/zh/guide/"
-      },
-      "regularPath": "/node/",
-      "relativePath": "node/README.md",
-      "key": "v-39c15d32",
-      "path": "/node/",
-      "lastUpdated": "3/6/2021, 4:40:28 PM"
+      "title": "数据库 增删改查",
+      "frontmatter": {},
+      "regularPath": "/mysql/select_add.html",
+      "relativePath": "mysql/select_add.md",
+      "key": "v-3ac373f6",
+      "path": "/mysql/select_add.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "数据库 增删改查",
+          "slug": "数据库-增删改查"
+        },
+        {
+          "level": 2,
+          "title": "安装node版Mysql数据库的驱动模块",
+          "slug": "安装node版mysql数据库的驱动模块"
+        },
+        {
+          "level": 3,
+          "title": "案例：",
+          "slug": "案例"
+        }
+      ]
     },
     {
       "title": "Time Line",
@@ -216,7 +333,7 @@ export const siteData = {
       },
       "regularPath": "/timeLine/",
       "relativePath": "timeLine/README.md",
-      "key": "v-6735c412",
+      "key": "v-d8ffd67c",
       "path": "/timeLine/",
       "headers": [
         {
@@ -228,11 +345,22 @@ export const siteData = {
       "lastUpdated": "3/6/2021, 4:40:28 PM"
     },
     {
+      "frontmatter": {
+        "actionText": "快速上手 →",
+        "actionLink": "/zh/guide/"
+      },
+      "regularPath": "/node/",
+      "relativePath": "node/README.md",
+      "key": "v-3d2d673c",
+      "path": "/node/",
+      "lastUpdated": "3/6/2021, 4:40:28 PM"
+    },
+    {
       "title": "H5",
       "frontmatter": {},
       "regularPath": "/web/H5/",
       "relativePath": "web/H5/README.md",
-      "key": "v-02b020b2",
+      "key": "v-92fb9f62",
       "path": "/web/H5/",
       "headers": [
         {
@@ -258,7 +386,7 @@ export const siteData = {
       },
       "regularPath": "/web/H5/svg.html",
       "relativePath": "web/H5/svg.md",
-      "key": "v-508a6cea",
+      "key": "v-5bc2f40e",
       "path": "/web/H5/svg.html",
       "lastUpdated": "3/6/2021, 4:40:28 PM"
     },
@@ -267,7 +395,7 @@ export const siteData = {
       "frontmatter": {},
       "regularPath": "/web/React/",
       "relativePath": "web/React/README.md",
-      "key": "v-1592f1d8",
+      "key": "v-05a5bba2",
       "path": "/web/React/",
       "lastUpdated": "3/6/2021, 4:40:28 PM"
     },
@@ -286,7 +414,7 @@ export const siteData = {
       },
       "regularPath": "/web/React/chess.html",
       "relativePath": "web/React/chess.md",
-      "key": "v-320fc539",
+      "key": "v-01e106c2",
       "path": "/web/React/chess.html",
       "headers": [
         {
@@ -342,7 +470,7 @@ export const siteData = {
       },
       "regularPath": "/web/es6/ArrayBuffer.html",
       "relativePath": "web/es6/ArrayBuffer.md",
-      "key": "v-7b1399f9",
+      "key": "v-511ddc7c",
       "path": "/web/es6/ArrayBuffer.html",
       "headers": [
         {
@@ -403,7 +531,7 @@ export const siteData = {
       "frontmatter": {},
       "regularPath": "/web/es6/",
       "relativePath": "web/es6/README.md",
-      "key": "v-013aa874",
+      "key": "v-766fc85d",
       "path": "/web/es6/",
       "lastUpdated": "3/6/2021, 4:40:28 PM"
     },
@@ -422,7 +550,7 @@ export const siteData = {
       },
       "regularPath": "/web/es6/es7_decorator.html",
       "relativePath": "web/es6/es7_decorator.md",
-      "key": "v-2dbb5939",
+      "key": "v-a8d476fc",
       "path": "/web/es6/es7_decorator.html",
       "lastUpdated": "3/6/2021, 4:40:28 PM"
     },
@@ -442,7 +570,7 @@ export const siteData = {
       },
       "regularPath": "/web/es6/front_end_modul.html",
       "relativePath": "web/es6/front_end_modul.md",
-      "key": "v-23e32f39",
+      "key": "v-0c94ce02",
       "path": "/web/es6/front_end_modul.html",
       "headers": [
         {
@@ -512,7 +640,7 @@ export const siteData = {
       },
       "regularPath": "/web/es6/ts_config.html",
       "relativePath": "web/es6/ts_config.md",
-      "key": "v-b72d8cce",
+      "key": "v-6fc3fde2",
       "path": "/web/es6/ts_config.html",
       "headers": [
         {
@@ -559,14 +687,6 @@ export const siteData = {
       "lastUpdated": "3/6/2021, 4:40:28 PM"
     },
     {
-      "frontmatter": {},
-      "regularPath": "/web/vue/",
-      "relativePath": "web/vue/README.md",
-      "key": "v-e397c36c",
-      "path": "/web/vue/",
-      "lastUpdated": "3/6/2021, 4:40:28 PM"
-    },
-    {
       "title": "vuePress部署到Github Page",
       "frontmatter": {
         "title": "vuePress部署到Github Page",
@@ -581,7 +701,7 @@ export const siteData = {
       },
       "regularPath": "/web/vue/vuePress_deploy.html",
       "relativePath": "web/vue/vuePress_deploy.md",
-      "key": "v-84d46f8e",
+      "key": "v-b37131fc",
       "path": "/web/vue/vuePress_deploy.html",
       "headers": [
         {
@@ -603,11 +723,19 @@ export const siteData = {
       "lastUpdated": "3/6/2021, 4:40:28 PM"
     },
     {
+      "frontmatter": {},
+      "regularPath": "/web/vue/",
+      "relativePath": "web/vue/README.md",
+      "key": "v-05413ae1",
+      "path": "/web/vue/",
+      "lastUpdated": "3/6/2021, 4:40:28 PM"
+    },
+    {
       "title": "文档说明",
       "frontmatter": {},
       "regularPath": "/zh/guide/",
       "relativePath": "zh/guide/README.md",
-      "key": "v-699b5b5c",
+      "key": "v-4ab03f75",
       "path": "/zh/guide/",
       "headers": [
         {
@@ -701,6 +829,13 @@ export const siteData = {
       ],
       "/web/React/": [
         "chess"
+      ],
+      "/mysql/": [
+        "introduce",
+        "dowloadAndinstall",
+        "db_base_table",
+        "date_type",
+        "select_add"
       ]
     },
     "blogConfig": {

@@ -1,7 +1,8 @@
 module.exports = {
     head: [
         ['meta', { name: 'viewport', content: 'width=device-width,initial-scale=1,user-scalable=no' }],
-        ['link', { rel: 'icon', href: 'favicon.ico' }]
+        ['link', { rel: 'icon', href: 'favicon.ico' }],
+
     ],
     base: '/myBlog/', // 部署到GitHub相关的配置
     title: 'myBlog',
@@ -46,7 +47,7 @@ module.exports = {
             '/web/vue/': ['vuePress_deploy'],
             '/web/H5/': ['svg'],
             '/web/React/': ['chess'],
-            '/mysql/': ['introduce', 'dowloadAndinstall', 'db_base_table', 'date_type', 'select_add'],
+            '/mysql/': ['dowloadAndinstall', 'introduce', 'db_base_table', 'date_type', 'operate_sql', 'node_engine'],
         },
         // 博客设置
         blogConfig: {
@@ -80,6 +81,7 @@ module.exports = {
                 buttonText: "刷新"
             }
         }
-    }
+    },
+    plugins: ['@vuepress/medium-zoom']
 };
 

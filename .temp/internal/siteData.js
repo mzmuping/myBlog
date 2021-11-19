@@ -45,20 +45,12 @@ export const siteData = {
             "details": "VuePress 为每个页面预渲染生成静态的 HTML，同时在页面被加载的时候，将作为 SPA 运行。"
           }
         ],
-        "footer": "MIT Licensed | Copyright © 2018-present Evan You"
+        "footer": "MIT Licensed | Copyright © 2020-present  mzmuping"
       },
       "regularPath": "/",
       "relativePath": "README.md",
       "key": "v-82487002",
       "path": "/",
-      "lastUpdated": "3/6/2021, 4:40:28 PM"
-    },
-    {
-      "frontmatter": {},
-      "regularPath": "/friendLink/",
-      "relativePath": "friendLink/README.md",
-      "key": "v-70b2b9a2",
-      "path": "/friendLink/",
       "lastUpdated": "3/6/2021, 4:40:28 PM"
     },
     {
@@ -77,21 +69,18 @@ export const siteData = {
     },
     {
       "frontmatter": {},
+      "regularPath": "/friendLink/",
+      "relativePath": "friendLink/README.md",
+      "key": "v-70b2b9a2",
+      "path": "/friendLink/",
+      "lastUpdated": "3/6/2021, 4:40:28 PM"
+    },
+    {
+      "frontmatter": {},
       "regularPath": "/guide/",
       "relativePath": "guide/README.md",
       "key": "v-e66ed5dc",
       "path": "/guide/",
-      "lastUpdated": "3/6/2021, 4:40:28 PM"
-    },
-    {
-      "frontmatter": {
-        "actionText": "快速上手 →",
-        "actionLink": "/zh/guide/"
-      },
-      "regularPath": "/java/",
-      "relativePath": "java/README.md",
-      "key": "v-da26df3c",
-      "path": "/java/",
       "lastUpdated": "3/6/2021, 4:40:28 PM"
     },
     {
@@ -112,76 +101,19 @@ export const siteData = {
           "title": "数值类",
           "slug": "数值类"
         }
-      ]
-    },
-    {
-      "title": "MySQL安装及基本使用教程",
-      "frontmatter": {},
-      "regularPath": "/mysql/dowloadAndinstall.html",
-      "relativePath": "mysql/dowloadAndinstall.md",
-      "key": "v-f60c83e2",
-      "path": "/mysql/dowloadAndinstall.html",
-      "headers": [
-        {
-          "level": 2,
-          "title": "MySQL安装及基本使用教程",
-          "slug": "mysql安装及基本使用教程"
-        },
-        {
-          "level": 3,
-          "title": "下载MySQL",
-          "slug": "下载mysql"
-        },
-        {
-          "level": 2,
-          "title": "测试msyql",
-          "slug": "测试msyql"
-        },
-        {
-          "level": 3,
-          "title": "连接Navicat 报错",
-          "slug": "连接navicat-报错"
-        }
-      ]
-    },
-    {
-      "title": "简介",
-      "frontmatter": {},
-      "regularPath": "/mysql/introduce.html",
-      "relativePath": "mysql/introduce.md",
-      "key": "v-7a1547af",
-      "path": "/mysql/introduce.html",
-      "headers": [
-        {
-          "level": 2,
-          "title": "简介",
-          "slug": "简介"
-        },
-        {
-          "level": 3,
-          "title": "数据库技术构成",
-          "slug": "数据库技术构成"
-        }
-      ]
-    },
-    {
-      "title": "创建数据库",
-      "frontmatter": {
-        "actionText": "创建数据库 →",
-        "actionLink": "/mysql/"
-      },
-      "regularPath": "/mysql/",
-      "relativePath": "mysql/readme.md",
-      "key": "v-4964e974",
-      "path": "/mysql/",
-      "headers": [
-        {
-          "level": 3,
-          "title": "创建数据库",
-          "slug": "创建数据库"
-        }
       ],
-      "lastUpdated": "11/15/2021, 5:55:41 PM"
+      "lastUpdated": "11/18/2021, 6:31:41 PM"
+    },
+    {
+      "frontmatter": {
+        "actionText": "快速上手 →",
+        "actionLink": "/zh/guide/"
+      },
+      "regularPath": "/java/",
+      "relativePath": "java/README.md",
+      "key": "v-da26df3c",
+      "path": "/java/",
+      "lastUpdated": "3/6/2021, 4:40:28 PM"
     },
     {
       "title": "数据库操作步骤",
@@ -286,26 +218,123 @@ export const siteData = {
           "title": "删除数据表",
           "slug": "删除数据表"
         }
-      ]
+      ],
+      "lastUpdated": "11/18/2021, 6:31:41 PM"
     },
     {
-      "frontmatter": {
-        "actionText": "快速上手 →",
-        "actionLink": "/zh/guide/"
-      },
-      "regularPath": "/nested/",
-      "relativePath": "nested/README.md",
-      "key": "v-1c4118c2",
-      "path": "/nested/",
-      "lastUpdated": "3/6/2021, 4:40:28 PM"
+      "title": "MySQL安装及基本使用教程",
+      "frontmatter": {},
+      "regularPath": "/mysql/dowloadAndinstall.html",
+      "relativePath": "mysql/dowloadAndinstall.md",
+      "key": "v-f60c83e2",
+      "path": "/mysql/dowloadAndinstall.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "MySQL安装及基本使用教程",
+          "slug": "mysql安装及基本使用教程"
+        },
+        {
+          "level": 3,
+          "title": "下载MySQL",
+          "slug": "下载mysql"
+        },
+        {
+          "level": 2,
+          "title": "测试msyql",
+          "slug": "测试msyql"
+        },
+        {
+          "level": 3,
+          "title": "连接Navicat 报错",
+          "slug": "连接navicat-报错"
+        }
+      ],
+      "lastUpdated": "11/18/2021, 6:31:41 PM"
+    },
+    {
+      "title": "文件配置",
+      "frontmatter": {},
+      "regularPath": "/mysql/introduce.html",
+      "relativePath": "mysql/introduce.md",
+      "key": "v-7a1547af",
+      "path": "/mysql/introduce.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "文件配置",
+          "slug": "文件配置"
+        },
+        {
+          "level": 2,
+          "title": "启动mysql",
+          "slug": "启动mysql"
+        },
+        {
+          "level": 2,
+          "title": "关闭",
+          "slug": "关闭"
+        },
+        {
+          "level": 2,
+          "title": "MySQL连接管理",
+          "slug": "mysql连接管理"
+        },
+        {
+          "level": 2,
+          "title": "切换数据库",
+          "slug": "切换数据库"
+        },
+        {
+          "level": 3,
+          "title": "创建用户",
+          "slug": "创建用户"
+        },
+        {
+          "level": 3,
+          "title": "查看用户",
+          "slug": "查看用户"
+        },
+        {
+          "level": 3,
+          "title": "修改用户密码",
+          "slug": "修改用户密码"
+        },
+        {
+          "level": 3,
+          "title": "删除用户",
+          "slug": "删除用户"
+        },
+        {
+          "level": 3,
+          "title": "查看权限",
+          "slug": "查看权限"
+        },
+        {
+          "level": 3,
+          "title": "授予权限",
+          "slug": "授予权限"
+        },
+        {
+          "level": 3,
+          "title": "MySQL各种权限：",
+          "slug": "mysql各种权限"
+        },
+        {
+          "level": 3,
+          "title": "MySQL常用的命令",
+          "slug": "mysql常用的命令"
+        }
+      ],
+      "lastUpdated": "11/18/2021, 6:31:41 PM"
     },
     {
       "title": "数据库 增删改查",
       "frontmatter": {},
-      "regularPath": "/mysql/select_add.html",
-      "relativePath": "mysql/select_add.md",
-      "key": "v-3ac373f6",
-      "path": "/mysql/select_add.html",
+      "regularPath": "/mysql/node_engine.html",
+      "relativePath": "mysql/node_engine.md",
+      "key": "v-476b2aaf",
+      "path": "/mysql/node_engine.html",
       "headers": [
         {
           "level": 2,
@@ -325,6 +354,147 @@ export const siteData = {
       ]
     },
     {
+      "title": "基本查询语句",
+      "frontmatter": {},
+      "regularPath": "/mysql/operate_sql.html",
+      "relativePath": "mysql/operate_sql.md",
+      "key": "v-09f44a2f",
+      "path": "/mysql/operate_sql.html",
+      "headers": [
+        {
+          "level": 3,
+          "title": "基本查询语句",
+          "slug": "基本查询语句"
+        },
+        {
+          "level": 2,
+          "title": "where 子句条件查询",
+          "slug": "where-子句条件查询"
+        },
+        {
+          "level": 3,
+          "title": "not in,或者in",
+          "slug": "not-in-或者in"
+        },
+        {
+          "level": 3,
+          "title": "带 not / between and  的范围查询",
+          "slug": "带-not-between-and-的范围查询"
+        },
+        {
+          "level": 3,
+          "title": "like 匹配查询，模糊查询",
+          "slug": "like-匹配查询-模糊查询"
+        },
+        {
+          "level": 3,
+          "title": "查询空值is null 或者 is not null 子句；",
+          "slug": "查询空值is-null-或者-is-not-null-子句"
+        },
+        {
+          "level": 3,
+          "title": "and 多条件查询",
+          "slug": "and-多条件查询"
+        },
+        {
+          "level": 3,
+          "title": "or 查询",
+          "slug": "or-查询"
+        },
+        {
+          "level": 3,
+          "title": "distinct 去重复查询",
+          "slug": "distinct-去重复查询"
+        },
+        {
+          "level": 2,
+          "title": "对查询结果排序",
+          "slug": "对查询结果排序"
+        },
+        {
+          "level": 2,
+          "title": "分组查询",
+          "slug": "分组查询"
+        },
+        {
+          "level": 3,
+          "title": "group by",
+          "slug": "group-by"
+        },
+        {
+          "level": 3,
+          "title": "having",
+          "slug": "having"
+        },
+        {
+          "level": 3,
+          "title": "with rollup， ifnull()",
+          "slug": "with-rollup-ifnull"
+        },
+        {
+          "level": 3,
+          "title": "多字段分组",
+          "slug": "多字段分组"
+        },
+        {
+          "level": 3,
+          "title": "group by 和 order by一起使用",
+          "slug": "group-by-和-order-by一起使用"
+        },
+        {
+          "level": 3,
+          "title": "用limit 限制查询结果的数量",
+          "slug": "用limit-限制查询结果的数量"
+        },
+        {
+          "level": 2,
+          "title": "使用集合函数查询",
+          "slug": "使用集合函数查询"
+        }
+      ]
+    },
+    {
+      "title": "创建数据库",
+      "frontmatter": {
+        "actionText": "创建数据库 →",
+        "actionLink": "/mysql/"
+      },
+      "regularPath": "/mysql/",
+      "relativePath": "mysql/readme.md",
+      "key": "v-4964e974",
+      "path": "/mysql/",
+      "headers": [
+        {
+          "level": 3,
+          "title": "创建数据库",
+          "slug": "创建数据库"
+        }
+      ],
+      "lastUpdated": "11/15/2021, 5:55:41 PM"
+    },
+    {
+      "frontmatter": {
+        "actionText": "快速上手 →",
+        "actionLink": "/zh/guide/"
+      },
+      "regularPath": "/nested/",
+      "relativePath": "nested/README.md",
+      "key": "v-1c4118c2",
+      "path": "/nested/",
+      "lastUpdated": "3/6/2021, 4:40:28 PM"
+    },
+    {
+      "frontmatter": {
+        "actionText": "快速上手 →",
+        "actionLink": "/zh/guide/"
+      },
+      "regularPath": "/node/",
+      "relativePath": "node/README.md",
+      "key": "v-3d2d673c",
+      "path": "/node/",
+      "lastUpdated": "3/6/2021, 4:40:28 PM"
+    },
+    {
       "title": "Time Line",
       "frontmatter": {
         "isTimeLine": true,
@@ -342,17 +512,6 @@ export const siteData = {
           "slug": "time-line"
         }
       ],
-      "lastUpdated": "3/6/2021, 4:40:28 PM"
-    },
-    {
-      "frontmatter": {
-        "actionText": "快速上手 →",
-        "actionLink": "/zh/guide/"
-      },
-      "regularPath": "/node/",
-      "relativePath": "node/README.md",
-      "key": "v-3d2d673c",
-      "path": "/node/",
       "lastUpdated": "3/6/2021, 4:40:28 PM"
     },
     {
@@ -687,6 +846,14 @@ export const siteData = {
       "lastUpdated": "3/6/2021, 4:40:28 PM"
     },
     {
+      "frontmatter": {},
+      "regularPath": "/web/vue/",
+      "relativePath": "web/vue/README.md",
+      "key": "v-05413ae1",
+      "path": "/web/vue/",
+      "lastUpdated": "3/6/2021, 4:40:28 PM"
+    },
+    {
       "title": "vuePress部署到Github Page",
       "frontmatter": {
         "title": "vuePress部署到Github Page",
@@ -720,14 +887,6 @@ export const siteData = {
           "slug": "_1-2"
         }
       ],
-      "lastUpdated": "3/6/2021, 4:40:28 PM"
-    },
-    {
-      "frontmatter": {},
-      "regularPath": "/web/vue/",
-      "relativePath": "web/vue/README.md",
-      "key": "v-05413ae1",
-      "path": "/web/vue/",
       "lastUpdated": "3/6/2021, 4:40:28 PM"
     },
     {
@@ -831,11 +990,12 @@ export const siteData = {
         "chess"
       ],
       "/mysql/": [
-        "introduce",
         "dowloadAndinstall",
+        "introduce",
         "db_base_table",
         "date_type",
-        "select_add"
+        "operate_sql",
+        "node_engine"
       ]
     },
     "blogConfig": {

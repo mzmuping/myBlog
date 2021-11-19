@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>基本查询语句 | myBlog</title>
+    <meta name="generator" content="VuePress 1.8.2">
+    <link rel="icon" href="favicon.ico">
+    <meta name="description" content="myBlogmyBlogmyBlogmyBlog">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    
+    <link rel="preload" href="/assets/css/0.styles.11087911.css" as="style"><link rel="preload" href="/assets/js/app.d18c593c.js" as="script"><link rel="preload" href="/assets/js/3.7b1ac571.js" as="script"><link rel="preload" href="/assets/js/22.42129d18.js" as="script"><link rel="prefetch" href="/assets/js/10.dd1c706f.js"><link rel="prefetch" href="/assets/js/11.f8ed09e3.js"><link rel="prefetch" href="/assets/js/12.3c9c259f.js"><link rel="prefetch" href="/assets/js/13.435fae60.js"><link rel="prefetch" href="/assets/js/14.3691716f.js"><link rel="prefetch" href="/assets/js/15.030147b7.js"><link rel="prefetch" href="/assets/js/16.2a4c8062.js"><link rel="prefetch" href="/assets/js/17.9aedf1eb.js"><link rel="prefetch" href="/assets/js/18.d5d2b4ce.js"><link rel="prefetch" href="/assets/js/19.7de17b8a.js"><link rel="prefetch" href="/assets/js/20.9c391902.js"><link rel="prefetch" href="/assets/js/21.ccd97856.js"><link rel="prefetch" href="/assets/js/23.a66479ca.js"><link rel="prefetch" href="/assets/js/24.150c4838.js"><link rel="prefetch" href="/assets/js/25.d2c30ca5.js"><link rel="prefetch" href="/assets/js/26.f2c7f395.js"><link rel="prefetch" href="/assets/js/27.38308966.js"><link rel="prefetch" href="/assets/js/28.75d81cdd.js"><link rel="prefetch" href="/assets/js/29.effd6f33.js"><link rel="prefetch" href="/assets/js/30.d14f834b.js"><link rel="prefetch" href="/assets/js/31.e98cda29.js"><link rel="prefetch" href="/assets/js/32.58976cbf.js"><link rel="prefetch" href="/assets/js/33.422cee79.js"><link rel="prefetch" href="/assets/js/34.937a1608.js"><link rel="prefetch" href="/assets/js/4.c1176c06.js"><link rel="prefetch" href="/assets/js/5.5887f947.js"><link rel="prefetch" href="/assets/js/6.1d2c0f54.js"><link rel="prefetch" href="/assets/js/7.cb624eb7.js"><link rel="prefetch" href="/assets/js/8.09ab84e3.js"><link rel="prefetch" href="/assets/js/9.447aa21e.js"><link rel="prefetch" href="/assets/js/vendors~docsearch.f2427402.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.11087911.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">myBlog</span></a> <div class="links"><form id="search-form" role="search" class="algolia-search-wrapper search-box"><input id="algolia-search-input" class="search-query"></form> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端" class="dropdown-title"><span class="title">前端</span> <span class="arrow down"></span></button> <button type="button" aria-label="前端" class="mobile-dropdown-title"><span class="title">前端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/web/es6/" class="nav-link">
+  es6
+</a></li><li class="dropdown-item"><!----> <a href="/web/vue/" class="nav-link">
+  vue
+</a></li><li class="dropdown-item"><!----> <a href="/web/H5/" class="nav-link">
+  H5
+</a></li><li class="dropdown-item"><!----> <a href="/web/React/" class="nav-link">
+  React
+</a></li></ul></div></div><div class="nav-item"><a href="/node/" class="nav-link">
+  nodejs
+</a></div><div class="nav-item"><a href="/mysql/" class="nav-link router-link-active">
+  mysql
+</a></div><div class="nav-item"><a href="/java/" class="nav-link">
+  java
+</a></div><div class="nav-item"><a href="/timeLine/" class="nav-link">
+  时间线
+</a></div><div class="nav-item"><a href="/friendLink/" class="nav-link">
+  友链
+</a></div><div class="nav-item"><a href="/nested/" class="nav-link">
+  关于
+</a></div> <a href="https://github.com/ChaselLHL/myBlog" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端" class="dropdown-title"><span class="title">前端</span> <span class="arrow down"></span></button> <button type="button" aria-label="前端" class="mobile-dropdown-title"><span class="title">前端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/web/es6/" class="nav-link">
+  es6
+</a></li><li class="dropdown-item"><!----> <a href="/web/vue/" class="nav-link">
+  vue
+</a></li><li class="dropdown-item"><!----> <a href="/web/H5/" class="nav-link">
+  H5
+</a></li><li class="dropdown-item"><!----> <a href="/web/React/" class="nav-link">
+  React
+</a></li></ul></div></div><div class="nav-item"><a href="/node/" class="nav-link">
+  nodejs
+</a></div><div class="nav-item"><a href="/mysql/" class="nav-link router-link-active">
+  mysql
+</a></div><div class="nav-item"><a href="/java/" class="nav-link">
+  java
+</a></div><div class="nav-item"><a href="/timeLine/" class="nav-link">
+  时间线
+</a></div><div class="nav-item"><a href="/friendLink/" class="nav-link">
+  友链
+</a></div><div class="nav-item"><a href="/nested/" class="nav-link">
+  关于
+</a></div> <a href="https://github.com/ChaselLHL/myBlog" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav>  <ul class="sidebar-links"><li><a href="/mysql/dowloadAndinstall.html" class="sidebar-link">MySQL安装及基本使用教程</a></li><li><a href="/mysql/introduce.html" class="sidebar-link">文件配置</a></li><li><a href="/mysql/db_base_table.html" class="sidebar-link">数据库操作步骤</a></li><li><a href="/mysql/date_type.html" class="sidebar-link">数据库数据类型</a></li><li><a href="/mysql/operate_sql.html" aria-current="page" class="active sidebar-link">基本查询语句</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/mysql/operate_sql.html#where-子句条件查询" class="sidebar-link">where 子句条件查询</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/mysql/operate_sql.html#not-in-或者in" class="sidebar-link">not in,或者in</a></li><li class="sidebar-sub-header"><a href="/mysql/operate_sql.html#带-not-between-and-的范围查询" class="sidebar-link">带 not / between and  的范围查询</a></li><li class="sidebar-sub-header"><a href="/mysql/operate_sql.html#like-匹配查询-模糊查询" class="sidebar-link">like 匹配查询，模糊查询</a></li><li class="sidebar-sub-header"><a href="/mysql/operate_sql.html#查询空值is-null-或者-is-not-null-子句" class="sidebar-link">查询空值is null 或者 is not null 子句；</a></li><li class="sidebar-sub-header"><a href="/mysql/operate_sql.html#and-多条件查询" class="sidebar-link">and 多条件查询</a></li><li class="sidebar-sub-header"><a href="/mysql/operate_sql.html#or-查询" class="sidebar-link">or 查询</a></li><li class="sidebar-sub-header"><a href="/mysql/operate_sql.html#distinct-去重复查询" class="sidebar-link">distinct 去重复查询</a></li></ul></li><li class="sidebar-sub-header"><a href="/mysql/operate_sql.html#对查询结果排序" class="sidebar-link">对查询结果排序</a></li><li class="sidebar-sub-header"><a href="/mysql/operate_sql.html#分组查询" class="sidebar-link">分组查询</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/mysql/operate_sql.html#group-by" class="sidebar-link">group by</a></li><li class="sidebar-sub-header"><a href="/mysql/operate_sql.html#having" class="sidebar-link">having</a></li><li class="sidebar-sub-header"><a href="/mysql/operate_sql.html#with-rollup-ifnull" class="sidebar-link">with rollup， ifnull()</a></li><li class="sidebar-sub-header"><a href="/mysql/operate_sql.html#多字段分组" class="sidebar-link">多字段分组</a></li><li class="sidebar-sub-header"><a href="/mysql/operate_sql.html#group-by-和-order-by一起使用" class="sidebar-link">group by 和 order by一起使用</a></li><li class="sidebar-sub-header"><a href="/mysql/operate_sql.html#用limit-限制查询结果的数量" class="sidebar-link">用limit 限制查询结果的数量</a></li></ul></li></ul></li><li><a href="/mysql/node_engine.html" class="sidebar-link">数据库 增删改查</a></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h3 id="基本查询语句"><a href="#基本查询语句" class="header-anchor">#</a> 基本查询语句</h3> <p>语法</p> <div class="language- extra-class"><pre class="language-text"><code>select {*|[字段列表]} 
+from &lt;表1&gt;,&lt;表1&gt;,....
+where &lt;表达式&gt;
+group by &lt;分组&gt;
+having &lt;expression&gt;
+order by &lt;描述&gt;
+limit &lt;分页&gt;;
+</code></pre></div><p>案例：</p> <p>创建表名为fruits，</p> <div class="language- extra-class"><pre class="language-text"><code>create table fruits
+(
+f_id    char(10)        not null,
+s_id    int         not null,
+f_name  char(255)   not null,
+f_price decimal(8,2)    not null,
+primary key(f_id)
+);
+</code></pre></div><p>插入数据：</p> <div class="language- extra-class"><pre class="language-text"><code>insert into fruits (f_id, s_id, f_name, f_price)
+     values('a1', 101,'apple',5.2),
+     ('b1',101,'blackberry', 10.2),
+     ('bs1',102,'orange', 11.2),
+     ('bs2',105,'melon',8.2),
+     ('t1',102,'banana', 10.3),
+     ('t2',102,'grape', 5.3),
+     ('o2',103,'coconut', 9.2),
+     ('c0',101,'cherry', 3.2),
+     ('a2',103, 'apricot',2.2),
+     ('l2',104,'lemon', 6.4),
+     ('b2',104,'berry', 7.6),
+     ('m1',106,'mango', 15.6),
+     ('m2',105,'xbabay', 2.6),
+     ('t4',107,'xbababa', 3.6),
+     ('m3',105,'xxtt', 11.6),
+     ('b5',107,'xxxx', 3.6);
+</code></pre></div><p>执行完后，接下来就是查看数据了</p> <ul><li>查看fruits表所有数据</li></ul> <blockquote><p>select * from fruits;</p></blockquote> <ul><li>从fruits表中获取f_name和f_price两列数据</li></ul> <blockquote><p>select f_name, f_price from fruits;</p></blockquote> <p>注意：* 通配符方便，但是查询慢，</p> <h2 id="where-子句条件查询"><a href="#where-子句条件查询" class="header-anchor">#</a> where 子句条件查询</h2> <p>可以使用运算符来查询，大于，小于，等于,不等于....</p> <ul><li>查询价格为10.2元的水果的名称</li></ul> <blockquote><p>select f_name ,f_price from fruits where f_price=10.2;</p></blockquote> <ul><li>查询价格小于10的水果的名称</li></ul> <blockquote><p>select f_name ,f_price from fruits where f_price&lt;10.2;</p></blockquote> <h3 id="not-in-或者in"><a href="#not-in-或者in" class="header-anchor">#</a> not in,或者in</h3> <p>查询所有s_id不等于101也不等于102的记录,</p> <blockquote><p>select f_name ,f_price from fruits where s_id  not in (101,102);</p></blockquote> <p>在于101~102之间</p> <blockquote><p>select f_name ,f_price from fruits where s_id  in (101,102);</p></blockquote> <h3 id="带-not-between-and-的范围查询"><a href="#带-not-between-and-的范围查询" class="header-anchor">#</a> 带 not / between and  的范围查询</h3> <p>不在范围查询</p> <blockquote><p>select f_name ,f_price from fruits where f_price not between 2.00 and 10.20;</p></blockquote> <p>在范围查询</p> <blockquote><p>select f_name ,f_price from fruits where f_price between 2.00 and 10.20;</p></blockquote> <h3 id="like-匹配查询-模糊查询"><a href="#like-匹配查询-模糊查询" class="header-anchor">#</a> like 匹配查询，模糊查询</h3> <p>百分号通配符%,匹配任意长度的字符甚至包括零字符，
+下划线通配符'_',一次只能匹配任意一个字符。</p> <ul><li>查找所有以’b’字母开头的水果,单个字符</li></ul> <blockquote><p>select f_name ,f_price from fruits where f_name like 'b%';</p></blockquote> <ul><li>在fruits表中，查询f_name中包含字母’g’的记录</li></ul> <blockquote><p>select f_name ,f_price from fruits where f_name like '%g%';</p></blockquote> <ul><li>查询以’b’开头，并以’y’结尾的水果的名称</li></ul> <blockquote><p>select f_name ,f_price from fruits where f_name like 'b%y';</p></blockquote> <ul><li>查询以字母’y’结尾，且’y’前面只有4个字母的记录</li></ul> <blockquote><p>select f_name ,f_price from fruits where f_name like '----y';</p></blockquote> <h3 id="查询空值is-null-或者-is-not-null-子句"><a href="#查询空值is-null-或者-is-not-null-子句" class="header-anchor">#</a> 查询空值is null 或者 is not null 子句；</h3> <p>查询某字段为空记录。</p> <p>案例： 创建数据表customers</p> <div class="language- extra-class"><pre class="language-text"><code>CREATE TABLE customers
+(
+  c_id      int       NOT NULL AUTO_INCREMENT,
+  c_name    char(50)  NOT NULL,
+  c_address char(50)  NULL,
+  c_city    char(50)  NULL,
+  c_zip     char(10)  NULL,
+  c_contact char(50)  NULL,
+  c_email   char(255) NULL,
+  PRIMARY KEY (c_id)
+);
+</code></pre></div><p>插入数据</p> <div class="language- extra-class"><pre class="language-text"><code>INSERT INTO customers(c_id, c_name, c_address, c_city, 
+c_zip,  c_contact, c_email) 
+VALUES(10001, 'RedHook', '200 Street ', 'Tianjin', 
+ '300000',  'LiMing', 'LMing@163.com'),
+(10002, 'Stars', '333 Fromage Lane',
+ 'Dalian', '116000',  'Zhangbo','Jerry@hotmail.com'),
+(10003, 'Netbhood', '1 Sunny Place', 'Qingdao',  '266000',
+ 'LuoCong', NULL),
+(10004, 'JOTO', '829 Riverside Drive', 'Haikou', 
+ '570000',  'YangShan', 'sam@hotmail.com');
+</code></pre></div><ul><li>查询 customers 表中c_email为空的记录的c_id、c_name和c_email字段值</li></ul> <blockquote><p>select c_id, c_name,c_email from  customers where c_email is null;</p></blockquote> <ul><li>查询customers表中c_email不为空的记录的c_id、c_name和c_email字段值</li></ul> <blockquote><p>select c_id, c_name,c_email from  customers where c_email is not null;</p></blockquote> <h3 id="and-多条件查询"><a href="#and-多条件查询" class="header-anchor">#</a> and 多条件查询</h3> <p>同时满足多条件查询,</p> <ul><li>fruits表中查询s_id = 101，并且f_price大于等于5的水果价格和名称</li></ul> <blockquote><p>select f_id, f_price, f_name from fruits where s_id = '101' and f_price &gt;=5;</p></blockquote> <ul><li>在fruits表中查询s_id = 101或者102，且f_price大于5，并且f_name=‘apple’的水果价格和名称</li></ul> <blockquote><p>select f_id, f_price, f_name from fruits where s_id IN('101', '102') and f_price &gt;= 5 and f_name = 'apple';</p></blockquote> <h3 id="or-查询"><a href="#or-查询" class="header-anchor">#</a> or 查询</h3> <p>满足一个条件即可返回。or也可以连接两个甚至多个查询条件。多个条件表达式用and分开。</p> <ul><li>查询s_id=101或者s_id=102的水果供应商的f_price和f_name</li></ul> <blockquote><p>select s_id,f_name, f_price from fruits where s_id = 101 OR s_id = 102;
+select s_id,f_name, f_price from fruits where s_id in(101,102);</p></blockquote> <h3 id="distinct-去重复查询"><a href="#distinct-去重复查询" class="header-anchor">#</a> distinct 去重复查询</h3> <ul><li>查询fruits表中s_id字段的值，返回s_id字段值且不得重复,desc 降序排序,asc 升序</li></ul> <blockquote><p>SELECT DISTINCT s_id FROM fruits;</p></blockquote> <h2 id="对查询结果排序"><a href="#对查询结果排序" class="header-anchor">#</a> 对查询结果排序</h2> <p>mysql 中可以通过select 使用order by 子句对查询的结果进行排序</p> <ul><li>单列排序</li> <li>多列排序</li> <li>指定排序方向，升序，降序</li></ul> <ol><li>查询fruits表的f_name字段值，并对其进行排序,默认升序排序</li></ol> <blockquote><p>select f_name from fruits order by f_name;</p></blockquote> <ol start="2"><li>查询fruits表中的f_name和f_price字段，先按f_name排序，再按f_price排序</li></ol> <blockquote><p>SELECT f_name, f_price FROM fruits ORDER BY f_name, f_price;</p></blockquote> <ol start="3"><li>查询fruits表中的f_name和f_price字段，对结果按f_price降序方式排序</li></ol> <blockquote><p>SELECT f_name, f_price FROM fruits ORDER BY f_price DESC;</p></blockquote> <ol start="4"><li>查询fruits表，先按f_price降序排序，再按f_name字段升序排序</li></ol> <blockquote><p>SELECT f_price, f_name FROM fruits ORDER BY f_price DESC, f_name;</p></blockquote> <h2 id="分组查询"><a href="#分组查询" class="header-anchor">#</a> 分组查询</h2> <ol><li><p>分组查询是对数据按照某个或者多个字段查询进行分组。</p></li> <li><p>[group by 字段] [having &lt;条件表达式&gt;]</p> <ul><li>创建分组</li> <li>使用having过滤分组</li> <li>在group by 子句中使用with rollup(总和)</li> <li>多字段分组</li> <li>group by 和 order by 一起使用</li></ul></li></ol> <ul><li>根据s_id对fruits表中的数据进行分组</li></ul> <blockquote><p>select s_id ,count(*) as total from fruits group by s_id;</p></blockquote> <h3 id="group-by"><a href="#group-by" class="header-anchor">#</a> group by</h3> <ul><li>根据s_id对fruits表中的数据进行分组，将每个供应商的水果名称显示出来,group_concat聚合函数，也可以排序</li></ul> <blockquote><p>select s_id, group_concat(f_name order by f_name asc ) as names from fruits group by s_id;</p></blockquote> <h3 id="having"><a href="#having" class="header-anchor">#</a> having</h3> <p>having：用于对where和group by查询出来的分组经行过滤，查出满足条件的分组结果。它是一个过滤声明，是在查询返回结果集以后对查询结果进行的过滤操作。
+执行顺序：select –&gt;where –&gt; group by–&gt; having–&gt;order by</p> <ul><li>根据s_id对fruits表中的数据进行分组，并显示水果种类大于1的分组信息,count()函数，返回总数</li></ul> <blockquote><p>select s_id , group_concat(f_name) as names from fruits group by s_id having count(f_name) &gt; 1;</p></blockquote> <h3 id="with-rollup-ifnull"><a href="#with-rollup-ifnull" class="header-anchor">#</a> with rollup， ifnull()</h3> <p>with rollup是用来在分组统计数据的基础上再进行统计汇总</p> <ul><li>根据s_id对fruits表中的数据进行分组，并显示记录数量</li></ul> <blockquote><p>select ifnull(s_id,'总数') as s_id , count(*) as total from fruits group by s_id with rollup;</p></blockquote> <h3 id="多字段分组"><a href="#多字段分组" class="header-anchor">#</a> 多字段分组</h3> <ul><li>根据s_id和f_name字段对fruits表中的数据进行分组，分析：先按照s_id分组，在f_name分组</li></ul> <blockquote><p>select * from fruits group by s_id ,f_name;</p></blockquote> <p>为了演示效果，首先创建数据表</p> <div class="language- extra-class"><pre class="language-text"><code>CREATE TABLE orderitems
+(
+  o_num      int          NOT NULL,
+  o_item     int          NOT NULL,
+  f_id       char(10)     NOT NULL,
+  quantity   int          NOT NULL,
+  item_price decimal(8,2) NOT NULL,
+  PRIMARY KEY (o_num,o_item)
+) ;
+</code></pre></div><p>然后插入演示数据。SQL语句如下：</p> <div class="language- extra-class"><pre class="language-text"><code>INSERT INTO orderitems(o_num, o_item, f_id, quantity, item_price)
+VALUES(30001, 1, 'a1', 10, 5.2),
+(30001, 2, 'b2', 3, 7.6),
+(30001, 3, 'bs1', 5, 11.2),
+(30001, 4, 'bs2', 15, 9.2),
+(30002, 1, 'b3', 2, 20.0),
+(30003, 1, 'c0', 100, 10),
+(30004, 1, 'o2', 50, 2.50),
+(30005, 1, 'c0', 5, 10),
+(30005, 2, 'b1', 10, 8.99),
+(30005, 3, 'a2', 10, 2.2),
+(30005, 4, 'm1', 5, 14.99);
+</code></pre></div><ul><li>查询订单价格大于100的订单号和总订单价格</li></ul> <blockquote><p>select o_num , sum(quantity * item_price) as orderTotal from orderitems group by o_num having sum(quantity * item_price) &gt;= 100;</p></blockquote> <h3 id="group-by-和-order-by一起使用"><a href="#group-by-和-order-by一起使用" class="header-anchor">#</a> group by 和 order by一起使用</h3> <ul><li>可以看到，返回的结果中orderTotal列的总订单价格并没有按照一定顺序显示，接下来，使用ORDER BY关键字按总订单价格排序显示结果</li></ul> <blockquote><p>select o_num ,sum(quantity<em>item_price) as orderTotal from orderitems group by o_num having sum(quantity</em>item_price) &gt;= 100 order by orderTotal;</p></blockquote> <h3 id="用limit-限制查询结果的数量"><a href="#用limit-限制查询结果的数量" class="header-anchor">#</a> 用limit 限制查询结果的数量</h3> <ol><li>limit 关键字可以用放回指定位置的记录</li> <li>limit [位置偏移量，]行数</li></ol> <ul><li>限制返回前4行，</li></ul> <blockquote><p>select * from fruits limit 4;</p></blockquote> <ul><li>返回从第5个记录开始的，行数长度为3的记录，索引重0开始。</li></ul> <blockquote><p>select * from fruits limit 4 ,3;</p></blockquote></div> <footer class="page-edit"><div class="edit-link"><a href="https://github.com/ChaselLHL/myBlog/edit/master/docs/mysql/operate_sql.md" target="_blank" rel="noopener noreferrer">在 GitHub 上编辑此页</a> <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></div> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/mysql/date_type.html" class="prev">
+        数据库数据类型
+      </a></span> <span class="next"><a href="/mysql/node_engine.html">
+        数据库 增删改查
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.d18c593c.js" defer></script><script src="/assets/js/3.7b1ac571.js" defer></script><script src="/assets/js/22.42129d18.js" defer></script>
+  </body>
+</html>

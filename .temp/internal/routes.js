@@ -21,6 +21,14 @@ export const routes = [
     redirect: "/"
   },
   {
+    name: "v-e395db88",
+    path: "/guide/JS/test.html",
+    component: GlobalLayout,
+    beforeEnter: (to, from, next) => {
+      ensureAsyncComponentsLoaded("Layout", "v-e395db88").then(next)
+    },
+  },
+  {
     name: "v-70b2b9a2",
     path: "/friendLink/",
     component: GlobalLayout,
@@ -31,14 +39,6 @@ export const routes = [
   {
     path: "/friendLink/index.html",
     redirect: "/friendLink/"
-  },
-  {
-    name: "v-e395db88",
-    path: "/guide/JS/test.html",
-    component: GlobalLayout,
-    beforeEnter: (to, from, next) => {
-      ensureAsyncComponentsLoaded("Layout", "v-e395db88").then(next)
-    },
   },
   {
     name: "v-e66ed5dc",
@@ -53,6 +53,14 @@ export const routes = [
     redirect: "/guide/"
   },
   {
+    name: "v-7f5ae9a2",
+    path: "/mysql/date_type.html",
+    component: GlobalLayout,
+    beforeEnter: (to, from, next) => {
+      ensureAsyncComponentsLoaded("Layout", "v-7f5ae9a2").then(next)
+    },
+  },
+  {
     name: "v-da26df3c",
     path: "/java/",
     component: GlobalLayout,
@@ -65,11 +73,11 @@ export const routes = [
     redirect: "/java/"
   },
   {
-    name: "v-7f5ae9a2",
-    path: "/mysql/date_type.html",
+    name: "v-e2bde822",
+    path: "/mysql/db_base_table.html",
     component: GlobalLayout,
     beforeEnter: (to, from, next) => {
-      ensureAsyncComponentsLoaded("Layout", "v-7f5ae9a2").then(next)
+      ensureAsyncComponentsLoaded("Layout", "v-e2bde822").then(next)
     },
   },
   {
@@ -89,6 +97,22 @@ export const routes = [
     },
   },
   {
+    name: "v-476b2aaf",
+    path: "/mysql/node_engine.html",
+    component: GlobalLayout,
+    beforeEnter: (to, from, next) => {
+      ensureAsyncComponentsLoaded("Layout", "v-476b2aaf").then(next)
+    },
+  },
+  {
+    name: "v-09f44a2f",
+    path: "/mysql/operate_sql.html",
+    component: GlobalLayout,
+    beforeEnter: (to, from, next) => {
+      ensureAsyncComponentsLoaded("Layout", "v-09f44a2f").then(next)
+    },
+  },
+  {
     name: "v-4964e974",
     path: "/mysql/",
     component: GlobalLayout,
@@ -99,14 +123,6 @@ export const routes = [
   {
     path: "/mysql/index.html",
     redirect: "/mysql/"
-  },
-  {
-    name: "v-e2bde822",
-    path: "/mysql/db_base_table.html",
-    component: GlobalLayout,
-    beforeEnter: (to, from, next) => {
-      ensureAsyncComponentsLoaded("Layout", "v-e2bde822").then(next)
-    },
   },
   {
     name: "v-1c4118c2",
@@ -121,12 +137,16 @@ export const routes = [
     redirect: "/nested/"
   },
   {
-    name: "v-3ac373f6",
-    path: "/mysql/select_add.html",
+    name: "v-3d2d673c",
+    path: "/node/",
     component: GlobalLayout,
     beforeEnter: (to, from, next) => {
-      ensureAsyncComponentsLoaded("Layout", "v-3ac373f6").then(next)
+      ensureAsyncComponentsLoaded("Layout", "v-3d2d673c").then(next)
     },
+  },
+  {
+    path: "/node/index.html",
+    redirect: "/node/"
   },
   {
     name: "v-d8ffd67c",
@@ -139,18 +159,6 @@ export const routes = [
   {
     path: "/timeLine/index.html",
     redirect: "/timeLine/"
-  },
-  {
-    name: "v-3d2d673c",
-    path: "/node/",
-    component: GlobalLayout,
-    beforeEnter: (to, from, next) => {
-      ensureAsyncComponentsLoaded("Layout", "v-3d2d673c").then(next)
-    },
-  },
-  {
-    path: "/node/index.html",
-    redirect: "/node/"
   },
   {
     name: "v-92fb9f62",
@@ -237,14 +245,6 @@ export const routes = [
     },
   },
   {
-    name: "v-b37131fc",
-    path: "/web/vue/vuePress_deploy.html",
-    component: GlobalLayout,
-    beforeEnter: (to, from, next) => {
-      ensureAsyncComponentsLoaded("Layout", "v-b37131fc").then(next)
-    },
-  },
-  {
     name: "v-05413ae1",
     path: "/web/vue/",
     component: GlobalLayout,
@@ -255,6 +255,14 @@ export const routes = [
   {
     path: "/web/vue/index.html",
     redirect: "/web/vue/"
+  },
+  {
+    name: "v-b37131fc",
+    path: "/web/vue/vuePress_deploy.html",
+    component: GlobalLayout,
+    beforeEnter: (to, from, next) => {
+      ensureAsyncComponentsLoaded("Layout", "v-b37131fc").then(next)
+    },
   },
   {
     name: "v-4ab03f75",

@@ -2,7 +2,7 @@
 
 ### 下载MySQL
 
-首先，去数据库的[官网](http://www.mysql.com)下载MySQL。
+首先，去数据库的[官网](http://www.mysql.com)下载[MySQL](https://dev.mysql.com/downloads/mysql/),
 
 然后点击downloads，MySQL Community (GPL) Downloads，选择MySQL Community Server。
 如下图：

@@ -33,6 +33,8 @@
   - 使用唯一性约束
   - 使用默认值约束
   - 设置表属性值自动增加
+  - 设置comment属性描述
+
 
  ### 1、创建表的语法形式
 
@@ -56,8 +58,8 @@
 ```
 CREATE TABLE tb_emp1
     (
-    id      INT(11),
-    name   VARCHAR(25),
+    id      INT(11) comment 'id描述',
+    name   VARCHAR(25) comment '姓名',
     deptId  INT(11),
     salary  FLOAT
     );

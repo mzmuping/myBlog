@@ -51,6 +51,14 @@ export const siteData = {
       "relativePath": "README.md",
       "key": "v-82487002",
       "path": "/",
+      "lastUpdated": "11/19/2021, 6:37:52 PM"
+    },
+    {
+      "frontmatter": {},
+      "regularPath": "/friendLink/",
+      "relativePath": "friendLink/README.md",
+      "key": "v-70b2b9a2",
+      "path": "/friendLink/",
       "lastUpdated": "3/6/2021, 4:40:28 PM"
     },
     {
@@ -69,18 +77,21 @@ export const siteData = {
     },
     {
       "frontmatter": {},
-      "regularPath": "/friendLink/",
-      "relativePath": "friendLink/README.md",
-      "key": "v-70b2b9a2",
-      "path": "/friendLink/",
-      "lastUpdated": "3/6/2021, 4:40:28 PM"
-    },
-    {
-      "frontmatter": {},
       "regularPath": "/guide/",
       "relativePath": "guide/README.md",
       "key": "v-e66ed5dc",
       "path": "/guide/",
+      "lastUpdated": "3/6/2021, 4:40:28 PM"
+    },
+    {
+      "frontmatter": {
+        "actionText": "快速上手 →",
+        "actionLink": "/zh/guide/"
+      },
+      "regularPath": "/java/",
+      "relativePath": "java/README.md",
+      "key": "v-da26df3c",
+      "path": "/java/",
       "lastUpdated": "3/6/2021, 4:40:28 PM"
     },
     {
@@ -103,17 +114,6 @@ export const siteData = {
         }
       ],
       "lastUpdated": "11/18/2021, 6:31:41 PM"
-    },
-    {
-      "frontmatter": {
-        "actionText": "快速上手 →",
-        "actionLink": "/zh/guide/"
-      },
-      "regularPath": "/java/",
-      "relativePath": "java/README.md",
-      "key": "v-da26df3c",
-      "path": "/java/",
-      "lastUpdated": "3/6/2021, 4:40:28 PM"
     },
     {
       "title": "数据库操作步骤",
@@ -250,7 +250,7 @@ export const siteData = {
           "slug": "连接navicat-报错"
         }
       ],
-      "lastUpdated": "11/18/2021, 6:31:41 PM"
+      "lastUpdated": "11/19/2021, 6:37:52 PM"
     },
     {
       "title": "文件配置",
@@ -326,7 +326,7 @@ export const siteData = {
           "slug": "mysql常用的命令"
         }
       ],
-      "lastUpdated": "11/18/2021, 6:31:41 PM"
+      "lastUpdated": "11/19/2021, 6:37:52 PM"
     },
     {
       "title": "数据库 增删改查",
@@ -351,23 +351,34 @@ export const siteData = {
           "title": "案例：",
           "slug": "案例"
         }
-      ]
+      ],
+      "lastUpdated": "11/19/2021, 6:37:52 PM"
     },
     {
-      "title": "基本查询语句",
-      "frontmatter": {},
+      "title": "select查询语句",
+      "frontmatter": {
+        "title": "select查询语句",
+        "date": "2021-11-20T00:00:00.000Z",
+        "categories": [
+          "frontend"
+        ],
+        "tags": [
+          "mysql",
+          "sql"
+        ]
+      },
       "regularPath": "/mysql/operate_sql.html",
       "relativePath": "mysql/operate_sql.md",
       "key": "v-09f44a2f",
       "path": "/mysql/operate_sql.html",
       "headers": [
         {
-          "level": 3,
-          "title": "基本查询语句",
-          "slug": "基本查询语句"
+          "level": 2,
+          "title": "select 查询语句",
+          "slug": "select-查询语句"
         },
         {
-          "level": 2,
+          "level": 3,
           "title": "where 子句条件查询",
           "slug": "where-子句条件查询"
         },
@@ -412,7 +423,7 @@ export const siteData = {
           "slug": "对查询结果排序"
         },
         {
-          "level": 2,
+          "level": 3,
           "title": "分组查询",
           "slug": "分组查询"
         },
@@ -450,8 +461,84 @@ export const siteData = {
           "level": 2,
           "title": "使用集合函数查询",
           "slug": "使用集合函数查询"
+        },
+        {
+          "level": 3,
+          "title": "count()使用",
+          "slug": "count-使用"
+        },
+        {
+          "level": 3,
+          "title": "avg()使用",
+          "slug": "avg-使用"
+        },
+        {
+          "level": 3,
+          "title": "max()使用",
+          "slug": "max-使用"
+        },
+        {
+          "level": 3,
+          "title": "min()使用",
+          "slug": "min-使用"
+        },
+        {
+          "level": 2,
+          "title": "连表查询",
+          "slug": "连表查询"
+        },
+        {
+          "level": 3,
+          "title": "内连接查询",
+          "slug": "内连接查询"
+        },
+        {
+          "level": 3,
+          "title": "外连接查询",
+          "slug": "外连接查询"
+        },
+        {
+          "level": 3,
+          "title": "复合条件连接查询",
+          "slug": "复合条件连接查询"
+        },
+        {
+          "level": 2,
+          "title": "子查询",
+          "slug": "子查询"
+        },
+        {
+          "level": 3,
+          "title": "带any ,some 关键字的子查询",
+          "slug": "带any-some-关键字的子查询"
+        },
+        {
+          "level": 3,
+          "title": "带all 关键字查询",
+          "slug": "带all-关键字查询"
+        },
+        {
+          "level": 3,
+          "title": "带exists 关键字的子查询",
+          "slug": "带exists-关键字的子查询"
+        },
+        {
+          "level": 3,
+          "title": "带in 关键字的子查询",
+          "slug": "带in-关键字的子查询"
+        },
+        {
+          "level": 3,
+          "title": "带比较运算符的子查询",
+          "slug": "带比较运算符的子查询"
+        },
+        {
+          "level": 2,
+          "title": "合并查询结果",
+          "slug": "合并查询结果"
         }
-      ]
+      ],
+      "lastUpdated": "11/19/2021, 6:37:52 PM"
     },
     {
       "title": "创建数据库",

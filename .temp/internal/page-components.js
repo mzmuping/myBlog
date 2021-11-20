@@ -3,11 +3,11 @@
  */
 export default {
   "v-82487002": () => import("E:\\其他\\vuepress\\myBlog\\docs\\README.md"),
-  "v-e395db88": () => import("E:\\其他\\vuepress\\myBlog\\docs\\guide\\JS\\test.md"),
   "v-70b2b9a2": () => import("E:\\其他\\vuepress\\myBlog\\docs\\friendLink\\README.md"),
+  "v-e395db88": () => import("E:\\其他\\vuepress\\myBlog\\docs\\guide\\JS\\test.md"),
   "v-e66ed5dc": () => import("E:\\其他\\vuepress\\myBlog\\docs\\guide\\README.md"),
-  "v-7f5ae9a2": () => import("E:\\其他\\vuepress\\myBlog\\docs\\mysql\\date_type.md"),
   "v-da26df3c": () => import("E:\\其他\\vuepress\\myBlog\\docs\\java\\README.md"),
+  "v-7f5ae9a2": () => import("E:\\其他\\vuepress\\myBlog\\docs\\mysql\\date_type.md"),
   "v-e2bde822": () => import("E:\\其他\\vuepress\\myBlog\\docs\\mysql\\db_base_table.md"),
   "v-f60c83e2": () => import("E:\\其他\\vuepress\\myBlog\\docs\\mysql\\dowloadAndinstall.md"),
   "v-7a1547af": () => import("E:\\其他\\vuepress\\myBlog\\docs\\mysql\\introduce.md"),

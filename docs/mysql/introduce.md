@@ -141,7 +141,7 @@ authentication_string 是msyql 8.0.11，5.7的password
     >show tables;
 - 显示数据表的属性，属性类型
     > show columns from 表名
-    >或者 decs 表名;
+    >或者 desc 表名;
 - 显示数据表的详细索引信息
     > show index from 表名
     >或者 show create table <表名> \g;

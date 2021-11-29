@@ -48,7 +48,7 @@ module.exports = {
             '/web/vue/': ['vuePress_deploy'],
             '/web/H5/': ['svg'],
             '/web/React/': ['chess'],
-            '/mysql/': ['dowloadAndinstall', 'introduce', 'db_base_table', 'date_type', 'operate_sql', 'node_engine'],
+            '/mysql/': ['dowloadAndinstall', 'introduce', 'db_base_table', 'date_type', 'operate_sql', 'insert_update', 'indexes', 'node_engine'],
         },
         // 博客设置
         blogConfig: {

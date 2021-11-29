@@ -176,6 +176,7 @@ CONSTRAINT STH UNIQUE(name)
 - 当用户进行数据插入时，如果用户未指定字段的值，则使用默认值来插入数据，如果字段未使用defalt来约束，则默认值为NULL，如果字段指定默认值，则使用指定的默认值。
 
 - 语法： 字段名 数据类型 DEFUALT 默认值
+```js
 CREATE TABLE tb_emp7 
 (
 id      INT(11) PRIMARY KEY,
@@ -183,7 +184,7 @@ name   VARCHAR(25) NOT NULL,
 deptId  INT(11) DEFAULT 1111, 
 salary  FLOAT
 );
-
+```
 ### 6、设置表属性值自动增加
 - 希望在每次插入新纪录时，系统自动生成字段的主键值。一个表只有一个字段使用自动添加约束，而且该字段必须为主键一部分。
 - 语法： 字段名 数据类型 AUTO_INCREMENT
@@ -318,7 +319,9 @@ CONSTRAINT fk_emp_dept  FOREIGN KEY (deptId) REFERENCES tb_dept1(id)
 ### 删除数据表
   - 外键约束时，主表不能被直接删除
 
-  - 语法：drop table if exists 表名;
+  - 语法：
+      - drop table if exists 表名;
+      - drop table 表名;
 
   案例：
 

@@ -20,7 +20,10 @@ order by <排序>
 limit <分页>;
 ```
 案例：
-
+创建test_db库
+```js
+create database test_db;
+```
 创建表名为fruits，
 ```js
 create table fruits
@@ -55,11 +58,11 @@ insert into fruits (f_id, s_id, f_name, f_price)
 
 执行完后，接下来就是查看数据了
 
-- 查看fruits表所有数据
+- 【例】查看fruits表所有数据
 ```js
  select * from fruits;
 ```
-- 从fruits表中获取f_name和f_price两列数据
+- 【例】从fruits表中获取f_name和f_price两列数据
 ```js
 select f_name, f_price from fruits;
 ```
@@ -68,33 +71,33 @@ select f_name, f_price from fruits;
 
 ### where 子句条件查询
 可以使用运算符来查询，大于，小于，等于,不等于....
-- 查询价格为10.2元的水果的名称
+- 【例】查询价格为10.2元的水果的名称
 ```js
 select f_name ,f_price from fruits where f_price=10.2;
 ```
-- 查询价格小于10的水果的名称
+- 【例】查询价格小于10的水果的名称
 > select f_name ,f_price from fruits where f_price<10.2;
 
 ### not in,或者in 
 
-查询所有s_id不等于101也不等于102的记录,
+【例】查询所有s_id不等于101也不等于102的记录,
 ```js
 select f_name ,f_price from fruits where s_id  not in (101,102);
 ```
 
-在于101~102之间
+【例】在于101~102之间
 ```js
 select f_name ,f_price from fruits where s_id  in (101,102);
 ```
 
 ### 带 not / between and  的范围查询
 
-不在范围查询
+【例】不在范围查询
 ```js
 select f_name ,f_price from fruits where f_price not between 2.00 and 10.20;
 ```
 
-在范围查询
+【例】在范围查询
 ```js
 select f_name ,f_price from fruits where f_price between 2.00 and 10.20;
 ```
@@ -103,22 +106,22 @@ select f_name ,f_price from fruits where f_price between 2.00 and 10.20;
 百分号通配符%,匹配任意长度的字符甚至包括零字符，
 下划线通配符'_',一次只能匹配任意一个字符。
 
-- 查找所有以’b’字母开头的水果,单个字符
+- 【例】查找所有以’b’字母开头的水果,单个字符
 ```js
 select f_name ,f_price from fruits where f_name like 'b%';
 ```
 
-- 在fruits表中，查询f_name中包含字母’g’的记录
+- 【例】在fruits表中，查询f_name中包含字母’g’的记录
 ```js
 select f_name ,f_price from fruits where f_name like '%g%';
 ```
 
-- 查询以’b’开头，并以’y’结尾的水果的名称
+- 【例】查询以’b’开头，并以’y’结尾的水果的名称
 ```js
 select f_name ,f_price from fruits where f_name like 'b%y';
 ```
 
-- 查询以字母’y’结尾，且’y’前面只有4个字母的记录
+- 【例】查询以字母’y’结尾，且’y’前面只有4个字母的记录
 ```js
 select f_name ,f_price from fruits where f_name like '----y';
 ```
@@ -154,25 +157,25 @@ VALUES(10001, 'RedHook', '200 Street ', 'Tianjin',
  '570000',  'YangShan', 'sam@hotmail.com');
 ```
 
-- 查询 customers 表中c_email为空的记录的c_id、c_name和c_email字段值
+- 【例】查询 customers 表中c_email为空的记录的c_id、c_name和c_email字段值
 
 ```js
 select c_id, c_name,c_email from  customers where c_email is null;
 ```
 
-- 查询customers表中c_email不为空的记录的c_id、c_name和c_email字段值
+- 【例】查询customers表中c_email不为空的记录的c_id、c_name和c_email字段值
 ```js
 select c_id, c_name,c_email from  customers where c_email is not null;
 ```
 
 ### and 多条件查询
 同时满足多条件查询,
-- fruits表中查询s_id = 101，并且f_price大于等于5的水果价格和名称
+- 【例】fruits表中查询s_id = 101，并且f_price大于等于5的水果价格和名称
 ```js
 select f_id, f_price, f_name from fruits where s_id = '101' and f_price >=5;
 ```
 
-- 在fruits表中查询s_id = 101或者102，且f_price大于5，并且f_name=‘apple’的水果价格和名称
+- 【例】在fruits表中查询s_id = 101或者102，且f_price大于5，并且f_name=‘apple’的水果价格和名称
 
 ```js
 select f_id, f_price, f_name from fruits 
@@ -181,7 +184,7 @@ where s_id IN('101', '102') and f_price >= 5 and f_name = 'apple';
 ### or 查询
 满足一个条件即可返回。or也可以连接两个甚至多个查询条件。多个条件表达式用and分开。
 
-- 查询s_id=101或者s_id=102的水果供应商的f_price和f_name
+- 【例】查询s_id=101或者s_id=102的水果供应商的f_price和f_name
 ```js
 select s_id,f_name, f_price from fruits where s_id = 101 OR s_id = 102;
 
@@ -189,7 +192,7 @@ select s_id,f_name, f_price from fruits where s_id in(101,102);
 ```
 
  ### distinct 去重复查询
-- 查询fruits表中s_id字段的值，返回s_id字段值且不得重复,desc 降序排序,asc 升序
+- 【例】查询fruits表中s_id字段的值，返回s_id字段值且不得重复,desc 降序排序,asc 升序
 ```js
 select distinct s_id from fruits;
 ```
@@ -230,13 +233,13 @@ SELECT f_price, f_name FROM fruits ORDER BY f_price DESC, f_name;
     - group by 和 order by 一起使用
 
 
-- 根据s_id对fruits表中的数据进行分组
+- 【例】根据s_id对fruits表中的数据进行分组
 ```js
 select s_id ,count(*) as total from fruits group by s_id;
 ```
 
 ### group by
-- 根据s_id对fruits表中的数据进行分组，将每个供应商的水果名称显示出来,group_concat聚合函数，也可以排序
+- 【例】根据s_id对fruits表中的数据进行分组，将每个供应商的水果名称显示出来,group_concat聚合函数，也可以排序
 ```js
 select s_id, group_concat(f_name order by f_name asc ) as names from fruits group by s_id;
 ```
@@ -245,7 +248,7 @@ select s_id, group_concat(f_name order by f_name asc ) as names from fruits grou
 having：用于对where和group by查询出来的分组经行过滤，查出满足条件的分组结果。它是一个过滤声明，是在查询返回结果集以后对查询结果进行的过滤操作。
 执行顺序：select –>where –> group by–> having–>order by
 
-- 根据s_id对fruits表中的数据进行分组，并显示水果种类大于1的分组信息,count()函数，返回总数
+- 【例】根据s_id对fruits表中的数据进行分组，并显示水果种类大于1的分组信息,count()函数，返回总数
 ```js
 select s_id , group_concat(f_name) as names from fruits group by s_id having count(f_name) > 1;
 ```
@@ -253,7 +256,7 @@ select s_id , group_concat(f_name) as names from fruits group by s_id having cou
 ### with rollup， ifnull()
 with rollup是用来在分组统计数据的基础上再进行统计汇总
 
-- 根据s_id对fruits表中的数据进行分组，并显示记录数量
+- 【例】根据s_id对fruits表中的数据进行分组，并显示记录数量
 
 ```js
 select ifnull(s_id,'总数') as s_id , count(*) as total from fruits group by s_id with rollup;
@@ -262,7 +265,7 @@ select ifnull(s_id,'总数') as s_id , count(*) as total from fruits group by s_
 ### 多字段分组
 
 
-- 根据s_id和f_name字段对fruits表中的数据进行分组，分析：先按照s_id分组，在f_name分组
+- 【例】根据s_id和f_name字段对fruits表中的数据进行分组，分析：先按照s_id分组，在f_name分组
 ```js
 select * from fruits group by s_id ,f_name;
 ```
@@ -296,7 +299,7 @@ VALUES(30001, 1, 'a1', 10, 5.2),
 (30005, 4, 'm1', 5, 14.99);
 ```
 
-- 查询订单价格大于100的订单号和总订单价格
+- 【例】查询订单价格大于100的订单号和总订单价格
 ```js
 select o_num , sum(quantity * item_price) as orderTotal 
 from orderitems 
@@ -304,7 +307,7 @@ group by o_num having sum(quantity * item_price) >= 100;
 ```
 
 ###  group by 和 order by一起使用
-- 可以看到，返回的结果中orderTotal列的总订单价格并没有按照一定顺序显示，接下来，使用ORDER BY关键字按总订单价格排序显示结果
+- 【例】可以看到，返回的结果中orderTotal列的总订单价格并没有按照一定顺序显示，接下来，使用ORDER BY关键字按总订单价格排序显示结果
 
 ```js
  select o_num ,sum(quantity*item_price) as orderTotal 
@@ -318,12 +321,12 @@ group by o_num having sum(quantity * item_price) >= 100;
 2. limit [位置偏移量，]行数
 
 
-- 限制返回前4行，
+- 【例】限制返回前4行，
 ``` js
 select * from fruits limit 4;
 ```
 
-- 返回从第5个记录开始的，行数长度为3的记录，索引重0开始。
+- 【例】返回从第5个记录开始的，行数长度为3的记录，索引重0开始。
 ```js
 select * from fruits limit 4 ,3;
 ```
@@ -343,49 +346,49 @@ select * from fruits limit 4 ,3;
     - 返回指定列中的最小值
 
 ### count()使用
-- 查询customers表中总的行数
+- 【例】查询customers表中总的行数
 ```js
 select count(*) as total from customers;
 ```
-- 查询customers表中有电子邮箱的顾客的总数
+- 【例】查询customers表中有电子邮箱的顾客的总数
 ```js
 select count(c_email) as emailTotal from customers;
 ```
-- 在 orderitems 表中，使用COUNT()函数统计不同订单号中订购的水果种类,水果种类进行升序排序
+- 【例】在 orderitems 表中，使用COUNT()函数统计不同订单号中订购的水果种类,水果种类进行升序排序
 ```js
 select o_num ,count(f_id) as f_id_num from orderitems group by o_num order by f_id_num;
 
 ### sum()使用
 ```
-- 在 orderitems 表中查询30005号订单一共购买的水果总量
+- 【例】在 orderitems 表中查询30005号订单一共购买的水果总量
 ```js
 select o_num , sum(quantity) as items_total from orderitems where o_num = '30005';
 ```
-- 在 orderitems 表中，使用SUM()函数统计不同订单号中订购的水果总量
+- 【例】在 orderitems 表中，使用SUM()函数统计不同订单号中订购的水果总量
 ```js
 select o_num , sum(quantity) as items_total from orderitems group by o_num order by items_total;
 ```
 ### avg()使用
-- 在 fruits 表中，查询每一个供应商的水果价格的平均值,平均值保留两位小数点
+- 【例】在 fruits 表中，查询每一个供应商的水果价格的平均值,平均值保留两位小数点
 ```js
 select s_id, cast(avg(f_price) as decimal(8,2)) as avg,avg(f_price),sum(f_price),count(s_id) from fruits group by s_id;
 ```
 
 ### max()使用
-- 在 fruits 表中查找市场上价格最高的水果
+- 【例】在 fruits 表中查找市场上价格最高的水果
 ```js
 select s_id,f_name, max(f_price) from fruits group by s_id;
 ```
-- 在 fruits 表中查找 f_name 的最大值
+- 【例】在 fruits 表中查找 f_name 的最大值
 ```js
 select s_id, max(f_name) from fruits group by s_id;
 ```
 ### min()使用
-- 在 fruits 表中查找市场上价格最低的水果
+- 【例】在 fruits 表中查找市场上价格最低的水果
 ```js
 select min(f_price) from fruits;
 ```
-- 在 fruits 表中查找不同供应商提供的价格最低的水果
+- 【例】在 fruits 表中查找不同供应商提供的价格最低的水果
 ```js
 select s_id, min(f_price) from fruits group by s_id;
 ```
@@ -432,13 +435,16 @@ desc suppliers;
 由结果可以看到，fruits表和suppliers表中都有相同数据类型的字段s_id,两个表通过s_id字段建立联系。接下来从fruits表中查询f_name、f_price字段，从suppliers表中查询s_id、s_name。sql语句：
 
 ```js
-select suppliers.s_id,s_name,f_name,f_price from fruits ,suppliers where fruits.s_id = suppliers.s_id;
+select suppliers.s_id,s_name,f_name,f_price 
+from 
+fruits ,suppliers where fruits.s_id = suppliers.s_id;
 ```
 
 #### 同表别名内连接
-- 查询供应f_id= ‘a1’的水果供应商提供的其他水果种类
+- 【例】查询供应f_id= ‘a1’的水果供应商提供的其他水果种类
 ```js
-select f1.f_id,f1.f_name from fruits as f1,fruits as f2 where f1.s_id = f2.s_id and f2.f_id = 'a1';
+select f1.f_id,f1.f_name from 
+fruits as f1,fruits as f2 where f1.s_id = f2.s_id and f2.f_id = 'a1';
 ```
 
 ### 外连接查询
@@ -467,7 +473,7 @@ insert into orders(o_num,o_date,c_id)  values (30002, '2008-09-12', 10003),
 
 - 左连接
 
-在 customers 表和 orders 表中，查询所有客户，包括没有订单的客户。
+【例】在 customers 表和 orders 表中，查询所有客户，包括没有订单的客户。
 
 ```js
 SELECT customers.c_id , orders.o_num FROM
@@ -490,13 +496,15 @@ SELECT customers.c_id ,orders.o_num FROM customers RIGHT OUTER JOIN orders ON cu
 
 在customers表和orders表中，使用INNER JOIN语法查询customers表中ID为10001的客户的订单信息。
 ```js
-SELECT * FROM customers INNER JOIN orders ON customers.c_id = orders.c_id AND customers.c_id =10001;
+SELECT * FROM customers INNER JOIN orders ON 
+customers.c_id = orders.c_id AND customers.c_id =10001;
 ```
 
-- 在 fruits 表和 suppliers 表之间，使用INNER JOIN语法进行内连接查询，并对查询结果排序
+- 【例】在 fruits 表和 suppliers 表之间，使用INNER JOIN语法进行内连接查询，并对查询结果排序
 
 ```js
-select suppliers.s_id, s_name,f_name, f_price from fruits inner join suppliers on fruits.s_id = suppliers.s_id order by fruits.s_id;
+select suppliers.s_id, s_name,f_name, f_price from fruits 
+INNER JOIN suppliers ON fruits.s_id = suppliers.s_id order by fruits.s_id;
 ```
 
 ## 子查询
@@ -518,7 +526,7 @@ INSERT INTO tbl2 values(6), (14), (11), (20);
 ```
 ANY关键字接在一个比较操作符的后面，表示若与子查询返回的任何值比较为TRUE，则返回TRUE。
 
-- 返回tbl2表的所有num2列，然后将tbl1中的num1的值与之进行比较，只要大于num2的任何1个值，即为符合查询条件的结果
+- 【例】返回tbl2表的所有num2列，然后将tbl1中的num1的值与之进行比较，只要大于num2的任何1个值，即为符合查询条件的结果
 ```js
 SELECT num1 FROM tbl1 where num1 > ANY (SELECT num2 FROM tbl2);
 
@@ -540,7 +548,7 @@ exists关键字后面的参数是一个任意的子查询，系统对子查询�
 
 案例：
 
-- 查询suppliers表中是否存在s_id=107的供应商，如果存在，则查询fruits表中的记录,
+- 【例】查询suppliers表中是否存在s_id=107的供应商，如果存在，则查询fruits表中的记录,
 (SELECT s_name FROM suppliers WHERE s_id = 107)有结果，所以执行SELECT * FROM fruits;
 ```js
  SELECT * FROM fruits
@@ -548,12 +556,12 @@ exists关键字后面的参数是一个任意的子查询，系统对子查询�
      (SELECT s_name FROM suppliers WHERE s_id = 107);
 ```
 
-- 查询suppliers表中是否存在s_id=107的供应商，如果存在，则查询fruits表中的f_price大于10.20的记录
+- 【例】查询suppliers表中是否存在s_id=107的供应商，如果存在，则查询fruits表中的f_price大于10.20的记录
 ```js
 select * from fruits where f_price > 10.20 and exists 
 (select * from suppliers where s_id=107);
 ```
-- 查询suppliers表中是否存在s_id=107的供应商，如果不存在则查询fruits表中的记录
+- 【例】查询suppliers表中是否存在s_id=107的供应商，如果不存在则查询fruits表中的记录
 ```js
 select * from fruits where not exists (select * from suppliers where s_id=107);
 ```
@@ -561,7 +569,7 @@ select * from fruits where not exists (select * from suppliers where s_id=107);
 in 关键字进行子查询时，内层查询语句仅仅返回一个数据列，这个数据列里的值将提供给外层查询语句进行比较操作。
 
 案例：
-- 在orderitems表中查询f_id为c0的订单号(o_num)，并根据订单号orders表查询具有订单号的客户c_id。
+- 【例】在orderitems表中查询f_id为c0的订单号(o_num)，并根据订单号orders表查询具有订单号的客户c_id。
 ```js
 select c_id from orders where o_num IN (select o_num from orderitems where f_id='c0');
 ```
@@ -580,14 +588,48 @@ select o_num  from orderitems where f_id = 'c0';
 
 案例：
 
-- 在suppliers表中查询s_city等于“Tianjin”的供应商s_id，然后在fruits表中查询所有该供应商提供的水果的种类
+- 【例】在suppliers表中查询s_city等于“Tianjin”的供应商s_id，然后在fruits表中查询所有该供应商提供的水果的种类
 ```js
 select * from fruits where s_id = (select su1.s_id from suppliers as su1 where su1.s_city='Tianjin');
 ```
-- 查询所有价格小于9的水果的信息，查询s_id等于101和103所有的水果的信息，使用UNION连接查询结果。
+
+## union , union all合并查询结果
+1. 利用union关键字，可以给出多条select语句，并将它们的结果组合成单个结果集。合并时，两个表对于的列数和数据类型必须相同。各个select语句之间使用union或者union all 关键字分隔。
+
+1. union all是不处理重复值的。
+
+
+案例：
+
+- 【例】查询所有价格小于9的水果的信息，查询s_id等于101和103所有的水果的信息，使用UNION连接查询结果。
 
 ```js
-select s_id , f_name , f_price from fruits where f_price < 9.0 union all SELECT s_id ,f_name ,f_price FROM fruits WHERE s_id IN (101,103);
+select s_id , f_name , f_price from fruits 
+where f_price < 9.0 
+union all SELECT s_id ,f_name ,f_price FROM fruits WHERE s_id IN (101,103);
+```
+返回结果：
+```
++------+------------+---------+
+| s_id | f_name     | f_price |
++------+------------+---------+
+|  101 | apple      |    5.20 |
+|  103 | apricot    |    2.20 |
+|  104 | berry      |    7.60 |
+|  107 | xxxx       |    3.60 |
+|  105 | melon      |    8.20 |
+|  101 | cherry     |    3.20 |
+|  104 | lemon      |    6.40 |
+|  105 | xbabay     |    2.60 |
+|  102 | grape      |    5.30 |
+|  107 | xbababa    |    3.60 |
+|  101 | apple      |    5.20 |
+|  103 | apricot    |    2.20 |
+|  101 | blackberry |   10.20 |
+|  101 | cherry     |    3.20 |
+|  103 | coconut    |    9.20 |
++------+------------+---------+
+15 rows in set (0.00 sec)
 ```
 注：UNION将多个SELECT语句的结果组合成一个结果集合。
 可以分开查看每个SELECT语句的结果：
@@ -595,6 +637,7 @@ select s_id , f_name , f_price from fruits where f_price < 9.0 union all SELECT 
 select s_id , f_name , f_price from fruits where f_price < 9.0 ;
 ```
 返回结果：
+```
 +------+---------+---------+
 | s_id | f_name  | f_price |
 +------+---------+---------+
@@ -610,11 +653,12 @@ select s_id , f_name , f_price from fruits where f_price < 9.0 ;
 |  107 | xbababa |    3.60 |
 +------+---------+---------+
 10 rows in set (0.00 sec)
-
+```
 ```js
 SELECT s_id ,f_name ,f_price FROM fruits WHERE s_id IN (101,103);
 ```
 返回结果：
+```
 +------+------------+---------+
 | s_id | f_name     | f_price |
 +------+------------+---------+
@@ -625,9 +669,147 @@ SELECT s_id ,f_name ,f_price FROM fruits WHERE s_id IN (101,103);
 |  103 | coconut    |    9.20 |
 +------+------------+---------+
 5 rows in set (0.00 sec)
+```
 
 然后两个合拼一起返回结果。
 
 
-## 合并查询结果
-利用union关键字，可以给出多条select语句，并将它们的结果组合成单个结果集。合并时，两个表对于的列数和数据类型必须相同。各个select语句之间使用union或者union all 关键字分隔。
+
+## 为表和字段取别名
+
+- 为表取别名
+    - 语法： 表名 [AS] 表别名
+- 为字段取别名
+    - 语法： 字段名 [AS] 字段别名
+
+为表取别名 案例 ：
+
+- 【例】为orders表取别名o，查询30001订单的下单日期,SQL语句如下
+
+```js
+select * from orders AS o where o.o_num = 30001;
+```
+- 【例】为customers和orders表分别取别名，并进行连接查询,SQL语句如下
+```js
+select c.c_id,o.o_num from customers as c  LEFT OUTER JOIN  orders as o on c.c_id = o.c_id;
+```
+由结果看到，MySQL可以同时为多个表取别名，而且表别名可以放在不同的位置，如WHERE子句、SELECT列表、ON子句以及ORDER BY子句等。
+在前面介绍内连接查询时指出自连接是一种特殊的内连接，在连接查询中的两个表都是同一个表
+
+为字段取别名 案例 ：
+
+- 【例】查询fruits表，为f_name取别名fruit_name，f_price取别名fruit_price，为fruits表取别名f1，查询表中f_price < 8的水果的名称
+
+```js
+select f1.f_name as fruit_name ,f1.f_price as fruit_price 
+from fruits as f1 where f1.f_price < 8;
+```
+- 【例】查询suppliers表中字段s_name和s_city，使用CONCAT函数连接这两个字段值，并取列别名为suppliers_title。
+注：函数结果集取别名
+```js
+select CONCAT(trim(s_name),'(',trim(s_city),')') as suppliers_title
+from suppliers order by s_name;
+```
+
+## 使用正则表达式查询
+语法：REGEXP
+- 查询以特定字符或者字符串开头‘^’的记录
+- 查询以特定字符或者字符串结尾‘$’的记录
+- 用符合‘.’来代替字符串中的任意一个字符
+- 使用‘*’ 和‘+’ 来匹配多个字符
+- 匹配指定字符串
+- 匹配指定字符中的任意一个
+- 匹配指定字符以外的字符
+- 使用{m}或者{m,n}来指定字符串连续出现的次数
+
+### 以‘^’开头，匹配以特定字符或者字符串开头的文本。
+- 【例】在fruits表中，查询f_name字段以字母’b’开头的记录
+```js
+select * from fruits where f_name regexp '^b';
+```
+- 【例】在fruits表中，查询f_name字段以“be”开头的记录
+```js
+select * from fruits where f_name regexp '^be';
+```
+
+### 查询以特定字符或者字符串结尾‘$’的记录
+- 【例】在fruits表中，查询f_name字段以字母’y’结尾的记录
+```js
+select * from fruits where f_name regexp 'y$';
+```
+-【例7.71】在fruits表中，查询f_name字段以字符串“rry”结尾的记录
+```js
+select * from fruits where f_name regexp 'rry$';
+```
+
+### 用符合‘.’来代替字符串中的任意一个字符
+- 【例7.72】在fruits表中，查询f_name字段值包含字母’a’与’g’且两个字母之间只有一个字母的记录
+```js
+select * from fruits where f_name regexp 'a.g';
+```
+### 使用‘*’ 和‘+’ 来匹配多个字符
+星号’*’匹配前面的字符任意多次，包括0次。加号’+’匹配前面的字符至少一次。
+- 【例】在fruits表中，查询f_name字段值以字母’b’开头，且’b’后面出现字母’a’的记录
+```js
+select * from fruits where f_name regexp '^ba*';
+```
+- 【例】在fruits表中，查询f_name字段值以字母’b’开头，且’b’后面出现字母’a’至少一次的记录
+```js
+select * from fruits where f_name regexp '^ba+';
+```
+### 匹配指定字符串
+正则表达式可以匹配指定字符串，只要这个字符串在查询文本中即可，如要匹配多个字符串，多个字符串之间使用分隔符’|’隔开
+
+- 【例】在fruits表中，查询f_name字段值包含字符串“on”的记录
+```js
+select * from fruits where f_name regexp 'on';
+```
+- 【例】在fruits表中，查询f_name字段值包含字符串“on”或者“ap”的记录
+```js
+select * from fruits where f_name regexp 'on|ap';
+```
+- 【例】在fruits表中，使用LIKE运算符查询f_name字段值为“on”的记录
+```js
+select * from fruits where f_name like 'on';
+//相当于
+select * from fruits where f_name = 'on';
+```
+### 匹配指定字符中的任意一个
+方括号“[]”指定一个字符集合，只匹配其中任何一个字符，即为所查找的文本。
+
+- 【例】在fruits表中，查找f_name字段中包含字母’o’或者’t’的记录
+```js
+select * from fruits where f_name regexp '[ot]';
+```
+所有返回的记录的f_name字段的值中都包含有字母o或者t，或者两个都有。
+
+- 【例】在fruits表，查询s_id字段中数值中包含4、5或者6的记录
+```js
+select * from fruits where s_id regexp '[456]';
+```
+
+###　匹配指定字符以外的字符
+
+“[^字符集合]”匹配不在指定集合中的任何字符。
+- 【例】在fruits表中，查询f_id字段包含字母a~e和数字1~2以外的字符的记录
+```js
+select * from fruits where f_id regexp '[^a-e1-2]';
+```
+
+### 使用{m}或者{m,n}来指定字符串连续出现的次数
+
+- 【例】在fruits表中，查询f_name字段值出现字母’x’至少2次的记录
+```js
+select * from fruits where f_name regexp 'x{2,}';
+//结果
++------+------+--------+---------+
+| f_id | s_id | f_name | f_price |
++------+------+--------+---------+
+| b5  |  107 | xxxx  |   3.60 |
+| m3  |  105 | xxtt  |  11.60 |
++------+-------+--------+---------+
+```
+- 【例】在fruits表中，查询f_name字段值出现字符串“ba”最少1次，最多3次的记录
+```js
+select * from fruits where f_name regexp 'ba{1,3}';
+```

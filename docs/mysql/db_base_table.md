@@ -219,7 +219,7 @@ salary  FLOAT
 - 语法： alter table <表名> modify <字段名> <数据类型>
 
 案例：
-```
+```js
 desc tb_dept1;//查看结构
 alter table tb_dept1 modify name varchar(30);
 ```
@@ -228,7 +228,7 @@ alter table tb_dept1 modify name varchar(30);
 - 语法： alter table <表名> change 原字段 修改字段 数据类型;
 
 案例：
-```
+```js
   alter table tb_dept1 change location loc varchar(50);
 ```
 
@@ -237,12 +237,12 @@ alter table tb_dept1 modify name varchar(30);
 
 案例： 在数据表tb_dept1中添加一个没有完整性约束的INT类型的字段managerId（部门经理编号）；
 
-```
+```js
 alter table tb_dept1 add managerId int(10) ;
 ```
 也可以用约束
 
-```
+```js
 //不能为空的int(10)类型的字段column1
 alter table tb_dept1 add column1 int(10) not null;
 //数据表首位添加一个INT类型的字段column2
@@ -255,7 +255,7 @@ alter table tb_dept1 add  colmun3 int(10) after name;
 - 语法： alter table <表名> drop 字段名；
 
 案例： 
-```
+```js
 alter table tb_dept1 drop colmun2;
 ```
 
@@ -263,7 +263,7 @@ alter table tb_dept1 drop colmun2;
 - 语法： alter table 表名 modify 数据类型 first;
 
 案例：
-```
+```js
 //放在首位
 alter table tb_dept1 modify id int(10) first;
 //colmun2字段插入到location字段后面
@@ -297,7 +297,7 @@ alter table tb_dept1 engine=MyISAM;
 ### 删除外键约束
 
 首先创建表tb_emp9，创建外键deptId关联tb_dept1表的主键id，SQL语句如下：
-```
+```js
 CREATE TABLE tb_emp9 
 (
 id      INT(11) PRIMARY KEY,
@@ -312,7 +312,7 @@ CONSTRAINT fk_emp_dept  FOREIGN KEY (deptId) REFERENCES tb_dept1(id)
   语法： alter table 表名 drop foreign key 外键别名;
 
   案例：
-  ```
+  ```js
   alter table tb_emp9 drop foreign key fk_emp_dept;
   ```
 
@@ -325,7 +325,7 @@ CONSTRAINT fk_emp_dept  FOREIGN KEY (deptId) REFERENCES tb_dept1(id)
 
   案例：
 
-  ```
+  ```js
     drop table if exists tb_emp9;
   ```
 

@@ -1,3 +1,13 @@
+---
+title: 文件配置
+date: 2022-01-11
+categories: 
+ - frontend
+tags:
+- mysql
+- 索引
+---
+
 ## 文件配置
 
 安装完成后，在my.ini文件中可以设置mysql
@@ -145,3 +155,6 @@ authentication_string 是msyql 8.0.11，5.7的password
 - 显示数据表的详细索引信息
     > show index from 表名
     >或者 show create table <表名> \g;
+- 查看使用哪个数据库
+
+    > select database();

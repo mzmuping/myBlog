@@ -38,6 +38,36 @@ insert into person (name,age,info) values ('Evans',27, 'secretary'),
 ('Dale',22, 'cook'),
 ('Edison',28, 'singer');
 ```
+- 【例】在person表中，在name、age和info字段指定插入值，同时插入3条新记录
+```js
+insert into person (name,age,info) values ('Evans',27, 'secretary'),
+('Dale',22, 'cook'),
+('Edison',28, 'singer');
+```
+- 【例】从person_old表中查询所有的记录，并将其插入到person表中。
+
+```js
+//创建person_old的数据表
+CREATE TABLE person_old
+(
+id     INT UNSIGNED NOT NULL AUTO_INCREMENT,
+name   CHAR(40) NOT NULL DEFAULT '',
+age    INT NOT NULL DEFAULT 0,
+info   CHAR(50) NULL,
+PRIMARY KEY (id)
+);
+
+//插入数据
+ INSERT INTO person_old
+     VALUES (11,'Harry',20, 'student'), (12,'Beckham',31, 'police');
+//查询person_old数据直接插入person中，person_old 字段要和person一样，如果不一样要使用 as 修改成一样,假如person_old字段 name_old ,person字段name ,这样就 name_old as name 
+INSERT INTO person(id, name, age, info)
+SELECT id, name, age, info FROM person_old;
+//or
+INSERT INTO person(id, name, age, info)
+SELECT id3 as id, name3 as name, age3 as age, info3 as inof FROM person_old3;
+```
+
 ### 更新数据
 通过update语句更新表数据
 语法：update <表名> set 字段1=新值 ,字段2=新值 where <条件>

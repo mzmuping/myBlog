@@ -1,4 +1,4 @@
-console.log('process.env===', process.env.MONGOOSE_URL)
+
 module.exports = {
     head: [
         ['meta', { name: 'viewport', content: 'width=device-width,initial-scale=1,user-scalable=no' }],
@@ -29,11 +29,19 @@ module.exports = {
         nav: [
             { text: 'Home', link: '/' },
             {
+                text: '导航栏配置', items: [
+                    { text: '自动读取', link: '/guide/vue/' },
+                    { text: '自定义', link: '/guide/ts/' }
+                ]
+            },
+            {
                 text: '前端', link: '/web/', items: [
                     { text: 'es6', link: '/web/es6/' },
                     { text: 'vue', link: '/web/vue/' },
                     { text: 'H5', link: '/web/H5/' },
                     { text: 'React', link: '/web/React/' },
+                    { text: 'ts', link: '/web/ts/' },
+                    { text: '进阶系列', link: '/web/advanced/' },
                 ]
             },
             { text: 'nodejs', link: '/node/' },
@@ -43,12 +51,24 @@ module.exports = {
             { text: '友链', link: '/friendLink/' },
             { text: '关于', link: '/nested/', icon: 'account_circle' },
         ],
+
         sidebar: {
             '/web/es6/': ['es7_decorator', 'ArrayBuffer', 'ts_config', 'front_end_modul'],
             '/web/vue/': ['vuePress_deploy'],
             '/web/H5/': ['svg'],
             '/web/React/': ['chess'],
+            '/web/ts/': ['install'],
             '/mysql/': ['dowloadAndinstall', 'introduce', 'db_base_table', 'date_type', 'operate_sql', 'insert_update', 'indexes', 'node_engine'],
+            '/guide/vue/': [
+                'test01', 'test02', 'test03'
+            ],
+            '/guide/ts/': [
+                {
+                    title: 'Typescript 学习',
+                    collapsable: true,
+                    children: ['test01', 'test02', 'test03']
+                }
+            ],
         },
         // 博客设置
         blogConfig: {
@@ -61,7 +81,7 @@ module.exports = {
                 text: 'Tag'      // 默认文案 “标签”
             }
         },
-        sidebarDepth: 2, // 侧边栏显示2级
+        sidebarDepth: 3, // 侧边栏显示2级
         algolia: {  // 搜索需要提交
             apiKey: '<API_KEY>',
             indexName: '<INDEX_NAME>'

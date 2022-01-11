@@ -23,6 +23,14 @@ export const siteData = {
   ],
   "pages": [
     {
+      "frontmatter": {},
+      "regularPath": "/friendLink/",
+      "relativePath": "friendLink/README.md",
+      "key": "v-70b2b9a2",
+      "path": "/friendLink/",
+      "lastUpdated": "3/6/2021, 4:40:28 PM"
+    },
+    {
       "title": "Home",
       "frontmatter": {
         "home": true,
@@ -54,6 +62,148 @@ export const siteData = {
       "lastUpdated": "11/19/2021, 6:37:52 PM"
     },
     {
+      "frontmatter": {},
+      "regularPath": "/guide/",
+      "relativePath": "guide/README.md",
+      "key": "v-e66ed5dc",
+      "path": "/guide/",
+      "lastUpdated": "3/6/2021, 4:40:28 PM"
+    },
+    {
+      "frontmatter": {},
+      "regularPath": "/guide/ts/",
+      "relativePath": "guide/ts/README.md",
+      "key": "v-a16ed662",
+      "path": "/guide/ts/"
+    },
+    {
+      "title": "测试02",
+      "frontmatter": {
+        "title": "测试02",
+        "date": "2021-11-25T00:00:00.000Z",
+        "categories": [
+          "frontend"
+        ],
+        "tags": [
+          "mysql",
+          "索引"
+        ]
+      },
+      "regularPath": "/guide/ts/test02.html",
+      "relativePath": "guide/ts/test02.md",
+      "key": "v-2c4cf17c",
+      "path": "/guide/ts/test02.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "测试01 - Typescript",
+          "slug": "测试01-typescript"
+        }
+      ]
+    },
+    {
+      "title": "测试03",
+      "frontmatter": {
+        "title": "测试03",
+        "date": "2021-11-25T00:00:00.000Z",
+        "categories": [
+          "frontend"
+        ],
+        "tags": [
+          "mysql",
+          "索引"
+        ]
+      },
+      "regularPath": "/guide/ts/test03.html",
+      "relativePath": "guide/ts/test03.md",
+      "key": "v-9b9bd1c8",
+      "path": "/guide/ts/test03.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "测试01 - Typescript",
+          "slug": "测试01-typescript"
+        }
+      ]
+    },
+    {
+      "frontmatter": {},
+      "regularPath": "/guide/vue/",
+      "relativePath": "guide/vue/README.md",
+      "key": "v-4ed5b891",
+      "path": "/guide/vue/"
+    },
+    {
+      "title": "测试01",
+      "frontmatter": {
+        "title": "测试01",
+        "date": "2021-11-25T00:00:00.000Z",
+        "categories": [
+          "frontend"
+        ],
+        "tags": [
+          "mysql",
+          "索引"
+        ]
+      },
+      "regularPath": "/guide/vue/test01.html",
+      "relativePath": "guide/vue/test01.md",
+      "key": "v-64e976a0",
+      "path": "/guide/vue/test01.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "test01",
+          "slug": "test01"
+        },
+        {
+          "level": 3,
+          "title": "test01--1",
+          "slug": "test01-1"
+        }
+      ]
+    },
+    {
+      "title": "test02",
+      "frontmatter": {},
+      "regularPath": "/guide/vue/test02.html",
+      "relativePath": "guide/vue/test02.md",
+      "key": "v-5dcd1f24",
+      "path": "/guide/vue/test02.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "test02",
+          "slug": "test02"
+        },
+        {
+          "level": 3,
+          "title": "test02--1",
+          "slug": "test02-1"
+        }
+      ]
+    },
+    {
+      "title": "test03",
+      "frontmatter": {},
+      "regularPath": "/guide/vue/test03.html",
+      "relativePath": "guide/vue/test03.md",
+      "key": "v-56b0c7a8",
+      "path": "/guide/vue/test03.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "test03",
+          "slug": "test03"
+        },
+        {
+          "level": 3,
+          "title": "test03--1",
+          "slug": "test03-1"
+        }
+      ]
+    },
+    {
       "frontmatter": {
         "actionText": "快速上手 →",
         "actionLink": "/zh/guide/"
@@ -65,14 +215,6 @@ export const siteData = {
       "lastUpdated": "3/6/2021, 4:40:28 PM"
     },
     {
-      "frontmatter": {},
-      "regularPath": "/guide/",
-      "relativePath": "guide/README.md",
-      "key": "v-e66ed5dc",
-      "path": "/guide/",
-      "lastUpdated": "3/6/2021, 4:40:28 PM"
-    },
-    {
       "title": "es7之修饰器",
       "frontmatter": {
         "title": "es7之修饰器",
@@ -80,11 +222,35 @@ export const siteData = {
         "categories": null,
         "sidebarDepth": 2
       },
-      "regularPath": "/guide/JS/test.html",
-      "relativePath": "guide/JS/test.md",
-      "key": "v-e395db88",
-      "path": "/guide/JS/test.html",
-      "lastUpdated": "3/6/2021, 4:40:28 PM"
+      "regularPath": "/guide/js/test.html",
+      "relativePath": "guide/js/test.md",
+      "key": "v-651d923c",
+      "path": "/guide/js/test.html"
+    },
+    {
+      "title": "测试01",
+      "frontmatter": {
+        "title": "测试01",
+        "date": "2021-11-25T00:00:00.000Z",
+        "categories": [
+          "frontend"
+        ],
+        "tags": [
+          "mysql",
+          "索引"
+        ]
+      },
+      "regularPath": "/guide/ts/test01.html",
+      "relativePath": "guide/ts/test01.md",
+      "key": "v-b3306848",
+      "path": "/guide/ts/test01.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "测试01 - Typescript",
+          "slug": "测试01-typescript"
+        }
+      ]
     },
     {
       "title": "数据库数据类型",
@@ -145,183 +311,22 @@ export const siteData = {
           "title": "创建表的时候创建索引",
           "slug": "创建表的时候创建索引"
         }
-      ]
-    },
-    {
-      "title": "数据库操作步骤",
-      "frontmatter": {},
-      "regularPath": "/mysql/db_base_table.html",
-      "relativePath": "mysql/db_base_table.md",
-      "key": "v-e2bde822",
-      "path": "/mysql/db_base_table.html",
-      "headers": [
-        {
-          "level": 3,
-          "title": "数据库操作步骤",
-          "slug": "数据库操作步骤"
-        },
-        {
-          "level": 2,
-          "title": "数据表基本操作",
-          "slug": "数据表基本操作"
-        },
-        {
-          "level": 3,
-          "title": "1、创建表的语法形式",
-          "slug": "_1、创建表的语法形式"
-        },
-        {
-          "level": 3,
-          "title": "2、使用主键约束",
-          "slug": "_2、使用主键约束"
-        },
-        {
-          "level": 3,
-          "title": "3、使用外键约束",
-          "slug": "_3、使用外键约束"
-        },
-        {
-          "level": 3,
-          "title": "4、使用非空约束",
-          "slug": "_4、使用非空约束"
-        },
-        {
-          "level": 3,
-          "title": "5、使用唯一性约束",
-          "slug": "_5、使用唯一性约束"
-        },
-        {
-          "level": 3,
-          "title": "5、使用默认值约束",
-          "slug": "_5、使用默认值约束"
-        },
-        {
-          "level": 3,
-          "title": "6、设置表属性值自动增加",
-          "slug": "_6、设置表属性值自动增加"
-        },
-        {
-          "level": 2,
-          "title": "操作数据表",
-          "slug": "操作数据表"
-        },
-        {
-          "level": 3,
-          "title": "查看数据表定义信息",
-          "slug": "查看数据表定义信息"
-        },
-        {
-          "level": 3,
-          "title": "修改表名",
-          "slug": "修改表名"
-        },
-        {
-          "level": 3,
-          "title": "修改字段的数据类型",
-          "slug": "修改字段的数据类型"
-        },
-        {
-          "level": 3,
-          "title": "修改字段名称",
-          "slug": "修改字段名称"
-        },
-        {
-          "level": 3,
-          "title": "添加字段名",
-          "slug": "添加字段名"
-        },
-        {
-          "level": 3,
-          "title": "删除数据表字段",
-          "slug": "删除数据表字段"
-        },
-        {
-          "level": 3,
-          "title": "调整字段位置",
-          "slug": "调整字段位置"
-        },
-        {
-          "level": 3,
-          "title": "删除外键约束",
-          "slug": "删除外键约束"
-        },
-        {
-          "level": 3,
-          "title": "删除数据表",
-          "slug": "删除数据表"
-        }
       ],
-      "lastUpdated": "11/20/2021, 6:30:57 PM"
+      "lastUpdated": "11/29/2021, 2:22:20 PM"
     },
     {
-      "title": "数据库 增删改查",
-      "frontmatter": {},
-      "regularPath": "/mysql/node_engine.html",
-      "relativePath": "mysql/node_engine.md",
-      "key": "v-476b2aaf",
-      "path": "/mysql/node_engine.html",
-      "headers": [
-        {
-          "level": 2,
-          "title": "数据库 增删改查",
-          "slug": "数据库-增删改查"
-        },
-        {
-          "level": 2,
-          "title": "安装node版Mysql数据库的驱动模块",
-          "slug": "安装node版mysql数据库的驱动模块"
-        },
-        {
-          "level": 3,
-          "title": "案例：",
-          "slug": "案例"
-        },
-        {
-          "level": 2,
-          "title": "使用Sequelize建立model",
-          "slug": "使用sequelize建立model"
-        }
-      ],
-      "lastUpdated": "11/19/2021, 6:37:52 PM"
-    },
-    {
-      "title": "插入，修改，删除",
+      "title": "文件配置",
       "frontmatter": {
-        "title": "插入，修改，删除",
-        "date": "2021-11-25T00:00:00.000Z",
+        "title": "文件配置",
+        "date": "2022-01-11T00:00:00.000Z",
         "categories": [
           "frontend"
         ],
         "tags": [
           "mysql",
-          "sql"
+          "索引"
         ]
       },
-      "regularPath": "/mysql/insert_update.html",
-      "relativePath": "mysql/insert_update.md",
-      "key": "v-6967dbaf",
-      "path": "/mysql/insert_update.html",
-      "headers": [
-        {
-          "level": 2,
-          "title": "插入数据",
-          "slug": "插入数据"
-        },
-        {
-          "level": 3,
-          "title": "更新数据",
-          "slug": "更新数据"
-        },
-        {
-          "level": 3,
-          "title": "删除数据",
-          "slug": "删除数据"
-        }
-      ]
-    },
-    {
-      "title": "文件配置",
-      "frontmatter": {},
       "regularPath": "/mysql/introduce.html",
       "relativePath": "mysql/introduce.md",
       "key": "v-7a1547af",
@@ -396,6 +401,73 @@ export const siteData = {
       "lastUpdated": "11/20/2021, 6:30:57 PM"
     },
     {
+      "title": "插入，修改，删除",
+      "frontmatter": {
+        "title": "插入，修改，删除",
+        "date": "2021-11-25T00:00:00.000Z",
+        "categories": [
+          "frontend"
+        ],
+        "tags": [
+          "mysql",
+          "sql"
+        ]
+      },
+      "regularPath": "/mysql/insert_update.html",
+      "relativePath": "mysql/insert_update.md",
+      "key": "v-6967dbaf",
+      "path": "/mysql/insert_update.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "插入数据",
+          "slug": "插入数据"
+        },
+        {
+          "level": 3,
+          "title": "更新数据",
+          "slug": "更新数据"
+        },
+        {
+          "level": 3,
+          "title": "删除数据",
+          "slug": "删除数据"
+        }
+      ],
+      "lastUpdated": "11/29/2021, 2:22:20 PM"
+    },
+    {
+      "title": "数据库 增删改查",
+      "frontmatter": {},
+      "regularPath": "/mysql/node_engine.html",
+      "relativePath": "mysql/node_engine.md",
+      "key": "v-476b2aaf",
+      "path": "/mysql/node_engine.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "数据库 增删改查",
+          "slug": "数据库-增删改查"
+        },
+        {
+          "level": 2,
+          "title": "安装node版Mysql数据库的驱动模块",
+          "slug": "安装node版mysql数据库的驱动模块"
+        },
+        {
+          "level": 3,
+          "title": "案例：",
+          "slug": "案例"
+        },
+        {
+          "level": 2,
+          "title": "使用Sequelize建立model",
+          "slug": "使用sequelize建立model"
+        }
+      ],
+      "lastUpdated": "11/29/2021, 2:22:20 PM"
+    },
+    {
       "title": "创建数据库",
       "frontmatter": {
         "actionText": "创建数据库 →",
@@ -413,6 +485,28 @@ export const siteData = {
         }
       ],
       "lastUpdated": "11/20/2021, 6:30:57 PM"
+    },
+    {
+      "frontmatter": {
+        "actionText": "快速上手 →",
+        "actionLink": "/zh/guide/"
+      },
+      "regularPath": "/node/",
+      "relativePath": "node/README.md",
+      "key": "v-3d2d673c",
+      "path": "/node/",
+      "lastUpdated": "3/6/2021, 4:40:28 PM"
+    },
+    {
+      "frontmatter": {
+        "actionText": "快速上手 →",
+        "actionLink": "/zh/guide/"
+      },
+      "regularPath": "/nested/",
+      "relativePath": "nested/README.md",
+      "key": "v-1c4118c2",
+      "path": "/nested/",
+      "lastUpdated": "3/6/2021, 4:40:28 PM"
     },
     {
       "title": "select查询语句",
@@ -643,29 +737,7 @@ export const siteData = {
           "slug": "使用-m-或者-m-n-来指定字符串连续出现的次数"
         }
       ],
-      "lastUpdated": "11/20/2021, 6:30:57 PM"
-    },
-    {
-      "frontmatter": {
-        "actionText": "快速上手 →",
-        "actionLink": "/zh/guide/"
-      },
-      "regularPath": "/node/",
-      "relativePath": "node/README.md",
-      "key": "v-3d2d673c",
-      "path": "/node/",
-      "lastUpdated": "3/6/2021, 4:40:28 PM"
-    },
-    {
-      "frontmatter": {
-        "actionText": "快速上手 →",
-        "actionLink": "/zh/guide/"
-      },
-      "regularPath": "/nested/",
-      "relativePath": "nested/README.md",
-      "key": "v-1c4118c2",
-      "path": "/nested/",
-      "lastUpdated": "3/6/2021, 4:40:28 PM"
+      "lastUpdated": "11/29/2021, 2:22:20 PM"
     },
     {
       "title": "Time Line",
@@ -683,22 +755,6 @@ export const siteData = {
           "level": 2,
           "title": "Time Line",
           "slug": "time-line"
-        }
-      ],
-      "lastUpdated": "3/6/2021, 4:40:28 PM"
-    },
-    {
-      "title": "H5",
-      "frontmatter": {},
-      "regularPath": "/web/H5/",
-      "relativePath": "web/H5/README.md",
-      "key": "v-92fb9f62",
-      "path": "/web/H5/",
-      "headers": [
-        {
-          "level": 3,
-          "title": "H5",
-          "slug": "h5"
         }
       ],
       "lastUpdated": "3/6/2021, 4:40:28 PM"
@@ -735,11 +791,38 @@ export const siteData = {
       "lastUpdated": "11/19/2021, 6:37:52 PM"
     },
     {
+      "title": "H5",
       "frontmatter": {},
-      "regularPath": "/friendLink/",
-      "relativePath": "friendLink/README.md",
-      "key": "v-70b2b9a2",
-      "path": "/friendLink/",
+      "regularPath": "/web/H5/",
+      "relativePath": "web/H5/README.md",
+      "key": "v-92fb9f62",
+      "path": "/web/H5/",
+      "headers": [
+        {
+          "level": 3,
+          "title": "H5",
+          "slug": "h5"
+        }
+      ],
+      "lastUpdated": "3/6/2021, 4:40:28 PM"
+    },
+    {
+      "title": "svg",
+      "frontmatter": {
+        "title": "svg",
+        "date": "2019-8-27",
+        "categories": [
+          "frontend"
+        ],
+        "tags": [
+          "h5",
+          "svg"
+        ]
+      },
+      "regularPath": "/web/H5/svg.html",
+      "relativePath": "web/H5/svg.md",
+      "key": "v-5bc2f40e",
+      "path": "/web/H5/svg.html",
       "lastUpdated": "3/6/2021, 4:40:28 PM"
     },
     {
@@ -749,6 +832,77 @@ export const siteData = {
       "relativePath": "web/React/README.md",
       "key": "v-05a5bba2",
       "path": "/web/React/",
+      "lastUpdated": "3/6/2021, 4:40:28 PM"
+    },
+    {
+      "title": "高级前端进阶",
+      "frontmatter": {},
+      "regularPath": "/web/advanced/",
+      "relativePath": "web/advanced/README.md",
+      "key": "v-a1a12a22",
+      "path": "/web/advanced/",
+      "headers": [
+        {
+          "level": 2,
+          "title": "高级前端进阶",
+          "slug": "高级前端进阶"
+        }
+      ]
+    },
+    {
+      "title": "React + Ts 实现三子棋小游戏",
+      "frontmatter": {
+        "title": "React + Ts 实现三子棋小游戏",
+        "date": "2019-9-12",
+        "categories": [
+          "frontend"
+        ],
+        "tags": [
+          "react",
+          "ts"
+        ]
+      },
+      "regularPath": "/web/React/chess.html",
+      "relativePath": "web/React/chess.md",
+      "key": "v-01e106c2",
+      "path": "/web/React/chess.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "游戏规则",
+          "slug": "游戏规则"
+        },
+        {
+          "level": 2,
+          "title": "组件化",
+          "slug": "组件化"
+        },
+        {
+          "level": 2,
+          "title": "开发棋子组件",
+          "slug": "开发棋子组件"
+        },
+        {
+          "level": 2,
+          "title": "开发棋盘组件",
+          "slug": "开发棋盘组件"
+        },
+        {
+          "level": 2,
+          "title": "开发游戏规则组件",
+          "slug": "开发游戏规则组件"
+        },
+        {
+          "level": 2,
+          "title": "开发显示游戏状态的组件",
+          "slug": "开发显示游戏状态的组件"
+        },
+        {
+          "level": 2,
+          "title": "收尾",
+          "slug": "收尾"
+        }
+      ],
       "lastUpdated": "3/6/2021, 4:40:28 PM"
     },
     {
@@ -842,75 +996,6 @@ export const siteData = {
       "lastUpdated": "3/6/2021, 4:40:28 PM"
     },
     {
-      "title": "让你的项目使用Ts吧",
-      "frontmatter": {
-        "title": "让你的项目使用Ts吧",
-        "date": "2019-8-29",
-        "categories": [
-          "frontend"
-        ],
-        "tags": [
-          "ts"
-        ]
-      },
-      "regularPath": "/web/es6/ts_config.html",
-      "relativePath": "web/es6/ts_config.md",
-      "key": "v-6fc3fde2",
-      "path": "/web/es6/ts_config.html",
-      "headers": [
-        {
-          "level": 2,
-          "title": "why ?",
-          "slug": "why"
-        },
-        {
-          "level": 2,
-          "title": "还在犹豫什么",
-          "slug": "还在犹豫什么"
-        },
-        {
-          "level": 2,
-          "title": "本文不涉及框架内容，因为框架的cli已经帮你搭好了ts环境。。。",
-          "slug": "本文不涉及框架内容-因为框架的cli已经帮你搭好了ts环境。。。"
-        },
-        {
-          "level": 2,
-          "title": "本文只教你如何在一个demo里搭建Ts环境，好了，我们开始吧",
-          "slug": "本文只教你如何在一个demo里搭建ts环境-好了-我们开始吧"
-        },
-        {
-          "level": 2,
-          "title": "插播一条重要内容",
-          "slug": "插播一条重要内容"
-        },
-        {
-          "level": 2,
-          "title": "ts和js分开",
-          "slug": "ts和js分开"
-        },
-        {
-          "level": 2,
-          "title": "ts-node",
-          "slug": "ts-node"
-        },
-        {
-          "level": 2,
-          "title": "nodemon",
-          "slug": "nodemon"
-        }
-      ],
-      "lastUpdated": "3/6/2021, 4:40:28 PM"
-    },
-    {
-      "title": "当你凝望大神的时候，大神也在凝望你",
-      "frontmatter": {},
-      "regularPath": "/web/es6/",
-      "relativePath": "web/es6/README.md",
-      "key": "v-766fc85d",
-      "path": "/web/es6/",
-      "lastUpdated": "3/6/2021, 4:40:28 PM"
-    },
-    {
       "title": "前端模块化",
       "frontmatter": {
         "title": "前端模块化",
@@ -983,12 +1068,114 @@ export const siteData = {
       "lastUpdated": "11/9/2021, 5:39:03 PM"
     },
     {
-      "frontmatter": {},
-      "regularPath": "/web/vue/",
-      "relativePath": "web/vue/README.md",
-      "key": "v-05413ae1",
-      "path": "/web/vue/",
+      "title": "让你的项目使用Ts吧",
+      "frontmatter": {
+        "title": "让你的项目使用Ts吧",
+        "date": "2019-8-29",
+        "categories": [
+          "frontend"
+        ],
+        "tags": [
+          "ts"
+        ]
+      },
+      "regularPath": "/web/es6/ts_config.html",
+      "relativePath": "web/es6/ts_config.md",
+      "key": "v-6fc3fde2",
+      "path": "/web/es6/ts_config.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "why ?",
+          "slug": "why"
+        },
+        {
+          "level": 2,
+          "title": "还在犹豫什么",
+          "slug": "还在犹豫什么"
+        },
+        {
+          "level": 2,
+          "title": "本文不涉及框架内容，因为框架的cli已经帮你搭好了ts环境。。。",
+          "slug": "本文不涉及框架内容-因为框架的cli已经帮你搭好了ts环境。。。"
+        },
+        {
+          "level": 2,
+          "title": "本文只教你如何在一个demo里搭建Ts环境，好了，我们开始吧",
+          "slug": "本文只教你如何在一个demo里搭建ts环境-好了-我们开始吧"
+        },
+        {
+          "level": 2,
+          "title": "插播一条重要内容",
+          "slug": "插播一条重要内容"
+        },
+        {
+          "level": 2,
+          "title": "ts和js分开",
+          "slug": "ts和js分开"
+        },
+        {
+          "level": 2,
+          "title": "ts-node",
+          "slug": "ts-node"
+        },
+        {
+          "level": 2,
+          "title": "nodemon",
+          "slug": "nodemon"
+        }
+      ],
       "lastUpdated": "3/6/2021, 4:40:28 PM"
+    },
+    {
+      "title": "当你凝望大神的时候，大神也在凝望你",
+      "frontmatter": {},
+      "regularPath": "/web/es6/",
+      "relativePath": "web/es6/README.md",
+      "key": "v-766fc85d",
+      "path": "/web/es6/",
+      "lastUpdated": "3/6/2021, 4:40:28 PM"
+    },
+    {
+      "title": "typescript",
+      "frontmatter": {},
+      "regularPath": "/web/ts/",
+      "relativePath": "web/ts/README.md",
+      "key": "v-5597620f",
+      "path": "/web/ts/",
+      "headers": [
+        {
+          "level": 2,
+          "title": "typescript",
+          "slug": "typescript"
+        }
+      ]
+    },
+    {
+      "title": "ts安装",
+      "frontmatter": {
+        "title": "ts安装"
+      },
+      "regularPath": "/web/ts/install.html",
+      "relativePath": "web/ts/install.md",
+      "key": "v-324bfd7c",
+      "path": "/web/ts/install.html"
+    },
+    {
+      "title": "文档说明",
+      "frontmatter": {},
+      "regularPath": "/zh/guide/",
+      "relativePath": "zh/guide/README.md",
+      "key": "v-4ab03f75",
+      "path": "/zh/guide/",
+      "headers": [
+        {
+          "level": 3,
+          "title": "文档说明",
+          "slug": "文档说明"
+        }
+      ],
+      "lastUpdated": "10/25/2021, 3:10:19 PM"
     },
     {
       "title": "vuePress部署到Github Page",
@@ -1027,95 +1214,118 @@ export const siteData = {
       "lastUpdated": "3/6/2021, 4:40:28 PM"
     },
     {
-      "title": "文档说明",
       "frontmatter": {},
-      "regularPath": "/zh/guide/",
-      "relativePath": "zh/guide/README.md",
-      "key": "v-4ab03f75",
-      "path": "/zh/guide/",
+      "regularPath": "/web/vue/",
+      "relativePath": "web/vue/README.md",
+      "key": "v-05413ae1",
+      "path": "/web/vue/",
+      "lastUpdated": "3/6/2021, 4:40:28 PM"
+    },
+    {
+      "title": "数据库操作步骤",
+      "frontmatter": {},
+      "regularPath": "/mysql/db_base_table.html",
+      "relativePath": "mysql/db_base_table.md",
+      "key": "v-e2bde822",
+      "path": "/mysql/db_base_table.html",
       "headers": [
         {
           "level": 3,
-          "title": "文档说明",
-          "slug": "文档说明"
+          "title": "数据库操作步骤",
+          "slug": "数据库操作步骤"
+        },
+        {
+          "level": 2,
+          "title": "数据表基本操作",
+          "slug": "数据表基本操作"
+        },
+        {
+          "level": 3,
+          "title": "1、创建表的语法形式",
+          "slug": "_1、创建表的语法形式"
+        },
+        {
+          "level": 3,
+          "title": "2、使用主键约束",
+          "slug": "_2、使用主键约束"
+        },
+        {
+          "level": 3,
+          "title": "3、使用外键约束",
+          "slug": "_3、使用外键约束"
+        },
+        {
+          "level": 3,
+          "title": "4、使用非空约束",
+          "slug": "_4、使用非空约束"
+        },
+        {
+          "level": 3,
+          "title": "5、使用唯一性约束",
+          "slug": "_5、使用唯一性约束"
+        },
+        {
+          "level": 3,
+          "title": "5、使用默认值约束",
+          "slug": "_5、使用默认值约束"
+        },
+        {
+          "level": 3,
+          "title": "6、设置表属性值自动增加",
+          "slug": "_6、设置表属性值自动增加"
+        },
+        {
+          "level": 2,
+          "title": "操作数据表",
+          "slug": "操作数据表"
+        },
+        {
+          "level": 3,
+          "title": "查看数据表定义信息",
+          "slug": "查看数据表定义信息"
+        },
+        {
+          "level": 3,
+          "title": "修改表名",
+          "slug": "修改表名"
+        },
+        {
+          "level": 3,
+          "title": "修改字段的数据类型",
+          "slug": "修改字段的数据类型"
+        },
+        {
+          "level": 3,
+          "title": "修改字段名称",
+          "slug": "修改字段名称"
+        },
+        {
+          "level": 3,
+          "title": "添加字段名",
+          "slug": "添加字段名"
+        },
+        {
+          "level": 3,
+          "title": "删除数据表字段",
+          "slug": "删除数据表字段"
+        },
+        {
+          "level": 3,
+          "title": "调整字段位置",
+          "slug": "调整字段位置"
+        },
+        {
+          "level": 3,
+          "title": "删除外键约束",
+          "slug": "删除外键约束"
+        },
+        {
+          "level": 3,
+          "title": "删除数据表",
+          "slug": "删除数据表"
         }
       ],
-      "lastUpdated": "10/25/2021, 3:10:19 PM"
-    },
-    {
-      "title": "React + Ts 实现三子棋小游戏",
-      "frontmatter": {
-        "title": "React + Ts 实现三子棋小游戏",
-        "date": "2019-9-12",
-        "categories": [
-          "frontend"
-        ],
-        "tags": [
-          "react",
-          "ts"
-        ]
-      },
-      "regularPath": "/web/React/chess.html",
-      "relativePath": "web/React/chess.md",
-      "key": "v-01e106c2",
-      "path": "/web/React/chess.html",
-      "headers": [
-        {
-          "level": 2,
-          "title": "游戏规则",
-          "slug": "游戏规则"
-        },
-        {
-          "level": 2,
-          "title": "组件化",
-          "slug": "组件化"
-        },
-        {
-          "level": 2,
-          "title": "开发棋子组件",
-          "slug": "开发棋子组件"
-        },
-        {
-          "level": 2,
-          "title": "开发棋盘组件",
-          "slug": "开发棋盘组件"
-        },
-        {
-          "level": 2,
-          "title": "开发游戏规则组件",
-          "slug": "开发游戏规则组件"
-        },
-        {
-          "level": 2,
-          "title": "开发显示游戏状态的组件",
-          "slug": "开发显示游戏状态的组件"
-        },
-        {
-          "level": 2,
-          "title": "收尾",
-          "slug": "收尾"
-        }
-      ],
-      "lastUpdated": "3/6/2021, 4:40:28 PM"
-    },
-    {
-      "title": "svg",
-      "frontmatter": {
-        "title": "svg",
-        "date": "2019-8-27",
-        "categories": [
-          "frontend"
-        ],
-        "tags": [
-          "h5",
-          "svg"
-        ]
-      },
-      "regularPath": "/web/H5/svg.html",
-      "relativePath": "web/H5/svg.md",
-      "key": "v-5bc2f40e",
-      "path": "/web/H5/svg.html",
-      "lastUpdated": "3/6/2021, 4:40:28 PM"
+      "lastUpdated": "11/29/2021, 2:26:38 PM"
     }
   ],
   "themeConfig": {
@@ -1137,6 +1347,19 @@ export const siteData = {
         "link": "/"
       },
       {
+        "text": "导航栏配置",
+        "items": [
+          {
+            "text": "自动读取",
+            "link": "/guide/vue/"
+          },
+          {
+            "text": "自定义",
+            "link": "/guide/ts/"
+          }
+        ]
+      },
+      {
         "text": "前端",
         "link": "/web/",
         "items": [
@@ -1155,6 +1378,14 @@ export const siteData = {
           {
             "text": "React",
             "link": "/web/React/"
+          },
+          {
+            "text": "ts",
+            "link": "/web/ts/"
+          },
+          {
+            "text": "进阶系列",
+            "link": "/web/advanced/"
           }
         ]
       },
@@ -1201,6 +1432,9 @@ export const siteData = {
       "/web/React/": [
         "chess"
       ],
+      "/web/ts/": [
+        "install"
+      ],
       "/mysql/": [
         "dowloadAndinstall",
         "introduce",
@@ -1210,6 +1444,22 @@ export const siteData = {
         "insert_update",
         "indexes",
         "node_engine"
+      ],
+      "/guide/vue/": [
+        "test01",
+        "test02",
+        "test03"
+      ],
+      "/guide/ts/": [
+        {
+          "title": "Typescript 学习",
+          "collapsable": true,
+          "children": [
+            "test01",
+            "test02",
+            "test03"
+          ]
+        }
       ]
     },
     "blogConfig": {
@@ -1222,7 +1472,7 @@ export const siteData = {
         "text": "Tag"
       }
     },
-    "sidebarDepth": 2,
+    "sidebarDepth": 3,
     "algolia": {
       "apiKey": "<API_KEY>",
       "indexName": "<INDEX_NAME>"

@@ -1,4 +1,4 @@
-
+console.log('环境变量', process.env.MONGOOSE_URL);
 module.exports = {
     head: [
         ['meta', { name: 'viewport', content: 'width=device-width,initial-scale=1,user-scalable=no' }],

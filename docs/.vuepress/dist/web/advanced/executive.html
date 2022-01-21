@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>调用栈--执行上下文 | myBlog</title>
+    <meta name="generator" content="VuePress 1.8.2">
+    <link rel="icon" href="favicon.ico">
+    <meta name="description" content="myBlogmyBlogmyBlogmyBlog">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    
+    <link rel="preload" href="/myBlog/assets/css/0.styles.9961da37.css" as="style"><link rel="preload" href="/myBlog/assets/js/app.e7deb49c.js" as="script"><link rel="preload" href="/myBlog/assets/js/3.31ee964e.js" as="script"><link rel="preload" href="/myBlog/assets/js/12.b47d52a3.js" as="script"><link rel="prefetch" href="/myBlog/assets/js/10.3b6e9a6c.js"><link rel="prefetch" href="/myBlog/assets/js/11.a9380957.js"><link rel="prefetch" href="/myBlog/assets/js/13.22a4a2ad.js"><link rel="prefetch" href="/myBlog/assets/js/14.6311276a.js"><link rel="prefetch" href="/myBlog/assets/js/15.9417e9db.js"><link rel="prefetch" href="/myBlog/assets/js/16.e29d3c2b.js"><link rel="prefetch" href="/myBlog/assets/js/17.009c6025.js"><link rel="prefetch" href="/myBlog/assets/js/18.fe9531a2.js"><link rel="prefetch" href="/myBlog/assets/js/19.1911dacf.js"><link rel="prefetch" href="/myBlog/assets/js/20.634a62b1.js"><link rel="prefetch" href="/myBlog/assets/js/21.9040dfbe.js"><link rel="prefetch" href="/myBlog/assets/js/22.a6fabeb1.js"><link rel="prefetch" href="/myBlog/assets/js/23.7bc6a8cc.js"><link rel="prefetch" href="/myBlog/assets/js/24.10e452f7.js"><link rel="prefetch" href="/myBlog/assets/js/25.ad7bf8d1.js"><link rel="prefetch" href="/myBlog/assets/js/26.7eb3c896.js"><link rel="prefetch" href="/myBlog/assets/js/27.0325b0df.js"><link rel="prefetch" href="/myBlog/assets/js/28.60618119.js"><link rel="prefetch" href="/myBlog/assets/js/29.16ab6a9c.js"><link rel="prefetch" href="/myBlog/assets/js/30.f1c704e3.js"><link rel="prefetch" href="/myBlog/assets/js/31.9981ef63.js"><link rel="prefetch" href="/myBlog/assets/js/32.c35276b1.js"><link rel="prefetch" href="/myBlog/assets/js/33.2a6d45b5.js"><link rel="prefetch" href="/myBlog/assets/js/34.0245f733.js"><link rel="prefetch" href="/myBlog/assets/js/35.5198ed80.js"><link rel="prefetch" href="/myBlog/assets/js/36.828e2b99.js"><link rel="prefetch" href="/myBlog/assets/js/37.af03c47e.js"><link rel="prefetch" href="/myBlog/assets/js/38.39cd4eef.js"><link rel="prefetch" href="/myBlog/assets/js/39.0f5129e0.js"><link rel="prefetch" href="/myBlog/assets/js/4.d5ca630b.js"><link rel="prefetch" href="/myBlog/assets/js/40.c3bdd677.js"><link rel="prefetch" href="/myBlog/assets/js/41.3f71c35b.js"><link rel="prefetch" href="/myBlog/assets/js/42.816140f4.js"><link rel="prefetch" href="/myBlog/assets/js/43.a1db43d4.js"><link rel="prefetch" href="/myBlog/assets/js/44.08183cb0.js"><link rel="prefetch" href="/myBlog/assets/js/45.5f8ca70c.js"><link rel="prefetch" href="/myBlog/assets/js/46.c2ed68df.js"><link rel="prefetch" href="/myBlog/assets/js/47.a49d67c5.js"><link rel="prefetch" href="/myBlog/assets/js/48.5b703320.js"><link rel="prefetch" href="/myBlog/assets/js/49.07cd7378.js"><link rel="prefetch" href="/myBlog/assets/js/5.3d419047.js"><link rel="prefetch" href="/myBlog/assets/js/50.5ba2aa6d.js"><link rel="prefetch" href="/myBlog/assets/js/51.0558195b.js"><link rel="prefetch" href="/myBlog/assets/js/52.0e5ba804.js"><link rel="prefetch" href="/myBlog/assets/js/6.f2e15b78.js"><link rel="prefetch" href="/myBlog/assets/js/7.3312d198.js"><link rel="prefetch" href="/myBlog/assets/js/8.6c9fb7ab.js"><link rel="prefetch" href="/myBlog/assets/js/9.602a3112.js"><link rel="prefetch" href="/myBlog/assets/js/vendors~docsearch.d5a001a3.js">
+    <link rel="stylesheet" href="/myBlog/assets/css/0.styles.9961da37.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container no-sidebar"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/myBlog/" class="home-link router-link-active"><!----> <span class="site-name">myBlog</span></a> <div class="links"><form id="search-form" role="search" class="algolia-search-wrapper search-box"><input id="algolia-search-input" class="search-query"></form> <nav class="nav-links can-hide"><div class="nav-item"><a href="/myBlog/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="导航栏配置" class="dropdown-title"><span class="title">导航栏配置</span> <span class="arrow down"></span></button> <button type="button" aria-label="导航栏配置" class="mobile-dropdown-title"><span class="title">导航栏配置</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/myBlog/guide/vue/" class="nav-link">
+  自动读取
+</a></li><li class="dropdown-item"><!----> <a href="/myBlog/guide/ts/" class="nav-link">
+  自定义
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端" class="dropdown-title"><span class="title">前端</span> <span class="arrow down"></span></button> <button type="button" aria-label="前端" class="mobile-dropdown-title"><span class="title">前端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/myBlog/web/es6/" class="nav-link">
+  es6
+</a></li><li class="dropdown-item"><!----> <a href="/myBlog/web/vue/" class="nav-link">
+  vue
+</a></li><li class="dropdown-item"><!----> <a href="/myBlog/web/H5/" class="nav-link">
+  H5
+</a></li><li class="dropdown-item"><!----> <a href="/myBlog/web/React/" class="nav-link">
+  React
+</a></li><li class="dropdown-item"><!----> <a href="/myBlog/web/ts/" class="nav-link">
+  ts
+</a></li><li class="dropdown-item"><!----> <a href="/myBlog/web/advanced/" class="nav-link router-link-active">
+  进阶系列
+</a></li></ul></div></div><div class="nav-item"><a href="/myBlog/node/" class="nav-link">
+  nodejs
+</a></div><div class="nav-item"><a href="/myBlog/mysql/" class="nav-link">
+  mysql
+</a></div><div class="nav-item"><a href="/myBlog/java/" class="nav-link">
+  java
+</a></div><div class="nav-item"><a href="/myBlog/timeLine/" class="nav-link">
+  时间线
+</a></div><div class="nav-item"><a href="/myBlog/friendLink/" class="nav-link">
+  友链
+</a></div><div class="nav-item"><a href="/myBlog/nested/" class="nav-link">
+  关于
+</a></div> <a href="https://github.com/ChaselLHL/myBlog" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/myBlog/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="导航栏配置" class="dropdown-title"><span class="title">导航栏配置</span> <span class="arrow down"></span></button> <button type="button" aria-label="导航栏配置" class="mobile-dropdown-title"><span class="title">导航栏配置</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/myBlog/guide/vue/" class="nav-link">
+  自动读取
+</a></li><li class="dropdown-item"><!----> <a href="/myBlog/guide/ts/" class="nav-link">
+  自定义
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端" class="dropdown-title"><span class="title">前端</span> <span class="arrow down"></span></button> <button type="button" aria-label="前端" class="mobile-dropdown-title"><span class="title">前端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/myBlog/web/es6/" class="nav-link">
+  es6
+</a></li><li class="dropdown-item"><!----> <a href="/myBlog/web/vue/" class="nav-link">
+  vue
+</a></li><li class="dropdown-item"><!----> <a href="/myBlog/web/H5/" class="nav-link">
+  H5
+</a></li><li class="dropdown-item"><!----> <a href="/myBlog/web/React/" class="nav-link">
+  React
+</a></li><li class="dropdown-item"><!----> <a href="/myBlog/web/ts/" class="nav-link">
+  ts
+</a></li><li class="dropdown-item"><!----> <a href="/myBlog/web/advanced/" class="nav-link router-link-active">
+  进阶系列
+</a></li></ul></div></div><div class="nav-item"><a href="/myBlog/node/" class="nav-link">
+  nodejs
+</a></div><div class="nav-item"><a href="/myBlog/mysql/" class="nav-link">
+  mysql
+</a></div><div class="nav-item"><a href="/myBlog/java/" class="nav-link">
+  java
+</a></div><div class="nav-item"><a href="/myBlog/timeLine/" class="nav-link">
+  时间线
+</a></div><div class="nav-item"><a href="/myBlog/friendLink/" class="nav-link">
+  友链
+</a></div><div class="nav-item"><a href="/myBlog/nested/" class="nav-link">
+  关于
+</a></div> <a href="https://github.com/ChaselLHL/myBlog" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav>  <!----> </aside> <main class="page"> <div class="theme-default-content content__default"><h3 id="简述"><a href="#简述" class="header-anchor">#</a> 简述</h3> <p>JS是单线程的语言，执行顺序肯定是顺序执行，但是JS 引擎并不是一行一行地分析和执行程序，而是一段一段地分析执行，会先进行编译阶段然后才是执行阶段。</p> <h3 id="执行上下文栈-调用栈"><a href="#执行上下文栈-调用栈" class="header-anchor">#</a> 执行上下文栈（调用栈）</h3> <p>JavaScript 引擎创建了执行上下文栈（Execution context stack，ECS）来管理执行上下文
+为了模拟执行上下文栈的行为，让我们定义执行上下文栈是一个数组：</p> <div class="language-js extra-class"><pre class="language-js"><code>ECStack <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token comment">//结构是后入先出</span>
+    globalContext<span class="token comment">//最底部永远有个 globalContext,全局变量</span>
+<span class="token punctuation">]</span><span class="token punctuation">;</span>
+</code></pre></div><p>案例：</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">function</span> <span class="token function">fun3</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'fun3'</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">function</span> <span class="token function">fun2</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token function">fun3</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">function</span> <span class="token function">fun1</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token function">fun2</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token function">fun1</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><p>执行上下文栈变化：</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// 伪代码</span>
+
+<span class="token comment">// fun1()</span>
+ECStack<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span><span class="token operator">&lt;</span>fun1<span class="token operator">&gt;</span> functionContext<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">// fun1中竟然调用了fun2，还要创建fun2的执行上下文</span>
+ECStack<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span><span class="token operator">&lt;</span>fun2<span class="token operator">&gt;</span> functionContext<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">// 擦，fun2还调用了fun3！</span>
+ECStack<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span><span class="token operator">&lt;</span>fun3<span class="token operator">&gt;</span> functionContext<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">// fun3执行完毕</span>
+ECStack<span class="token punctuation">.</span><span class="token function">pop</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">// fun2执行完毕</span>
+ECStack<span class="token punctuation">.</span><span class="token function">pop</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">// fun1执行完毕</span>
+ECStack<span class="token punctuation">.</span><span class="token function">pop</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">// javascript接着执行下面的代码，但是ECStack底层永远有个globalContext</span>
+
+</code></pre></div><p><img src="data:image/png;base64,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" alt="调用栈图"></p> <h3 id="执行上下文"><a href="#执行上下文" class="header-anchor">#</a> 执行上下文</h3> <ul><li><p>全局执行上下文：只有一个，浏览器中的全局对象就是 window 对象，this 指向这个全局对象。</p></li> <li><p>函数执行上下文：存在无数个，只有在函数被调用的时候才会被创建，每次调用函数都会创建一个新的执行上下文。</p></li> <li><p>Eval 函数执行上下文： 指的是运行在 eval 函数中的代码，很少用而且不建议使用。</p></li></ul> <p>下面讲解 全局执行上下文，函数执行上下文</p> <h3 id="对于每个执行上下文-都有三个重要属性"><a href="#对于每个执行上下文-都有三个重要属性" class="header-anchor">#</a> 对于每个执行上下文，都有三个重要属性：</h3> <ul><li>变量对象(Variable object，VO)</li> <li>作用域链(Scope chain)</li> <li>this</li></ul> <h3 id="全局上下文"><a href="#全局上下文" class="header-anchor">#</a> 全局上下文</h3> <p>我们先了解一个概念，叫全局对象。在 W3School 中也有介绍</p> <blockquote><p>全局对象是预定义的对象，作为 JavaScript 的全局函数和全局属性的占位符。通过使用全局对象，可以访问所有其他所有预定义的对象、函数和属性。</p></blockquote> <blockquote><p>在顶层 JavaScript 代码中，可以用关键字 this 引用全局对象。因为全局对象是作用域链的头，这意味着所有非限定性的变量和函数名都会作为该对象的属性来查询。</p></blockquote> <blockquote><p>例如，当JavaScript 代码引用 parseInt() 函数时，它引用的是全局对象的 parseInt 属性。全局对象是作用域链的头，还意味着在顶层 JavaScript 代码中声明的所有变量都将成为全局对象的属性。</p></blockquote> <p>总结： 全局上下文中的变量对象就是全局对象呐！</p> <p>案例：
+1、在客户端 JavaScript 中，this 指向全局对象就是window对象</p> <div class="language-js extra-class"><pre class="language-js"><code>console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">)</span>
+
+</code></pre></div><h3 id="函数上下文"><a href="#函数上下文" class="header-anchor">#</a> 函数上下文</h3> <p>在函数上下文中，我们用活动对象(activation object, AO)来表示变量对象</p> <p>活动对象是在进入函数上下文时刻被创建的，它通过函数的 arguments 属性初始化。 arguments 属性值是 Arguments 对象。</p> <h4 id="执行过程"><a href="#执行过程" class="header-anchor">#</a> 执行过程</h4> <p>执行上下文的代码会分成两个阶段进行处理：分析和执行，我们也可以叫做：</p> <p>进入执行上下文(预编译)
+代码执行</p> <hr> <p>进入执行上下文时，初始化的规则如下，从上到下就是一种顺序：</p> <p>进入执行上下文：</p> <ol><li>函数的所有形参（如果是函数上下文）
+<ul><li>由名称与对应值组成的一个变量对象的属性被创建</li> <li>没有实参，属性值设为undefined</li></ul></li> <li>函数声明
+<ul><li>由名称与对应值 (函数对象function-object) 组成的一个变量对象的属性被创建</li> <li>如果变量对象已存在同名的属性，则完全替换这个属性值</li></ul></li> <li>变量声明
+<ul><li>由名称与对应值（undefined）组成一个变量的属性被创建</li> <li>如果变量名称跟已经声明的形式参数或函数相同，则变量声明不会干扰已经存在的这类属性</li></ul></li></ol> <p>举个例子:</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">function</span> <span class="token function">foo</span><span class="token punctuation">(</span><span class="token parameter">a</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">var</span> b <span class="token operator">=</span> <span class="token number">2</span><span class="token punctuation">;</span>
+  <span class="token keyword">function</span> <span class="token function">c</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
+  <span class="token keyword">var</span> <span class="token function-variable function">d</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+  b <span class="token operator">=</span> <span class="token number">3</span><span class="token punctuation">;</span>
+
+<span class="token punctuation">}</span>
+
+<span class="token function">foo</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><p>在进入执行上下文后，这时候的 AO 是：</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">//编译前函数被提升放到顶部了，如：</span>
+<span class="token keyword">function</span> <span class="token function">foo</span><span class="token punctuation">(</span><span class="token parameter">a</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">function</span> <span class="token function">c</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
+  <span class="token keyword">var</span> b <span class="token operator">=</span> <span class="token number">2</span><span class="token punctuation">;</span>
+  <span class="token keyword">var</span> <span class="token function-variable function">d</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">;</span>
+  b <span class="token operator">=</span> <span class="token number">3</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token constant">AO</span> <span class="token operator">=</span> <span class="token punctuation">{</span>
+    arguments<span class="token operator">:</span><span class="token punctuation">{</span>
+        <span class="token number">0</span><span class="token operator">:</span><span class="token number">1</span><span class="token punctuation">,</span>
+        length<span class="token operator">:</span><span class="token number">1</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    a<span class="token operator">:</span><span class="token number">1</span><span class="token punctuation">,</span>
+    b<span class="token operator">:</span><span class="token keyword">undefined</span><span class="token punctuation">,</span>
+    c<span class="token operator">:</span>reference to <span class="token keyword">function</span> <span class="token function">c</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+    d<span class="token operator">:</span><span class="token keyword">undefined</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h4 id="代码执行"><a href="#代码执行" class="header-anchor">#</a> 代码执行</h4> <p>在代码执行阶段，会顺序执行代码，根据代码，修改变量对象的属性值</p> <p>分析上面代码，变量对象属性值数据变化：</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token constant">AO</span><span class="token operator">=</span><span class="token punctuation">{</span>
+    arguments<span class="token operator">:</span><span class="token punctuation">{</span>
+        <span class="token number">0</span><span class="token operator">:</span><span class="token number">1</span><span class="token punctuation">,</span>
+        length<span class="token operator">:</span><span class="token number">1</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    a<span class="token operator">:</span><span class="token number">1</span><span class="token punctuation">,</span>
+    b<span class="token operator">:</span><span class="token number">3</span> 
+    c<span class="token operator">:</span>reference to <span class="token keyword">function</span> <span class="token function">c</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span><span class="token punctuation">}</span>
+    d<span class="token operator">:</span>reference to FunctionExpression <span class="token string">&quot;d&quot;</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span>
+执行循序变化：
+
+进入函数
+    <span class="token operator">==</span>》
+    执行 <span class="token keyword">var</span> b <span class="token operator">=</span> <span class="token number">2</span><span class="token punctuation">;</span><span class="token comment">// AO.b:2, b值变为2</span>
+    <span class="token operator">==</span>》
+    执行 <span class="token keyword">var</span> <span class="token function-variable function">d</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">;</span> <span class="token comment">// AO.d= function() {}, d值指向一个匿名函数</span>
+    <span class="token operator">==</span>》 b <span class="token operator">=</span> <span class="token number">3</span><span class="token punctuation">;</span> <span class="token comment">// AO.b = 3; // b值被赋值为3</span>
+</code></pre></div><p>到这里变量对象的创建过程就介绍完了，让我们简洁的总结我们上述所说：</p> <ol><li>全局上下文的变量对象（VO）初始化是全局对象</li> <li>函数上下文的变量对象 (AO) 初始化只包括 Arguments 对象</li> <li>在进入执行上下文时会给变量对象添加形参、函数声明、变量声明等初始的属性值</li> <li>在代码执行阶段，会再次修改变量对象的属性值</li></ol> <h3 id="思考题"><a href="#思考题" class="header-anchor">#</a> 思考题</h3> <p>1.第一题</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">function</span> <span class="token function">foo</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>a<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    a <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token function">foo</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// ???</span>
+
+<span class="token keyword">function</span> <span class="token function">bar</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    a <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>a<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token function">bar</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// ???</span>
+</code></pre></div><p>第一段会报错：Uncaught ReferenceError: a is not defined。</p> <p>第二段会打印：1。</p> <p>这是因为函数中的 &quot;a&quot; 并没有通过 var 关键字声明，所有不会被存放在 AO 中。</p> <p>第一段执行 console 的时候， AO 的值是：</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token constant">AO</span> <span class="token operator">=</span> <span class="token punctuation">{</span>
+    arguments<span class="token operator">:</span> <span class="token punctuation">{</span>
+        length<span class="token operator">:</span> <span class="token number">0</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>没有 a 的值，然后就会到全局去找，全局也没有，所以会报错。</p> <p>当第二段执行 console 的时候，全局对象已经被赋予了 a 属性，这时候就可以从全局找到 a 的值，所以会打印 1。</p> <p>第二题</p> <div class="language-js extra-class"><pre class="language-js"><code>console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>foo<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token keyword">function</span> <span class="token function">foo</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">&quot;foo&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">var</span> foo <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span>
+
+<span class="token comment">//VO</span>
+<span class="token constant">VO</span> <span class="token operator">=</span> <span class="token punctuation">{</span>
+    foo<span class="token operator">:</span> reference to <span class="token keyword">function</span> <span class="token function">foo</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">&quot;foo&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+    foo<span class="token operator">:</span><span class="token keyword">undefined</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>会打印函数，而不是 undefined 。</p> <p>这是因为在进入执行上下文时，首先会处理函数声明，其次会处理变量声明，如果变量名称跟已经声明的形式参数或函数相同，则变量声明不会干扰已经存在的这类属性。</p> <h3 id="作用域"><a href="#作用域" class="header-anchor">#</a> 作用域</h3> <p>作用域是指程序源代码中定义变量的区域。</p> <p>作用域规定了如何查找变量，也就是确定当前执行代码对变量的访问权限。</p> <p>JavaScript 采用词法作用域(lexical scoping)，也就是静态作用域。</p> <p>因为JavaScript采用的是词法作用域，函数的作用域基于函数创建的位置。</p> <p>例子：</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">var</span> value <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span>
+
+<span class="token keyword">function</span> <span class="token function">foo</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>value<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">function</span> <span class="token function">bar</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">var</span> value <span class="token operator">=</span> <span class="token number">2</span><span class="token punctuation">;</span>
+    <span class="token function">foo</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token function">bar</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">// 结果是 ???</span>
+</code></pre></div><p>JavaScript采用静态作用域，让我们分析下执行过程：</p> <p>执行 foo 函数，先从 foo 函数内部查找是否有局部变量 value，如果没有，就根据书写的位置，查找上面一层的代码，也就是 value 等于 1，所以结果会打印 1。</p> <h3 id="作用域链"><a href="#作用域链" class="header-anchor">#</a> 作用域链</h3> <p>在《思考题》中讲到，当查找变量的时候，会先从当前上下文的变量对象中查找，如果没有找到，就会从父级(词法层面上的父级)执行上下文的变量对象中查找，一直找到全局上下文的变量对象，也就是全局对象。这样由多个执行上下文的变量对象构成的链表就叫做作用域链。</p> <p>下面，让我们以一个函数的创建和激活两个时期来讲解作用域链是如何创建和变化的。</p> <p>###　函数创建</p> <p>在《JavaScript深入之词法作用域和动态作用域》中讲到，函数的作用域在函数定义的时候就决定了。</p> <p>这是因为函数有一个内部属性 [[scope]]，当函数创建的时候，就会保存所有父变量对象到其中，你可以理解 [[scope]] 就是所有父变量对象的层级链，但是注意：[[scope]] 并不代表完整的作用域链！</p> <p>举个例子：</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">function</span> <span class="token function">foo</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">function</span> <span class="token function">bar</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token operator">...</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>函数创建时，各自的[[scope]]为：</p> <div class="language-js extra-class"><pre class="language-js"><code>foo<span class="token punctuation">.</span><span class="token punctuation">[</span><span class="token punctuation">[</span>scope<span class="token punctuation">]</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token punctuation">[</span>
+  globalContext<span class="token punctuation">.</span><span class="token constant">VO</span>
+<span class="token punctuation">]</span><span class="token punctuation">;</span>
+
+bar<span class="token punctuation">.</span><span class="token punctuation">[</span><span class="token punctuation">[</span>scope<span class="token punctuation">]</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token punctuation">[</span>
+    fooContext<span class="token punctuation">.</span><span class="token constant">AO</span><span class="token punctuation">,</span>
+    globalContext<span class="token punctuation">.</span><span class="token constant">VO</span>
+<span class="token punctuation">]</span><span class="token punctuation">;</span>
+</code></pre></div></div> <footer class="page-edit"><div class="edit-link"><a href="https://github.com/ChaselLHL/myBlog/edit/master/docs/web/advanced/executive.md" target="_blank" rel="noopener noreferrer">在 GitHub 上编辑此页</a> <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></div> <div class="last-updated"><span class="prefix">Last Updated:</span> <span class="time">1/21/2022, 5:57:07 PM</span></div></footer> <!----> </main></div><div class="global-ui"></div></div>
+    <script src="/myBlog/assets/js/app.e7deb49c.js" defer></script><script src="/myBlog/assets/js/3.31ee964e.js" defer></script><script src="/myBlog/assets/js/12.b47d52a3.js" defer></script>
+  </body>
+</html>

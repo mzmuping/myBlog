@@ -1,14 +1,14 @@
 ### 本地开发
 
 ```
-npm docs:dev
+npm start
 
 ```
 
 ### 构建
 
 ```
-npm docs:build
+npm build
 
 ```
 
@@ -16,6 +16,11 @@ npm docs:build
 
 ```
 npm deploy-gh
+
+```
+跑测试js文件server
+```
+yarn dev
 
 ```
 

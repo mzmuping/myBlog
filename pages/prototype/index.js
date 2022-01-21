@@ -146,8 +146,8 @@ var dog = new Dog('小狗', 8, '雄性')
 
 console.log(dog)
 
-function Anima() { }
-var anima = new Anima();
+// function Anima() { }
+// var anima = new Anima();
 //
 console.log('anima.__proto__====', anima.__proto__ === Anima.prototype)//true
 console.log('anima.constructor', anima.constructor === Anima.prototype.constructor)//true

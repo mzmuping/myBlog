@@ -35,6 +35,11 @@ module.exports = {
                 ]
             },
             {
+                text: '错误总结', items: [
+                    { text: 'github', link: '/error/' },
+                ]
+            },
+            {
                 text: '前端', link: '/web/', items: [
                     { text: 'es6', link: '/web/es6/' },
                     { text: 'vue', link: '/web/vue/' },
@@ -67,6 +72,13 @@ module.exports = {
                     title: 'Typescript 学习',
                     collapsable: true,
                     children: ['test01', 'test02', 'test03']
+                }
+            ],
+            '/error/': [
+                {
+                    title: 'github 提交错误',
+                    collapsable: true,
+                    children: ['git_error']
                 }
             ],
         },

@@ -10,3 +10,5 @@ fatal: unable to access 'https://github.com/mzmuping/mutil-web.git/': OpenSSL SS
 > git config --global http.sslVerify "false"
 > git push 或者 git push --set-upstream origin master
 ```
+
+希望成功

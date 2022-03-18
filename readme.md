@@ -18,7 +18,7 @@ npm build
 npm deploy-gh
 
 ```
-跑测试js文件server
+跑测试js文件server,
 ```
 yarn dev
 

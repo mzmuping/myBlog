@@ -1,0 +1,169 @@
+---
+title: 常用composition API
+date: 2021-11-25
+categories: 
+ - frontend
+tags:
+- vue3
+- 索引
+---
+
+## 组合式 API
+[官方文档](https://v3.cn.vuejs.org/api/composition-api.html)
+
+###  5. reactive 对比 ref
+- 从定义数据角度对比：
+    - ref用来定义：<font color='red'>基本数据类型数据</font>
+    - reactive用来定义：<font color='red'>对象（数组）类型数据</font>
+    - 备注：ref 也可以用来定义<font color='red'>对象(数组)类型数据</font>，它内部会自动通过reactive转换为<font color='red'>代理对象</font>
+
+- 从原理角度对比
+    - ref通过Object.defineProperty()的get与set来实现响应式（数据劫持）
+    - reactive通过使用<font  color='red'>Proxy</font>来实现响应式（数据劫持），并通过<font  color='red'>Reflect</font>操作源对象内部的数据
+
+- 从使用角度对比
+    - ref定义的数据：操作数据需要.value,读取数据时模板中直接读取<font  color='red'>不需要</font>.value
+    - reactive定义的数据：操作数据与读取数据：<font  color='red'>均不需要</font>.value
+
+### 6.setup的两个注意点
+- setup执行的时机
+    - 在beforeCreate之前执行一次，this是undefined
+- setup的参数
+    - props:值为对象，包含：组件外部传递过来，却组件内部声明接受了属性
+    - context:执行上下文对象
+        - attr:值为对象，包含：组件外部传递过来，但没有在props配置中声明的属性，相当于this.$attr
+        - slots:收到的插槽内容，相当于this.$slots
+        - emit:分发自定义事件的函数，相当于this.$emit
+
+### 7.计算属性与监视
+
+**1.computed函数**
+
+- 与vue2.x中computed配置功能一致
+- 写法
+
+```js
+import {computed} from vue;
+
+export default {
+    
+    setup(){
+        //只读
+        const count = ref(1)
+        const plusOne = computed(() => count.value + 1)
+
+        console.log(plusOne.value) // 2
+
+        //读，改
+        const count = ref(1)
+        const plusOne = computed({
+            get: () => count.value + 1,
+            set: val => {
+                count.value = val - 1
+            }
+        })
+
+        plusOne.value = 1
+        console.log(count.value) // 0
+
+    }
+}
+
+```
+
+**2.watch函数**
+- 与vue2.x中watch配置功能一致
+- 写法
+```js
+
+    import {ref,watch, reactive} from 'vue'
+
+    export default {
+        setup(){
+            let count = ref(1)
+            let person = reactive({
+                name:'张三',
+                age:18
+            })
+            //单个监听
+            watch(count,(newValue, oldValue)=>{},immediate: true)
+            //多个监听
+            watch([person,count], (newValue, oldValue) => {
+                console.log("The new person value is: ", newValue, oldValue);
+            },
+            { deep: false }
+            );
+
+        }
+    }
+
+```
+
+- 两个小坑
+    - 监视reactive定义的响应式数据时，oldValue无法正确获取，强制开启了深度监视（deep配置失效）
+    - 监视reactive定义的响应式数据中某个属性时，deep配置有效
+    ```js
+        //情况一：监视ref定义的响应式数据
+        watch(sum,(newValue,oldValue)=>{},{immediate: true})
+
+        //情况二：监视多个ref定义的响应式数据
+        watch([sum,msg],(newValue,oldValue)=>{})
+
+        /*情况三：监视reactive定义的响应式数据
+            若watch监视的是reactive定义的响应式数据，则无法正确获取oldValue
+            若watch监视的是reactive定义的响应式数据，则强制开启了深度监视
+        */
+        watch(person,(newValue,oldValue)=>{},
+        {immediate: true,deep:true})//此处的deep配置失效
+
+        //情况四：监视reactive定义的响应式数据中的某个属性
+        watch(()=>person.job,(newValue,oldValue)=>{}, {immediate: true,deep:true})
+
+        //情况五：监视ref定义的响应式数据中的person
+        watch(person,(newValue,oldValue)=>{}, {immediate: true,deep:true})
+
+    ```
+**3.watchEffect函数**
+- watch的套路是：既要指明监视的属性，也要指明监视的回调
+- watchEffect的套路是：不用指明监视哪个属性，监视的回调中用到哪个属性，那就监视哪个属性
+- watchEffect有点像computed:
+    - 但computed注重的计算出来的值（回调函数的返回值），所以必须要写返回值
+    - 而watchEffect更注重的是过程（回调函数的函数体），所以不用写返回值
+    ```js
+        watchEffect(()=>{
+            const x1 = sum.vulue;
+            const x2 = person.age;
+        })
+    ```
+### 8生命周期
+
+|  类型   | 字节  | 
+|  ----  | ----  | 
+| ![](./images/vue2-lifecycle.png)   |![](./images/vue3-lifecycle2.png)  | 
+
+- vue3中可以继续使用vue2生命周期钩子变化,但是有两个更名
+    - beforeDestoy改名beforeUmmount
+    - destoyed改名dmmounted
+
+- vue3也提供Composition API 形式的生命周期钩子，与vue2中钩子对应关系
+    - beforeCreate ===> setup()
+    - created  =======> setup()
+    - beforeMount ====> onBeforeMount
+    - mounted ========> onMounted
+    - beforeUpdate ===> onBeforeUpdate
+    - updated ========> onUpdate
+    - beforeUnmount ==> onBeforeUnmount
+    - unmounted ======> onUnmounted
+
+### 9.自定义hook函数
+- 什么是hook? --- 本质是一个函数，把setup函数中使用的composition Api进行了封装
+- 类似vue2.x的mixin
+- 自定义hook的优势，复用代码，让setup中的逻辑更加清楚易懂
+
+### toRef
+- 作用：创建一个ref对象，其value值指向另一个对象中的某一个属性值
+- 语法：const name = toRef(person,'name')
+- 应用：要将响应式对象中的某个属性单独提供给外部使用时
+- 拓展：toRefs与toRef功能一样，但可以批量创建多个ref对象，语法toRefs(person)
+
+

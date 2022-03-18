@@ -59,7 +59,12 @@ module.exports = {
 
         sidebar: {
             '/web/es6/': ['es7_decorator', 'ArrayBuffer', 'ts_config', 'front_end_modul'],
-            '/web/vue/': ['vuePress_deploy'],
+            '/web/vue/': ['vuePress_deploy', {
+                title: 'vue3 指导',
+                collapsable: true,
+                children: ['vue3_intro']
+            }],
+
             '/web/H5/': ['svg'],
             '/web/React/': ['chess'],
             '/web/ts/': ['install'],

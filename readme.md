@@ -14,7 +14,7 @@ npm build
 
 ### 上传提交，预览
 
-```
+```sh
 npm deploy-gh
 
 ```

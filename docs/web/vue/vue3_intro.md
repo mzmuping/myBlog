@@ -137,7 +137,7 @@ export default {
     ```
 ### 8生命周期
 
-|  类型   | 字节  | 
+|  vue2.x   | vue3.x  | 
 |  ----  | ----  | 
 | ![](./images/vue2-lifecycle.png)   |![](./images/vue3-lifecycle2.png)  | 
 
@@ -261,3 +261,90 @@ export default {
             return {person}
         }
     ```
+
+**6.响应式数据的判断函数**
+- isRef：检查值是否为一个 ref 对象
+- isProxy: 检查对象是否是由 reactive 或 readonly 创建的 proxy
+- isReactive: 检查对象是否是由 reactive 创建的响应式代理
+- isReadonly: 检查对象是否是由 readonly 创建的只读代理。
+
+### vue3其他调整
+
+#### 1.全局api的转移
+ - vue2.x有许多全局api和配置
+   - 例如：注册全局组件，注册全局指令等
+    ```js
+        //vue2注册全局组件
+        Vue.component('MyButton',{
+            data(){
+               return {
+                   count:0
+               } 
+            },
+            template:`<button @click="count++">clicked</button>`
+        })
+        //vue2.注册全局指令
+        Vue.directive('focus',{
+            inserted:el=>el.focus();
+        })
+    ```
+- vue3 中对这些API做了调整
+    - 将全局的API，即Vue.xxx调整到应用实例（app）上
+
+        |  vue2.x                  | vue3.x                 | 
+        |  -------                 | ------                 | 
+        | Vue.config.xxx           |  app.conifg.xxxx       | 
+        | Vue.config.productionTip |  移除                  | 
+        | Vue.component            |  app.component         | 
+        | Vue.directive            |  app.directive         | 
+        | Vue.mixin                |  app.use         | 
+        | Vue.use                  |  app.mixin         | 
+        | Vue.prototype            |  app.config.globalProperties | 
+
+#### 2.其他改变
+- data选项应始终被声明为一个函数
+- 过度类名的更改
+    - vue2.x写法
+
+    ```js
+        .v-enter,
+        .v-leave-to{
+            opacity:0
+        }
+        .v-leave,
+        .v-enter-to{
+             opacity:1
+        }
+    ```
+    - vue2.x写法
+
+    ```js
+        .v-enter-from,
+        .v-leave-to{
+            opacity:0
+        }
+        .v-leave-from,
+        .v-enter-to{
+             opacity:1
+        }
+    ```
+    
+    - 移除keyCode作为v-on的修饰符，同时也不再支持config.keyCodes
+    - 移除v-on.native修饰符
+        - 父组件中绑定事件
+        ```html
+            <my-component 
+                v-on:close="handle"
+                v-on:click="handle"
+            />
+        ```
+        - 子组件中声明自定义事件
+        ```js
+           export defualt{
+               emits:['close']//click会被默认原生事件
+           }
+        ```
+        - 移除过滤器（filter） 
+
+        官网： “虽然这看起来很方便，但它需要一个自定义语法，打破了大括号内的表达式“只是 JavaScript”的假设，这不仅有学习成本，而且有实现成本”
+    - [更多vue2.x与vue3.x不同](https://v3.cn.vuejs.org/guide/migration/migration-build.html#%E6%A6%82%E8%BF%B0)

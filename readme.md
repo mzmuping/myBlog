@@ -1,21 +1,26 @@
 ### 本地开发
 
 ```
-npm docs:dev
+npm start
 
 ```
 
 ### 构建
 
 ```
-npm docs:build
+npm build
 
 ```
 
 ### 上传提交，预览
 
-```
+```sh
 npm deploy-gh
+
+```
+跑测试js文件server,
+```
+yarn dev
 
 ```
 

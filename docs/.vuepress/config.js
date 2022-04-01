@@ -47,6 +47,7 @@ module.exports = {
                     { text: 'React', link: '/web/React/' },
                     { text: 'ts', link: '/web/ts/' },
                     { text: '进阶系列', link: '/web/advanced/' },
+                    { text: '面试题', link: '/web/interview/' },
                 ]
             },
             { text: 'nodejs', link: '/node/' },
@@ -68,6 +69,11 @@ module.exports = {
             '/web/H5/': ['svg'],
             '/web/React/': ['chess'],
             '/web/ts/': ['install'],
+            '/web/interview/': [{
+                title: '',
+                collapsable: true,
+                children: ['test03']
+            }],
             '/mysql/': ['dowloadAndinstall', 'introduce', 'db_base_table', 'date_type', 'operate_sql', 'insert_update', 'indexes', 'node_engine'],
             '/guide/vue/': [
                 'test01', 'test02', 'test03'

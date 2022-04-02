@@ -67,7 +67,18 @@ module.exports = {
             }],
 
             '/web/H5/': ['svg'],
-            '/web/React/': ['chess'],
+            '/web/React/': [
+                {
+                    title: 'hooks api学习',
+                    collapsable: true,
+                    children: ['useCallback-api']
+                },
+                {
+                    title: '实现三子棋小游戏 ',
+                    collapsable: true,
+                    children: ['chess']
+                }
+            ],
             '/web/ts/': ['install'],
             '/web/interview/': [{
                 title: '',

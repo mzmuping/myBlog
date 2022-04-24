@@ -65,7 +65,7 @@ module.exports = {
                 collapsable: true,
                 children: ['vue3_intro']
             }],
-
+            '/node/': ['node_process'],
             '/web/H5/': ['svg'],
             '/web/React/': [
                 {

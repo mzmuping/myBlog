@@ -1,562 +1,91 @@
 <!DOCTYPE html>
 <html lang="en-US">
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>前端模块化 | myBlog</title>
-    <meta name="generator" content="VuePress 1.8.2" />
-    <link rel="icon" href="favicon.ico" />
-    <meta name="description" content="myBlogmyBlogmyBlogmyBlog" />
-    <meta
-      name="viewport"
-      content="width=device-width,initial-scale=1,user-scalable=no"
-    />
-
-    <link
-      rel="preload"
-      href="/myBlog/assets/css/0.styles.9961da37.css"
-      as="style"
-    />
-    <link rel="preload" href="/myBlog/assets/js/app.2a200a47.js" as="script" />
-    <link rel="preload" href="/myBlog/assets/js/3.1dd42633.js" as="script" />
-    <link rel="preload" href="/myBlog/assets/js/15.3f077aa5.js" as="script" />
-    <link rel="prefetch" href="/myBlog/assets/js/10.04dce474.js" />
-    <link rel="prefetch" href="/myBlog/assets/js/11.ebd2c0f5.js" />
-    <link rel="prefetch" href="/myBlog/assets/js/12.3ac0898e.js" />
-    <link rel="prefetch" href="/myBlog/assets/js/13.38cf5de4.js" />
-    <link rel="prefetch" href="/myBlog/assets/js/14.77d64a51.js" />
-    <link rel="prefetch" href="/myBlog/assets/js/16.46f247b8.js" />
-    <link rel="prefetch" href="/myBlog/assets/js/17.0582cc19.js" />
-    <link rel="prefetch" href="/myBlog/assets/js/18.094c304c.js" />
-    <link rel="prefetch" href="/myBlog/assets/js/19.5b602654.js" />
-    <link rel="prefetch" href="/myBlog/assets/js/20.fab01036.js" />
-    <link rel="prefetch" href="/myBlog/assets/js/21.5a1df0bf.js" />
-    <link rel="prefetch" href="/myBlog/assets/js/22.377d55ec.js" />
-    <link rel="prefetch" href="/myBlog/assets/js/23.efbaa244.js" />
-    <link rel="prefetch" href="/myBlog/assets/js/24.fe304b38.js" />
-    <link rel="prefetch" href="/myBlog/assets/js/25.e90e5675.js" />
-    <link rel="prefetch" href="/myBlog/assets/js/26.61bec9f2.js" />
-    <link rel="prefetch" href="/myBlog/assets/js/27.3e9068ba.js" />
-    <link rel="prefetch" href="/myBlog/assets/js/28.9aded43a.js" />
-    <link rel="prefetch" href="/myBlog/assets/js/29.038bedbb.js" />
-    <link rel="prefetch" href="/myBlog/assets/js/30.cc70c509.js" />
-    <link rel="prefetch" href="/myBlog/assets/js/31.da4ae0d2.js" />
-    <link rel="prefetch" href="/myBlog/assets/js/32.d70de289.js" />
-    <link rel="prefetch" href="/myBlog/assets/js/33.6af8056a.js" />
-    <link rel="prefetch" href="/myBlog/assets/js/34.fdc2c293.js" />
-    <link rel="prefetch" href="/myBlog/assets/js/35.17555fb1.js" />
-    <link rel="prefetch" href="/myBlog/assets/js/36.b6bc43ce.js" />
-    <link rel="prefetch" href="/myBlog/assets/js/37.65162a31.js" />
-    <link rel="prefetch" href="/myBlog/assets/js/38.3c181ccb.js" />
-    <link rel="prefetch" href="/myBlog/assets/js/39.066dd98b.js" />
-    <link rel="prefetch" href="/myBlog/assets/js/4.afcfe61e.js" />
-    <link rel="prefetch" href="/myBlog/assets/js/40.d50f2ec3.js" />
-    <link rel="prefetch" href="/myBlog/assets/js/41.77dd7d56.js" />
-    <link rel="prefetch" href="/myBlog/assets/js/42.f386f1e0.js" />
-    <link rel="prefetch" href="/myBlog/assets/js/43.acb3af63.js" />
-    <link rel="prefetch" href="/myBlog/assets/js/44.7a33ab13.js" />
-    <link rel="prefetch" href="/myBlog/assets/js/45.e5fabca6.js" />
-    <link rel="prefetch" href="/myBlog/assets/js/46.43b7ebc6.js" />
-    <link rel="prefetch" href="/myBlog/assets/js/47.63d1ff19.js" />
-    <link rel="prefetch" href="/myBlog/assets/js/48.589f46cb.js" />
-    <link rel="prefetch" href="/myBlog/assets/js/49.4cd9cdc5.js" />
-    <link rel="prefetch" href="/myBlog/assets/js/5.bb777d9e.js" />
-    <link rel="prefetch" href="/myBlog/assets/js/50.c1e4f425.js" />
-    <link rel="prefetch" href="/myBlog/assets/js/51.ce235396.js" />
-    <link rel="prefetch" href="/myBlog/assets/js/52.55def222.js" />
-    <link rel="prefetch" href="/myBlog/assets/js/53.fed04149.js" />
-    <link rel="prefetch" href="/myBlog/assets/js/6.87986e45.js" />
-    <link rel="prefetch" href="/myBlog/assets/js/7.80865b54.js" />
-    <link rel="prefetch" href="/myBlog/assets/js/8.66486edd.js" />
-    <link rel="prefetch" href="/myBlog/assets/js/9.654dbc20.js" />
-    <link
-      rel="prefetch"
-      href="/myBlog/assets/js/vendors~docsearch.70fcbd13.js"
-    />
-    <link rel="stylesheet" href="/myBlog/assets/css/0.styles.9961da37.css" />
+    <meta name="generator" content="VuePress 1.8.2">
+    <link rel="icon" href="favicon.ico">
+    <meta name="description" content="myBlogmyBlogmyBlogmyBlog">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    
+    <link rel="preload" href="/myBlog/assets/css/0.styles.9961da37.css" as="style"><link rel="preload" href="/myBlog/assets/js/app.de10531d.js" as="script"><link rel="preload" href="/myBlog/assets/js/3.4f9ff7e4.js" as="script"><link rel="preload" href="/myBlog/assets/js/16.6c9455e8.js" as="script"><link rel="prefetch" href="/myBlog/assets/js/10.8ae0b839.js"><link rel="prefetch" href="/myBlog/assets/js/11.5b8e4ff5.js"><link rel="prefetch" href="/myBlog/assets/js/12.07476b98.js"><link rel="prefetch" href="/myBlog/assets/js/13.4b6c76fb.js"><link rel="prefetch" href="/myBlog/assets/js/14.93d172a8.js"><link rel="prefetch" href="/myBlog/assets/js/15.a81e90a4.js"><link rel="prefetch" href="/myBlog/assets/js/17.d4944dc3.js"><link rel="prefetch" href="/myBlog/assets/js/18.b60293bf.js"><link rel="prefetch" href="/myBlog/assets/js/19.7f5371fc.js"><link rel="prefetch" href="/myBlog/assets/js/20.d1c8562d.js"><link rel="prefetch" href="/myBlog/assets/js/21.a958d88f.js"><link rel="prefetch" href="/myBlog/assets/js/22.d64ef5bc.js"><link rel="prefetch" href="/myBlog/assets/js/23.665f54e7.js"><link rel="prefetch" href="/myBlog/assets/js/24.3f195826.js"><link rel="prefetch" href="/myBlog/assets/js/25.04916020.js"><link rel="prefetch" href="/myBlog/assets/js/26.ac09c518.js"><link rel="prefetch" href="/myBlog/assets/js/27.6abf41ed.js"><link rel="prefetch" href="/myBlog/assets/js/28.2790a955.js"><link rel="prefetch" href="/myBlog/assets/js/29.9805c9f9.js"><link rel="prefetch" href="/myBlog/assets/js/30.9d71a086.js"><link rel="prefetch" href="/myBlog/assets/js/31.ff4167f4.js"><link rel="prefetch" href="/myBlog/assets/js/32.4d962c07.js"><link rel="prefetch" href="/myBlog/assets/js/33.195a80d7.js"><link rel="prefetch" href="/myBlog/assets/js/34.36c2b399.js"><link rel="prefetch" href="/myBlog/assets/js/35.62687d81.js"><link rel="prefetch" href="/myBlog/assets/js/36.284071e1.js"><link rel="prefetch" href="/myBlog/assets/js/37.30bd3977.js"><link rel="prefetch" href="/myBlog/assets/js/38.a98ca10b.js"><link rel="prefetch" href="/myBlog/assets/js/39.435b80b3.js"><link rel="prefetch" href="/myBlog/assets/js/4.afcfe61e.js"><link rel="prefetch" href="/myBlog/assets/js/40.dbbdf0df.js"><link rel="prefetch" href="/myBlog/assets/js/41.e87f1156.js"><link rel="prefetch" href="/myBlog/assets/js/42.26517c9f.js"><link rel="prefetch" href="/myBlog/assets/js/43.c180e389.js"><link rel="prefetch" href="/myBlog/assets/js/44.e2cf3a14.js"><link rel="prefetch" href="/myBlog/assets/js/45.1d92761f.js"><link rel="prefetch" href="/myBlog/assets/js/46.52c61531.js"><link rel="prefetch" href="/myBlog/assets/js/47.5162a08e.js"><link rel="prefetch" href="/myBlog/assets/js/48.a75edde5.js"><link rel="prefetch" href="/myBlog/assets/js/49.c9050d83.js"><link rel="prefetch" href="/myBlog/assets/js/5.d924fa7f.js"><link rel="prefetch" href="/myBlog/assets/js/50.b38f0aa4.js"><link rel="prefetch" href="/myBlog/assets/js/51.39fadb3a.js"><link rel="prefetch" href="/myBlog/assets/js/52.bb46b508.js"><link rel="prefetch" href="/myBlog/assets/js/53.c7649765.js"><link rel="prefetch" href="/myBlog/assets/js/54.3544b8c8.js"><link rel="prefetch" href="/myBlog/assets/js/55.8f8b96f8.js"><link rel="prefetch" href="/myBlog/assets/js/56.64460b4c.js"><link rel="prefetch" href="/myBlog/assets/js/57.8d468320.js"><link rel="prefetch" href="/myBlog/assets/js/58.2c4dc6eb.js"><link rel="prefetch" href="/myBlog/assets/js/6.ff2c7557.js"><link rel="prefetch" href="/myBlog/assets/js/7.0519124e.js"><link rel="prefetch" href="/myBlog/assets/js/8.64402c3e.js"><link rel="prefetch" href="/myBlog/assets/js/9.7bac44a1.js"><link rel="prefetch" href="/myBlog/assets/js/vendors~docsearch.46848a98.js">
+    <link rel="stylesheet" href="/myBlog/assets/css/0.styles.9961da37.css">
   </head>
   <body>
-    <div id="app" data-server-rendered="true">
-      <div class="theme-container">
-        <header class="navbar">
-          <div class="sidebar-button">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              aria-hidden="true"
-              role="img"
-              viewBox="0 0 448 512"
-              class="icon"
-            >
-              <path
-                fill="currentColor"
-                d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"
-              ></path>
-            </svg>
-          </div>
-          <a href="/myBlog/" class="home-link router-link-active"
-            ><!---->
-            <span class="site-name">myBlog</span></a
-          >
-          <div class="links">
-            <form
-              id="search-form"
-              role="search"
-              class="algolia-search-wrapper search-box"
-            >
-              <input id="algolia-search-input" class="search-query" />
-            </form>
-            <nav class="nav-links can-hide">
-              <div class="nav-item">
-                <a href="/myBlog/" class="nav-link"> Home </a>
-              </div>
-              <div class="nav-item">
-                <div class="dropdown-wrapper">
-                  <button
-                    type="button"
-                    aria-label="导航栏配置"
-                    class="dropdown-title"
-                  >
-                    <span class="title">导航栏配置</span>
-                    <span class="arrow down"></span>
-                  </button>
-                  <button
-                    type="button"
-                    aria-label="导航栏配置"
-                    class="mobile-dropdown-title"
-                  >
-                    <span class="title">导航栏配置</span>
-                    <span class="arrow right"></span>
-                  </button>
-                  <ul class="nav-dropdown" style="display: none">
-                    <li class="dropdown-item">
-                      <!---->
-                      <a href="/myBlog/guide/vue/" class="nav-link">
-                        自动读取
-                      </a>
-                    </li>
-                    <li class="dropdown-item">
-                      <!---->
-                      <a href="/myBlog/guide/ts/" class="nav-link"> 自定义 </a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <div class="nav-item">
-                <div class="dropdown-wrapper">
-                  <button
-                    type="button"
-                    aria-label="错误总结"
-                    class="dropdown-title"
-                  >
-                    <span class="title">错误总结</span>
-                    <span class="arrow down"></span>
-                  </button>
-                  <button
-                    type="button"
-                    aria-label="错误总结"
-                    class="mobile-dropdown-title"
-                  >
-                    <span class="title">错误总结</span>
-                    <span class="arrow right"></span>
-                  </button>
-                  <ul class="nav-dropdown" style="display: none">
-                    <li class="dropdown-item">
-                      <!---->
-                      <a href="/myBlog/error/" class="nav-link"> github </a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <div class="nav-item">
-                <div class="dropdown-wrapper">
-                  <button
-                    type="button"
-                    aria-label="前端"
-                    class="dropdown-title"
-                  >
-                    <span class="title">前端</span>
-                    <span class="arrow down"></span>
-                  </button>
-                  <button
-                    type="button"
-                    aria-label="前端"
-                    class="mobile-dropdown-title"
-                  >
-                    <span class="title">前端</span>
-                    <span class="arrow right"></span>
-                  </button>
-                  <ul class="nav-dropdown" style="display: none">
-                    <li class="dropdown-item">
-                      <!---->
-                      <a
-                        href="/myBlog/web/es6/"
-                        class="nav-link router-link-active"
-                      >
-                        es6
-                      </a>
-                    </li>
-                    <li class="dropdown-item">
-                      <!---->
-                      <a href="/myBlog/web/vue/" class="nav-link"> vue </a>
-                    </li>
-                    <li class="dropdown-item">
-                      <!---->
-                      <a href="/myBlog/web/H5/" class="nav-link"> H5 </a>
-                    </li>
-                    <li class="dropdown-item">
-                      <!---->
-                      <a href="/myBlog/web/React/" class="nav-link"> React </a>
-                    </li>
-                    <li class="dropdown-item">
-                      <!---->
-                      <a href="/myBlog/web/ts/" class="nav-link"> ts </a>
-                    </li>
-                    <li class="dropdown-item">
-                      <!---->
-                      <a href="/myBlog/web/advanced/" class="nav-link">
-                        进阶系列
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <div class="nav-item">
-                <a href="/myBlog/node/" class="nav-link"> nodejs </a>
-              </div>
-              <div class="nav-item">
-                <a href="/myBlog/mysql/" class="nav-link"> mysql </a>
-              </div>
-              <div class="nav-item">
-                <a href="/myBlog/java/" class="nav-link"> java </a>
-              </div>
-              <div class="nav-item">
-                <a href="/myBlog/timeLine/" class="nav-link"> 时间线 </a>
-              </div>
-              <div class="nav-item">
-                <a href="/myBlog/friendLink/" class="nav-link"> 友链 </a>
-              </div>
-              <div class="nav-item">
-                <a href="/myBlog/nested/" class="nav-link"> 关于 </a>
-              </div>
-              <a
-                href="https://github.com/ChaselLHL/myBlog"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="repo-link"
-              >
-                GitHub
-                <span
-                  ><svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    aria-hidden="true"
-                    focusable="false"
-                    x="0px"
-                    y="0px"
-                    viewBox="0 0 100 100"
-                    width="15"
-                    height="15"
-                    class="icon outbound"
-                  >
-                    <path
-                      fill="currentColor"
-                      d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"
-                    ></path>
-                    <polygon
-                      fill="currentColor"
-                      points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"
-                    ></polygon>
-                  </svg>
-                  <span class="sr-only">(opens new window)</span></span
-                ></a
-              >
-            </nav>
-          </div>
-        </header>
-        <div class="sidebar-mask"></div>
-        <aside class="sidebar">
-          <nav class="nav-links">
-            <div class="nav-item">
-              <a href="/myBlog/" class="nav-link"> Home </a>
-            </div>
-            <div class="nav-item">
-              <div class="dropdown-wrapper">
-                <button
-                  type="button"
-                  aria-label="导航栏配置"
-                  class="dropdown-title"
-                >
-                  <span class="title">导航栏配置</span>
-                  <span class="arrow down"></span>
-                </button>
-                <button
-                  type="button"
-                  aria-label="导航栏配置"
-                  class="mobile-dropdown-title"
-                >
-                  <span class="title">导航栏配置</span>
-                  <span class="arrow right"></span>
-                </button>
-                <ul class="nav-dropdown" style="display: none">
-                  <li class="dropdown-item">
-                    <!---->
-                    <a href="/myBlog/guide/vue/" class="nav-link"> 自动读取 </a>
-                  </li>
-                  <li class="dropdown-item">
-                    <!---->
-                    <a href="/myBlog/guide/ts/" class="nav-link"> 自定义 </a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div class="nav-item">
-              <div class="dropdown-wrapper">
-                <button
-                  type="button"
-                  aria-label="错误总结"
-                  class="dropdown-title"
-                >
-                  <span class="title">错误总结</span>
-                  <span class="arrow down"></span>
-                </button>
-                <button
-                  type="button"
-                  aria-label="错误总结"
-                  class="mobile-dropdown-title"
-                >
-                  <span class="title">错误总结</span>
-                  <span class="arrow right"></span>
-                </button>
-                <ul class="nav-dropdown" style="display: none">
-                  <li class="dropdown-item">
-                    <!---->
-                    <a href="/myBlog/error/" class="nav-link"> github </a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div class="nav-item">
-              <div class="dropdown-wrapper">
-                <button type="button" aria-label="前端" class="dropdown-title">
-                  <span class="title">前端</span>
-                  <span class="arrow down"></span>
-                </button>
-                <button
-                  type="button"
-                  aria-label="前端"
-                  class="mobile-dropdown-title"
-                >
-                  <span class="title">前端</span>
-                  <span class="arrow right"></span>
-                </button>
-                <ul class="nav-dropdown" style="display: none">
-                  <li class="dropdown-item">
-                    <!---->
-                    <a
-                      href="/myBlog/web/es6/"
-                      class="nav-link router-link-active"
-                    >
-                      es6
-                    </a>
-                  </li>
-                  <li class="dropdown-item">
-                    <!---->
-                    <a href="/myBlog/web/vue/" class="nav-link"> vue </a>
-                  </li>
-                  <li class="dropdown-item">
-                    <!---->
-                    <a href="/myBlog/web/H5/" class="nav-link"> H5 </a>
-                  </li>
-                  <li class="dropdown-item">
-                    <!---->
-                    <a href="/myBlog/web/React/" class="nav-link"> React </a>
-                  </li>
-                  <li class="dropdown-item">
-                    <!---->
-                    <a href="/myBlog/web/ts/" class="nav-link"> ts </a>
-                  </li>
-                  <li class="dropdown-item">
-                    <!---->
-                    <a href="/myBlog/web/advanced/" class="nav-link">
-                      进阶系列
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div class="nav-item">
-              <a href="/myBlog/node/" class="nav-link"> nodejs </a>
-            </div>
-            <div class="nav-item">
-              <a href="/myBlog/mysql/" class="nav-link"> mysql </a>
-            </div>
-            <div class="nav-item">
-              <a href="/myBlog/java/" class="nav-link"> java </a>
-            </div>
-            <div class="nav-item">
-              <a href="/myBlog/timeLine/" class="nav-link"> 时间线 </a>
-            </div>
-            <div class="nav-item">
-              <a href="/myBlog/friendLink/" class="nav-link"> 友链 </a>
-            </div>
-            <div class="nav-item">
-              <a href="/myBlog/nested/" class="nav-link"> 关于 </a>
-            </div>
-            <a
-              href="https://github.com/ChaselLHL/myBlog"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="repo-link"
-            >
-              GitHub
-              <span
-                ><svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  aria-hidden="true"
-                  focusable="false"
-                  x="0px"
-                  y="0px"
-                  viewBox="0 0 100 100"
-                  width="15"
-                  height="15"
-                  class="icon outbound"
-                >
-                  <path
-                    fill="currentColor"
-                    d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"
-                  ></path>
-                  <polygon
-                    fill="currentColor"
-                    points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"
-                  ></polygon>
-                </svg>
-                <span class="sr-only">(opens new window)</span></span
-              ></a
-            >
-          </nav>
-          <ul class="sidebar-links">
-            <li>
-              <a href="/myBlog/web/es6/es7_decorator.html" class="sidebar-link"
-                >es7之修饰器</a
-              >
-            </li>
-            <li>
-              <a href="/myBlog/web/es6/ArrayBuffer.html" class="sidebar-link"
-                >es6之ArrayBuffer</a
-              >
-            </li>
-            <li>
-              <a href="/myBlog/web/es6/ts_config.html" class="sidebar-link"
-                >让你的项目使用Ts吧</a
-              >
-            </li>
-            <li>
-              <a
-                href="/myBlog/web/es6/front_end_modul.html"
-                aria-current="page"
-                class="active sidebar-link"
-                >前端模块化</a
-              >
-              <ul class="sidebar-sub-headers">
-                <li class="sidebar-sub-header">
-                  <a
-                    href="/myBlog/web/es6/front_end_modul.html#背景"
-                    class="sidebar-link"
-                    >背景</a
-                  >
-                </li>
-                <li class="sidebar-sub-header">
-                  <a
-                    href="/myBlog/web/es6/front_end_modul.html#commonjs"
-                    class="sidebar-link"
-                    >CommonJS</a
-                  >
-                </li>
-                <li class="sidebar-sub-header">
-                  <a
-                    href="/myBlog/web/es6/front_end_modul.html#amd"
-                    class="sidebar-link"
-                    >AMD</a
-                  >
-                </li>
-                <li class="sidebar-sub-header">
-                  <a
-                    href="/myBlog/web/es6/front_end_modul.html#esm"
-                    class="sidebar-link"
-                    >ESM</a
-                  >
-                </li>
-                <li class="sidebar-sub-header">
-                  <a
-                    href="/myBlog/web/es6/front_end_modul.html#esm-规范"
-                    class="sidebar-link"
-                    >ESM 规范</a
-                  >
-                  <ul class="sidebar-sub-headers">
-                    <li class="sidebar-sub-header">
-                      <a
-                        href="/myBlog/web/es6/front_end_modul.html#模块导出"
-                        class="sidebar-link"
-                        >模块导出</a
-                      >
-                    </li>
-                    <li class="sidebar-sub-header">
-                      <a
-                        href="/myBlog/web/es6/front_end_modul.html#模块导入"
-                        class="sidebar-link"
-                        >模块导入</a
-                      >
-                    </li>
-                    <li class="sidebar-sub-header">
-                      <a
-                        href="/myBlog/web/es6/front_end_modul.html#导入同时进行导出"
-                        class="sidebar-link"
-                        >导入同时进行导出</a
-                      >
-                    </li>
-                  </ul>
-                </li>
-                <li class="sidebar-sub-header">
-                  <a
-                    href="/myBlog/web/es6/front_end_modul.html#esm-与-commonjs-的差异"
-                    class="sidebar-link"
-                    >ESM 与 CommonJS 的差异</a
-                  >
-                  <ul class="sidebar-sub-headers">
-                    <li class="sidebar-sub-header">
-                      <a
-                        href="/myBlog/web/es6/front_end_modul.html#服务端"
-                        class="sidebar-link"
-                        >服务端</a
-                      >
-                    </li>
-                  </ul>
-                </li>
-              </ul>
-            </li>
-          </ul>
-        </aside>
-        <main class="page">
-          <div class="theme-default-content content__default">
-            <h2 id="背景"><a href="#背景" class="header-anchor">#</a> 背景</h2>
-            <p>
-              众所周知，早期 JavaScript 原生并不支持模块化，直到 2015 年，TC39
-              发布 ES6，其中有一个规范就是 ES
-              modules（为了方便表述，后面统一简称 ESM）。但是在 ES6
-              规范提出前，就已经存在了一些模块化方案，比如 CommonJS（in
-              Node.js）、AMD。ESM
-              与这些规范的共同点就是都支持导入（import）和导出（export）语法，只是其行为的关键词也一些差异
-            </p>
-            <h2 id="commonjs">
-              <a href="#commonjs" class="header-anchor">#</a> CommonJS
-            </h2>
-            <div class="language-js extra-class">
-              <div class="highlight-lines">
-                <div class="highlighted"> </div>
-                <br /><br /><br /><br /><br /><br /><br /><br />
-              </div>
-              <pre
-                class="language-js"
-              ><code><span class="token comment">//add.js</span>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/myBlog/" class="home-link router-link-active"><!----> <span class="site-name">myBlog</span></a> <div class="links"><form id="search-form" role="search" class="algolia-search-wrapper search-box"><input id="algolia-search-input" class="search-query"></form> <nav class="nav-links can-hide"><div class="nav-item"><a href="/myBlog/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="导航栏配置" class="dropdown-title"><span class="title">导航栏配置</span> <span class="arrow down"></span></button> <button type="button" aria-label="导航栏配置" class="mobile-dropdown-title"><span class="title">导航栏配置</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/myBlog/guide/vue/" class="nav-link">
+  自动读取
+</a></li><li class="dropdown-item"><!----> <a href="/myBlog/guide/ts/" class="nav-link">
+  自定义
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="错误总结" class="dropdown-title"><span class="title">错误总结</span> <span class="arrow down"></span></button> <button type="button" aria-label="错误总结" class="mobile-dropdown-title"><span class="title">错误总结</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/myBlog/error/" class="nav-link">
+  github
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端" class="dropdown-title"><span class="title">前端</span> <span class="arrow down"></span></button> <button type="button" aria-label="前端" class="mobile-dropdown-title"><span class="title">前端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/myBlog/web/es6/" class="nav-link router-link-active">
+  es6
+</a></li><li class="dropdown-item"><!----> <a href="/myBlog/web/vue/" class="nav-link">
+  vue
+</a></li><li class="dropdown-item"><!----> <a href="/myBlog/web/H5/" class="nav-link">
+  H5
+</a></li><li class="dropdown-item"><!----> <a href="/myBlog/web/React/" class="nav-link">
+  React
+</a></li><li class="dropdown-item"><!----> <a href="/myBlog/web/ts/" class="nav-link">
+  ts
+</a></li><li class="dropdown-item"><!----> <a href="/myBlog/web/advanced/" class="nav-link">
+  进阶系列
+</a></li><li class="dropdown-item"><!----> <a href="/myBlog/web/interview/" class="nav-link">
+  面试题
+</a></li></ul></div></div><div class="nav-item"><a href="/myBlog/node/" class="nav-link">
+  nodejs
+</a></div><div class="nav-item"><a href="/myBlog/mysql/" class="nav-link">
+  mysql
+</a></div><div class="nav-item"><a href="/myBlog/java/" class="nav-link">
+  java
+</a></div><div class="nav-item"><a href="/myBlog/timeLine/" class="nav-link">
+  时间线
+</a></div><div class="nav-item"><a href="/myBlog/friendLink/" class="nav-link">
+  友链
+</a></div><div class="nav-item"><a href="/myBlog/nested/" class="nav-link">
+  关于
+</a></div> <a href="https://github.com/ChaselLHL/myBlog" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/myBlog/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="导航栏配置" class="dropdown-title"><span class="title">导航栏配置</span> <span class="arrow down"></span></button> <button type="button" aria-label="导航栏配置" class="mobile-dropdown-title"><span class="title">导航栏配置</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/myBlog/guide/vue/" class="nav-link">
+  自动读取
+</a></li><li class="dropdown-item"><!----> <a href="/myBlog/guide/ts/" class="nav-link">
+  自定义
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="错误总结" class="dropdown-title"><span class="title">错误总结</span> <span class="arrow down"></span></button> <button type="button" aria-label="错误总结" class="mobile-dropdown-title"><span class="title">错误总结</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/myBlog/error/" class="nav-link">
+  github
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端" class="dropdown-title"><span class="title">前端</span> <span class="arrow down"></span></button> <button type="button" aria-label="前端" class="mobile-dropdown-title"><span class="title">前端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/myBlog/web/es6/" class="nav-link router-link-active">
+  es6
+</a></li><li class="dropdown-item"><!----> <a href="/myBlog/web/vue/" class="nav-link">
+  vue
+</a></li><li class="dropdown-item"><!----> <a href="/myBlog/web/H5/" class="nav-link">
+  H5
+</a></li><li class="dropdown-item"><!----> <a href="/myBlog/web/React/" class="nav-link">
+  React
+</a></li><li class="dropdown-item"><!----> <a href="/myBlog/web/ts/" class="nav-link">
+  ts
+</a></li><li class="dropdown-item"><!----> <a href="/myBlog/web/advanced/" class="nav-link">
+  进阶系列
+</a></li><li class="dropdown-item"><!----> <a href="/myBlog/web/interview/" class="nav-link">
+  面试题
+</a></li></ul></div></div><div class="nav-item"><a href="/myBlog/node/" class="nav-link">
+  nodejs
+</a></div><div class="nav-item"><a href="/myBlog/mysql/" class="nav-link">
+  mysql
+</a></div><div class="nav-item"><a href="/myBlog/java/" class="nav-link">
+  java
+</a></div><div class="nav-item"><a href="/myBlog/timeLine/" class="nav-link">
+  时间线
+</a></div><div class="nav-item"><a href="/myBlog/friendLink/" class="nav-link">
+  友链
+</a></div><div class="nav-item"><a href="/myBlog/nested/" class="nav-link">
+  关于
+</a></div> <a href="https://github.com/ChaselLHL/myBlog" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav>  <ul class="sidebar-links"><li><a href="/myBlog/web/es6/es7_decorator.html" class="sidebar-link">es7之修饰器</a></li><li><a href="/myBlog/web/es6/ArrayBuffer.html" class="sidebar-link">es6之ArrayBuffer</a></li><li><a href="/myBlog/web/es6/ts_config.html" class="sidebar-link">让你的项目使用Ts吧</a></li><li><a href="/myBlog/web/es6/front_end_modul.html" aria-current="page" class="active sidebar-link">前端模块化</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/myBlog/web/es6/front_end_modul.html#背景" class="sidebar-link">背景</a></li><li class="sidebar-sub-header"><a href="/myBlog/web/es6/front_end_modul.html#commonjs" class="sidebar-link">CommonJS</a></li><li class="sidebar-sub-header"><a href="/myBlog/web/es6/front_end_modul.html#amd" class="sidebar-link">AMD</a></li><li class="sidebar-sub-header"><a href="/myBlog/web/es6/front_end_modul.html#esm" class="sidebar-link">ESM</a></li><li class="sidebar-sub-header"><a href="/myBlog/web/es6/front_end_modul.html#esm-规范" class="sidebar-link">ESM 规范</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/myBlog/web/es6/front_end_modul.html#模块导出" class="sidebar-link">模块导出</a></li><li class="sidebar-sub-header"><a href="/myBlog/web/es6/front_end_modul.html#模块导入" class="sidebar-link">模块导入</a></li><li class="sidebar-sub-header"><a href="/myBlog/web/es6/front_end_modul.html#导入同时进行导出" class="sidebar-link">导入同时进行导出</a></li></ul></li><li class="sidebar-sub-header"><a href="/myBlog/web/es6/front_end_modul.html#esm-与-commonjs-的差异" class="sidebar-link">ESM 与 CommonJS 的差异</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/myBlog/web/es6/front_end_modul.html#服务端" class="sidebar-link">服务端</a></li></ul></li></ul></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h2 id="背景"><a href="#背景" class="header-anchor">#</a> 背景</h2> <p>众所周知，早期 JavaScript 原生并不支持模块化，直到 2015 年，TC39 发布 ES6，其中有一个规范就是 ES modules（为了方便表述，后面统一简称 ESM）。但是在 ES6 规范提出前，就已经存在了一些模块化方案，比如 CommonJS（in Node.js）、AMD。ESM 与这些规范的共同点就是都支持导入（import）和导出（export）语法，只是其行为的关键词也一些差异</p> <h2 id="commonjs"><a href="#commonjs" class="header-anchor">#</a> CommonJS</h2> <div class="language-js extra-class"><div class="highlight-lines"><div class="highlighted"> </div><br><br><br><br><br><br><br><br></div><pre class="language-js"><code><span class="token comment">//add.js</span>
 <span class="token keyword">const</span> <span class="token function-variable function">add</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token parameter">a<span class="token punctuation">,</span>b</span><span class="token punctuation">)</span><span class="token operator">=&gt;</span>a<span class="token operator">+</span>b<span class="token punctuation">;</span>
 module<span class="token punctuation">.</span>exports <span class="token operator">=</span> add<span class="token punctuation">;</span>
 <span class="token comment">//index.js</span>
@@ -564,17 +93,7 @@ module<span class="token punctuation">.</span>exports <span class="token operato
 
 <span class="token function">add</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">)</span>
 
-</code></pre>
-            </div>
-            <h2 id="amd"><a href="#amd" class="header-anchor">#</a> AMD</h2>
-            <div class="language-js extra-class">
-              <div class="highlight-lines">
-                <div class="highlighted"> </div>
-                <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-              </div>
-              <pre
-                class="language-js"
-              ><code><span class="token comment">//add.js</span>
+</code></pre></div><h2 id="amd"><a href="#amd" class="header-anchor">#</a> AMD</h2> <div class="language-js extra-class"><div class="highlight-lines"><div class="highlighted"> </div><br><br><br><br><br><br><br><br><br><br><br></div><pre class="language-js"><code><span class="token comment">//add.js</span>
 <span class="token function">define</span><span class="token punctuation">(</span><span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
     <span class="token keyword">const</span> <span class="token function-variable function">add</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token parameter">a<span class="token punctuation">,</span>b</span><span class="token punctuation">)</span><span class="token operator">=&gt;</span> a <span class="token operator">+</span> b<span class="token punctuation">;</span>
     <span class="token keyword">return</span> add <span class="token punctuation">;</span>
@@ -585,17 +104,7 @@ module<span class="token punctuation">.</span>exports <span class="token operato
     <span class="token function">add</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">5</span><span class="token punctuation">)</span>
 <span class="token punctuation">}</span><span class="token punctuation">)</span>
 
-</code></pre>
-            </div>
-            <h2 id="esm"><a href="#esm" class="header-anchor">#</a> ESM</h2>
-            <div class="language-js extra-class">
-              <div class="highlight-lines">
-                <div class="highlighted"> </div>
-                <br /><br /><br /><br /><br /><br /><br /><br />
-              </div>
-              <pre
-                class="language-js"
-              ><code><span class="token comment">//add.js</span>
+</code></pre></div><h2 id="esm"><a href="#esm" class="header-anchor">#</a> ESM</h2> <div class="language-js extra-class"><div class="highlight-lines"><div class="highlighted"> </div><br><br><br><br><br><br><br><br></div><pre class="language-js"><code><span class="token comment">//add.js</span>
 <span class="token keyword">const</span> <span class="token function-variable function">add</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token parameter">a<span class="token punctuation">,</span>b</span><span class="token punctuation">)</span><span class="token operator">=&gt;</span>a<span class="token operator">+</span>b
 <span class="token keyword">export</span> defaul add
 
@@ -603,45 +112,8 @@ module<span class="token punctuation">.</span>exports <span class="token operato
 <span class="token keyword">import</span> add <span class="token keyword">from</span> <span class="token string">'./add'</span>
 <span class="token function">add</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">6</span><span class="token punctuation">)</span>
 
-</code></pre>
-            </div>
-            <p>
-              ESM 的出现不同于其他的规范，因为这是 JavaScript
-              官方推出的模块化方案，相比于 CommonJS 和 AMD 方案，ESM
-              采用了完全静态化的方式进行模块的加载.
-            </p>
-            <h2 id="esm-规范">
-              <a href="#esm-规范" class="header-anchor">#</a> ESM 规范
-            </h2>
-            <h3 id="模块导出">
-              <a href="#模块导出" class="header-anchor">#</a> 模块导出
-            </h3>
-            <p>
-              模块导出只有一个关键字：export,最简单的方法在变量前面添加 export
-              关键字。
-            </p>
-            <div class="language-js extra-class">
-              <div class="highlight-lines">
-                <div class="highlighted"> </div>
-                <br />
-              </div>
-              <pre
-                class="language-js"
-              ><code><span class="token keyword">export</span> <span class="token keyword">const</span> name <span class="token operator">=</span><span class="token string">'你的名字'</span>
-</code></pre>
-            </div>
-            <p>
-              可以在 let ,const ,var 前直接加上 export，也可以是 function，class
-              前面加上 export
-            </p>
-            <div class="language-js extra-class">
-              <div class="highlight-lines">
-                <div class="highlighted"> </div>
-                <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-              </div>
-              <pre
-                class="language-js"
-              ><code><span class="token keyword">export</span> <span class="token keyword">function</span> <span class="token function">getName</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+</code></pre></div><p>ESM 的出现不同于其他的规范，因为这是 JavaScript 官方推出的模块化方案，相比于 CommonJS 和 AMD 方案，ESM 采用了完全静态化的方式进行模块的加载.</p> <h2 id="esm-规范"><a href="#esm-规范" class="header-anchor">#</a> ESM 规范</h2> <h3 id="模块导出"><a href="#模块导出" class="header-anchor">#</a> 模块导出</h3> <p>模块导出只有一个关键字：export,最简单的方法在变量前面添加 export 关键字。</p> <div class="language-js extra-class"><div class="highlight-lines"><div class="highlighted"> </div><br></div><pre class="language-js"><code><span class="token keyword">export</span> <span class="token keyword">const</span> name <span class="token operator">=</span><span class="token string">'你的名字'</span>
+</code></pre></div><p>可以在 let ,const ,var 前直接加上 export，也可以是 function，class 前面加上 export</p> <div class="language-js extra-class"><div class="highlight-lines"><div class="highlighted"> </div><br><br><br><br><br><br><br><br><br><br></div><pre class="language-js"><code><span class="token keyword">export</span> <span class="token keyword">function</span> <span class="token function">getName</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
     <span class="token keyword">return</span> name
 <span class="token punctuation">}</span>
 
@@ -651,17 +123,7 @@ module<span class="token punctuation">.</span>exports <span class="token operato
     <span class="token punctuation">}</span>
 <span class="token punctuation">}</span>
 
-</code></pre>
-            </div>
-            <p>上面的导出方法也可以使用大括号的方式进行简写</p>
-            <div class="language-js extra-class">
-              <div class="highlight-lines">
-                <div class="highlighted"> </div>
-                <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-              </div>
-              <pre
-                class="language-js"
-              ><code><span class="token keyword">const</span> name <span class="token operator">=</span> <span class="token string">'string'</span>
+</code></pre></div><p>上面的导出方法也可以使用大括号的方式进行简写</p> <div class="language-js extra-class"><div class="highlight-lines"><div class="highlighted"> </div><br><br><br><br><br><br><br><br><br><br><br><br><br><br></div><pre class="language-js"><code><span class="token keyword">const</span> name <span class="token operator">=</span> <span class="token string">'string'</span>
 
 funciton <span class="token function">getName</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
     <span class="token keyword">return</span> name
@@ -675,54 +137,17 @@ funciton <span class="token function">getName</span><span class="token punctuati
 
 <span class="token keyword">export</span> <span class="token punctuation">{</span>name<span class="token punctuation">,</span>getName<span class="token punctuation">,</span>Logger<span class="token punctuation">}</span>
 
-</code></pre>
-            </div>
-            <p>最后一种语法，也是我们经常使用的，导出默认模块。</p>
-            <div class="language-js extra-class">
-              <div class="highlight-lines">
-                <div class="highlighted"> </div>
-                <br /><br /><br />
-              </div>
-              <pre
-                class="language-js"
-              ><code><span class="token keyword">const</span> name <span class="token operator">=</span> <span class="token string">'string'</span>
+</code></pre></div><p>最后一种语法，也是我们经常使用的，导出默认模块。</p> <div class="language-js extra-class"><div class="highlight-lines"><div class="highlighted"> </div><br><br><br></div><pre class="language-js"><code><span class="token keyword">const</span> name <span class="token operator">=</span> <span class="token string">'string'</span>
 <span class="token keyword">export</span> <span class="token keyword">default</span> name
 
-</code></pre>
-            </div>
-            <h3 id="模块导入">
-              <a href="#模块导入" class="header-anchor">#</a> 模块导入
-            </h3>
-            <p>模块的导入使用import，并配合 from 关键词。</p>
-            <div class="language-js extra-class">
-              <div class="highlight-lines">
-                <div class="highlighted"> </div>
-                <br /><br /><br /><br /><br /><br /><br />
-              </div>
-              <pre
-                class="language-js"
-              ><code><span class="token comment">//main.js</span>
+</code></pre></div><h3 id="模块导入"><a href="#模块导入" class="header-anchor">#</a> 模块导入</h3> <p>模块的导入使用import，并配合 from 关键词。</p> <div class="language-js extra-class"><div class="highlight-lines"><div class="highlighted"> </div><br><br><br><br><br><br><br></div><pre class="language-js"><code><span class="token comment">//main.js</span>
 <span class="token keyword">import</span> name <span class="token keyword">from</span> <span class="token string">'./module.js'</span>
 
 <span class="token comment">//module.js</span>
 <span class="token keyword">const</span> name <span class="token operator">=</span> <span class="token string">'string'</span>
 <span class="token keyword">export</span> <span class="token keyword">default</span> name
 
-</code></pre>
-            </div>
-            <p>
-              这样直接导入的方式，module.js 中必须使用 export default，也就是说
-              import
-              语法，默认导入的是default模块。如果想要导入其他模块，就必须使用对象展开的语法。
-            </p>
-            <div class="language-js extra-class">
-              <div class="highlight-lines">
-                <div class="highlighted"> </div>
-                <br /><br /><br /><br /><br /><br /><br /><br />
-              </div>
-              <pre
-                class="language-js"
-              ><code><span class="token comment">//main.js</span>
+</code></pre></div><p>这样直接导入的方式，module.js 中必须使用 export default，也就是说 import 语法，默认导入的是default模块。如果想要导入其他模块，就必须使用对象展开的语法。</p> <div class="language-js extra-class"><div class="highlight-lines"><div class="highlighted"> </div><br><br><br><br><br><br><br><br></div><pre class="language-js"><code><span class="token comment">//main.js</span>
 <span class="token keyword">import</span> age<span class="token punctuation">,</span> <span class="token punctuation">{</span> name <span class="token punctuation">,</span>getName <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'./module.js'</span>
 
 <span class="token comment">//module.js</span>
@@ -730,19 +155,7 @@ funciton <span class="token function">getName</span><span class="token punctuati
 <span class="token keyword">export</span> <span class="token keyword">const</span> name <span class="token operator">=</span> <span class="token string">'Shenfq'</span>
 <span class="token keyword">export</span> <span class="token keyword">const</span> <span class="token function-variable function">getName</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> name
 
-</code></pre>
-            </div>
-            <p>
-              如果模块文件同时导出了默认模块，和其他模块，在导入时，也可以同时将两者导入。
-            </p>
-            <div class="language-js extra-class">
-              <div class="highlight-lines">
-                <div class="highlighted"> </div>
-                <br /><br /><br /><br /><br /><br /><br /><br />
-              </div>
-              <pre
-                class="language-js"
-              ><code><span class="token comment">// main.js</span>
+</code></pre></div><p>如果模块文件同时导出了默认模块，和其他模块，在导入时，也可以同时将两者导入。</p> <div class="language-js extra-class"><div class="highlight-lines"><div class="highlighted"> </div><br><br><br><br><br><br><br><br></div><pre class="language-js"><code><span class="token comment">// main.js</span>
 <span class="token keyword">import</span> name<span class="token punctuation">,</span> <span class="token punctuation">{</span> getName <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'./module.js'</span>
 
 <span class="token comment">//module.js</span>
@@ -750,17 +163,7 @@ funciton <span class="token function">getName</span><span class="token punctuati
 <span class="token keyword">export</span> <span class="token keyword">const</span> <span class="token function-variable function">getName</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> name
 <span class="token keyword">export</span> <span class="token keyword">default</span> name
 
-</code></pre>
-            </div>
-            <p>当然，ESM 也提供了重命名的语法，将导入的模块进行重新命名。</p>
-            <div class="language-js extra-class">
-              <div class="highlight-lines">
-                <div class="highlighted"> </div>
-                <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-              </div>
-              <pre
-                class="language-js"
-              ><code><span class="token comment">//main.js</span>
+</code></pre></div><p>当然，ESM 也提供了重命名的语法，将导入的模块进行重新命名。</p> <div class="language-js extra-class"><div class="highlight-lines"><div class="highlighted"> </div><br><br><br><br><br><br><br><br><br><br></div><pre class="language-js"><code><span class="token comment">//main.js</span>
 <span class="token keyword">import</span> <span class="token operator">*</span> <span class="token keyword">as</span> mod <span class="token keyword">from</span>  <span class="token string">'./module.js'</span>
 <span class="token keyword">let</span> name <span class="token operator">=</span> <span class="token string">''</span>
 name <span class="token operator">=</span> mod<span class="token punctuation">.</span>name
@@ -770,97 +173,17 @@ name <span class="token operator">=</span> mod<span class="token punctuation">.<
 
 <span class="token keyword">export</span> <span class="token keyword">const</span> name <span class="token operator">=</span> <span class="token string">'Shenfq'</span>
 <span class="token keyword">export</span> <span class="token keyword">const</span> <span class="token function-variable function">getName</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> name
-</code></pre>
-            </div>
-            <p>上述写法就相当于于将模块导出的对象进行重新赋值：</p>
-            <div class="language-js extra-class">
-              <div class="highlight-lines">
-                <div class="highlighted"> </div>
-                <br /><br /><br /><br />
-              </div>
-              <pre
-                class="language-js"
-              ><code><span class="token comment">// main.js</span>
+</code></pre></div><p>上述写法就相当于于将模块导出的对象进行重新赋值：</p> <div class="language-js extra-class"><div class="highlight-lines"><div class="highlighted"> </div><br><br><br><br></div><pre class="language-js"><code><span class="token comment">// main.js</span>
 
 <span class="token keyword">import</span> <span class="token punctuation">{</span> name<span class="token punctuation">,</span> getName <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'./module.js'</span>
 <span class="token keyword">const</span> mod <span class="token operator">=</span> <span class="token punctuation">{</span> name<span class="token punctuation">,</span> getName <span class="token punctuation">}</span>
-</code></pre>
-            </div>
-            <p>同时也可以对单独的变量进行重命名：</p>
-            <div class="language-js extra-class">
-              <div class="highlight-lines">
-                <div class="highlighted"> </div>
-                <br /><br />
-              </div>
-              <pre
-                class="language-js"
-              ><code><span class="token operator">/</span> main<span class="token punctuation">.</span>js
+</code></pre></div><p>同时也可以对单独的变量进行重命名：</p> <div class="language-js extra-class"><div class="highlight-lines"><div class="highlighted"> </div><br><br></div><pre class="language-js"><code><span class="token operator">/</span> main<span class="token punctuation">.</span>js
 <span class="token keyword">import</span> <span class="token punctuation">{</span> name<span class="token punctuation">,</span> getName <span class="token keyword">as</span> getModName <span class="token punctuation">}</span>
-</code></pre>
-            </div>
-            <h3 id="导入同时进行导出">
-              <a href="#导入同时进行导出" class="header-anchor">#</a>
-              导入同时进行导出
-            </h3>
-            <p>
-              如果有两个模块 a 和 b ，同时引入了模块
-              c，但是这两个模块还需要导入模块 d，如果模块 a、b 在导入 c
-              之后，再导入 d 也是可以的，但是有些繁琐，我们可以直接在模块 c
-              里面导入模块 d，再把模块 d 暴露出去。
-            </p>
-            <div class="language-js extra-class">
-              <div class="highlight-lines">
-                <div class="highlighted"> </div>
-                <br /><br /><br />
-              </div>
-              <pre
-                class="language-js"
-              ><code><span class="token comment">// module_c.js</span>
+</code></pre></div><h3 id="导入同时进行导出"><a href="#导入同时进行导出" class="header-anchor">#</a> 导入同时进行导出</h3> <p>如果有两个模块 a 和 b ，同时引入了模块 c，但是这两个模块还需要导入模块 d，如果模块 a、b 在导入 c 之后，再导入 d 也是可以的，但是有些繁琐，我们可以直接在模块 c 里面导入模块 d，再把模块 d 暴露出去。</p> <div class="language-js extra-class"><div class="highlight-lines"><div class="highlighted"> </div><br><br><br></div><pre class="language-js"><code><span class="token comment">// module_c.js</span>
 <span class="token keyword">import</span> <span class="token punctuation">{</span> name<span class="token punctuation">,</span> getName <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'./module_d.js'</span>
 <span class="token keyword">export</span> <span class="token punctuation">{</span> name<span class="token punctuation">,</span> getName <span class="token punctuation">}</span>
-</code></pre>
-            </div>
-            <p>
-              这么写看起来还是有些麻烦，这里 ESM 提供了一种将 import 和 export
-              进行结合的语法。
-            </p>
-            <div class="language-js extra-class">
-              <div class="highlight-lines">
-                <div class="highlighted"> </div>
-                <br />
-              </div>
-              <pre
-                class="language-js"
-              ><code><span class="token keyword">export</span> <span class="token punctuation">{</span> name<span class="token punctuation">,</span> getName <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'./module_d.js'</span>
-</code></pre>
-            </div>
-            <p>
-              上面是 ESM 规范的一些基本语法，如果想了解更多，可以翻阅阮老师的
-              《ES6 入门》。
-            </p>
-            <h2 id="esm-与-commonjs-的差异">
-              <a href="#esm-与-commonjs-的差异" class="header-anchor">#</a> ESM
-              与 CommonJS 的差异
-            </h2>
-            <p>
-              首先是语法上差异，esm导入导出import,export语法, cmd
-              导入导出reqire(),module.exprots 语法。
-            </p>
-            <p>
-              另一个 ESM 与 CommonJS 显著的差异在于，ESM
-              导入模块的变量都是强绑定，导出模块的变量一旦发生变化，对应导入模块的变量也会跟随变化，而
-              CommonJS
-              中导入的模块都是值传递与引用传递，类似于函数传参（基本类型进行值传递，相当于拷贝变量，非基础类型【对象、数组】，进行引用传递）。
-            </p>
-            <p>下面我们看下详细的案例：<strong>CommonJS</strong></p>
-            <div class="language-js extra-class">
-              <div class="highlight-lines">
-                <div class="highlighted"> </div>
-                <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-              </div>
-              <pre
-                class="language-js"
-              ><code><span class="token comment">//a.js</span>
+</code></pre></div><p>这么写看起来还是有些麻烦，这里 ESM 提供了一种将 import 和 export 进行结合的语法。</p> <div class="language-js extra-class"><div class="highlight-lines"><div class="highlighted"> </div><br></div><pre class="language-js"><code><span class="token keyword">export</span> <span class="token punctuation">{</span> name<span class="token punctuation">,</span> getName <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'./module_d.js'</span>
+</code></pre></div><p>上面是 ESM 规范的一些基本语法，如果想了解更多，可以翻阅阮老师的 《ES6 入门》。</p> <h2 id="esm-与-commonjs-的差异"><a href="#esm-与-commonjs-的差异" class="header-anchor">#</a> ESM 与 CommonJS 的差异</h2> <p>首先是语法上差异，esm导入导出import,export语法, cmd 导入导出reqire(),module.exprots 语法。</p> <p>另一个 ESM 与 CommonJS 显著的差异在于，ESM 导入模块的变量都是强绑定，导出模块的变量一旦发生变化，对应导入模块的变量也会跟随变化，而 CommonJS 中导入的模块都是值传递与引用传递，类似于函数传参（基本类型进行值传递，相当于拷贝变量，非基础类型【对象、数组】，进行引用传递）。</p> <p>下面我们看下详细的案例：<strong>CommonJS</strong></p> <div class="language-js extra-class"><div class="highlight-lines"><div class="highlighted"> </div><br><br><br><br><br><br><br><br><br><br><br><br><br></div><pre class="language-js"><code><span class="token comment">//a.js</span>
 <span class="token keyword">const</span> mod <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span>'<span class="token punctuation">.</span><span class="token operator">/</span>b<span class="token punctuation">)</span>
 <span class="token function">setTime</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">=&gt;</span><span class="token punctuation">{</span>
     console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>mod<span class="token punctuation">)</span>
@@ -873,23 +196,9 @@ name <span class="token operator">=</span> mod<span class="token punctuation">.<
 <span class="token punctuation">}</span><span class="token punctuation">)</span>
 
 module<span class="token punctuation">.</span>exports <span class="token operator">=</span> mod
-</code></pre>
-            </div>
-            <p>输出结果：</p>
-            <div class="language- extra-class">
-              <pre class="language-text"><code>$ node a.js
+</code></pre></div><p>输出结果：</p> <div class="language- extra-class"><pre class="language-text"><code>$ node a.js
 first value
-</code></pre>
-            </div>
-            <p><strong>ESM</strong></p>
-            <div class="language-js extra-class">
-              <div class="highlight-lines">
-                <div class="highlighted"> </div>
-                <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-              </div>
-              <pre
-                class="language-js"
-              ><code><span class="token comment">//a.mjs</span>
+</code></pre></div><p><strong>ESM</strong></p> <div class="language-js extra-class"><div class="highlight-lines"><div class="highlighted"> </div><br><br><br><br><br><br><br><br><br><br><br><br><br></div><pre class="language-js"><code><span class="token comment">//a.mjs</span>
 <span class="token keyword">import</span> mod <span class="token keyword">from</span> <span class="token string">'./a.mjs'</span><span class="token punctuation">;</span>
 <span class="token function">setTime</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">=&gt;</span><span class="token punctuation">{</span>
     console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>mod<span class="token punctuation">)</span>
@@ -902,260 +211,35 @@ first value
     mod <span class="token operator">=</span> <span class="token string">'second value'</span>
 <span class="token punctuation">}</span><span class="token punctuation">,</span><span class="token number">500</span><span class="token punctuation">)</span>
 
-</code></pre>
-            </div>
-            <p>输出结果：</p>
-            <div class="language- extra-class">
-              <pre class="language-text"><code>node --experimental-modules a.mjs
+</code></pre></div><p>输出结果：</p> <div class="language- extra-class"><pre class="language-text"><code>node --experimental-modules a.mjs
 # (node:99615) ExperimentalWarning: The ESM module loader is experimental.
 second value
-</code></pre>
-            </div>
-            <p>
-              另外，CommonJS
-              的模块实现，实际是给每个模块文件做了一层函数包裹，从而使得每个模块获取
-              require/module、__filename/__dirname 变量。那上面的 a.js
-              来举例，实际执行过程中 a.js 运行代码如下：
-            </p>
-            <div class="language-js extra-class">
-              <div class="highlight-lines">
-                <div class="highlighted"> </div>
-                <br /><br /><br /><br /><br /><br /><br />
-              </div>
-              <pre
-                class="language-js"
-              ><code><span class="token comment">// a.js</span>
+</code></pre></div><p>另外，CommonJS 的模块实现，实际是给每个模块文件做了一层函数包裹，从而使得每个模块获取 require/module、__filename/__dirname 变量。那上面的 a.js 来举例，实际执行过程中 a.js 运行代码如下：</p> <div class="language-js extra-class"><div class="highlight-lines"><div class="highlighted"> </div><br><br><br><br><br><br><br></div><pre class="language-js"><code><span class="token comment">// a.js</span>
 <span class="token punctuation">(</span><span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">exports<span class="token punctuation">,</span> require<span class="token punctuation">,</span> module<span class="token punctuation">,</span> __filename<span class="token punctuation">,</span> __dirname</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
  <span class="token keyword">const</span> mod <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'./b'</span><span class="token punctuation">)</span>
   <span class="token function">setTimeout</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
     console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>mod<span class="token punctuation">)</span>
   <span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token number">1000</span><span class="token punctuation">)</span>
 <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-</code></pre>
-            </div>
-            <p>
-              而 ESM 的模块是通过 import/export
-              关键词来实现，没有对应的函数包裹，所以在 ESM 模块中，需要使用
-              import.meta 变量来获取 __filename/__dirname。import.meta 是
-              ECMAScript 实现的一个包含模块元数据的特定对象，主要用于存放模块的
-              url，而 node 中只支持加载本地模块，所以 url 都是使用 file: 协议。
-            </p>
-            <div class="language- extra-class">
-              <pre class="language-text"><code>import url from 'url'
+</code></pre></div><p>而 ESM 的模块是通过 import/export 关键词来实现，没有对应的函数包裹，所以在 ESM 模块中，需要使用 import.meta 变量来获取 __filename/__dirname。import.meta 是 ECMAScript 实现的一个包含模块元数据的特定对象，主要用于存放模块的 url，而 node 中只支持加载本地模块，所以 url 都是使用 file: 协议。</p> <div class="language- extra-class"><pre class="language-text"><code>import url from 'url'
 import path from 'path'
 // import.meta: { url: file:///Users/dev/mjs/a.mjs }
 const __filename = url.fileURLToPath(import.meta.url)
 const __dirname = path.dirname(__filename)
-</code></pre>
-            </div>
-            <p><strong>加载的原理</strong></p>
-            <p>步骤：</p>
-            <ul>
-              <li>
-                Construction（构造）：下载所有的文件并且解析为module records。
-              </li>
-              <li>
-                Instantiation（实例）：把所有导出的变量入内存指定位置（但是暂时还不求值）。然后，让导出和导入都指向内存指定位置。这叫做『linking(链接)』。
-              </li>
-              <li>
-                Evaluation（求值）：执行代码，得到变量的值然后放到内存对应位置。
-              </li>
-            </ul>
-            <p><strong>模块记录</strong></p>
-            <p>
-              所有的模块化开发，都是从一个入口文件开始，无论是 Node.js
-              还是浏览器，都会根据这个入口文件进行检索，一步一步找到其他所有的依赖文件。
-            </p>
-            <div class="language-js extra-class">
-              <div class="highlight-lines">
-                <div class="highlighted"> </div>
-                <br /><br /><br />
-              </div>
-              <pre
-                class="language-js"
-              ><code><span class="token comment">// Node.js: main.mjs</span>
+</code></pre></div><p><strong>加载的原理</strong></p> <p>步骤：</p> <ul><li>Construction（构造）：下载所有的文件并且解析为module records。</li> <li>Instantiation（实例）：把所有导出的变量入内存指定位置（但是暂时还不求值）。然后，让导出和导入都指向内存指定位置。这叫做『linking(链接)』。</li> <li>Evaluation（求值）：执行代码，得到变量的值然后放到内存对应位置。</li></ul> <p><strong>模块记录</strong></p> <p>所有的模块化开发，都是从一个入口文件开始，无论是 Node.js 还是浏览器，都会根据这个入口文件进行检索，一步一步找到其他所有的依赖文件。</p> <div class="language-js extra-class"><div class="highlight-lines"><div class="highlighted"> </div><br><br><br></div><pre class="language-js"><code><span class="token comment">// Node.js: main.mjs</span>
 <span class="token keyword">import</span> Log <span class="token keyword">from</span> <span class="token string">'./log.mjs'</span>
 
-</code></pre>
-            </div>
-            <div class="language-js extra-class">
-              <div class="highlight-lines">
-                <div class="highlighted"> </div>
-                <br /><br />
-              </div>
-              <pre
-                class="language-js"
-              ><code><span class="token operator">&lt;</span><span class="token operator">!</span><span class="token operator">--</span> chrome、firefox <span class="token operator">--</span><span class="token operator">&gt;</span>
+</code></pre></div><div class="language-js extra-class"><div class="highlight-lines"><div class="highlighted"> </div><br><br></div><pre class="language-js"><code><span class="token operator">&lt;</span><span class="token operator">!</span><span class="token operator">--</span> chrome、firefox <span class="token operator">--</span><span class="token operator">&gt;</span>
 <span class="token operator">&lt;</span>script type<span class="token operator">=</span><span class="token string">&quot;module&quot;</span> src<span class="token operator">=</span><span class="token string">&quot;./log.js&quot;</span><span class="token operator">&gt;</span><span class="token operator">&lt;</span><span class="token operator">/</span>script<span class="token operator">&gt;</span>
-</code></pre>
-            </div>
-            <p>
-              值得注意的是，刚开始拿到入口文件，我们并不知道它依赖了哪些模块，所以必须先通过
-              js
-              引擎静态分析，得到一个模块记录，该记录包含了该文件的依赖项。所以，一开始拿到的
-              js 文件并不会执行，只是会将文件转换得到一个模块记录（module
-              records）。所有的 import 模块都在模块记录的 importEntries
-              字段中记录，更多模块记录相关的字段可以查阅tc39.es。
-            </p>
-            <p>
-              <img
-                src="/myBlog/assets/img/module_record.e50ec7fc.png"
-                alt="module_record"
-              />
-            </p>
-            <p><strong>模块构造</strong></p>
-            <p>
-              得到模块记录后，会下载所有依赖，并再次将依赖文件转换为模块记录，一直持续到没有依赖文件为止，这个过程被称为『构造』（construction）。模块构造包括如下三个步骤：
-            </p>
-            <ul>
-              <li>模块识别（解析依赖模块 url，找到真实的下载路径）；</li>
-              <li>文件下载（从指定的 url 进行下载，或从文件系统进行加载）；</li>
-              <li>转化为模块记录（module records）</li>
-            </ul>
-            <p>
-              目前为止，主流浏览器都已经支持 ESM 了，只需在 script
-              标签传入指定的 type=&quot;module&quot; 即可。
-            </p>
-            <div class="language-js extra-class">
-              <div class="highlight-lines">
-                <div class="highlighted"> </div>
-                <br />
-              </div>
-              <pre
-                class="language-js"
-              ><code><span class="token operator">&lt;</span>script type<span class="token operator">=</span><span class="token string">&quot;module&quot;</span> src<span class="token operator">=</span><span class="token string">&quot;./main.js&quot;</span><span class="token operator">&gt;</span><span class="token operator">&lt;</span><span class="token operator">/</span>script<span class="token operator">&gt;</span>
-</code></pre>
-            </div>
-            <p>
-              另外，我们知道在 Node.js 中，要使用 ESM 有时候需要用到 .mjs
-              后缀，但是浏览器并不关心文件后缀，只需要 http
-              响应头的MIME类型正确即可（Content-Type:
-              text/javascript）。同时，当 type=&quot;module&quot; 时，默认启用
-              defer 来加载脚本。这里补充一张 defer、async 差异图。
-            </p>
-            <h3 id="服务端">
-              <a href="#服务端" class="header-anchor">#</a> 服务端
-            </h3>
-            <p>
-              浏览器能够通过 script 标签指定当前脚本是否作为模块处理，但是在
-              Node.js 中没有很明确的方式来表示是否需要使用 ESM，而且 Node.js
-              中本身就已经有了 CommonJS 的标准模块化方案。就算开启了
-              ESM，又通过何种方式来判断当前入口文件导入的模块到底是使用的 ESM
-              还是 CommonJS 呢？为了解决上述问题，node 社区开始出现了 ESM
-              的相关草案，具体可以在 github 上查阅。
-            </p>
-            <p>
-              2017年发布的 Node.js 8.5.0 开启了 ESM
-              的实验性支持，在启动程序时，加上 --experimental-modules 来开启对
-              ESM 的支持，并将 .mjs 后缀的文件当做 ESM 来解析。早期的期望是在
-              Node.js 12 达到 LTS 状态正式发布，然后期望并没有实现，直到最近的
-              13.2.0 版本才正式支持 ESM，也就是取消了 --experimental-modules
-              启动参数。具体细节可以查看 Node.js 13.2.0 的官方文档。
-            </p>
-            <p>
-              关于 .mjs
-              后缀社区有两种完全不同的态度。支持的一方认为通过文件后缀区分类型是最简单也是最明确的方式，且社区早已有类似案例，例如，.jsx
-              用于 React 组件、.ts 用于 ts 文件；而支持的一方认为，.js 作为 js
-              后缀已经存在这么多年，视觉上很难接受一个 .mjs 也是 js
-              文件，而且现有的很多工具都是以 .js 后缀来识别 js 文件，如果引入了
-              .mjs 方案，就有大批量的工具需要修改来有效的适配 ESM。
-            </p>
-            <p>
-              所以除了 .mjs 后缀指定 ESM 外，还可以使用 pkg.json 文件的 type
-              属性。如果 type 属性为 module，则表示当前模块应使用 ESM
-              来解析模块，否则使用 CommonJS 解析模块。
-            </p>
-            <div class="language-js extra-class">
-              <div class="highlight-lines">
-                <div class="highlighted"> </div>
-                <br /><br /><br />
-              </div>
-              <pre
-                class="language-js"
-              ><code><span class="token punctuation">{</span>
+</code></pre></div><p>值得注意的是，刚开始拿到入口文件，我们并不知道它依赖了哪些模块，所以必须先通过 js 引擎静态分析，得到一个模块记录，该记录包含了该文件的依赖项。所以，一开始拿到的 js 文件并不会执行，只是会将文件转换得到一个模块记录（module records）。所有的 import 模块都在模块记录的 importEntries 字段中记录，更多模块记录相关的字段可以查阅tc39.es。</p> <p><img src="/myBlog/assets/img/module_record.e50ec7fc.png" alt="module_record"></p> <p><strong>模块构造</strong></p> <p>得到模块记录后，会下载所有依赖，并再次将依赖文件转换为模块记录，一直持续到没有依赖文件为止，这个过程被称为『构造』（construction）。模块构造包括如下三个步骤：</p> <ul><li>模块识别（解析依赖模块 url，找到真实的下载路径）；</li> <li>文件下载（从指定的 url 进行下载，或从文件系统进行加载）；</li> <li>转化为模块记录（module records）</li></ul> <p>目前为止，主流浏览器都已经支持 ESM 了，只需在 script 标签传入指定的 type=&quot;module&quot; 即可。</p> <div class="language-js extra-class"><div class="highlight-lines"><div class="highlighted"> </div><br></div><pre class="language-js"><code><span class="token operator">&lt;</span>script type<span class="token operator">=</span><span class="token string">&quot;module&quot;</span> src<span class="token operator">=</span><span class="token string">&quot;./main.js&quot;</span><span class="token operator">&gt;</span><span class="token operator">&lt;</span><span class="token operator">/</span>script<span class="token operator">&gt;</span>
+</code></pre></div><p>另外，我们知道在 Node.js 中，要使用 ESM 有时候需要用到 .mjs 后缀，但是浏览器并不关心文件后缀，只需要 http 响应头的MIME类型正确即可（Content-Type: text/javascript）。同时，当 type=&quot;module&quot; 时，默认启用 defer 来加载脚本。这里补充一张 defer、async 差异图。</p> <h3 id="服务端"><a href="#服务端" class="header-anchor">#</a> 服务端</h3> <p>浏览器能够通过 script 标签指定当前脚本是否作为模块处理，但是在 Node.js 中没有很明确的方式来表示是否需要使用 ESM，而且 Node.js 中本身就已经有了 CommonJS 的标准模块化方案。就算开启了 ESM，又通过何种方式来判断当前入口文件导入的模块到底是使用的 ESM 还是 CommonJS 呢？为了解决上述问题，node 社区开始出现了 ESM 的相关草案，具体可以在 github 上查阅。</p> <p>2017年发布的 Node.js 8.5.0 开启了 ESM 的实验性支持，在启动程序时，加上 --experimental-modules 来开启对 ESM 的支持，并将 .mjs 后缀的文件当做 ESM 来解析。早期的期望是在 Node.js 12 达到 LTS 状态正式发布，然后期望并没有实现，直到最近的 13.2.0 版本才正式支持 ESM，也就是取消了 --experimental-modules 启动参数。具体细节可以查看 Node.js 13.2.0 的官方文档。</p> <p>关于 .mjs 后缀社区有两种完全不同的态度。支持的一方认为通过文件后缀区分类型是最简单也是最明确的方式，且社区早已有类似案例，例如，.jsx 用于 React 组件、.ts 用于 ts 文件；而支持的一方认为，.js 作为 js 后缀已经存在这么多年，视觉上很难接受一个 .mjs 也是 js 文件，而且现有的很多工具都是以 .js 后缀来识别 js 文件，如果引入了 .mjs 方案，就有大批量的工具需要修改来有效的适配 ESM。</p> <p>所以除了 .mjs 后缀指定 ESM 外，还可以使用 pkg.json 文件的 type 属性。如果 type 属性为 module，则表示当前模块应使用 ESM 来解析模块，否则使用 CommonJS 解析模块。</p> <div class="language-js extra-class"><div class="highlight-lines"><div class="highlighted"> </div><br><br><br></div><pre class="language-js"><code><span class="token punctuation">{</span>
   <span class="token string">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;module&quot;</span> <span class="token comment">// module | commonjs(default)</span>
 <span class="token punctuation">}</span>
-</code></pre>
-            </div>
-            <p>
-              当然有些本地文件是没有 pkg.json 的，但是你又不想使用 .mjs
-              后缀，这时候只需要在命令行加上一个启动参数
-              --input-type=module。同时 input-type 也支持 commonjs
-              参数来指定使用
-              CommonJS（-—input-type=commonjs）。总结一下，Node.js
-              中，以下三种情况会启用 ESM 的模块加载方式：
-            </p>
-            <ul>
-              <li>件后缀为.mjs;</li>
-              <li>pkg.json 中 type 字段指定为 module；</li>
-              <li>启动参数添加 --input-type=module。</li>
-            </ul>
-            <p>同样，也有三种情况会启用 CommonJS 的模块加载方式：</p>
-            <ul>
-              <li>文件后缀为.cjs;</li>
-              <li>pkg.json 中 type 字段指定为 commonjs；</li>
-              <li>启动参数添加 --input-type=commonjs。</li>
-            </ul>
-            <p>
-              虽然 13.2 版本去除了 --experimental-modules
-              的启动参数，但是按照文档的说法，在 Node.js 中使用 ESM
-              依旧是实验特性。
-            </p>
-          </div>
-          <footer class="page-edit">
-            <div class="edit-link">
-              <a
-                href="https://github.com/ChaselLHL/myBlog/edit/master/docs/web/es6/front_end_modul.md"
-                target="_blank"
-                rel="noopener noreferrer"
-                >在 GitHub 上编辑此页</a
-              >
-              <span
-                ><svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  aria-hidden="true"
-                  focusable="false"
-                  x="0px"
-                  y="0px"
-                  viewBox="0 0 100 100"
-                  width="15"
-                  height="15"
-                  class="icon outbound"
-                >
-                  <path
-                    fill="currentColor"
-                    d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"
-                  ></path>
-                  <polygon
-                    fill="currentColor"
-                    points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"
-                  ></polygon>
-                </svg>
-                <span class="sr-only">(opens new window)</span></span
-              >
-            </div>
-            <div class="last-updated">
-              <span class="prefix">Last Updated:</span>
-              <span class="time">11/9/2021, 5:39:03 PM</span>
-            </div>
-          </footer>
-          <div class="page-nav">
-            <p class="inner">
-              <span class="prev">
-                ←
-                <a href="/myBlog/web/es6/ts_config.html" class="prev">
-                  让你的项目使用Ts吧
-                </a></span
-              >
-              <!---->
-            </p>
-          </div>
-        </main>
-      </div>
-      <div class="global-ui"></div>
-    </div>
-    <script src="/myBlog/assets/js/app.2a200a47.js" defer></script>
-    <script src="/myBlog/assets/js/3.1dd42633.js" defer></script>
-    <script src="/myBlog/assets/js/15.3f077aa5.js" defer></script>
+</code></pre></div><p>当然有些本地文件是没有 pkg.json 的，但是你又不想使用 .mjs 后缀，这时候只需要在命令行加上一个启动参数 --input-type=module。同时 input-type 也支持 commonjs 参数来指定使用 CommonJS（-—input-type=commonjs）。总结一下，Node.js 中，以下三种情况会启用 ESM 的模块加载方式：</p> <ul><li>件后缀为.mjs;</li> <li>pkg.json 中 type 字段指定为 module；</li> <li>启动参数添加 --input-type=module。</li></ul> <p>同样，也有三种情况会启用 CommonJS 的模块加载方式：</p> <ul><li>文件后缀为.cjs;</li> <li>pkg.json 中 type 字段指定为 commonjs；</li> <li>启动参数添加 --input-type=commonjs。</li></ul> <p>虽然 13.2 版本去除了 --experimental-modules 的启动参数，但是按照文档的说法，在 Node.js 中使用 ESM 依旧是实验特性。</p></div> <footer class="page-edit"><div class="edit-link"><a href="https://github.com/ChaselLHL/myBlog/edit/master/docs/web/es6/front_end_modul.md" target="_blank" rel="noopener noreferrer">在 GitHub 上编辑此页</a> <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></div> <div class="last-updated"><span class="prefix">Last Updated:</span> <span class="time">11/9/2021, 5:39:03 PM</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/myBlog/web/es6/ts_config.html" class="prev">
+        让你的项目使用Ts吧
+      </a></span> <!----></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/myBlog/assets/js/app.de10531d.js" defer></script><script src="/myBlog/assets/js/3.4f9ff7e4.js" defer></script><script src="/myBlog/assets/js/16.6c9455e8.js" defer></script>
   </body>
 </html>

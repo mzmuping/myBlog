@@ -83,7 +83,7 @@ module.exports = {
             '/web/interview/': [{
                 title: '',
                 collapsable: true,
-                children: ['test03']
+                children: ['cross-domain']
             }],
             '/mysql/': ['dowloadAndinstall', 'introduce', 'db_base_table', 'date_type', 'operate_sql', 'insert_update', 'indexes', 'node_engine'],
             '/guide/vue/': [

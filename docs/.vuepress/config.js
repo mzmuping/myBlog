@@ -81,7 +81,7 @@ module.exports = {
             ],
             '/web/ts/': ['install'],
             '/web/interview/': [{
-                title: '',
+                title: '跨域的解决方案',
                 collapsable: true,
                 children: ['cross-domain']
             }],

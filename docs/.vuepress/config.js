@@ -65,7 +65,11 @@ module.exports = {
                 collapsable: true,
                 children: ['vue3_intro']
             }],
-            '/node/': ['node_process'],
+            '/node/': ['node_process', {
+                title: 'redis与cache区别',
+                collapsable: true,
+                children: ['cache-redis']
+            },],
             '/web/H5/': ['svg'],
             '/web/React/': [
                 {

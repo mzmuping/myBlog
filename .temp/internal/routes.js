@@ -9,6 +9,18 @@ import GlobalLayout from "C:\\Users\\admin\\AppData\\Local\\Yarn\\Data\\global\\
 injectComponentOption(GlobalLayout, 'mixins', rootMixins)
 export const routes = [
   {
+    name: "v-4ccdc1fa",
+    path: "/error/",
+    component: GlobalLayout,
+    beforeEnter: (to, from, next) => {
+      ensureAsyncComponentsLoaded("Layout", "v-4ccdc1fa").then(next)
+    },
+  },
+  {
+    path: "/error/index.html",
+    redirect: "/error/"
+  },
+  {
     name: "v-82487002",
     path: "/",
     component: GlobalLayout,
@@ -21,16 +33,12 @@ export const routes = [
     redirect: "/"
   },
   {
-    name: "v-4ccdc1fa",
-    path: "/error/",
+    name: "v-6b0846ef",
+    path: "/error/git_error.html",
     component: GlobalLayout,
     beforeEnter: (to, from, next) => {
-      ensureAsyncComponentsLoaded("Layout", "v-4ccdc1fa").then(next)
+      ensureAsyncComponentsLoaded("Layout", "v-6b0846ef").then(next)
     },
-  },
-  {
-    path: "/error/index.html",
-    redirect: "/error/"
   },
   {
     name: "v-e66ed5dc",
@@ -57,14 +65,6 @@ export const routes = [
     redirect: "/friendLink/"
   },
   {
-    name: "v-6b0846ef",
-    path: "/error/git_error.html",
-    component: GlobalLayout,
-    beforeEnter: (to, from, next) => {
-      ensureAsyncComponentsLoaded("Layout", "v-6b0846ef").then(next)
-    },
-  },
-  {
     name: "v-651d923c",
     path: "/guide/js/test.html",
     component: GlobalLayout,
@@ -85,6 +85,14 @@ export const routes = [
     redirect: "/guide/ts/"
   },
   {
+    name: "v-b3306848",
+    path: "/guide/ts/test01.html",
+    component: GlobalLayout,
+    beforeEnter: (to, from, next) => {
+      ensureAsyncComponentsLoaded("Layout", "v-b3306848").then(next)
+    },
+  },
+  {
     name: "v-2c4cf17c",
     path: "/guide/ts/test02.html",
     component: GlobalLayout,
@@ -93,12 +101,16 @@ export const routes = [
     },
   },
   {
-    name: "v-b3306848",
-    path: "/guide/ts/test01.html",
+    name: "v-4ed5b891",
+    path: "/guide/vue/",
     component: GlobalLayout,
     beforeEnter: (to, from, next) => {
-      ensureAsyncComponentsLoaded("Layout", "v-b3306848").then(next)
+      ensureAsyncComponentsLoaded("Layout", "v-4ed5b891").then(next)
     },
+  },
+  {
+    path: "/guide/vue/index.html",
+    redirect: "/guide/vue/"
   },
   {
     name: "v-9b9bd1c8",
@@ -115,18 +127,6 @@ export const routes = [
     beforeEnter: (to, from, next) => {
       ensureAsyncComponentsLoaded("Layout", "v-64e976a0").then(next)
     },
-  },
-  {
-    name: "v-4ed5b891",
-    path: "/guide/vue/",
-    component: GlobalLayout,
-    beforeEnter: (to, from, next) => {
-      ensureAsyncComponentsLoaded("Layout", "v-4ed5b891").then(next)
-    },
-  },
-  {
-    path: "/guide/vue/index.html",
-    redirect: "/guide/vue/"
   },
   {
     name: "v-5dcd1f24",
@@ -165,6 +165,14 @@ export const routes = [
     },
   },
   {
+    name: "v-e2bde822",
+    path: "/mysql/db_base_table.html",
+    component: GlobalLayout,
+    beforeEnter: (to, from, next) => {
+      ensureAsyncComponentsLoaded("Layout", "v-e2bde822").then(next)
+    },
+  },
+  {
     name: "v-f60c83e2",
     path: "/mysql/dowloadAndinstall.html",
     component: GlobalLayout,
@@ -178,14 +186,6 @@ export const routes = [
     component: GlobalLayout,
     beforeEnter: (to, from, next) => {
       ensureAsyncComponentsLoaded("Layout", "v-33db0ae2").then(next)
-    },
-  },
-  {
-    name: "v-e2bde822",
-    path: "/mysql/db_base_table.html",
-    component: GlobalLayout,
-    beforeEnter: (to, from, next) => {
-      ensureAsyncComponentsLoaded("Layout", "v-e2bde822").then(next)
     },
   },
   {
@@ -213,14 +213,6 @@ export const routes = [
     },
   },
   {
-    name: "v-09f44a2f",
-    path: "/mysql/operate_sql.html",
-    component: GlobalLayout,
-    beforeEnter: (to, from, next) => {
-      ensureAsyncComponentsLoaded("Layout", "v-09f44a2f").then(next)
-    },
-  },
-  {
     name: "v-4964e974",
     path: "/mysql/",
     component: GlobalLayout,
@@ -233,6 +225,34 @@ export const routes = [
     redirect: "/mysql/"
   },
   {
+    name: "v-09f44a2f",
+    path: "/mysql/operate_sql.html",
+    component: GlobalLayout,
+    beforeEnter: (to, from, next) => {
+      ensureAsyncComponentsLoaded("Layout", "v-09f44a2f").then(next)
+    },
+  },
+  {
+    name: "v-1c4118c2",
+    path: "/nested/",
+    component: GlobalLayout,
+    beforeEnter: (to, from, next) => {
+      ensureAsyncComponentsLoaded("Layout", "v-1c4118c2").then(next)
+    },
+  },
+  {
+    path: "/nested/index.html",
+    redirect: "/nested/"
+  },
+  {
+    name: "v-cabb67e2",
+    path: "/node/cache-redis.html",
+    component: GlobalLayout,
+    beforeEnter: (to, from, next) => {
+      ensureAsyncComponentsLoaded("Layout", "v-cabb67e2").then(next)
+    },
+  },
+  {
     name: "v-3d2d673c",
     path: "/node/",
     component: GlobalLayout,
@@ -243,6 +263,14 @@ export const routes = [
   {
     path: "/node/index.html",
     redirect: "/node/"
+  },
+  {
+    name: "v-56e676f8",
+    path: "/node/nest.js/start.html",
+    component: GlobalLayout,
+    beforeEnter: (to, from, next) => {
+      ensureAsyncComponentsLoaded("Layout", "v-56e676f8").then(next)
+    },
   },
   {
     name: "v-6cf031ee",
@@ -265,32 +293,12 @@ export const routes = [
     redirect: "/timeLine/"
   },
   {
-    name: "v-cabb67e2",
-    path: "/node/cache-redis.html",
-    component: GlobalLayout,
-    beforeEnter: (to, from, next) => {
-      ensureAsyncComponentsLoaded("Layout", "v-cabb67e2").then(next)
-    },
-  },
-  {
     name: "v-5bc2f40e",
     path: "/web/H5/svg.html",
     component: GlobalLayout,
     beforeEnter: (to, from, next) => {
       ensureAsyncComponentsLoaded("Layout", "v-5bc2f40e").then(next)
     },
-  },
-  {
-    name: "v-1c4118c2",
-    path: "/nested/",
-    component: GlobalLayout,
-    beforeEnter: (to, from, next) => {
-      ensureAsyncComponentsLoaded("Layout", "v-1c4118c2").then(next)
-    },
-  },
-  {
-    path: "/nested/index.html",
-    redirect: "/nested/"
   },
   {
     name: "v-92fb9f62",
@@ -305,6 +313,22 @@ export const routes = [
     redirect: "/web/H5/"
   },
   {
+    name: "v-01e106c2",
+    path: "/web/React/chess.html",
+    component: GlobalLayout,
+    beforeEnter: (to, from, next) => {
+      ensureAsyncComponentsLoaded("Layout", "v-01e106c2").then(next)
+    },
+  },
+  {
+    name: "v-4abf3be2",
+    path: "/web/React/useCallback-api.html",
+    component: GlobalLayout,
+    beforeEnter: (to, from, next) => {
+      ensureAsyncComponentsLoaded("Layout", "v-4abf3be2").then(next)
+    },
+  },
+  {
     name: "v-05a5bba2",
     path: "/web/React/",
     component: GlobalLayout,
@@ -315,14 +339,6 @@ export const routes = [
   {
     path: "/web/React/index.html",
     redirect: "/web/React/"
-  },
-  {
-    name: "v-01e106c2",
-    path: "/web/React/chess.html",
-    component: GlobalLayout,
-    beforeEnter: (to, from, next) => {
-      ensureAsyncComponentsLoaded("Layout", "v-01e106c2").then(next)
-    },
   },
   {
     name: "v-a1a12a22",
@@ -337,11 +353,11 @@ export const routes = [
     redirect: "/web/advanced/"
   },
   {
-    name: "v-4abf3be2",
-    path: "/web/React/useCallback-api.html",
+    name: "v-79af9248",
+    path: "/web/advanced/executive.html",
     component: GlobalLayout,
     beforeEnter: (to, from, next) => {
-      ensureAsyncComponentsLoaded("Layout", "v-4abf3be2").then(next)
+      ensureAsyncComponentsLoaded("Layout", "v-79af9248").then(next)
     },
   },
   {
@@ -350,14 +366,6 @@ export const routes = [
     component: GlobalLayout,
     beforeEnter: (to, from, next) => {
       ensureAsyncComponentsLoaded("Layout", "v-86193a14").then(next)
-    },
-  },
-  {
-    name: "v-79af9248",
-    path: "/web/advanced/executive.html",
-    component: GlobalLayout,
-    beforeEnter: (to, from, next) => {
-      ensureAsyncComponentsLoaded("Layout", "v-79af9248").then(next)
     },
   },
   {
@@ -377,6 +385,22 @@ export const routes = [
     },
   },
   {
+    name: "v-a8d476fc",
+    path: "/web/es6/es7_decorator.html",
+    component: GlobalLayout,
+    beforeEnter: (to, from, next) => {
+      ensureAsyncComponentsLoaded("Layout", "v-a8d476fc").then(next)
+    },
+  },
+  {
+    name: "v-0c94ce02",
+    path: "/web/es6/front_end_modul.html",
+    component: GlobalLayout,
+    beforeEnter: (to, from, next) => {
+      ensureAsyncComponentsLoaded("Layout", "v-0c94ce02").then(next)
+    },
+  },
+  {
     name: "v-766fc85d",
     path: "/web/es6/",
     component: GlobalLayout,
@@ -389,30 +413,6 @@ export const routes = [
     redirect: "/web/es6/"
   },
   {
-    name: "v-a8d476fc",
-    path: "/web/es6/es7_decorator.html",
-    component: GlobalLayout,
-    beforeEnter: (to, from, next) => {
-      ensureAsyncComponentsLoaded("Layout", "v-a8d476fc").then(next)
-    },
-  },
-  {
-    name: "v-6fc3fde2",
-    path: "/web/es6/ts_config.html",
-    component: GlobalLayout,
-    beforeEnter: (to, from, next) => {
-      ensureAsyncComponentsLoaded("Layout", "v-6fc3fde2").then(next)
-    },
-  },
-  {
-    name: "v-0c94ce02",
-    path: "/web/es6/front_end_modul.html",
-    component: GlobalLayout,
-    beforeEnter: (to, from, next) => {
-      ensureAsyncComponentsLoaded("Layout", "v-0c94ce02").then(next)
-    },
-  },
-  {
     name: "v-324f6d2a",
     path: "/web/interview/",
     component: GlobalLayout,
@@ -423,6 +423,14 @@ export const routes = [
   {
     path: "/web/interview/index.html",
     redirect: "/web/interview/"
+  },
+  {
+    name: "v-6fc3fde2",
+    path: "/web/es6/ts_config.html",
+    component: GlobalLayout,
+    beforeEnter: (to, from, next) => {
+      ensureAsyncComponentsLoaded("Layout", "v-6fc3fde2").then(next)
+    },
   },
   {
     name: "v-7511ec4c",
@@ -481,14 +489,6 @@ export const routes = [
     },
   },
   {
-    name: "v-b37131fc",
-    path: "/web/vue/vuePress_deploy.html",
-    component: GlobalLayout,
-    beforeEnter: (to, from, next) => {
-      ensureAsyncComponentsLoaded("Layout", "v-b37131fc").then(next)
-    },
-  },
-  {
     name: "v-4ab03f75",
     path: "/zh/guide/",
     component: GlobalLayout,
@@ -499,6 +499,14 @@ export const routes = [
   {
     path: "/zh/guide/index.html",
     redirect: "/zh/guide/"
+  },
+  {
+    name: "v-b37131fc",
+    path: "/web/vue/vuePress_deploy.html",
+    component: GlobalLayout,
+    beforeEnter: (to, from, next) => {
+      ensureAsyncComponentsLoaded("Layout", "v-b37131fc").then(next)
+    },
   },
   {
     path: '*',

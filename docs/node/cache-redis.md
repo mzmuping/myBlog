@@ -37,3 +37,6 @@ tags:
 - memached
 ### 选择
 有持久化需求或者对数据结构和处理有高级要求的应用，选择redis。其他简单的key/value存储，选择cache
+
+### cached介绍 
+

@@ -23,32 +23,6 @@ export const siteData = {
   ],
   "pages": [
     {
-      "title": "错误总结",
-      "frontmatter": {
-        "title": "错误总结",
-        "date": "2021-01-21T00:00:00.000Z",
-        "categories": [
-          "git"
-        ],
-        "tags": [
-          "git",
-          "git"
-        ]
-      },
-      "regularPath": "/error/",
-      "relativePath": "error/README.md",
-      "key": "v-4ccdc1fa",
-      "path": "/error/",
-      "headers": [
-        {
-          "level": 3,
-          "title": "错误总结",
-          "slug": "错误总结"
-        }
-      ],
-      "lastUpdated": "1/21/2022, 6:06:43 PM"
-    },
-    {
       "title": "Home",
       "frontmatter": {
         "home": true,
@@ -107,6 +81,32 @@ export const siteData = {
       "key": "v-e66ed5dc",
       "path": "/guide/",
       "lastUpdated": "3/6/2021, 4:40:28 PM"
+    },
+    {
+      "title": "错误总结",
+      "frontmatter": {
+        "title": "错误总结",
+        "date": "2021-01-21T00:00:00.000Z",
+        "categories": [
+          "git"
+        ],
+        "tags": [
+          "git",
+          "git"
+        ]
+      },
+      "regularPath": "/error/",
+      "relativePath": "error/README.md",
+      "key": "v-4ccdc1fa",
+      "path": "/error/",
+      "headers": [
+        {
+          "level": 3,
+          "title": "错误总结",
+          "slug": "错误总结"
+        }
+      ],
+      "lastUpdated": "1/21/2022, 6:06:43 PM"
     },
     {
       "frontmatter": {},
@@ -190,14 +190,6 @@ export const siteData = {
       "lastUpdated": "1/11/2022, 3:57:00 PM"
     },
     {
-      "frontmatter": {},
-      "regularPath": "/guide/vue/",
-      "relativePath": "guide/vue/README.md",
-      "key": "v-4ed5b891",
-      "path": "/guide/vue/",
-      "lastUpdated": "1/11/2022, 3:57:00 PM"
-    },
-    {
       "title": "测试03",
       "frontmatter": {
         "title": "测试03",
@@ -221,6 +213,14 @@ export const siteData = {
           "slug": "测试01-typescript"
         }
       ],
+      "lastUpdated": "1/11/2022, 3:57:00 PM"
+    },
+    {
+      "frontmatter": {},
+      "regularPath": "/guide/vue/",
+      "relativePath": "guide/vue/README.md",
+      "key": "v-4ed5b891",
+      "path": "/guide/vue/",
       "lastUpdated": "1/11/2022, 3:57:00 PM"
     },
     {
@@ -921,6 +921,25 @@ export const siteData = {
       "lastUpdated": "3/6/2021, 4:40:28 PM"
     },
     {
+      "title": "node总结",
+      "frontmatter": {
+        "title": "node总结",
+        "date": "2022-4-24",
+        "categories": [
+          "frontend"
+        ],
+        "tags": [
+          "node",
+          "ts"
+        ]
+      },
+      "regularPath": "/node/",
+      "relativePath": "node/README.md",
+      "key": "v-3d2d673c",
+      "path": "/node/",
+      "lastUpdated": "4/24/2022, 5:39:33 PM"
+    },
+    {
       "title": "redis与cache区别",
       "frontmatter": {
         "title": "redis与cache区别",
@@ -969,26 +988,57 @@ export const siteData = {
           "slug": "cached介绍"
         }
       ],
-      "lastUpdated": "4/29/2022, 3:11:21 PM"
+      "lastUpdated": "5/7/2022, 6:30:40 PM"
     },
     {
-      "title": "node总结",
+      "title": "创建脚手架",
       "frontmatter": {
-        "title": "node总结",
-        "date": "2022-4-24",
+        "title": "创建脚手架",
+        "date": "2022-5-13",
         "categories": [
           "frontend"
         ],
         "tags": [
           "node",
-          "ts"
+          "ArrayBuffer"
         ]
       },
-      "regularPath": "/node/",
-      "relativePath": "node/README.md",
-      "key": "v-3d2d673c",
-      "path": "/node/",
-      "lastUpdated": "4/24/2022, 5:39:33 PM"
+      "regularPath": "/node/cli.html",
+      "relativePath": "node/cli.md",
+      "key": "v-433d15af",
+      "path": "/node/cli.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "安装yo",
+          "slug": "安装yo"
+        },
+        {
+          "level": 2,
+          "title": "安装对应 generater",
+          "slug": "安装对应-generater"
+        },
+        {
+          "level": 2,
+          "title": "yo 运行generator",
+          "slug": "yo-运行generator"
+        },
+        {
+          "level": 3,
+          "title": "Yeoman Sub Generator",
+          "slug": "yeoman-sub-generator"
+        },
+        {
+          "level": 2,
+          "title": "Yeoman 基本使用步骤",
+          "slug": "yeoman-基本使用步骤"
+        },
+        {
+          "level": 2,
+          "title": "创建",
+          "slug": "创建"
+        }
+      ]
     },
     {
       "title": "nest.js 总结",
@@ -1018,7 +1068,8 @@ export const siteData = {
           "title": "命令",
           "slug": "命令"
         }
-      ]
+      ],
+      "lastUpdated": "5/7/2022, 6:30:40 PM"
     },
     {
       "title": "守护Node.js进程",
@@ -1077,6 +1128,22 @@ export const siteData = {
       "lastUpdated": "3/6/2021, 4:40:28 PM"
     },
     {
+      "title": "H5",
+      "frontmatter": {},
+      "regularPath": "/web/H5/",
+      "relativePath": "web/H5/README.md",
+      "key": "v-92fb9f62",
+      "path": "/web/H5/",
+      "headers": [
+        {
+          "level": 3,
+          "title": "H5",
+          "slug": "h5"
+        }
+      ],
+      "lastUpdated": "3/6/2021, 4:40:28 PM"
+    },
+    {
       "title": "svg",
       "frontmatter": {
         "title": "svg",
@@ -1096,19 +1163,12 @@ export const siteData = {
       "lastUpdated": "3/6/2021, 4:40:28 PM"
     },
     {
-      "title": "H5",
+      "title": "React",
       "frontmatter": {},
-      "regularPath": "/web/H5/",
-      "relativePath": "web/H5/README.md",
-      "key": "v-92fb9f62",
-      "path": "/web/H5/",
-      "headers": [
-        {
-          "level": 3,
-          "title": "H5",
-          "slug": "h5"
-        }
-      ],
+      "regularPath": "/web/React/",
+      "relativePath": "web/React/README.md",
+      "key": "v-05a5bba2",
+      "path": "/web/React/",
       "lastUpdated": "3/6/2021, 4:40:28 PM"
     },
     {
@@ -1246,16 +1306,33 @@ export const siteData = {
           "slug": "结论"
         }
       ],
-      "lastUpdated": "4/2/2022, 6:31:28 PM"
+      "lastUpdated": "5/7/2022, 6:30:40 PM"
     },
     {
-      "title": "React",
-      "frontmatter": {},
-      "regularPath": "/web/React/",
-      "relativePath": "web/React/README.md",
-      "key": "v-05a5bba2",
-      "path": "/web/React/",
-      "lastUpdated": "3/6/2021, 4:40:28 PM"
+      "title": "hooks useMemo",
+      "frontmatter": {
+        "title": "hooks useMemo",
+        "date": "2022-05-7",
+        "categories": [
+          "frontend"
+        ],
+        "tags": [
+          "react",
+          "ts"
+        ]
+      },
+      "regularPath": "/web/React/useMemo.html",
+      "relativePath": "web/React/useMemo.md",
+      "key": "v-db5c4e3c",
+      "path": "/web/React/useMemo.html",
+      "headers": [
+        {
+          "level": 3,
+          "title": "",
+          "slug": ""
+        }
+      ],
+      "lastUpdated": "5/11/2022, 5:28:30 PM"
     },
     {
       "title": "高级前端进阶",
@@ -1269,6 +1346,32 @@ export const siteData = {
           "level": 2,
           "title": "高级前端进阶",
           "slug": "高级前端进阶"
+        }
+      ],
+      "lastUpdated": "1/13/2022, 5:04:39 PM"
+    },
+    {
+      "title": "面向对象继承",
+      "frontmatter": {
+        "title": "面向对象继承",
+        "date": "2019-8-19",
+        "categories": [
+          "js面向对象继承解说"
+        ],
+        "tags": [
+          "面向对象",
+          "继承"
+        ]
+      },
+      "regularPath": "/web/advanced/inherit.html",
+      "relativePath": "web/advanced/inherit.md",
+      "key": "v-86193a14",
+      "path": "/web/advanced/inherit.html",
+      "headers": [
+        {
+          "level": 3,
+          "title": "",
+          "slug": ""
         }
       ],
       "lastUpdated": "1/13/2022, 5:04:39 PM"
@@ -1338,32 +1441,6 @@ export const siteData = {
         }
       ],
       "lastUpdated": "1/21/2022, 5:57:07 PM"
-    },
-    {
-      "title": "面向对象继承",
-      "frontmatter": {
-        "title": "面向对象继承",
-        "date": "2019-8-19",
-        "categories": [
-          "js面向对象继承解说"
-        ],
-        "tags": [
-          "面向对象",
-          "继承"
-        ]
-      },
-      "regularPath": "/web/advanced/inherit.html",
-      "relativePath": "web/advanced/inherit.md",
-      "key": "v-86193a14",
-      "path": "/web/advanced/inherit.html",
-      "headers": [
-        {
-          "level": 3,
-          "title": "",
-          "slug": ""
-        }
-      ],
-      "lastUpdated": "1/13/2022, 5:04:39 PM"
     },
     {
       "title": "原型链图解",
@@ -1488,6 +1565,15 @@ export const siteData = {
       "lastUpdated": "11/9/2021, 5:39:03 PM"
     },
     {
+      "title": "当你凝望大神的时候，大神也在凝望你",
+      "frontmatter": {},
+      "regularPath": "/web/es6/",
+      "relativePath": "web/es6/README.md",
+      "key": "v-766fc85d",
+      "path": "/web/es6/",
+      "lastUpdated": "3/6/2021, 4:40:28 PM"
+    },
+    {
       "title": "es7之修饰器",
       "frontmatter": {
         "title": "es7之修饰器",
@@ -1579,24 +1665,6 @@ export const siteData = {
       "lastUpdated": "11/9/2021, 5:39:03 PM"
     },
     {
-      "title": "当你凝望大神的时候，大神也在凝望你",
-      "frontmatter": {},
-      "regularPath": "/web/es6/",
-      "relativePath": "web/es6/README.md",
-      "key": "v-766fc85d",
-      "path": "/web/es6/",
-      "lastUpdated": "3/6/2021, 4:40:28 PM"
-    },
-    {
-      "title": "面试题总结",
-      "frontmatter": {},
-      "regularPath": "/web/interview/",
-      "relativePath": "web/interview/README.md",
-      "key": "v-324f6d2a",
-      "path": "/web/interview/",
-      "lastUpdated": "4/1/2022, 1:27:01 PM"
-    },
-    {
       "title": "让你的项目使用Ts吧",
       "frontmatter": {
         "title": "让你的项目使用Ts吧",
@@ -1657,6 +1725,15 @@ export const siteData = {
       "lastUpdated": "3/6/2021, 4:40:28 PM"
     },
     {
+      "title": "面试题总结",
+      "frontmatter": {},
+      "regularPath": "/web/interview/",
+      "relativePath": "web/interview/README.md",
+      "key": "v-324f6d2a",
+      "path": "/web/interview/",
+      "lastUpdated": "4/1/2022, 1:27:01 PM"
+    },
+    {
       "title": "跨域造成原因和解决方法",
       "frontmatter": {
         "title": "跨域造成原因和解决方法",
@@ -1693,6 +1770,36 @@ export const siteData = {
       "lastUpdated": "4/1/2022, 1:27:01 PM"
     },
     {
+      "title": "http和https知识点",
+      "frontmatter": {
+        "title": "http和https知识点",
+        "date": "2022-5-13",
+        "categories": [
+          "frontend"
+        ],
+        "tags": [
+          "react，vue，http",
+          "ts"
+        ]
+      },
+      "regularPath": "/web/interview/http_https.html",
+      "relativePath": "web/interview/http_https.md",
+      "key": "v-baa599d8",
+      "path": "/web/interview/http_https.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "http",
+          "slug": "http"
+        },
+        {
+          "level": 2,
+          "title": "https",
+          "slug": "https"
+        }
+      ]
+    },
+    {
       "title": "面试题",
       "frontmatter": {
         "title": "面试题",
@@ -1709,7 +1816,63 @@ export const siteData = {
       "relativePath": "web/interview/interview.md",
       "key": "v-4d283d22",
       "path": "/web/interview/interview.html",
-      "lastUpdated": "4/1/2022, 1:27:01 PM"
+      "lastUpdated": "5/7/2022, 6:30:40 PM"
+    },
+    {
+      "title": "面试过程",
+      "frontmatter": {},
+      "regularPath": "/web/interview/notes.html",
+      "relativePath": "web/interview/notes.md",
+      "key": "v-4648f522",
+      "path": "/web/interview/notes.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "网络层http",
+          "slug": "网络层http"
+        },
+        {
+          "level": 2,
+          "title": "virtual DOM  好处/坏处",
+          "slug": "virtual-dom-好处-坏处"
+        },
+        {
+          "level": 2,
+          "title": "vue3 优化",
+          "slug": "vue3-优化"
+        },
+        {
+          "level": 2,
+          "title": "react与vue key作用",
+          "slug": "react与vue-key作用"
+        },
+        {
+          "level": 2,
+          "title": "react hooks 替代 redux",
+          "slug": "react-hooks-替代-redux"
+        },
+        {
+          "level": 2,
+          "title": "react fiber 原理",
+          "slug": "react-fiber-原理"
+        },
+        {
+          "level": 2,
+          "title": "工程化优化打包，提高加载速度",
+          "slug": "工程化优化打包-提高加载速度"
+        },
+        {
+          "level": 2,
+          "title": "未来规划",
+          "slug": "未来规划"
+        },
+        {
+          "level": 3,
+          "title": "网站性能优化都有哪些点",
+          "slug": "网站性能优化都有哪些点"
+        }
+      ],
+      "lastUpdated": "5/11/2022, 5:28:30 PM"
     },
     {
       "title": "typescript",
@@ -1991,7 +2154,8 @@ export const siteData = {
           "children": [
             "cache-redis"
           ]
-        }
+        },
+        "cli"
       ],
       "/web/H5/": [
         "svg"
@@ -2016,6 +2180,7 @@ export const siteData = {
         "install"
       ],
       "/web/interview/": [
+        "notes",
         {
           "title": "跨域的解决方案",
           "collapsable": true,

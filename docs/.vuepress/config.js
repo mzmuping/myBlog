@@ -69,7 +69,7 @@ module.exports = {
                 title: 'redis与cache区别',
                 collapsable: true,
                 children: ['cache-redis']
-            },],
+            }, 'cli',],
             '/web/H5/': ['svg'],
             '/web/React/': [
                 {
@@ -84,7 +84,7 @@ module.exports = {
                 }
             ],
             '/web/ts/': ['install'],
-            '/web/interview/': [{
+            '/web/interview/': ['notes', {
                 title: '跨域的解决方案',
                 collapsable: true,
                 children: ['cross-domain']

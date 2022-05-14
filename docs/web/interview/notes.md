@@ -83,7 +83,13 @@
     + 首次渲染大量 DOM ，大量计算 ，效率比较低
     + 内存维护一份dom副本，消耗大
     + 不利少量更改
-    
+## vue3 优化
++ diff算法优化
+    + 静态标签(PatchFlag) ，PatchFlag 进行了划分，不同元素加上不同的标签类型
+    + 静态提升（没有响应式，不参与更新的元素提出来）
++ 响应响应式 proxy 替换 Object.definedProperty()
++ 
+
 ## react与vue key作用
 + diff 算法 ,vnode 先比较 key 和标签名,一致再判断子节点
 + 一定程度提高diff 效率
@@ -101,6 +107,37 @@
     + 利用 requestIdeCallback 空闲时间递减
     + 收集片段任务结果
 
+## 工程化优化打包，提高加载速度
++ 压缩前端项目中 JS 的体积
+    + terser-webpack-plugin / uglifyjs-webpack-plugin压缩JS代码
+    + gzip 或者 brotli 压缩，在网关处(nginx)开启
+    + webpack-bundle-analyzer 分析打包体积,替换占用较大体积的库，如 moment -> dayjs
+    + 按需引入模块
+        + 使用支持 Tree-Shaking 的库 ,对无引用的库或函数进行删除，如 lodash -> lodash/es 
+        + 使用插件lodash-webpack-plugin，按需引入，移除没有使用lodash方法
+    + 使用 babel (css 为 postcss) 时采用 browserlist ，越先进的浏览器所需要的 polyfill 越少，体积更小
+    + 路由懒加载
+    + 代码分离
+        + 使用 webpack 的 splitChunks 拆分包
+        + runtimeChunk ：配置runtime取到一个单独的chunk中，浏览器缓存的策略
+        + 动态导入： output中，通过 chunkFilename 属性
+    + 使用 webpack 的 splitChunks 拆分包，（总体积不变的，个体变小，提高效率）,runtimeChunk , 动态导入
+    + mini-css-extract-plugin,css 文件提取，css-minimizer-webpack-plugin css文件压缩
++ 打包速度优化 
+    + webapck5 设置 cache:{type:'filesystem'},webpack4 cache-loader。  以及dll-plugin
+    + loader 转化。指定 include ； exclude 过滤不需要编译的文件夹
+    + 优化 resolve 配置
+        + 配置 alias
+        + 配置 extensions   需要解析的文件类型列表
+    + babel     配置  去掉全量引入 polyFill  改为 按需添加
+        + 配置。@babel/plugin-transform-runtime 抽取每个module 中公共工具函数
+    + 配置  externals  从cdn 直接加载 
+    + 
+## 未来规划
++ 更关注基础建设
+
 ### 网站性能优化都有哪些点
 
-+ 减少 http 请求次数： CSS Sprites, JS、CSS 源码压缩、图片大小适当控制； 网页 Gzip，CDN 托管，data 缓存 ，图片服务器。 尽量减少内联样式 将脚本放在底部 少用全局变量、缓存 DOM 节点查找的结果 图片预加载 按需加载
++ 减少 http 请求次数： CSS Sprites, JS、CSS 源码压缩、图片大小适当控制；
++ 网页 Gzip，CDN 托管，data 缓存 ，图片服务器。 
++ 尽量减少内联样式 将脚本放在底部 少用全局变量、缓存 DOM 节点查找的结果 图片预加载 按需加载

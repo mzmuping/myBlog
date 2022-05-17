@@ -84,7 +84,7 @@ module.exports = {
                 }
             ],
             '/web/ts/': ['install'],
-            '/web/interview/': ['notes', {
+            '/web/interview/': ['notes', 'webpack', , 'http_https', {
                 title: '跨域的解决方案',
                 collapsable: true,
                 children: ['cross-domain']

@@ -86,9 +86,9 @@
 ## vue3 优化
 + diff算法优化
     + 静态标签(PatchFlag) ，PatchFlag 进行了划分，不同元素加上不同的标签类型
-    + 静态提升（没有响应式，不参与更新的元素提出来）
+    + 静态节点提升（没有响应式，不参与更新的元素提出来）
 + 响应响应式 proxy 替换 Object.definedProperty()
-+ 
++ composition api 设计 hooks 思想
 
 ## react与vue key作用
 + diff 算法 ,vnode 先比较 key 和标签名,一致再判断子节点

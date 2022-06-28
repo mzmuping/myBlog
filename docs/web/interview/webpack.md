@@ -18,7 +18,7 @@ babel-loader,url-loader,file-loader
 在webpack v5中统一使用assets module
 
 常见plugin:
-define-plugin: 定义环境变量
+define-plugin: 定义环境变量，代码变量
 common-chunk-plugin: 提取公共代码,webpack v4开始移除，使用 optimization.splitChunks
 uglify-webpack-plugin / terser-plugin: 压缩js代码
 
@@ -28,9 +28,9 @@ plugin 壮大webpack功能，灵活性比较强
 
 性能优化：
 - 压缩代码： uglifyjs/terser
-- mini-css-extract-plugin,css 文件提取，css-minimizer-webpack-plugin css文件压缩 
-- cdn 加速： externals配置第三方包，或者loader 配置 publicpath 部分cdn 
-- 删除死代码tree shaking 与 Scope Hoisting: 
+- mini-css-extract-plugin,css 文件提取，css-minimizer-webpack-plugin css文件压缩
+- cdn 加速： externals配置第三方包，或者loader 配置 publicpath 部分cdn
+- 删除死代码tree shaking 与 Scope Hoisting:
     - tree shaking: 配置 optimization.usedExports: false,optimization.minimize: true
     - Scope Hoisting:配置 concatenateModules：true,合拼安全代码
 - resole: extensions 配置优化
@@ -38,4 +38,3 @@ plugin 壮大webpack功能，灵活性比较强
 - Dllplugin / DllReferencePlugin ：拆分 bundles动态链接库，生成manifest.json，DllReferencePlugin
 - autoweb多页应用，或者html-webapck-plugin 搭建entry
 - babel-plugin-import 按需加载
-

@@ -137,7 +137,22 @@
 + 更关注基础建设
 
 ### 网站性能优化都有哪些点
-
++ react 性能优化
+    + 覆盖shouldComponentUpdate,减少render方法调用
+    + PureComponent和React.memo()封装组件，实现浅比较
+    + useMemo/useCallback封装数据，缓存数据，和函数
+    + 及时清除dom事件
+    + 合理使用异步组件
++ vue 性能优化
+    + 合理使用v-show,v-if
+    + 合理使用computed
+    + 合理使用keep-alive
+    + v-for 加key
+    + 合理使用异步组件
+    + 及时清除dom事件
++ 
 + 减少 http 请求次数： CSS Sprites, JS、CSS 源码压缩、图片大小适当控制；
 + 网页 Gzip，CDN 托管，data 缓存 ，图片服务器。 
 + 尽量减少内联样式 将脚本放在底部 少用全局变量、缓存 DOM 节点查找的结果 图片预加载 按需加载
+
+

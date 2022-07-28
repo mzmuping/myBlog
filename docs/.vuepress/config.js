@@ -55,6 +55,7 @@ module.exports = {
           { text: "ts", link: "/web/ts/" },
           { text: "进阶系列", link: "/web/advanced/" },
           { text: "面试题", link: "/web/interview/" },
+          { text: "前端工程化", link: "/web/webpack/" },
         ],
       },
       { text: "nodejs", link: "/node/" },
@@ -93,6 +94,7 @@ module.exports = {
           children: ["cache-redis"],
         },
         "cli",
+        "npm",
       ],
       "/web/H5/": ["svg"],
       "/web/React/": [
@@ -116,6 +118,18 @@ module.exports = {
           title: "跨域的解决方案",
           collapsable: true,
           children: ["cross-domain"],
+        },
+      ],
+      "/web/webpack/": [
+        {
+          title: "webpack",
+          collapsable: true,
+          children: ["instro"],
+        },
+        {
+          title: "rollup",
+          collapsable: true,
+          children: ["rollup/test"],
         },
       ],
       "/mysql/": [

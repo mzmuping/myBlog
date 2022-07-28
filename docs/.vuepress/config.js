@@ -177,7 +177,7 @@ module.exports = {
     },
     lastUpdated: "Last Updated", // string | boolean
     // 假定是 GitHub. 同时也可以是一个完整的 GitLab URL
-    repo: "ChaselLHL/myBlog",
+    repo: "mzmuping/myBlog",
     // 以下为可选的编辑链接选项
     // 假如文档不是放在仓库的根目录下：
     docsDir: "docs",

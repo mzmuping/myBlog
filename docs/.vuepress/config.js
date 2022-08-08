@@ -94,7 +94,11 @@ module.exports = {
           children: ["cache-redis"],
         },
         "cli",
-        "npm",
+        {
+          title: "npm",
+          collapsable: true,
+          children: ["npm/pkg-tools", "npm/diff"],
+        },
       ],
       "/web/H5/": ["svg"],
       "/web/React/": [
@@ -129,7 +133,7 @@ module.exports = {
         {
           title: "rollup",
           collapsable: true,
-          children: ["rollup/test"],
+          children: ["rollup/index"],
         },
       ],
       "/mysql/": [

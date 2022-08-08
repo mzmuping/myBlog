@@ -23,6 +23,32 @@ export const siteData = {
   ],
   "pages": [
     {
+      "title": "错误总结",
+      "frontmatter": {
+        "title": "错误总结",
+        "date": "2021-01-21T00:00:00.000Z",
+        "categories": [
+          "git"
+        ],
+        "tags": [
+          "git",
+          "git"
+        ]
+      },
+      "regularPath": "/error/",
+      "relativePath": "error/README.md",
+      "key": "v-fa88db9e",
+      "path": "/error/",
+      "headers": [
+        {
+          "level": 3,
+          "title": "错误总结",
+          "slug": "错误总结"
+        }
+      ],
+      "lastUpdated": "1/21/2022, 6:06:43 PM"
+    },
+    {
       "title": "Home",
       "frontmatter": {
         "home": true,
@@ -54,30 +80,12 @@ export const siteData = {
       "lastUpdated": "11/19/2021, 6:37:52 PM"
     },
     {
-      "title": "错误总结",
-      "frontmatter": {
-        "title": "错误总结",
-        "date": "2021-01-21T00:00:00.000Z",
-        "categories": [
-          "git"
-        ],
-        "tags": [
-          "git",
-          "git"
-        ]
-      },
-      "regularPath": "/error/",
-      "relativePath": "error/README.md",
-      "key": "v-fa88db9e",
-      "path": "/error/",
-      "headers": [
-        {
-          "level": 3,
-          "title": "错误总结",
-          "slug": "错误总结"
-        }
-      ],
-      "lastUpdated": "1/21/2022, 6:06:43 PM"
+      "frontmatter": {},
+      "regularPath": "/friendLink/",
+      "relativePath": "friendLink/README.md",
+      "key": "v-9e821dce",
+      "path": "/friendLink/",
+      "lastUpdated": "3/6/2021, 4:40:28 PM"
     },
     {
       "title": "github 提交失败",
@@ -99,14 +107,6 @@ export const siteData = {
         }
       ],
       "lastUpdated": "4/24/2022, 5:39:33 PM"
-    },
-    {
-      "frontmatter": {},
-      "regularPath": "/friendLink/",
-      "relativePath": "friendLink/README.md",
-      "key": "v-9e821dce",
-      "path": "/friendLink/",
-      "lastUpdated": "3/6/2021, 4:40:28 PM"
     },
     {
       "title": "es7之修饰器",
@@ -165,32 +165,6 @@ export const siteData = {
       "lastUpdated": "1/11/2022, 3:57:00 PM"
     },
     {
-      "title": "测试02",
-      "frontmatter": {
-        "title": "测试02",
-        "date": "2021-11-25T00:00:00.000Z",
-        "categories": [
-          "frontend"
-        ],
-        "tags": [
-          "mysql",
-          "索引"
-        ]
-      },
-      "regularPath": "/guide/ts/test02.html",
-      "relativePath": "guide/ts/test02.md",
-      "key": "v-9dde93b6",
-      "path": "/guide/ts/test02.html",
-      "headers": [
-        {
-          "level": 2,
-          "title": "测试01 - Typescript",
-          "slug": "测试01-typescript"
-        }
-      ],
-      "lastUpdated": "1/11/2022, 3:57:00 PM"
-    },
-    {
       "title": "测试03",
       "frontmatter": {
         "title": "测试03",
@@ -207,6 +181,32 @@ export const siteData = {
       "relativePath": "guide/ts/test03.md",
       "key": "v-36f5dbc5",
       "path": "/guide/ts/test03.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "测试01 - Typescript",
+          "slug": "测试01-typescript"
+        }
+      ],
+      "lastUpdated": "1/11/2022, 3:57:00 PM"
+    },
+    {
+      "title": "测试02",
+      "frontmatter": {
+        "title": "测试02",
+        "date": "2021-11-25T00:00:00.000Z",
+        "categories": [
+          "frontend"
+        ],
+        "tags": [
+          "mysql",
+          "索引"
+        ]
+      },
+      "regularPath": "/guide/ts/test02.html",
+      "relativePath": "guide/ts/test02.md",
+      "key": "v-9dde93b6",
+      "path": "/guide/ts/test02.html",
       "headers": [
         {
           "level": 2,
@@ -330,6 +330,37 @@ export const siteData = {
       "lastUpdated": "11/18/2021, 6:31:41 PM"
     },
     {
+      "title": "MySQL安装及基本使用教程",
+      "frontmatter": {},
+      "regularPath": "/mysql/dowloadAndinstall.html",
+      "relativePath": "mysql/dowloadAndinstall.md",
+      "key": "v-71d910b8",
+      "path": "/mysql/dowloadAndinstall.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "MySQL安装及基本使用教程",
+          "slug": "mysql安装及基本使用教程"
+        },
+        {
+          "level": 3,
+          "title": "下载MySQL",
+          "slug": "下载mysql"
+        },
+        {
+          "level": 2,
+          "title": "测试msyql",
+          "slug": "测试msyql"
+        },
+        {
+          "level": 3,
+          "title": "连接Navicat 报错",
+          "slug": "连接navicat-报错"
+        }
+      ],
+      "lastUpdated": "11/19/2021, 6:37:52 PM"
+    },
+    {
       "title": "数据库操作步骤",
       "frontmatter": {},
       "regularPath": "/mysql/db_base_table.html",
@@ -434,37 +465,6 @@ export const siteData = {
         }
       ],
       "lastUpdated": "11/29/2021, 2:26:38 PM"
-    },
-    {
-      "title": "MySQL安装及基本使用教程",
-      "frontmatter": {},
-      "regularPath": "/mysql/dowloadAndinstall.html",
-      "relativePath": "mysql/dowloadAndinstall.md",
-      "key": "v-71d910b8",
-      "path": "/mysql/dowloadAndinstall.html",
-      "headers": [
-        {
-          "level": 2,
-          "title": "MySQL安装及基本使用教程",
-          "slug": "mysql安装及基本使用教程"
-        },
-        {
-          "level": 3,
-          "title": "下载MySQL",
-          "slug": "下载mysql"
-        },
-        {
-          "level": 2,
-          "title": "测试msyql",
-          "slug": "测试msyql"
-        },
-        {
-          "level": 3,
-          "title": "连接Navicat 报错",
-          "slug": "连接navicat-报错"
-        }
-      ],
-      "lastUpdated": "11/19/2021, 6:37:52 PM"
     },
     {
       "title": "索引",
@@ -911,17 +911,6 @@ export const siteData = {
       "lastUpdated": "11/20/2021, 6:30:57 PM"
     },
     {
-      "frontmatter": {
-        "actionText": "快速上手 →",
-        "actionLink": "/zh/guide/"
-      },
-      "regularPath": "/nested/",
-      "relativePath": "nested/README.md",
-      "key": "v-e408918e",
-      "path": "/nested/",
-      "lastUpdated": "3/6/2021, 4:40:28 PM"
-    },
-    {
       "title": "node总结",
       "frontmatter": {
         "title": "node总结",
@@ -1063,6 +1052,37 @@ export const siteData = {
       "lastUpdated": "5/17/2022, 6:31:55 PM"
     },
     {
+      "title": "nest.js 总结",
+      "frontmatter": {
+        "title": "nest.js 总结",
+        "date": "2022-4-29",
+        "categories": [
+          "frontend"
+        ],
+        "tags": [
+          "node",
+          "ArrayBuffer"
+        ]
+      },
+      "regularPath": "/node/nest.js/start.html",
+      "relativePath": "node/nest.js/start.md",
+      "key": "v-2ec458e1",
+      "path": "/node/nest.js/start.html",
+      "headers": [
+        {
+          "level": 3,
+          "title": "简介",
+          "slug": "简介"
+        },
+        {
+          "level": 3,
+          "title": "命令",
+          "slug": "命令"
+        }
+      ],
+      "lastUpdated": "5/7/2022, 6:30:40 PM"
+    },
+    {
       "title": "守护Node.js进程",
       "frontmatter": {
         "title": "守护Node.js进程",
@@ -1099,9 +1119,36 @@ export const siteData = {
       "lastUpdated": "4/24/2022, 5:39:33 PM"
     },
     {
-      "title": "npm 发布",
+      "title": "npm & yarn & pnpm 区别",
       "frontmatter": {
-        "title": "npm 发布",
+        "title": "npm & yarn & pnpm 区别",
+        "date": "2022-7-27",
+        "categories": [
+          "frontend"
+        ],
+        "tags": [
+          "npm",
+          "yarn",
+          "pnpm",
+          "索引"
+        ]
+      },
+      "regularPath": "/node/npm/diff.html",
+      "relativePath": "node/npm/diff.md",
+      "key": "v-bb9ec882",
+      "path": "/node/npm/diff.html",
+      "headers": [
+        {
+          "level": 3,
+          "title": "npm查看、设置镜像源",
+          "slug": "npm查看、设置镜像源"
+        }
+      ]
+    },
+    {
+      "title": "npm 管理工具",
+      "frontmatter": {
+        "title": "npm 管理工具",
         "date": "2022-5-14",
         "categories": [
           "frontend"
@@ -1111,49 +1158,102 @@ export const siteData = {
           "npm"
         ]
       },
-      "regularPath": "/node/npm.html",
-      "relativePath": "node/npm.md",
-      "key": "v-d2566e7c",
-      "path": "/node/npm.html",
+      "regularPath": "/node/npm/pkg-tools.html",
+      "relativePath": "node/npm/pkg-tools.md",
+      "key": "v-71106f59",
+      "path": "/node/npm/pkg-tools.html",
       "headers": [
         {
           "level": 2,
           "title": "注册npm账号",
           "slug": "注册npm账号"
-        }
-      ],
-      "lastUpdated": "5/14/2022, 6:37:55 PM"
-    },
-    {
-      "title": "nest.js 总结",
-      "frontmatter": {
-        "title": "nest.js 总结",
-        "date": "2022-4-29",
-        "categories": [
-          "frontend"
-        ],
-        "tags": [
-          "node",
-          "ArrayBuffer"
-        ]
-      },
-      "regularPath": "/node/nest.js/start.html",
-      "relativePath": "node/nest.js/start.md",
-      "key": "v-2ec458e1",
-      "path": "/node/nest.js/start.html",
-      "headers": [
+        },
         {
-          "level": 3,
-          "title": "简介",
-          "slug": "简介"
+          "level": 2,
+          "title": "镜像源管理",
+          "slug": "镜像源管理"
         },
         {
           "level": 3,
-          "title": "命令",
-          "slug": "命令"
+          "title": "npm查看、设置镜像源",
+          "slug": "npm查看、设置镜像源"
+        },
+        {
+          "level": 3,
+          "title": "全局设置taobao镜像源",
+          "slug": "全局设置taobao镜像源"
+        },
+        {
+          "level": 3,
+          "title": "nrm镜像源管理工具",
+          "slug": "nrm镜像源管理工具"
+        },
+        {
+          "level": 3,
+          "title": "切换镜像源",
+          "slug": "切换镜像源"
+        },
+        {
+          "level": 2,
+          "title": "node 版本工具",
+          "slug": "node-版本工具"
+        },
+        {
+          "level": 3,
+          "title": "安装",
+          "slug": "安装"
+        },
+        {
+          "level": 3,
+          "title": "查看已安装node",
+          "slug": "查看已安装node"
+        },
+        {
+          "level": 3,
+          "title": "安装最新版本",
+          "slug": "安装最新版本"
+        },
+        {
+          "level": 3,
+          "title": "安装指定版本",
+          "slug": "安装指定版本"
+        },
+        {
+          "level": 3,
+          "title": "使用版本",
+          "slug": "使用版本"
+        },
+        {
+          "level": 3,
+          "title": "卸载版本号的Node",
+          "slug": "卸载版本号的node"
+        },
+        {
+          "level": 3,
+          "title": "命令行",
+          "slug": "命令行"
+        }
+      ]
+    },
+    {
+      "title": "Time Line",
+      "frontmatter": {
+        "isTimeLine": true,
+        "sidebar": false,
+        "isComment": false
+      },
+      "regularPath": "/timeLine/",
+      "relativePath": "timeLine/README.md",
+      "key": "v-51489fb9",
+      "path": "/timeLine/",
+      "headers": [
+        {
+          "level": 2,
+          "title": "Time Line",
+          "slug": "time-line"
         }
       ],
-      "lastUpdated": "5/7/2022, 6:30:40 PM"
+      "lastUpdated": "3/6/2021, 4:40:28 PM"
     },
     {
       "title": "H5",
@@ -1198,82 +1298,6 @@ export const siteData = {
       "key": "v-6afecb66",
       "path": "/web/React/",
       "lastUpdated": "3/6/2021, 4:40:28 PM"
-    },
-    {
-      "title": "Time Line",
-      "frontmatter": {
-        "isTimeLine": true,
-        "sidebar": false,
-        "isComment": false
-      },
-      "regularPath": "/timeLine/",
-      "relativePath": "timeLine/README.md",
-      "key": "v-51489fb9",
-      "path": "/timeLine/",
-      "headers": [
-        {
-          "level": 2,
-          "title": "Time Line",
-          "slug": "time-line"
-        }
-      ],
-      "lastUpdated": "3/6/2021, 4:40:28 PM"
-    },
-    {
-      "title": "React + Ts 实现三子棋小游戏",
-      "frontmatter": {
-        "title": "React + Ts 实现三子棋小游戏",
-        "date": "2019-9-12",
-        "categories": [
-          "frontend"
-        ],
-        "tags": [
-          "react",
-          "ts"
-        ]
-      },
-      "regularPath": "/web/React/chess.html",
-      "relativePath": "web/React/chess.md",
-      "key": "v-f2b6692a",
-      "path": "/web/React/chess.html",
-      "headers": [
-        {
-          "level": 2,
-          "title": "游戏规则",
-          "slug": "游戏规则"
-        },
-        {
-          "level": 2,
-          "title": "组件化",
-          "slug": "组件化"
-        },
-        {
-          "level": 2,
-          "title": "开发棋子组件",
-          "slug": "开发棋子组件"
-        },
-        {
-          "level": 2,
-          "title": "开发棋盘组件",
-          "slug": "开发棋盘组件"
-        },
-        {
-          "level": 2,
-          "title": "开发游戏规则组件",
-          "slug": "开发游戏规则组件"
-        },
-        {
-          "level": 2,
-          "title": "开发显示游戏状态的组件",
-          "slug": "开发显示游戏状态的组件"
-        },
-        {
-          "level": 2,
-          "title": "收尾",
-          "slug": "收尾"
-        }
-      ],
-      "lastUpdated": "5/17/2022, 6:31:55 PM"
     },
     {
       "title": "useCallback的api适用",
@@ -1357,6 +1381,62 @@ export const siteData = {
       "lastUpdated": "5/7/2022, 6:30:40 PM"
     },
     {
+      "title": "React + Ts 实现三子棋小游戏",
+      "frontmatter": {
+        "title": "React + Ts 实现三子棋小游戏",
+        "date": "2019-9-12",
+        "categories": [
+          "frontend"
+        ],
+        "tags": [
+          "react",
+          "ts"
+        ]
+      },
+      "regularPath": "/web/React/chess.html",
+      "relativePath": "web/React/chess.md",
+      "key": "v-f2b6692a",
+      "path": "/web/React/chess.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "游戏规则",
+          "slug": "游戏规则"
+        },
+        {
+          "level": 2,
+          "title": "组件化",
+          "slug": "组件化"
+        },
+        {
+          "level": 2,
+          "title": "开发棋子组件",
+          "slug": "开发棋子组件"
+        },
+        {
+          "level": 2,
+          "title": "开发棋盘组件",
+          "slug": "开发棋盘组件"
+        },
+        {
+          "level": 2,
+          "title": "开发游戏规则组件",
+          "slug": "开发游戏规则组件"
+        },
+        {
+          "level": 2,
+          "title": "开发显示游戏状态的组件",
+          "slug": "开发显示游戏状态的组件"
+        },
+        {
+          "level": 2,
+          "title": "收尾",
+          "slug": "收尾"
+        }
+      ],
+      "lastUpdated": "5/17/2022, 6:31:55 PM"
+    },
+    {
       "title": "hooks useMemo",
       "frontmatter": {
         "title": "hooks useMemo",
@@ -1381,6 +1461,48 @@ export const siteData = {
         }
       ],
       "lastUpdated": "5/11/2022, 5:28:30 PM"
+    },
+    {
+      "title": "高级前端进阶",
+      "frontmatter": {},
+      "regularPath": "/web/advanced/",
+      "relativePath": "web/advanced/README.md",
+      "key": "v-16d50ee6",
+      "path": "/web/advanced/",
+      "headers": [
+        {
+          "level": 2,
+          "title": "高级前端进阶",
+          "slug": "高级前端进阶"
+        }
+      ],
+      "lastUpdated": "1/13/2022, 5:04:39 PM"
+    },
+    {
+      "title": "面向对象继承",
+      "frontmatter": {
+        "title": "面向对象继承",
+        "date": "2019-8-19",
+        "categories": [
+          "js面向对象继承解说"
+        ],
+        "tags": [
+          "面向对象",
+          "继承"
+        ]
+      },
+      "regularPath": "/web/advanced/inherit.html",
+      "relativePath": "web/advanced/inherit.md",
+      "key": "v-6467af42",
+      "path": "/web/advanced/inherit.html",
+      "headers": [
+        {
+          "level": 3,
+          "title": "",
+          "slug": ""
+        }
+      ],
+      "lastUpdated": "1/13/2022, 5:04:39 PM"
     },
     {
       "title": "调用栈--执行上下文",
@@ -1449,17 +1571,52 @@ export const siteData = {
       "lastUpdated": "1/21/2022, 5:57:07 PM"
     },
     {
-      "title": "高级前端进阶",
-      "frontmatter": {},
-      "regularPath": "/web/advanced/",
-      "relativePath": "web/advanced/README.md",
-      "key": "v-16d50ee6",
-      "path": "/web/advanced/",
+      "title": "原型链图解",
+      "frontmatter": {
+        "title": "原型链图解",
+        "date": "2019-8-19",
+        "categories": [
+          "js面向对象原型链解说"
+        ],
+        "tags": [
+          "面向对象",
+          "原型链"
+        ]
+      },
+      "regularPath": "/web/advanced/prototype.html",
+      "relativePath": "web/advanced/prototype.md",
+      "key": "v-b9040b5e",
+      "path": "/web/advanced/prototype.html",
       "headers": [
         {
-          "level": 2,
-          "title": "高级前端进阶",
-          "slug": "高级前端进阶"
+          "level": 3,
+          "title": "JS中的原型和原型链",
+          "slug": "js中的原型和原型链"
+        },
+        {
+          "level": 3,
+          "title": "构造函数",
+          "slug": "构造函数"
+        },
+        {
+          "level": 3,
+          "title": "原型",
+          "slug": "原型"
+        },
+        {
+          "level": 3,
+          "title": "实例对象与原型对象关系",
+          "slug": "实例对象与原型对象关系"
+        },
+        {
+          "level": 3,
+          "title": "继承与原型链",
+          "slug": "继承与原型链"
+        },
+        {
+          "level": 3,
+          "title": "比较全面原型图",
+          "slug": "比较全面原型图"
         }
       ],
       "lastUpdated": "1/13/2022, 5:04:39 PM"
@@ -1545,83 +1702,6 @@ export const siteData = {
       "lastUpdated": "3/6/2021, 4:40:28 PM"
     },
     {
-      "title": "原型链图解",
-      "frontmatter": {
-        "title": "原型链图解",
-        "date": "2019-8-19",
-        "categories": [
-          "js面向对象原型链解说"
-        ],
-        "tags": [
-          "面向对象",
-          "原型链"
-        ]
-      },
-      "regularPath": "/web/advanced/prototype.html",
-      "relativePath": "web/advanced/prototype.md",
-      "key": "v-b9040b5e",
-      "path": "/web/advanced/prototype.html",
-      "headers": [
-        {
-          "level": 3,
-          "title": "JS中的原型和原型链",
-          "slug": "js中的原型和原型链"
-        },
-        {
-          "level": 3,
-          "title": "构造函数",
-          "slug": "构造函数"
-        },
-        {
-          "level": 3,
-          "title": "原型",
-          "slug": "原型"
-        },
-        {
-          "level": 3,
-          "title": "实例对象与原型对象关系",
-          "slug": "实例对象与原型对象关系"
-        },
-        {
-          "level": 3,
-          "title": "继承与原型链",
-          "slug": "继承与原型链"
-        },
-        {
-          "level": 3,
-          "title": "比较全面原型图",
-          "slug": "比较全面原型图"
-        }
-      ],
-      "lastUpdated": "1/13/2022, 5:04:39 PM"
-    },
-    {
-      "title": "面向对象继承",
-      "frontmatter": {
-        "title": "面向对象继承",
-        "date": "2019-8-19",
-        "categories": [
-          "js面向对象继承解说"
-        ],
-        "tags": [
-          "面向对象",
-          "继承"
-        ]
-      },
-      "regularPath": "/web/advanced/inherit.html",
-      "relativePath": "web/advanced/inherit.md",
-      "key": "v-6467af42",
-      "path": "/web/advanced/inherit.html",
-      "headers": [
-        {
-          "level": 3,
-          "title": "",
-          "slug": ""
-        }
-      ],
-      "lastUpdated": "1/13/2022, 5:04:39 PM"
-    },
-    {
       "title": "es7之修饰器",
       "frontmatter": {
         "title": "es7之修饰器",
@@ -1639,6 +1719,48 @@ export const siteData = {
       "key": "v-2d5a58aa",
       "path": "/web/es6/es7_decorator.html",
       "lastUpdated": "3/6/2021, 4:40:28 PM"
+    },
+    {
+      "title": "iterator 迭代器",
+      "frontmatter": {
+        "title": "iterator 迭代器",
+        "date": "2022-06-28T00:00:00.000Z",
+        "categories": [
+          "frontend"
+        ],
+        "tags": [
+          "Set",
+          "amd",
+          "esm"
+        ]
+      },
+      "regularPath": "/web/es6/iterator.html",
+      "relativePath": "web/es6/iterator.md",
+      "key": "v-29bff457",
+      "path": "/web/es6/iterator.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "简介",
+          "slug": "简介"
+        },
+        {
+          "level": 2,
+          "title": "原生具备 Iterator 接口的数据结构如下",
+          "slug": "原生具备-iterator-接口的数据结构如下"
+        },
+        {
+          "level": 2,
+          "title": "其他场合",
+          "slug": "其他场合"
+        },
+        {
+          "level": 2,
+          "title": "案例",
+          "slug": "案例"
+        }
+      ],
+      "lastUpdated": "6/29/2022, 10:05:13 AM"
     },
     {
       "title": "前端模块化",
@@ -1711,48 +1833,6 @@ export const siteData = {
         }
       ],
       "lastUpdated": "11/9/2021, 5:39:03 PM"
-    },
-    {
-      "title": "iterator 迭代器",
-      "frontmatter": {
-        "title": "iterator 迭代器",
-        "date": "2022-06-28T00:00:00.000Z",
-        "categories": [
-          "frontend"
-        ],
-        "tags": [
-          "Set",
-          "amd",
-          "esm"
-        ]
-      },
-      "regularPath": "/web/es6/iterator.html",
-      "relativePath": "web/es6/iterator.md",
-      "key": "v-29bff457",
-      "path": "/web/es6/iterator.html",
-      "headers": [
-        {
-          "level": 2,
-          "title": "简介",
-          "slug": "简介"
-        },
-        {
-          "level": 2,
-          "title": "原生具备 Iterator 接口的数据结构如下",
-          "slug": "原生具备-iterator-接口的数据结构如下"
-        },
-        {
-          "level": 2,
-          "title": "其他场合",
-          "slug": "其他场合"
-        },
-        {
-          "level": 2,
-          "title": "案例",
-          "slug": "案例"
-        }
-      ],
-      "lastUpdated": "6/29/2022, 10:05:13 AM"
     },
     {
       "title": "手写一个Set集合",
@@ -2044,6 +2124,22 @@ export const siteData = {
       "lastUpdated": "6/28/2022, 6:27:21 PM"
     },
     {
+      "title": "typescript",
+      "frontmatter": {},
+      "regularPath": "/web/ts/",
+      "relativePath": "web/ts/README.md",
+      "key": "v-715bfef4",
+      "path": "/web/ts/",
+      "headers": [
+        {
+          "level": 2,
+          "title": "typescript",
+          "slug": "typescript"
+        }
+      ],
+      "lastUpdated": "1/11/2022, 3:57:00 PM"
+    },
+    {
       "title": "webpack",
       "frontmatter": {
         "title": "webpack",
@@ -2068,22 +2164,6 @@ export const siteData = {
         }
       ],
       "lastUpdated": "6/28/2022, 6:27:21 PM"
-    },
-    {
-      "title": "typescript",
-      "frontmatter": {},
-      "regularPath": "/web/ts/",
-      "relativePath": "web/ts/README.md",
-      "key": "v-715bfef4",
-      "path": "/web/ts/",
-      "headers": [
-        {
-          "level": 2,
-          "title": "typescript",
-          "slug": "typescript"
-        }
-      ],
-      "lastUpdated": "1/11/2022, 3:57:00 PM"
     },
     {
       "title": "ts安装",
@@ -2251,9 +2331,94 @@ export const siteData = {
       "lastUpdated": "6/28/2022, 6:27:21 PM"
     },
     {
-      "title": "rollup",
+      "title": "npm & yarn & pnpm",
       "frontmatter": {
-        "title": "rollup",
+        "title": "npm & yarn & pnpm",
+        "date": "2022-7-27",
+        "categories": [
+          "frontend"
+        ],
+        "tags": [
+          "npm",
+          "yarn",
+          "pnpm",
+          "索引"
+        ]
+      },
+      "regularPath": "/web/webpack/npm/",
+      "relativePath": "web/webpack/npm/index.md",
+      "key": "v-95f2d0d2",
+      "path": "/web/webpack/npm/",
+      "headers": [
+        {
+          "level": 3,
+          "title": "npm查看、设置镜像源",
+          "slug": "npm查看、设置镜像源"
+        },
+        {
+          "level": 3,
+          "title": "全局设置taobao镜像源",
+          "slug": "全局设置taobao镜像源"
+        },
+        {
+          "level": 3,
+          "title": "nrm镜像源管理工具",
+          "slug": "nrm镜像源管理工具"
+        },
+        {
+          "level": 3,
+          "title": "切换镜像源",
+          "slug": "切换镜像源"
+        }
+      ]
+    },
+    {
+      "title": "npm & yarn & pnpm 却别",
+      "frontmatter": {
+        "title": "npm & yarn & pnpm 却别",
+        "date": "2022-7-27",
+        "categories": [
+          "frontend"
+        ],
+        "tags": [
+          "npm",
+          "yarn",
+          "pnpm",
+          "索引"
+        ]
+      },
+      "regularPath": "/web/webpack/npm/deffi.html",
+      "relativePath": "web/webpack/npm/deffi.md",
+      "key": "v-ce719d44",
+      "path": "/web/webpack/npm/deffi.html",
+      "headers": [
+        {
+          "level": 3,
+          "title": "npm查看、设置镜像源",
+          "slug": "npm查看、设置镜像源"
+        }
+      ]
+    },
+    {
+      "title": "文档说明",
+      "frontmatter": {},
+      "regularPath": "/zh/guide/",
+      "relativePath": "zh/guide/README.md",
+      "key": "v-0878ca6c",
+      "path": "/zh/guide/",
+      "headers": [
+        {
+          "level": 3,
+          "title": "文档说明",
+          "slug": "文档说明"
+        }
+      ],
+      "lastUpdated": "10/25/2021, 3:10:19 PM"
+    },
+    {
+      "title": "快速创建",
+      "frontmatter": {
+        "title": "快速创建",
         "date": "2022-7-27",
         "categories": [
           "frontend"
@@ -2263,10 +2428,10 @@ export const siteData = {
           "索引"
         ]
       },
-      "regularPath": "/web/webpack/rollup/test.html",
-      "relativePath": "web/webpack/rollup/test.md",
-      "key": "v-168c1d90",
-      "path": "/web/webpack/rollup/test.html",
+      "regularPath": "/web/webpack/rollup/",
+      "relativePath": "web/webpack/rollup/index.md",
+      "key": "v-b57a5126",
+      "path": "/web/webpack/rollup/",
       "headers": [
         {
           "level": 2,
@@ -2328,24 +2493,18 @@ export const siteData = {
           "title": "github",
           "slug": "github"
         }
-      ],
-      "lastUpdated": "7/28/2022, 2:23:28 PM"
+      ]
     },
     {
-      "title": "文档说明",
-      "frontmatter": {},
-      "regularPath": "/zh/guide/",
-      "relativePath": "zh/guide/README.md",
-      "key": "v-0878ca6c",
-      "path": "/zh/guide/",
-      "headers": [
-        {
-          "level": 3,
-          "title": "文档说明",
-          "slug": "文档说明"
-        }
-      ],
-      "lastUpdated": "10/25/2021, 3:10:19 PM"
+      "frontmatter": {
+        "actionText": "快速上手 →",
+        "actionLink": "/zh/guide/"
+      },
+      "regularPath": "/nested/",
+      "relativePath": "nested/README.md",
+      "key": "v-e408918e",
+      "path": "/nested/",
+      "lastUpdated": "3/6/2021, 4:40:28 PM"
     }
   ],
   "themeConfig": {
@@ -2488,7 +2647,14 @@ export const siteData = {
           ]
         },
         "cli",
-        "npm"
+        {
+          "title": "npm",
+          "collapsable": true,
+          "children": [
+            "npm/pkg-tools",
+            "npm/diff"
+          ]
+        }
       ],
       "/web/H5/": [
         "svg"
@@ -2536,7 +2702,7 @@ export const siteData = {
           "title": "rollup",
           "collapsable": true,
           "children": [
-            "rollup/test"
+            "rollup/index"
           ]
         }
       ],

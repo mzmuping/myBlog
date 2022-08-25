@@ -60,7 +60,11 @@ module.exports = {
       },
       { text: "nodejs", link: "/node/" },
       { text: "mysql", link: "/mysql/" },
-      { text: "java", link: "/java/" },
+      {
+        text: "linux",
+        link: "/linux/",
+        items: [{ text: "node安装", link: "/linux/node/" }],
+      },
       { text: "时间线", link: "/timeLine/", icon: "reco-date" },
       { text: "友链", link: "/friendLink/" },
       { text: "关于", link: "/nested/", icon: "account_circle" },
@@ -161,6 +165,7 @@ module.exports = {
           children: ["git_error"],
         },
       ],
+      "/linux/": ["node"],
     },
     // 博客设置
     blogConfig: {

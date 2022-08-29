@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>linux 安装node | myBlog</title>
+    <meta name="generator" content="VuePress 1.8.2">
+    <link rel="icon" href="favicon.ico">
+    <meta name="description" content="myBlogmyBlogmyBlogmyBlog">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    
+    <link rel="preload" href="/myBlog/assets/css/0.styles.9961da37.css" as="style"><link rel="preload" href="/myBlog/assets/js/app.2d12e51e.js" as="script"><link rel="preload" href="/myBlog/assets/js/3.171a6b9b.js" as="script"><link rel="preload" href="/myBlog/assets/js/36.3276f4f6.js" as="script"><link rel="prefetch" href="/myBlog/assets/js/10.88c567a2.js"><link rel="prefetch" href="/myBlog/assets/js/11.8e93d8da.js"><link rel="prefetch" href="/myBlog/assets/js/12.2caf3fa8.js"><link rel="prefetch" href="/myBlog/assets/js/13.dbe62826.js"><link rel="prefetch" href="/myBlog/assets/js/14.37fd6d92.js"><link rel="prefetch" href="/myBlog/assets/js/15.c55b52e5.js"><link rel="prefetch" href="/myBlog/assets/js/16.33e1afe4.js"><link rel="prefetch" href="/myBlog/assets/js/17.7731dbb4.js"><link rel="prefetch" href="/myBlog/assets/js/18.8980e9f1.js"><link rel="prefetch" href="/myBlog/assets/js/19.ce7b6434.js"><link rel="prefetch" href="/myBlog/assets/js/20.a5dd910f.js"><link rel="prefetch" href="/myBlog/assets/js/21.0ee59345.js"><link rel="prefetch" href="/myBlog/assets/js/22.1f99e53a.js"><link rel="prefetch" href="/myBlog/assets/js/23.f83c213f.js"><link rel="prefetch" href="/myBlog/assets/js/24.ce81e998.js"><link rel="prefetch" href="/myBlog/assets/js/25.c5d6b4e4.js"><link rel="prefetch" href="/myBlog/assets/js/26.8639d50f.js"><link rel="prefetch" href="/myBlog/assets/js/27.95825451.js"><link rel="prefetch" href="/myBlog/assets/js/28.0b6565d6.js"><link rel="prefetch" href="/myBlog/assets/js/29.88d2c0d6.js"><link rel="prefetch" href="/myBlog/assets/js/30.de2898b9.js"><link rel="prefetch" href="/myBlog/assets/js/31.c3cea5a4.js"><link rel="prefetch" href="/myBlog/assets/js/32.d804c626.js"><link rel="prefetch" href="/myBlog/assets/js/33.2692a891.js"><link rel="prefetch" href="/myBlog/assets/js/34.f3b3bd79.js"><link rel="prefetch" href="/myBlog/assets/js/35.c0a56101.js"><link rel="prefetch" href="/myBlog/assets/js/37.77c6b0e6.js"><link rel="prefetch" href="/myBlog/assets/js/38.12a6c0b1.js"><link rel="prefetch" href="/myBlog/assets/js/39.caa06186.js"><link rel="prefetch" href="/myBlog/assets/js/4.45c9cfe1.js"><link rel="prefetch" href="/myBlog/assets/js/40.f212494f.js"><link rel="prefetch" href="/myBlog/assets/js/41.1ecd8384.js"><link rel="prefetch" href="/myBlog/assets/js/42.0996a611.js"><link rel="prefetch" href="/myBlog/assets/js/43.264f4e47.js"><link rel="prefetch" href="/myBlog/assets/js/44.2007dd6c.js"><link rel="prefetch" href="/myBlog/assets/js/45.e980684b.js"><link rel="prefetch" href="/myBlog/assets/js/46.9142a52a.js"><link rel="prefetch" href="/myBlog/assets/js/47.df4f1bf7.js"><link rel="prefetch" href="/myBlog/assets/js/48.5f2d78e0.js"><link rel="prefetch" href="/myBlog/assets/js/49.71f10dde.js"><link rel="prefetch" href="/myBlog/assets/js/5.bc4ad5ad.js"><link rel="prefetch" href="/myBlog/assets/js/50.a14d666a.js"><link rel="prefetch" href="/myBlog/assets/js/51.8fafafaf.js"><link rel="prefetch" href="/myBlog/assets/js/52.a9b1bf96.js"><link rel="prefetch" href="/myBlog/assets/js/53.5a0d57bb.js"><link rel="prefetch" href="/myBlog/assets/js/54.92376d09.js"><link rel="prefetch" href="/myBlog/assets/js/55.9f5c8ffa.js"><link rel="prefetch" href="/myBlog/assets/js/56.0480678d.js"><link rel="prefetch" href="/myBlog/assets/js/57.fe052363.js"><link rel="prefetch" href="/myBlog/assets/js/58.2039d54b.js"><link rel="prefetch" href="/myBlog/assets/js/59.117c7301.js"><link rel="prefetch" href="/myBlog/assets/js/6.c73fdac9.js"><link rel="prefetch" href="/myBlog/assets/js/60.a5bc16a8.js"><link rel="prefetch" href="/myBlog/assets/js/61.27bd516c.js"><link rel="prefetch" href="/myBlog/assets/js/62.f8eedc6b.js"><link rel="prefetch" href="/myBlog/assets/js/63.ce2b6835.js"><link rel="prefetch" href="/myBlog/assets/js/64.879a5634.js"><link rel="prefetch" href="/myBlog/assets/js/65.5d218688.js"><link rel="prefetch" href="/myBlog/assets/js/66.63dd7c8b.js"><link rel="prefetch" href="/myBlog/assets/js/67.13f0a867.js"><link rel="prefetch" href="/myBlog/assets/js/68.463a3039.js"><link rel="prefetch" href="/myBlog/assets/js/69.19a23d4b.js"><link rel="prefetch" href="/myBlog/assets/js/7.20852f0f.js"><link rel="prefetch" href="/myBlog/assets/js/70.fae4a864.js"><link rel="prefetch" href="/myBlog/assets/js/71.c9127d35.js"><link rel="prefetch" href="/myBlog/assets/js/72.b5c2d338.js"><link rel="prefetch" href="/myBlog/assets/js/73.37a894f9.js"><link rel="prefetch" href="/myBlog/assets/js/74.7c546d46.js"><link rel="prefetch" href="/myBlog/assets/js/8.b24bcebe.js"><link rel="prefetch" href="/myBlog/assets/js/9.6ac6caca.js"><link rel="prefetch" href="/myBlog/assets/js/vendors~docsearch.5e8e1442.js">
+    <link rel="stylesheet" href="/myBlog/assets/css/0.styles.9961da37.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/myBlog/" class="home-link router-link-active"><!----> <span class="site-name">myBlog</span></a> <div class="links"><form id="search-form" role="search" class="algolia-search-wrapper search-box"><input id="algolia-search-input" class="search-query"></form> <nav class="nav-links can-hide"><div class="nav-item"><a href="/myBlog/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="导航栏配置" class="dropdown-title"><span class="title">导航栏配置</span> <span class="arrow down"></span></button> <button type="button" aria-label="导航栏配置" class="mobile-dropdown-title"><span class="title">导航栏配置</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/myBlog/guide/vue/" class="nav-link">
+  自动读取
+</a></li><li class="dropdown-item"><!----> <a href="/myBlog/guide/ts/" class="nav-link">
+  自定义
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="错误总结" class="dropdown-title"><span class="title">错误总结</span> <span class="arrow down"></span></button> <button type="button" aria-label="错误总结" class="mobile-dropdown-title"><span class="title">错误总结</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/myBlog/error/" class="nav-link">
+  github
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端" class="dropdown-title"><span class="title">前端</span> <span class="arrow down"></span></button> <button type="button" aria-label="前端" class="mobile-dropdown-title"><span class="title">前端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/myBlog/web/es6/" class="nav-link">
+  es6
+</a></li><li class="dropdown-item"><!----> <a href="/myBlog/web/vue/" class="nav-link">
+  vue
+</a></li><li class="dropdown-item"><!----> <a href="/myBlog/web/H5/" class="nav-link">
+  H5
+</a></li><li class="dropdown-item"><!----> <a href="/myBlog/web/React/" class="nav-link">
+  React
+</a></li><li class="dropdown-item"><!----> <a href="/myBlog/web/ts/" class="nav-link">
+  ts
+</a></li><li class="dropdown-item"><!----> <a href="/myBlog/web/advanced/" class="nav-link">
+  进阶系列
+</a></li><li class="dropdown-item"><!----> <a href="/myBlog/web/interview/" class="nav-link">
+  面试题
+</a></li><li class="dropdown-item"><!----> <a href="/myBlog/web/webpack/" class="nav-link">
+  前端工程化
+</a></li></ul></div></div><div class="nav-item"><a href="/myBlog/node/" class="nav-link">
+  nodejs
+</a></div><div class="nav-item"><a href="/myBlog/mysql/" class="nav-link">
+  mysql
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="linux" class="dropdown-title"><span class="title">linux</span> <span class="arrow down"></span></button> <button type="button" aria-label="linux" class="mobile-dropdown-title"><span class="title">linux</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/myBlog/linux/node/" class="nav-link">
+  node安装
+</a></li></ul></div></div><div class="nav-item"><a href="/myBlog/timeLine/" class="nav-link">
+  时间线
+</a></div><div class="nav-item"><a href="/myBlog/friendLink/" class="nav-link">
+  友链
+</a></div><div class="nav-item"><a href="/myBlog/nested/" class="nav-link">
+  关于
+</a></div> <a href="https://github.com/mzmuping/myBlog" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/myBlog/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="导航栏配置" class="dropdown-title"><span class="title">导航栏配置</span> <span class="arrow down"></span></button> <button type="button" aria-label="导航栏配置" class="mobile-dropdown-title"><span class="title">导航栏配置</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/myBlog/guide/vue/" class="nav-link">
+  自动读取
+</a></li><li class="dropdown-item"><!----> <a href="/myBlog/guide/ts/" class="nav-link">
+  自定义
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="错误总结" class="dropdown-title"><span class="title">错误总结</span> <span class="arrow down"></span></button> <button type="button" aria-label="错误总结" class="mobile-dropdown-title"><span class="title">错误总结</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/myBlog/error/" class="nav-link">
+  github
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端" class="dropdown-title"><span class="title">前端</span> <span class="arrow down"></span></button> <button type="button" aria-label="前端" class="mobile-dropdown-title"><span class="title">前端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/myBlog/web/es6/" class="nav-link">
+  es6
+</a></li><li class="dropdown-item"><!----> <a href="/myBlog/web/vue/" class="nav-link">
+  vue
+</a></li><li class="dropdown-item"><!----> <a href="/myBlog/web/H5/" class="nav-link">
+  H5
+</a></li><li class="dropdown-item"><!----> <a href="/myBlog/web/React/" class="nav-link">
+  React
+</a></li><li class="dropdown-item"><!----> <a href="/myBlog/web/ts/" class="nav-link">
+  ts
+</a></li><li class="dropdown-item"><!----> <a href="/myBlog/web/advanced/" class="nav-link">
+  进阶系列
+</a></li><li class="dropdown-item"><!----> <a href="/myBlog/web/interview/" class="nav-link">
+  面试题
+</a></li><li class="dropdown-item"><!----> <a href="/myBlog/web/webpack/" class="nav-link">
+  前端工程化
+</a></li></ul></div></div><div class="nav-item"><a href="/myBlog/node/" class="nav-link">
+  nodejs
+</a></div><div class="nav-item"><a href="/myBlog/mysql/" class="nav-link">
+  mysql
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="linux" class="dropdown-title"><span class="title">linux</span> <span class="arrow down"></span></button> <button type="button" aria-label="linux" class="mobile-dropdown-title"><span class="title">linux</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/myBlog/linux/node/" class="nav-link">
+  node安装
+</a></li></ul></div></div><div class="nav-item"><a href="/myBlog/timeLine/" class="nav-link">
+  时间线
+</a></div><div class="nav-item"><a href="/myBlog/friendLink/" class="nav-link">
+  友链
+</a></div><div class="nav-item"><a href="/myBlog/nested/" class="nav-link">
+  关于
+</a></div> <a href="https://github.com/mzmuping/myBlog" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav>  <ul class="sidebar-links"><li><a href="/myBlog/linux/node.html" aria-current="page" class="active sidebar-link">linux 安装node</a><ul class="sidebar-sub-headers"></ul></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><p>###　第一步：下载压缩包并解压</p> <p>（1）cd /opt ----切换到opt目录下</p> <p>（2）mkdir software ----创建software文件夹</p> <p>（3）cd software ----进入到新建的这个文件夹中</p> <p>（4）<code>wget https://nodejs.org/dist/v16.3.0/node-v16.3.0-linux-x64.tar.xz</code> ----这个是直接用命令进行下载，需要注意的是，如果连接不上，需要在windows中访问:<code>https://nodejs.org/dist/</code>,然后选择自己需要的node.js版本，再通过xftp软件，上传到 opt/software目录下!</p> <p>（5）tar xvf node-v15.11.0-linux-x64.tar.xz -----解压，这一步请确保当前所处的位置是在： opt/software/这个目录下</p> <p>(6) mv node-v16.3.0-linux-x64 node ---改变文件名</p> <h3 id="第二步-配置环境变量"><a href="#第二步-配置环境变量" class="header-anchor">#</a> 第二步：配置环境变量</h3> <p>1）vi /etc/profile ----进入配置环境变量的文件中</p> <p>（2）点击键盘中的 &quot; i &quot;键，进入插入模式</p> <p>（3）在末尾输入：export PATH=$PATH:/opt/software/node/bin/</p> <p>（4）按esc键，退出编辑模式，再按shift+“:” 再按wq，回车，保存并退出</p> <p>（5）sorce /etc/profile -----这个是让配置环境生效，有时候报错（-bash: sorce: command not found）</p> <blockquote><p>在 /etc/profile 里配置的环境变量只要退出后都需要再 source /etc/profile 才会生效</p></blockquote> <blockquote><p>解决办法：
+编辑vi ~/.bashrc 再最后面增加</p></blockquote> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">if</span> <span class="token punctuation">[</span> <span class="token operator">-</span>f <span class="token operator">/</span>etc<span class="token operator">/</span>profile <span class="token punctuation">]</span><span class="token punctuation">;</span> then
+	<span class="token punctuation">.</span> <span class="token operator">/</span>etc<span class="token operator">/</span>profile
+fi
+
+</code></pre></div><blockquote><p>注意：修改完要重启系统</p></blockquote> <h3 id="第三步-检查安装环境"><a href="#第三步-检查安装环境" class="header-anchor">#</a> 第三步：检查安装环境</h3> <p>1）node -v</p> <p>（2）npm -v</p> <p>（3）npm install -g cnpm --registry=https://registry.npm.taobao.org -----这个是换成淘宝镜像，因为连接国外的服务器下载很慢</p></div> <footer class="page-edit"><div class="edit-link"><a href="https://github.com/mzmuping/myBlog/edit/master/docs/linux/node.md" target="_blank" rel="noopener noreferrer">在 GitHub 上编辑此页</a> <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></div> <div class="last-updated"><span class="prefix">Last Updated:</span> <span class="time">8/25/2022, 6:38:59 PM</span></div></footer> <!----> </main></div><div class="global-ui"></div></div>
+    <script src="/myBlog/assets/js/app.2d12e51e.js" defer></script><script src="/myBlog/assets/js/3.171a6b9b.js" defer></script><script src="/myBlog/assets/js/36.3276f4f6.js" defer></script>
+  </body>
+</html>

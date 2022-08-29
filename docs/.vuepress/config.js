@@ -137,7 +137,7 @@ module.exports = {
         {
           title: "rollup",
           collapsable: true,
-          children: ["rollup/index"],
+          children: ["rollup/quick_create"],
         },
       ],
       "/mysql/": [

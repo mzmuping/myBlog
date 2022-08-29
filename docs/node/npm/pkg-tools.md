@@ -23,7 +23,7 @@ npm publish
 ### npm查看、设置镜像源
 查看当前镜像源
 ```js
-npm get registry
+npm config get registry
 ```
 
 ### 全局设置taobao镜像源

@@ -63,7 +63,10 @@ module.exports = {
       {
         text: "linux",
         link: "/linux/",
-        items: [{ text: "node安装", link: "/linux/node/" }],
+        items: [
+          { text: "node安装", link: "/linux/node/" },
+          { text: "docker", link: "/linux/docker/install" },
+        ],
       },
       { text: "时间线", link: "/timeLine/", icon: "reco-date" },
       { text: "友链", link: "/friendLink/" },
@@ -165,7 +168,14 @@ module.exports = {
           children: ["git_error"],
         },
       ],
-      "/linux/": ["node"],
+      "/linux/": [
+        "node",
+        {
+          title: "docker 学习",
+          collapsable: true,
+          children: ["docker/install"],
+        },
+      ],
     },
     // 博客设置
     blogConfig: {

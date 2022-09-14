@@ -95,6 +95,7 @@ module.exports = {
       ],
       "/node/": [
         "node_process",
+        "vscode_debug",
         {
           title: "redis与cache区别",
           collapsable: true,

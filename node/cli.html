@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>创建脚手架 | myBlog</title>
+    <meta name="generator" content="VuePress 1.8.2">
+    <link rel="icon" href="favicon.ico">
+    <meta name="description" content="myBlogmyBlogmyBlogmyBlog">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    
+    <link rel="preload" href="/myBlog/assets/css/0.styles.3c0d323c.css" as="style"><link rel="preload" href="/myBlog/assets/js/app.8d00eada.js" as="script"><link rel="preload" href="/myBlog/assets/js/3.1fd96a24.js" as="script"><link rel="preload" href="/myBlog/assets/js/15.c8ad8a34.js" as="script"><link rel="prefetch" href="/myBlog/assets/js/10.94af45d4.js"><link rel="prefetch" href="/myBlog/assets/js/11.63a7dfae.js"><link rel="prefetch" href="/myBlog/assets/js/12.f6167b79.js"><link rel="prefetch" href="/myBlog/assets/js/13.cfaed0b3.js"><link rel="prefetch" href="/myBlog/assets/js/14.57792c39.js"><link rel="prefetch" href="/myBlog/assets/js/16.8ee79f40.js"><link rel="prefetch" href="/myBlog/assets/js/17.81610de7.js"><link rel="prefetch" href="/myBlog/assets/js/18.364d9efa.js"><link rel="prefetch" href="/myBlog/assets/js/19.abaef9b0.js"><link rel="prefetch" href="/myBlog/assets/js/20.1b7bb19a.js"><link rel="prefetch" href="/myBlog/assets/js/21.ffd075ca.js"><link rel="prefetch" href="/myBlog/assets/js/22.d6d2847f.js"><link rel="prefetch" href="/myBlog/assets/js/23.e02deb38.js"><link rel="prefetch" href="/myBlog/assets/js/24.f18d4050.js"><link rel="prefetch" href="/myBlog/assets/js/25.b6ba228d.js"><link rel="prefetch" href="/myBlog/assets/js/26.73b53451.js"><link rel="prefetch" href="/myBlog/assets/js/27.520a6cda.js"><link rel="prefetch" href="/myBlog/assets/js/28.7c81b9c6.js"><link rel="prefetch" href="/myBlog/assets/js/29.58ea60e4.js"><link rel="prefetch" href="/myBlog/assets/js/30.e3259446.js"><link rel="prefetch" href="/myBlog/assets/js/31.9d75c6ff.js"><link rel="prefetch" href="/myBlog/assets/js/32.ec25dc6f.js"><link rel="prefetch" href="/myBlog/assets/js/33.fa09ddff.js"><link rel="prefetch" href="/myBlog/assets/js/34.8f8fa38a.js"><link rel="prefetch" href="/myBlog/assets/js/35.e424c4f1.js"><link rel="prefetch" href="/myBlog/assets/js/36.7cc7c626.js"><link rel="prefetch" href="/myBlog/assets/js/37.67ea5194.js"><link rel="prefetch" href="/myBlog/assets/js/38.8f94a7f8.js"><link rel="prefetch" href="/myBlog/assets/js/39.a17f5a63.js"><link rel="prefetch" href="/myBlog/assets/js/4.648112fd.js"><link rel="prefetch" href="/myBlog/assets/js/40.80d4a804.js"><link rel="prefetch" href="/myBlog/assets/js/41.4255fa1d.js"><link rel="prefetch" href="/myBlog/assets/js/42.06a4a774.js"><link rel="prefetch" href="/myBlog/assets/js/43.44e96bd3.js"><link rel="prefetch" href="/myBlog/assets/js/44.508c8e31.js"><link rel="prefetch" href="/myBlog/assets/js/45.029a29fb.js"><link rel="prefetch" href="/myBlog/assets/js/46.153ec408.js"><link rel="prefetch" href="/myBlog/assets/js/47.02485f6f.js"><link rel="prefetch" href="/myBlog/assets/js/48.d57c880e.js"><link rel="prefetch" href="/myBlog/assets/js/49.edc71bf0.js"><link rel="prefetch" href="/myBlog/assets/js/5.691f51bb.js"><link rel="prefetch" href="/myBlog/assets/js/50.7de61240.js"><link rel="prefetch" href="/myBlog/assets/js/51.5a2c1d19.js"><link rel="prefetch" href="/myBlog/assets/js/52.4b1e7ce1.js"><link rel="prefetch" href="/myBlog/assets/js/53.0a114e66.js"><link rel="prefetch" href="/myBlog/assets/js/54.51eecbba.js"><link rel="prefetch" href="/myBlog/assets/js/55.4167add7.js"><link rel="prefetch" href="/myBlog/assets/js/56.07352fde.js"><link rel="prefetch" href="/myBlog/assets/js/57.6451581d.js"><link rel="prefetch" href="/myBlog/assets/js/58.8f787794.js"><link rel="prefetch" href="/myBlog/assets/js/59.7a06c87b.js"><link rel="prefetch" href="/myBlog/assets/js/6.638dc60a.js"><link rel="prefetch" href="/myBlog/assets/js/60.cbb6b75e.js"><link rel="prefetch" href="/myBlog/assets/js/61.ce18d4e3.js"><link rel="prefetch" href="/myBlog/assets/js/62.0bd37fee.js"><link rel="prefetch" href="/myBlog/assets/js/63.27f72453.js"><link rel="prefetch" href="/myBlog/assets/js/64.aaea2b8d.js"><link rel="prefetch" href="/myBlog/assets/js/65.36b8471a.js"><link rel="prefetch" href="/myBlog/assets/js/66.ce044f43.js"><link rel="prefetch" href="/myBlog/assets/js/67.753f6ee1.js"><link rel="prefetch" href="/myBlog/assets/js/68.ef432299.js"><link rel="prefetch" href="/myBlog/assets/js/69.451ec36e.js"><link rel="prefetch" href="/myBlog/assets/js/7.9df82698.js"><link rel="prefetch" href="/myBlog/assets/js/70.8e99d146.js"><link rel="prefetch" href="/myBlog/assets/js/71.b9d8ca47.js"><link rel="prefetch" href="/myBlog/assets/js/72.0e9d0a76.js"><link rel="prefetch" href="/myBlog/assets/js/73.8e30a24c.js"><link rel="prefetch" href="/myBlog/assets/js/74.a8e3f706.js"><link rel="prefetch" href="/myBlog/assets/js/75.273388e7.js"><link rel="prefetch" href="/myBlog/assets/js/76.38fcf607.js"><link rel="prefetch" href="/myBlog/assets/js/77.df2c38c5.js"><link rel="prefetch" href="/myBlog/assets/js/8.9b24eb24.js"><link rel="prefetch" href="/myBlog/assets/js/9.8ce9daac.js"><link rel="prefetch" href="/myBlog/assets/js/vendors~docsearch.39963113.js">
+    <link rel="stylesheet" href="/myBlog/assets/css/0.styles.3c0d323c.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/myBlog/" class="home-link router-link-active"><!----> <span class="site-name">myBlog</span></a> <div class="links"><form id="search-form" role="search" class="algolia-search-wrapper search-box"><input id="algolia-search-input" class="search-query"></form> <nav class="nav-links can-hide"><div class="nav-item"><a href="/myBlog/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="导航栏配置" class="dropdown-title"><span class="title">导航栏配置</span> <span class="arrow down"></span></button> <button type="button" aria-label="导航栏配置" class="mobile-dropdown-title"><span class="title">导航栏配置</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/myBlog/guide/vue/" class="nav-link">
+  自动读取
+</a></li><li class="dropdown-item"><!----> <a href="/myBlog/guide/ts/" class="nav-link">
+  自定义
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="错误总结" class="dropdown-title"><span class="title">错误总结</span> <span class="arrow down"></span></button> <button type="button" aria-label="错误总结" class="mobile-dropdown-title"><span class="title">错误总结</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/myBlog/error/" class="nav-link">
+  github
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端" class="dropdown-title"><span class="title">前端</span> <span class="arrow down"></span></button> <button type="button" aria-label="前端" class="mobile-dropdown-title"><span class="title">前端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/myBlog/web/es6/" class="nav-link">
+  es6
+</a></li><li class="dropdown-item"><!----> <a href="/myBlog/web/vue/" class="nav-link">
+  vue
+</a></li><li class="dropdown-item"><!----> <a href="/myBlog/web/H5/" class="nav-link">
+  H5
+</a></li><li class="dropdown-item"><!----> <a href="/myBlog/web/React/" class="nav-link">
+  React
+</a></li><li class="dropdown-item"><!----> <a href="/myBlog/web/ts/" class="nav-link">
+  ts
+</a></li><li class="dropdown-item"><!----> <a href="/myBlog/web/advanced/" class="nav-link">
+  进阶系列
+</a></li><li class="dropdown-item"><!----> <a href="/myBlog/web/interview/" class="nav-link">
+  面试题
+</a></li><li class="dropdown-item"><!----> <a href="/myBlog/web/webpack/" class="nav-link">
+  前端工程化
+</a></li></ul></div></div><div class="nav-item"><a href="/myBlog/node/" class="nav-link router-link-active">
+  nodejs
+</a></div><div class="nav-item"><a href="/myBlog/mysql/" class="nav-link">
+  mysql
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="linux" class="dropdown-title"><span class="title">linux</span> <span class="arrow down"></span></button> <button type="button" aria-label="linux" class="mobile-dropdown-title"><span class="title">linux</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/myBlog/linux/node/" class="nav-link">
+  node安装
+</a></li><li class="dropdown-item"><!----> <a href="/myBlog/linux/docker/install.html" class="nav-link">
+  docker
+</a></li></ul></div></div><div class="nav-item"><a href="/myBlog/timeLine/" class="nav-link">
+  时间线
+</a></div><div class="nav-item"><a href="/myBlog/friendLink/" class="nav-link">
+  友链
+</a></div><div class="nav-item"><a href="/myBlog/nested/" class="nav-link">
+  关于
+</a></div> <a href="https://github.com/mzmuping/myBlog" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/myBlog/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="导航栏配置" class="dropdown-title"><span class="title">导航栏配置</span> <span class="arrow down"></span></button> <button type="button" aria-label="导航栏配置" class="mobile-dropdown-title"><span class="title">导航栏配置</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/myBlog/guide/vue/" class="nav-link">
+  自动读取
+</a></li><li class="dropdown-item"><!----> <a href="/myBlog/guide/ts/" class="nav-link">
+  自定义
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="错误总结" class="dropdown-title"><span class="title">错误总结</span> <span class="arrow down"></span></button> <button type="button" aria-label="错误总结" class="mobile-dropdown-title"><span class="title">错误总结</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/myBlog/error/" class="nav-link">
+  github
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端" class="dropdown-title"><span class="title">前端</span> <span class="arrow down"></span></button> <button type="button" aria-label="前端" class="mobile-dropdown-title"><span class="title">前端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/myBlog/web/es6/" class="nav-link">
+  es6
+</a></li><li class="dropdown-item"><!----> <a href="/myBlog/web/vue/" class="nav-link">
+  vue
+</a></li><li class="dropdown-item"><!----> <a href="/myBlog/web/H5/" class="nav-link">
+  H5
+</a></li><li class="dropdown-item"><!----> <a href="/myBlog/web/React/" class="nav-link">
+  React
+</a></li><li class="dropdown-item"><!----> <a href="/myBlog/web/ts/" class="nav-link">
+  ts
+</a></li><li class="dropdown-item"><!----> <a href="/myBlog/web/advanced/" class="nav-link">
+  进阶系列
+</a></li><li class="dropdown-item"><!----> <a href="/myBlog/web/interview/" class="nav-link">
+  面试题
+</a></li><li class="dropdown-item"><!----> <a href="/myBlog/web/webpack/" class="nav-link">
+  前端工程化
+</a></li></ul></div></div><div class="nav-item"><a href="/myBlog/node/" class="nav-link router-link-active">
+  nodejs
+</a></div><div class="nav-item"><a href="/myBlog/mysql/" class="nav-link">
+  mysql
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="linux" class="dropdown-title"><span class="title">linux</span> <span class="arrow down"></span></button> <button type="button" aria-label="linux" class="mobile-dropdown-title"><span class="title">linux</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/myBlog/linux/node/" class="nav-link">
+  node安装
+</a></li><li class="dropdown-item"><!----> <a href="/myBlog/linux/docker/install.html" class="nav-link">
+  docker
+</a></li></ul></div></div><div class="nav-item"><a href="/myBlog/timeLine/" class="nav-link">
+  时间线
+</a></div><div class="nav-item"><a href="/myBlog/friendLink/" class="nav-link">
+  友链
+</a></div><div class="nav-item"><a href="/myBlog/nested/" class="nav-link">
+  关于
+</a></div> <a href="https://github.com/mzmuping/myBlog" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav>  <ul class="sidebar-links"><li><a href="/myBlog/node/node_process.html" class="sidebar-link">守护Node.js进程</a></li><li><a href="/myBlog/node/vscode_debug.html" class="sidebar-link">vscode-debug</a></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>redis与cache区别</span> <span class="arrow right"></span></p> <!----></section></li><li><a href="/myBlog/node/cli.html" aria-current="page" class="active sidebar-link">创建脚手架</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/myBlog/node/cli.html#使用第三方yeoman" class="sidebar-link">使用第三方yeoman</a></li><li class="sidebar-sub-header"><a href="/myBlog/node/cli.html#安装对应-generater" class="sidebar-link">安装对应 generater</a></li><li class="sidebar-sub-header"><a href="/myBlog/node/cli.html#yo-运行generator" class="sidebar-link">yo 运行generator</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/myBlog/node/cli.html#yeoman-sub-generator" class="sidebar-link">Yeoman Sub Generator</a></li></ul></li><li class="sidebar-sub-header"><a href="/myBlog/node/cli.html#yeoman-基本使用步骤" class="sidebar-link">Yeoman 基本使用步骤</a></li><li class="sidebar-sub-header"><a href="/myBlog/node/cli.html#创建-自定义generator" class="sidebar-link">创建 自定义generator</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/myBlog/node/cli.html#写法" class="sidebar-link">写法</a></li><li class="sidebar-sub-header"><a href="/myBlog/node/cli.html#plop" class="sidebar-link">plop</a></li><li class="sidebar-sub-header"><a href="/myBlog/node/cli.html#手写cli" class="sidebar-link">手写cli</a></li></ul></li></ul></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>npm</span> <span class="arrow right"></span></p> <!----></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h3 id="简介"><a href="#简介" class="header-anchor">#</a> 简介</h3> <p>这篇介绍脚手架工具，使用yeoman,plop 创建，还有自定义创建cli</p> <h2 id="使用第三方yeoman"><a href="#使用第三方yeoman" class="header-anchor">#</a> 使用第三方yeoman</h2> <div class="language-js extra-class"><pre class="language-js"><code>npm install <span class="token operator">-</span>g yo 
+yarn global add yo
+</code></pre></div><h2 id="安装对应-generater"><a href="#安装对应-generater" class="header-anchor">#</a> 安装对应 generater</h2> <div class="language-js extra-class"><pre class="language-js"><code>npm i generater<span class="token operator">-</span>node <span class="token operator">-</span>g 
+yarn global add generater<span class="token operator">-</span>node
+</code></pre></div><h2 id="yo-运行generator"><a href="#yo-运行generator" class="header-anchor">#</a> yo 运行generator</h2> <div class="language-js extra-class"><pre class="language-js"><code>yo node
+</code></pre></div><h3 id="yeoman-sub-generator"><a href="#yeoman-sub-generator" class="header-anchor">#</a> Yeoman Sub Generator</h3> <p>Generator不一定都会有子集
+<a href="https://github.com/yeoman/generator-node" target="_blank" rel="noopener noreferrer">支持子集Generator<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <ul><li>作用：在某些某些项目配置通用的的一些文件</li></ul> <div class="language-js extra-class"><pre class="language-js"><code>yo node<span class="token operator">:</span>cli
+yarn
+yarn link
+chen<span class="token operator">-</span>module  <span class="token operator">--</span>help
+</code></pre></div><h2 id="yeoman-基本使用步骤"><a href="#yeoman-基本使用步骤" class="header-anchor">#</a> Yeoman 基本使用步骤</h2> <ol><li>明确你的需求</li> <li>找到合适的Generator</li> <li>全局安装找到的Generator</li> <li>通过yo运行对应的Generator</li> <li>通过命令行交互填写选项</li> <li>生成项目结构</li></ol> <h2 id="创建-自定义generator"><a href="#创建-自定义generator" class="header-anchor">#</a> 创建 自定义generator</h2> <ul><li>步骤
+<a href="https://github.com/mzmuping/mzmuing-vue-cli" target="_blank" rel="noopener noreferrer">源码<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">//文件名 规范 generator-&lt;name&gt;</span>
+mkdir generator<span class="token operator">-</span>sample <span class="token comment">//创建项目文件</span>
+yarn init  <span class="token comment">// 初始化package.json文件</span>
+yarn add yeoman<span class="token operator">-</span>generator <span class="token comment">// 添加yeomona 引入模块,自定义要继承者模块</span>
+code <span class="token punctuation">.</span> <span class="token comment">//vscode 打开</span>
+generators<span class="token operator">/</span>app<span class="token operator">/</span>index<span class="token punctuation">.</span>js  <span class="token comment">// 作为入口文件</span>
+yarn link <span class="token comment">//创建全局映射</span>
+yo sample <span class="token comment">//使用</span>
+npm publish <span class="token comment">// 推送到npm</span>
+</code></pre></div><ul><li>目录结构</li></ul> <div class="language- extra-class"><pre class="language-text"><code>|---generator
+    |--- app
+        |--- index.js
+</code></pre></div><h3 id="写法"><a href="#写法" class="header-anchor">#</a> 写法</h3> <p>index.js 文件是继承入口，返回一个继承yeoman-generator类</p> <p>基本使用</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">const</span> Generator <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'yeoman-generator'</span><span class="token punctuation">)</span>
+
+module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token keyword">class</span> <span class="token class-name">extends</span> Generator<span class="token punctuation">{</span>
+    <span class="token function">initianlizing</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token comment">//获取当前项目状态，获取基本配置参数等</span>
+    <span class="token punctuation">}</span>
+    <span class="token function">prompting</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token comment">//向用户展示交互式问题收集关键参数</span>
+        <span class="token keyword">return</span> <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">prompt</span><span class="token punctuation">(</span><span class="token punctuation">[</span>
+        <span class="token punctuation">{</span>
+            type<span class="token operator">:</span> <span class="token string">'input'</span><span class="token punctuation">,</span>
+            name<span class="token operator">:</span> <span class="token string">'name'</span><span class="token punctuation">,</span>
+            message<span class="token operator">:</span> <span class="token string">'Your project name'</span><span class="token punctuation">,</span>
+            <span class="token keyword">default</span><span class="token operator">:</span> <span class="token keyword">this</span><span class="token punctuation">.</span>appname<span class="token comment">//appname 目录名</span>
+        <span class="token punctuation">}</span>
+        <span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span><span class="token parameter">answers</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+            <span class="token keyword">this</span><span class="token punctuation">.</span>answers <span class="token operator">=</span> answers<span class="token punctuation">;</span>
+        <span class="token punctuation">}</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+    <span class="token function">configuring</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token comment">//保存配置相关信息且生成配置文件（名称多为'.'开头的配置文件,例如.editorconfig）</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">default</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token comment">//未匹配任何生命周期方法的非私有方法均在此环节*自动*执行</span>
+    <span class="token punctuation">}</span>
+    <span class="token function">writing</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token comment">//依据模板进行新项目结构的写操作</span>
+
+        <span class="token comment">//生成目录的时候会自动调用该方法</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>fs<span class="token punctuation">.</span><span class="token function">write</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">destinationPath</span><span class="token punctuation">(</span><span class="token string">'temp.text'</span><span class="token punctuation">)</span><span class="token punctuation">,</span> Math<span class="token punctuation">.</span><span class="token function">random</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">toString</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+
+    <span class="token punctuation">}</span>
+    <span class="token function">conflicts</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token comment">//处理冲突(内部调用，一般不用处理）</span>
+    <span class="token punctuation">}</span>
+    <span class="token function">install</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token comment">//使用指定的包管理工具进行依赖安装(支持npm,bower,yarn)</span>
+    <span class="token punctuation">}</span>
+    <span class="token function">end</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token comment">//结束动作，例如清屏，输出结束信息，say GoodBye等等</span>
+    <span class="token punctuation">}</span>
+
+<span class="token punctuation">}</span>
+</code></pre></div><h3 id="plop"><a href="#plop" class="header-anchor">#</a> plop</h3> <p>一个小而美的脚手架工具</p> <h3 id="手写cli"><a href="#手写cli" class="header-anchor">#</a> 手写cli</h3> <p>步骤：</p> <ol><li>创建项目 sample-cli</li> <li>yarn init // 创建package.json</li> <li>创建cli.js // 填写下面文件</li></ol> <div class="language-js extra-class"><pre class="language-js"><code>#<span class="token operator">!</span><span class="token operator">/</span>usr<span class="token operator">/</span>bin<span class="token operator">/</span>env node
+<span class="token comment">// Node CLI 应用入口文件必须要有这样文件头</span>
+<span class="token comment">// 如果是linux 或者 macOS 系统下还需要修改此文件的读写权限为755</span>
+<span class="token comment">// 具体就是通过 chmod 755 cli.js 实现修改</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'cli is run '</span><span class="token punctuation">)</span>
+</code></pre></div><ol start="4"><li>在package.json 添加</li></ol> <div class="language- extra-class"><pre class="language-text"><code>{
+&quot;bin&quot;: &quot;cli.js&quot;,
+}
+</code></pre></div><ol start="5"><li>yarn link // 挂载全局</li> <li>测试=》 在新文件夹 cmd 中入sample-cli</li></ol> <p>结果：
+<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAa8AAAAyCAYAAADr5FQoAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAVESURBVHhe7dnJbexGEIBhByD44iy0BeBAfXc+SsFJKIF5aAMFlMu19ZAcskf/4cNj10bOgilY/u3z8/P28fFxe39/v729vd1eX19vLy8vAABcFssLALAclhcAYDksLwDAclheAIDlsLwAAMtheQEAlsPyAgAsh+UFAFgOywsAsByWFwBgOSwvAMByWF4AgOWwvAAAy2F5AQCWc9jy+vr6cuOr4PnX9tNfP/Ds0uU1fgAs3VyJ6r15XuxsZz/L1vcj6pW5mle3umd9XR2rvPaznzO7/8j95O/Q1YXLy/vQZj/I6ovRiZ1pz+cZs2bn3dOjZb02t+U+1tbn3ssVnuFMV3798h056xk79z/z+VBjeSX2fp5Hv74z3//urCPfk87sI+8/HD2/cvb9K7w/uJe7vGY+0FGb1Uc5Lz5z30fZ85nOeH1nvf/dWUe/J9X8s+//CFd4hsjZz3bl9wa5Sy8vma1leS/unb06Ly81NiayPpvXdV5ceL0Ss7mqTvLduI3JXKFzXl7X2Gsvb0kuqrFxe+2JctKnVTVVXtdkua5qRpXXvJzttTWduKXz9tpT5TSvplL1Z/GsD+fbvLwq2Zcji23Nyznq6fRHMS9enW2sc+2ddbxTm/VnsT3zXq2Icp359izXWhQXM33V/boxiXt0XtfbWJX3bJmfnb3r8W9Uo83E7TxPVO+do5hW5XGew5fX0P3S6Fj1DJ2Z2YxqvtZ5ls69daxz7Z2z+NZaHbsnr0m+W9eJ61iV78SHmR4dy2Zq3Tqr6puda+tn+kdt1u9d2/qZWBSPaj3d2qpu5p54rMsuLzlrWU7YGn22sl4tyuk+W+P16Fjn2jtn8a21OjauPba+k9NxK8p7cR2r8p34kPV4shqd0zVevKOaX+VFlKv6ddzm9dm7tvUzMYl7vFpPt7aqm7knHstdXiPhfWhbPkjbe898ne88S6dGy+ptbvZsY51r75zFo9qhM1fHslmRqD+bFeW8eDVzr/tk8czsM82qZm29v661fdnZu7b1M7Es3tXtr+q2PgeO015e0Yc44p0PuDNPx7bmvbPW6dey2eM6y8vZ9lTX3jmLR7VDNbc629hs3qu38azfxsZ1Va9F+WiGVz+T92JePnLPLBvL7jczf1zb+qxW/o1qtJl4VBux9ffMnL0nHidcXsP44IRu0qq88Gqk15thczbv1URxnZup0by87vNmSMzWRPGoRkRzo5gW1QpdG9VlOZ23MXu2opzus3k5ezlPVhPNkLiXtzmb16q8R8/1+jt5fbZsr1ev4971bE7Tdd0am++I+nX8njzOly6vva3+BeD5r+Oe18IP0OPwXuNoLK8JPP81jNchvHzkWV7/1d37+QAzHrq8AADYA8sLALAclhcAYDmbl1f2d+29/u7N388BANrdy0sWSrZU9lo6e80BADyHQ//LCwCAI7C8AADLKZeX/MkuWlJZPOvryuboXFTjsfXR2euJruUMADheurzsD7L3A139aO/1o77Hs1ijXvdE117M9to8AOA44fLq/hBXdXv9oB+xKLIZXk7HqjwA4DjLLi+JaTZfyXq8nI5VeQDAcZZeXtbsvbJ6L6djVR4AcJzT/p/XiFe9mq31emfmDVm9dz8d83qzeQCA/aTLa5AfbfvDrONb8jqWifo1nc90e21en3XcqwUAHKdcXmexS4ClAAAQl15emlcDAPiZLru8AACIsLwAAMtheQEAlpMurz/+/v0/dGPm+/vb5dXu4ej5q9LvPe8PgGcSLi9vWc0usE5sD/w4/98j3//hz7/++ddsDgDmvdx+AfRdVv8j9qJtAAAAAElFTkSuQmCC" alt=""></p> <p>上图node cli就跑起来了</p> <p>下面我们添加一个创建基本模板文件</p> <p>先按照依赖：</p> <div class="language-js extra-class"><pre class="language-js"><code>yarn add inquirer <span class="token operator">-</span><span class="token constant">D</span>
+yanr add ejs <span class="token operator">-</span><span class="token constant">D</span>
+</code></pre></div><p>代码实现</p> <div class="language-js extra-class"><pre class="language-js"><code>#<span class="token operator">!</span><span class="token operator">/</span>usr<span class="token operator">/</span>bin<span class="token operator">/</span>env node
+
+<span class="token comment">// Node CLI 应用入口文件必须要有这样文件头</span>
+<span class="token comment">// 如果是linux 或者 macOS 系统下还需要修改此文件的读写权限为755</span>
+<span class="token comment">// 具体就是通过 chmod 755 cli.js 实现修改</span>
+
+<span class="token comment">// 脚手架的工作过程：</span>
+<span class="token comment">// 1. 通过命令行交互询问用户问题</span>
+<span class="token comment">// 2. 根据用户回答的结果生成文件</span>
+<span class="token keyword">const</span> inquirer <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'inquirer'</span><span class="token punctuation">)</span>
+<span class="token keyword">const</span> fs <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'fs'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">const</span> path <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'path'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">const</span> ejs <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'ejs'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+inquirer<span class="token punctuation">.</span><span class="token function">prompt</span><span class="token punctuation">(</span><span class="token punctuation">[</span>
+    <span class="token punctuation">{</span>
+        type<span class="token operator">:</span> <span class="token string">'input'</span><span class="token punctuation">,</span>
+        name<span class="token operator">:</span> <span class="token string">'name'</span><span class="token punctuation">,</span>
+        message<span class="token operator">:</span> <span class="token string">'Project name?'</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">]</span><span class="token punctuation">)</span>
+    <span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span><span class="token parameter">answers</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+        <span class="token comment">//根据用户回答的结果生成文件</span>
+
+        <span class="token comment">//模板目录</span>
+        <span class="token keyword">const</span> temlDir <span class="token operator">=</span> path<span class="token punctuation">.</span><span class="token function">join</span><span class="token punctuation">(</span>__dirname<span class="token punctuation">,</span> <span class="token string">'templates'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        <span class="token comment">//目标目录</span>
+        <span class="token keyword">const</span> destDir <span class="token operator">=</span> process<span class="token punctuation">.</span><span class="token function">cwd</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token comment">//读取文件</span>
+        fs<span class="token punctuation">.</span><span class="token function">readdir</span><span class="token punctuation">(</span>temlDir<span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token parameter">err<span class="token punctuation">,</span> files</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+            <span class="token keyword">if</span> <span class="token punctuation">(</span>err<span class="token punctuation">)</span> <span class="token keyword">throw</span> err
+            files<span class="token punctuation">.</span><span class="token function">forEach</span><span class="token punctuation">(</span><span class="token parameter">file</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+                <span class="token comment">//ejs 替换用户交互内容</span>
+                ejs<span class="token punctuation">.</span><span class="token function">renderFile</span><span class="token punctuation">(</span>path<span class="token punctuation">.</span><span class="token function">join</span><span class="token punctuation">(</span>temlDir<span class="token punctuation">,</span> file<span class="token punctuation">)</span><span class="token punctuation">,</span> answers<span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token parameter">err<span class="token punctuation">,</span> result</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+                    <span class="token keyword">if</span> <span class="token punctuation">(</span>err<span class="token punctuation">)</span> <span class="token keyword">throw</span> err<span class="token punctuation">;</span>
+                    <span class="token comment">//输出模板到目标目录</span>
+                    fs<span class="token punctuation">.</span><span class="token function">writeFileSync</span><span class="token punctuation">(</span>path<span class="token punctuation">.</span><span class="token function">join</span><span class="token punctuation">(</span>destDir<span class="token punctuation">,</span> file<span class="token punctuation">)</span><span class="token punctuation">,</span> result<span class="token punctuation">)</span><span class="token punctuation">;</span>
+                <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token punctuation">}</span><span class="token punctuation">)</span>
+        <span class="token punctuation">}</span><span class="token punctuation">)</span>
+
+    <span class="token punctuation">}</span><span class="token punctuation">)</span>
+</code></pre></div></div> <footer class="page-edit"><div class="edit-link"><a href="https://github.com/mzmuping/myBlog/edit/master/docs/node/cli.md" target="_blank" rel="noopener noreferrer">在 GitHub 上编辑此页</a> <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></div> <div class="last-updated"><span class="prefix">Last Updated:</span> <span class="time">5/17/2022, 6:31:55 PM</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/myBlog/node/cache-redis.html" class="prev">
+        redis与cache区别
+      </a></span> <span class="next"><a href="/myBlog/node/npm/pkg-tools.html">
+        npm 管理工具
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/myBlog/assets/js/app.8d00eada.js" defer></script><script src="/myBlog/assets/js/3.1fd96a24.js" defer></script><script src="/myBlog/assets/js/15.c8ad8a34.js" defer></script>
+  </body>
+</html>

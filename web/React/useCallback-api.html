@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>useCallback的api适用 | myBlog</title>
+    <meta name="generator" content="VuePress 1.8.2">
+    <link rel="icon" href="favicon.ico">
+    <meta name="description" content="myBlogmyBlogmyBlogmyBlog">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    
+    <link rel="preload" href="/myBlog/assets/css/0.styles.3c0d323c.css" as="style"><link rel="preload" href="/myBlog/assets/js/app.8d00eada.js" as="script"><link rel="preload" href="/myBlog/assets/js/3.1fd96a24.js" as="script"><link rel="preload" href="/myBlog/assets/js/17.81610de7.js" as="script"><link rel="prefetch" href="/myBlog/assets/js/10.94af45d4.js"><link rel="prefetch" href="/myBlog/assets/js/11.63a7dfae.js"><link rel="prefetch" href="/myBlog/assets/js/12.f6167b79.js"><link rel="prefetch" href="/myBlog/assets/js/13.cfaed0b3.js"><link rel="prefetch" href="/myBlog/assets/js/14.57792c39.js"><link rel="prefetch" href="/myBlog/assets/js/15.c8ad8a34.js"><link rel="prefetch" href="/myBlog/assets/js/16.8ee79f40.js"><link rel="prefetch" href="/myBlog/assets/js/18.364d9efa.js"><link rel="prefetch" href="/myBlog/assets/js/19.abaef9b0.js"><link rel="prefetch" href="/myBlog/assets/js/20.1b7bb19a.js"><link rel="prefetch" href="/myBlog/assets/js/21.ffd075ca.js"><link rel="prefetch" href="/myBlog/assets/js/22.d6d2847f.js"><link rel="prefetch" href="/myBlog/assets/js/23.e02deb38.js"><link rel="prefetch" href="/myBlog/assets/js/24.f18d4050.js"><link rel="prefetch" href="/myBlog/assets/js/25.b6ba228d.js"><link rel="prefetch" href="/myBlog/assets/js/26.73b53451.js"><link rel="prefetch" href="/myBlog/assets/js/27.520a6cda.js"><link rel="prefetch" href="/myBlog/assets/js/28.7c81b9c6.js"><link rel="prefetch" href="/myBlog/assets/js/29.58ea60e4.js"><link rel="prefetch" href="/myBlog/assets/js/30.e3259446.js"><link rel="prefetch" href="/myBlog/assets/js/31.9d75c6ff.js"><link rel="prefetch" href="/myBlog/assets/js/32.ec25dc6f.js"><link rel="prefetch" href="/myBlog/assets/js/33.fa09ddff.js"><link rel="prefetch" href="/myBlog/assets/js/34.8f8fa38a.js"><link rel="prefetch" href="/myBlog/assets/js/35.e424c4f1.js"><link rel="prefetch" href="/myBlog/assets/js/36.7cc7c626.js"><link rel="prefetch" href="/myBlog/assets/js/37.67ea5194.js"><link rel="prefetch" href="/myBlog/assets/js/38.8f94a7f8.js"><link rel="prefetch" href="/myBlog/assets/js/39.a17f5a63.js"><link rel="prefetch" href="/myBlog/assets/js/4.648112fd.js"><link rel="prefetch" href="/myBlog/assets/js/40.80d4a804.js"><link rel="prefetch" href="/myBlog/assets/js/41.4255fa1d.js"><link rel="prefetch" href="/myBlog/assets/js/42.06a4a774.js"><link rel="prefetch" href="/myBlog/assets/js/43.44e96bd3.js"><link rel="prefetch" href="/myBlog/assets/js/44.508c8e31.js"><link rel="prefetch" href="/myBlog/assets/js/45.029a29fb.js"><link rel="prefetch" href="/myBlog/assets/js/46.153ec408.js"><link rel="prefetch" href="/myBlog/assets/js/47.02485f6f.js"><link rel="prefetch" href="/myBlog/assets/js/48.d57c880e.js"><link rel="prefetch" href="/myBlog/assets/js/49.edc71bf0.js"><link rel="prefetch" href="/myBlog/assets/js/5.691f51bb.js"><link rel="prefetch" href="/myBlog/assets/js/50.7de61240.js"><link rel="prefetch" href="/myBlog/assets/js/51.5a2c1d19.js"><link rel="prefetch" href="/myBlog/assets/js/52.4b1e7ce1.js"><link rel="prefetch" href="/myBlog/assets/js/53.0a114e66.js"><link rel="prefetch" href="/myBlog/assets/js/54.51eecbba.js"><link rel="prefetch" href="/myBlog/assets/js/55.4167add7.js"><link rel="prefetch" href="/myBlog/assets/js/56.07352fde.js"><link rel="prefetch" href="/myBlog/assets/js/57.6451581d.js"><link rel="prefetch" href="/myBlog/assets/js/58.8f787794.js"><link rel="prefetch" href="/myBlog/assets/js/59.7a06c87b.js"><link rel="prefetch" href="/myBlog/assets/js/6.638dc60a.js"><link rel="prefetch" href="/myBlog/assets/js/60.cbb6b75e.js"><link rel="prefetch" href="/myBlog/assets/js/61.ce18d4e3.js"><link rel="prefetch" href="/myBlog/assets/js/62.0bd37fee.js"><link rel="prefetch" href="/myBlog/assets/js/63.27f72453.js"><link rel="prefetch" href="/myBlog/assets/js/64.aaea2b8d.js"><link rel="prefetch" href="/myBlog/assets/js/65.36b8471a.js"><link rel="prefetch" href="/myBlog/assets/js/66.ce044f43.js"><link rel="prefetch" href="/myBlog/assets/js/67.753f6ee1.js"><link rel="prefetch" href="/myBlog/assets/js/68.ef432299.js"><link rel="prefetch" href="/myBlog/assets/js/69.451ec36e.js"><link rel="prefetch" href="/myBlog/assets/js/7.9df82698.js"><link rel="prefetch" href="/myBlog/assets/js/70.8e99d146.js"><link rel="prefetch" href="/myBlog/assets/js/71.b9d8ca47.js"><link rel="prefetch" href="/myBlog/assets/js/72.0e9d0a76.js"><link rel="prefetch" href="/myBlog/assets/js/73.8e30a24c.js"><link rel="prefetch" href="/myBlog/assets/js/74.a8e3f706.js"><link rel="prefetch" href="/myBlog/assets/js/75.273388e7.js"><link rel="prefetch" href="/myBlog/assets/js/76.38fcf607.js"><link rel="prefetch" href="/myBlog/assets/js/77.df2c38c5.js"><link rel="prefetch" href="/myBlog/assets/js/8.9b24eb24.js"><link rel="prefetch" href="/myBlog/assets/js/9.8ce9daac.js"><link rel="prefetch" href="/myBlog/assets/js/vendors~docsearch.39963113.js">
+    <link rel="stylesheet" href="/myBlog/assets/css/0.styles.3c0d323c.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/myBlog/" class="home-link router-link-active"><!----> <span class="site-name">myBlog</span></a> <div class="links"><form id="search-form" role="search" class="algolia-search-wrapper search-box"><input id="algolia-search-input" class="search-query"></form> <nav class="nav-links can-hide"><div class="nav-item"><a href="/myBlog/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="导航栏配置" class="dropdown-title"><span class="title">导航栏配置</span> <span class="arrow down"></span></button> <button type="button" aria-label="导航栏配置" class="mobile-dropdown-title"><span class="title">导航栏配置</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/myBlog/guide/vue/" class="nav-link">
+  自动读取
+</a></li><li class="dropdown-item"><!----> <a href="/myBlog/guide/ts/" class="nav-link">
+  自定义
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="错误总结" class="dropdown-title"><span class="title">错误总结</span> <span class="arrow down"></span></button> <button type="button" aria-label="错误总结" class="mobile-dropdown-title"><span class="title">错误总结</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/myBlog/error/" class="nav-link">
+  github
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端" class="dropdown-title"><span class="title">前端</span> <span class="arrow down"></span></button> <button type="button" aria-label="前端" class="mobile-dropdown-title"><span class="title">前端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/myBlog/web/es6/" class="nav-link">
+  es6
+</a></li><li class="dropdown-item"><!----> <a href="/myBlog/web/vue/" class="nav-link">
+  vue
+</a></li><li class="dropdown-item"><!----> <a href="/myBlog/web/H5/" class="nav-link">
+  H5
+</a></li><li class="dropdown-item"><!----> <a href="/myBlog/web/React/" class="nav-link router-link-active">
+  React
+</a></li><li class="dropdown-item"><!----> <a href="/myBlog/web/ts/" class="nav-link">
+  ts
+</a></li><li class="dropdown-item"><!----> <a href="/myBlog/web/advanced/" class="nav-link">
+  进阶系列
+</a></li><li class="dropdown-item"><!----> <a href="/myBlog/web/interview/" class="nav-link">
+  面试题
+</a></li><li class="dropdown-item"><!----> <a href="/myBlog/web/webpack/" class="nav-link">
+  前端工程化
+</a></li></ul></div></div><div class="nav-item"><a href="/myBlog/node/" class="nav-link">
+  nodejs
+</a></div><div class="nav-item"><a href="/myBlog/mysql/" class="nav-link">
+  mysql
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="linux" class="dropdown-title"><span class="title">linux</span> <span class="arrow down"></span></button> <button type="button" aria-label="linux" class="mobile-dropdown-title"><span class="title">linux</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/myBlog/linux/node/" class="nav-link">
+  node安装
+</a></li><li class="dropdown-item"><!----> <a href="/myBlog/linux/docker/install.html" class="nav-link">
+  docker
+</a></li></ul></div></div><div class="nav-item"><a href="/myBlog/timeLine/" class="nav-link">
+  时间线
+</a></div><div class="nav-item"><a href="/myBlog/friendLink/" class="nav-link">
+  友链
+</a></div><div class="nav-item"><a href="/myBlog/nested/" class="nav-link">
+  关于
+</a></div> <a href="https://github.com/mzmuping/myBlog" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/myBlog/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="导航栏配置" class="dropdown-title"><span class="title">导航栏配置</span> <span class="arrow down"></span></button> <button type="button" aria-label="导航栏配置" class="mobile-dropdown-title"><span class="title">导航栏配置</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/myBlog/guide/vue/" class="nav-link">
+  自动读取
+</a></li><li class="dropdown-item"><!----> <a href="/myBlog/guide/ts/" class="nav-link">
+  自定义
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="错误总结" class="dropdown-title"><span class="title">错误总结</span> <span class="arrow down"></span></button> <button type="button" aria-label="错误总结" class="mobile-dropdown-title"><span class="title">错误总结</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/myBlog/error/" class="nav-link">
+  github
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端" class="dropdown-title"><span class="title">前端</span> <span class="arrow down"></span></button> <button type="button" aria-label="前端" class="mobile-dropdown-title"><span class="title">前端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/myBlog/web/es6/" class="nav-link">
+  es6
+</a></li><li class="dropdown-item"><!----> <a href="/myBlog/web/vue/" class="nav-link">
+  vue
+</a></li><li class="dropdown-item"><!----> <a href="/myBlog/web/H5/" class="nav-link">
+  H5
+</a></li><li class="dropdown-item"><!----> <a href="/myBlog/web/React/" class="nav-link router-link-active">
+  React
+</a></li><li class="dropdown-item"><!----> <a href="/myBlog/web/ts/" class="nav-link">
+  ts
+</a></li><li class="dropdown-item"><!----> <a href="/myBlog/web/advanced/" class="nav-link">
+  进阶系列
+</a></li><li class="dropdown-item"><!----> <a href="/myBlog/web/interview/" class="nav-link">
+  面试题
+</a></li><li class="dropdown-item"><!----> <a href="/myBlog/web/webpack/" class="nav-link">
+  前端工程化
+</a></li></ul></div></div><div class="nav-item"><a href="/myBlog/node/" class="nav-link">
+  nodejs
+</a></div><div class="nav-item"><a href="/myBlog/mysql/" class="nav-link">
+  mysql
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="linux" class="dropdown-title"><span class="title">linux</span> <span class="arrow down"></span></button> <button type="button" aria-label="linux" class="mobile-dropdown-title"><span class="title">linux</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/myBlog/linux/node/" class="nav-link">
+  node安装
+</a></li><li class="dropdown-item"><!----> <a href="/myBlog/linux/docker/install.html" class="nav-link">
+  docker
+</a></li></ul></div></div><div class="nav-item"><a href="/myBlog/timeLine/" class="nav-link">
+  时间线
+</a></div><div class="nav-item"><a href="/myBlog/friendLink/" class="nav-link">
+  友链
+</a></div><div class="nav-item"><a href="/myBlog/nested/" class="nav-link">
+  关于
+</a></div> <a href="https://github.com/mzmuping/myBlog" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>hooks api学习</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/myBlog/web/React/useCallback-api.html" aria-current="page" class="active sidebar-link">useCallback的api适用</a><ul class="sidebar-sub-headers"></ul></li></ul></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>实现三子棋小游戏 </span> <span class="arrow right"></span></p> <!----></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h3 id="usecallback问题和隐患并给出解决方案"><a href="#usecallback问题和隐患并给出解决方案" class="header-anchor">#</a> useCallback问题和隐患并给出解决方案</h3> <p>返回一个 memoized 回调函数。
+把内联回调函数及依赖项数组作为参数传入 <code>useCallback</code>，它将返回该回调函数的 memoized 版本，
+该回调函数仅在某个依赖项改变时才会更新。当你把回调函数传递给经过优化的并使用引用相等性去避免非必要渲染（例如 shouldComponentUpdate）的子组件时，它将非常有用,</p> <h3 id="使用-usecallback-的场景"><a href="#使用-usecallback-的场景" class="header-anchor">#</a> 使用 useCallback 的场景</h3> <ul><li>函数被 useEffect 内部所使用，但为了避免频繁 useEffect 的频繁调用，所以我包一下</li> <li>当这个函数会被传递给子组件，为了避免子组件频繁渲染，使用 useCallback 包裹，保持引用不变（使用的最多的场景）</li> <li>因为有一个使用了 useCallback 的函数引用了我这个函数，所以我不得不包一下</li> <li>我只是为了解决 hooks lint 的提示报警，所以我包一下</li> <li>需要保存一个函数闭包结果，如配合 debounce、throttle 使用；</li> <li>我希望这个useCallback包裹的函数，但某个依赖项变化时，引用了我这个函数的所有 useEffect 都得重新执行一下；</li></ul> <h3 id="案例"><a href="#案例" class="header-anchor">#</a> 案例</h3> <p>假如这里有个文章组件，我想观察当「文章内容」明确后， 用户对「文章标题」的修改频率如何。这个
+具体实现：当「文章内容」的长度大于 0 时编辑「文章标题」就上报埋点，同时带上「文章标题」和「文章内容」的 字符长度。</p> <p>点击链接，打开 console 看<a href="https://codepen.io/huyao/pen/LYbdomv?editors=0010" target="_blank" rel="noopener noreferrer">Demo<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <p>写出了下面这一段代码，大家可以细看一下，有哪些地方需要优化？它有哪些地方不规范？</p> <div class="language-js extra-class"><pre class="language-js"><code>
+<span class="token comment">// 新建文章组件</span>
+<span class="token keyword">function</span> <span class="token function">EditArticle</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">const</span> <span class="token punctuation">[</span>title<span class="token punctuation">,</span> setTitle<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token function">useState</span><span class="token punctuation">(</span><span class="token string">&quot;&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token keyword">const</span> <span class="token punctuation">[</span>content<span class="token punctuation">,</span> setContent<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token function">useState</span><span class="token punctuation">(</span><span class="token string">&quot;&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token keyword">const</span> <span class="token punctuation">[</span>other<span class="token punctuation">,</span> setOther<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token function">useState</span><span class="token punctuation">(</span><span class="token string">&quot;&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+ 
+ 
+  <span class="token comment">// 获取当前「标题」和「内容」的长度</span>
+  <span class="token keyword">const</span> <span class="token function-variable function">getTextLen</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token punctuation">[</span>title<span class="token punctuation">.</span>length<span class="token punctuation">,</span> content<span class="token punctuation">.</span>length<span class="token punctuation">]</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">;</span>
+ 
+ 
+  <span class="token comment">// 上报当前「标题」和「内容」的长度</span>
+  <span class="token keyword">const</span> <span class="token function-variable function">report</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    <span class="token keyword">const</span> <span class="token punctuation">[</span>titleLen<span class="token punctuation">,</span> contentLen<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token function">getTextLen</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>contentLen <span class="token operator">&gt;</span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">埋点 &gt;&gt;&gt; O长度 </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>titleLen<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">, kr长度</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>contentLen<span class="token interpolation-punctuation punctuation">}</span></span><span class="token template-punctuation string">`</span></span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span><span class="token punctuation">;</span>
+ 
+ 
+  <span class="token comment">/**
+   * 副作用
+   * 当「标题」长度变化时，上报
+   */</span>
+  <span class="token function">useEffect</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    <span class="token function">report</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token punctuation">[</span>title<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+ 
+ 
+  <span class="token keyword">return</span> <span class="token punctuation">(</span>
+    <span class="token operator">&lt;</span>div className<span class="token operator">=</span><span class="token string">&quot;App&quot;</span><span class="token operator">&gt;</span>
+       文章标题   <span class="token operator">&lt;</span>input value<span class="token operator">=</span><span class="token punctuation">{</span>title<span class="token punctuation">}</span> onChange<span class="token operator">=</span><span class="token punctuation">{</span><span class="token punctuation">(</span><span class="token parameter">e</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token function">setTitle</span><span class="token punctuation">(</span>e<span class="token punctuation">.</span>target<span class="token punctuation">.</span>value<span class="token punctuation">)</span><span class="token punctuation">}</span> <span class="token operator">/</span><span class="token operator">&gt;</span>
+ 
+ 
+       文章内容  <span class="token operator">&lt;</span>input value<span class="token operator">=</span><span class="token punctuation">{</span>content<span class="token punctuation">}</span> onChange<span class="token operator">=</span><span class="token punctuation">{</span><span class="token punctuation">(</span><span class="token parameter">e</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token function">setContent</span><span class="token punctuation">(</span>e<span class="token punctuation">.</span>target<span class="token punctuation">.</span>value<span class="token punctuation">)</span><span class="token punctuation">}</span> <span class="token operator">/</span><span class="token operator">&gt;</span>
+ 
+ 
+       其他不相关状态：<span class="token operator">&lt;</span>input value<span class="token operator">=</span><span class="token punctuation">{</span>other<span class="token punctuation">}</span> onChange<span class="token operator">=</span><span class="token punctuation">{</span><span class="token punctuation">(</span><span class="token parameter">e</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token function">setOther</span><span class="token punctuation">(</span>e<span class="token punctuation">.</span>target<span class="token punctuation">.</span>value<span class="token punctuation">)</span><span class="token punctuation">}</span> <span class="token operator">/</span><span class="token operator">&gt;</span>
+ 
+ 
+      <span class="token operator">&lt;</span>MemoArticleTypeSetting getTextLen<span class="token operator">=</span><span class="token punctuation">{</span>getTextLen<span class="token punctuation">}</span> <span class="token operator">/</span><span class="token operator">&gt;</span>
+    <span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">&gt;</span>
+  <span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token keyword">enum</span> ArticleType <span class="token punctuation">{</span>
+  <span class="token constant">WEB</span> <span class="token operator">=</span> <span class="token string">&quot;前端&quot;</span><span class="token punctuation">,</span>
+  <span class="token constant">SERVER</span> <span class="token operator">=</span> <span class="token string">&quot;后端&quot;</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span>
+ 
+ 
+<span class="token comment">// 子组件，修改文章类型（无需关注，它只是接受了父组件的一个参数而已）</span>
+<span class="token keyword">const</span> ArticleTypeSetting<span class="token operator">:</span> <span class="token constant">FC</span><span class="token operator">&lt;</span><span class="token punctuation">{</span> <span class="token function-variable function">getTextLen</span><span class="token operator">:</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> number<span class="token punctuation">[</span><span class="token punctuation">]</span> <span class="token punctuation">}</span><span class="token operator">&gt;</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token parameter"><span class="token punctuation">{</span>  getTextLen <span class="token punctuation">}</span></span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">&quot; --- ArticleTypeSetting 组件重新渲染 --- &quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+ 
+ 
+  <span class="token keyword">const</span> <span class="token punctuation">[</span>articleType<span class="token punctuation">,</span> setArticleType<span class="token punctuation">]</span> <span class="token operator">=</span> useState<span class="token operator">&lt;</span>ArticleType<span class="token operator">&gt;</span><span class="token punctuation">(</span>ArticleType<span class="token punctuation">.</span><span class="token constant">WEB</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+ 
+ 
+  <span class="token keyword">const</span> <span class="token function-variable function">handleChange</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token parameter">e<span class="token operator">:</span> React<span class="token punctuation">.</span>ChangeEvent<span class="token operator">&lt;</span>HTMLInputElement<span class="token operator">&gt;</span></span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    <span class="token function">setArticleType</span><span class="token punctuation">(</span>e<span class="token punctuation">.</span>target<span class="token punctuation">.</span>value <span class="token keyword">as</span> ArticleType<span class="token punctuation">)</span><span class="token punctuation">;</span>
+ 
+ 
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>  <span class="token string">&quot;埋点 &gt;&gt;&gt; 切换类型，当前「标题」和「内容」长度：&quot;</span><span class="token punctuation">,</span> <span class="token function">getTextLen</span><span class="token punctuation">(</span><span class="token punctuation">)</span>  <span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">;</span>
+ 
+ 
+  <span class="token keyword">return</span> <span class="token punctuation">(</span>
+    <span class="token operator">&lt;</span>div<span class="token operator">&gt;</span>
+      <span class="token operator">&lt;</span>div<span class="token operator">&gt;</span>文章类型组件，当选择类型时上报「标题」和「内容」长度<span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">&gt;</span>
+      <span class="token operator">&lt;</span>div<span class="token operator">&gt;</span>
+        <span class="token punctuation">{</span><span class="token punctuation">[</span>ArticleType<span class="token punctuation">.</span><span class="token constant">WEB</span><span class="token punctuation">,</span> ArticleType<span class="token punctuation">.</span><span class="token constant">SERVER</span><span class="token punctuation">]</span><span class="token punctuation">.</span><span class="token function">map</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">type</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">(</span>
+          <span class="token operator">&lt;</span>div<span class="token operator">&gt;</span>  
+            <span class="token operator">&lt;</span>input  type<span class="token operator">=</span><span class="token string">&quot;radio&quot;</span> value<span class="token operator">=</span><span class="token punctuation">{</span>type<span class="token punctuation">}</span> checked<span class="token operator">=</span><span class="token punctuation">{</span>articleType <span class="token operator">===</span> type<span class="token punctuation">}</span> onChange<span class="token operator">=</span><span class="token punctuation">{</span>handleChange<span class="token punctuation">}</span>  <span class="token operator">/</span><span class="token operator">&gt;</span> 
+           <span class="token punctuation">{</span>type<span class="token punctuation">}</span> 
+          <span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">&gt;</span>
+        <span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">}</span>
+      <span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">&gt;</span>
+    <span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">&gt;</span>
+  <span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+ 
+ 
+<span class="token keyword">const</span> MemoArticleTypeSetting <span class="token operator">=</span> <span class="token function">memo</span><span class="token punctuation">(</span>ArticleTypeSetting<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><h3 id="codereview-与修改"><a href="#codereview-与修改" class="header-anchor">#</a> CodeReview 与修改</h3> <h3 id="哪些地方需要优化"><a href="#哪些地方需要优化" class="header-anchor">#</a> 哪些地方需要优化？</h3> <p>子组件 ArticleTypeSetting 是使用 memo 包裹的，这个组件是希望尽可能的减少渲染次数的（假装这个组件有性能问题，一般不用包）。但是，现在每当修改任意一个值（如 other），子组件都会重新渲染，这显然是没有达到优化的预期的</p> <h3 id="哪些地方不规范"><a href="#哪些地方不规范" class="header-anchor">#</a> 哪些地方不规范？</h3> <p><img src="/myBlog/assets/img/useCallback-lint.16f0ae4c.png" alt="">
+这里不规范， useEffect 中使用了 report 函数，但是没有将它放到依赖数组中。我认为这是一件比较危险的事情，在 Hooks 中经常有过期状态的问题。插件已经帮你提示了，虽然现在你自测感觉没问题，但你很难保证在经过几轮轮修改之后，虽然你的代码一堆 warning 或 error，但跑起
+来没问题。</p> <h3 id="修改代码"><a href="#修改代码" class="header-anchor">#</a> 修改代码</h3> <p>对代码进行了一些修改：</p> <ul><li>将 getTextLen 和 report 使用 useCallback 包裹<div class="language-js extra-class"><pre class="language-js"><code>    <span class="token comment">// 获取当前「标题」和「内容」的长度</span>
+    <span class="token keyword">const</span> getTextLen <span class="token operator">=</span> <span class="token function">useCallback</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> <span class="token punctuation">[</span>title<span class="token punctuation">.</span>length<span class="token punctuation">,</span> content<span class="token punctuation">.</span>length<span class="token punctuation">]</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token punctuation">[</span>title<span class="token punctuation">,</span> content<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    
+    
+    <span class="token comment">// 上报当前「标题」和「内容」的长度</span>
+    <span class="token keyword">const</span> report <span class="token operator">=</span> <span class="token function">useCallback</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+        <span class="token keyword">const</span> <span class="token punctuation">[</span>titleLen<span class="token punctuation">,</span> contentLen<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token function">getTextLen</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span>contentLen <span class="token operator">&gt;</span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">埋点 &gt;&gt;&gt; O长度 </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>titleLen<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">, kr长度</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>contentLen<span class="token interpolation-punctuation punctuation">}</span></span><span class="token template-punctuation string">`</span></span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token punctuation">[</span>getTextLen<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    
+    
+    <span class="token comment">/**
+    * 副作用
+    * 当「标题」长度变化时，上报
+    */</span>
+    <span class="token function">useEffect</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+        <span class="token function">report</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token punctuation">[</span>title<span class="token punctuation">,</span> report<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><ul><li><p>还有问题吗？</p> <p>有，当 「文章内容」修改了之后，会触发 useEffect 继续上报，这个问题比较隐晦，不再回归测试的话难以发现；并且编辑文章内容时子组件也在重新渲染。</p></li></ul></li></ul> <h3 id="为什么出了问题"><a href="#为什么出了问题" class="header-anchor">#</a> 为什么出了问题</h3> <p>我的初衷只是使用 useCallback 避免频繁调用，但当一个 useCallback 的依赖项变化后，这个 useEffect 会被执行，就像上面修改过后的代码一样，「文章内容」修改了之后，也会触发 useEffect 的，这就是「useCallback 带来的隐式依赖问题」。</p> <h3 id="如何解决"><a href="#如何解决" class="header-anchor">#</a> 如何解决</h3> <p>将 函数绑定到 useRef 上来解决</p> <div class="language-js extra-class"><pre class="language-js"><code>
+ <span class="token keyword">const</span> getTextLenRef <span class="token operator">=</span> useRef<span class="token operator">&lt;</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">[</span>number<span class="token punctuation">,</span> number<span class="token punctuation">]</span><span class="token operator">&gt;</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+ 
+ 
+  <span class="token comment">// 获取当前「标题」和「内容」的长度</span>
+  getTextLenRef<span class="token punctuation">.</span><span class="token function-variable function">current</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token punctuation">[</span>title<span class="token punctuation">.</span>length<span class="token punctuation">,</span> content<span class="token punctuation">.</span>length<span class="token punctuation">]</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">;</span>
+ 
+ 
+  <span class="token comment">// 上报当前「标题」和「内容」的长度</span>
+  <span class="token keyword">const</span> <span class="token function-variable function">report</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    <span class="token keyword">const</span> <span class="token punctuation">[</span>titleLen<span class="token punctuation">,</span> contentLen<span class="token punctuation">]</span> <span class="token operator">=</span> getTextLenRef<span class="token punctuation">.</span><span class="token function">current</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>contentLen <span class="token operator">&gt;</span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">埋点 &gt;&gt;&gt; O长度 </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>titleLen<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">, kr长度</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>contentLen<span class="token interpolation-punctuation punctuation">}</span></span><span class="token template-punctuation string">`</span></span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span><span class="token punctuation">;</span>
+ 
+ 
+  <span class="token comment">/**
+   * 副作用
+   * 当「标题」长度变化时，上报
+   */</span>
+  <span class="token function">useEffect</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    <span class="token function">report</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token punctuation">[</span>title<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><p>将函数绑定到 Ref上，ref 引用不论怎样都保持不变，而且函数每次 render ref 上又会绑定最新的函数，不会有闭包问题。我在开发一个复杂项目中，大量的使用了这种方式，这让我的开发效率提升。它让我专注于写业务，而不是专注于解决闭包问题。</p> <p>这种处理方式的灵感来源于 Dan 的博客：使用 React Hooks 声明 setInterval</p> <h3 id="优化使用-ref-的体验"><a href="#优化使用-ref-的体验" class="header-anchor">#</a> 优化使用 ref 的体验</h3> <p>虽然把函数挂到 ref 上可以很好到解决这个问题，但是我在开发的时候我并不知道一个函数之后会不会碰到这个闭包问题，但我又不想所以函数全部都这样干。</p> <p>我对这种方式抽象封装了一下，得到这样一个工具函数，它通过将函数挂到 ref 上，保证永远都是拿到最新状态的函数，往外暴露时使用 useCallback 包裹，保证函数引用不更新。</p> <div class="language-js extra-class"><pre class="language-js"><code>
+<span class="token keyword">export</span> <span class="token keyword">function</span> useRefCallback<span class="token operator">&lt;</span><span class="token constant">T</span> <span class="token keyword">extends</span> <span class="token punctuation">(</span><span class="token parameter"><span class="token operator">...</span>args<span class="token operator">:</span> any<span class="token punctuation">[</span><span class="token punctuation">]</span></span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> any<span class="token operator">&gt;</span><span class="token punctuation">(</span>callback<span class="token operator">:</span> <span class="token constant">T</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">const</span> callbackRef <span class="token operator">=</span> <span class="token function">useRef</span><span class="token punctuation">(</span>callback<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  callbackRef<span class="token punctuation">.</span>current <span class="token operator">=</span> callback<span class="token punctuation">;</span>
+  <span class="token keyword">return</span> <span class="token function">useCallback</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter"><span class="token operator">...</span>args<span class="token operator">:</span> any<span class="token punctuation">[</span><span class="token punctuation">]</span></span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> callbackRef<span class="token punctuation">.</span><span class="token function">current</span><span class="token punctuation">(</span><span class="token operator">...</span>args<span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token keyword">as</span> <span class="token constant">T</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>使用时，简单的把原来有闭包问题的函数包裹一下，不需要传递依赖性，方便简单又好用。</p> <p>点击链接，打开 console 看<a href="https://codepen.io/huyao/pen/XWNELYr?editors=0010" target="_blank" rel="noopener noreferrer">Demo<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <div class="language-js extra-class"><pre class="language-js"><code>
+  <span class="token comment">// 获取当前「标题」和「内容」的长度</span>
+  <span class="token keyword">const</span> getTextLen <span class="token operator">=</span> <span class="token function">useRefCallback</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token punctuation">[</span>title<span class="token punctuation">.</span>length<span class="token punctuation">,</span> content<span class="token punctuation">.</span>length<span class="token punctuation">]</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+ 
+ 
+  <span class="token comment">// 上报当前「标题」和「内容」的长度</span>
+  <span class="token keyword">const</span> report <span class="token operator">=</span> <span class="token function">useRefCallback</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    <span class="token keyword">const</span> <span class="token punctuation">[</span>titleLen<span class="token punctuation">,</span> contentLen<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token function">getTextLen</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>contentLen <span class="token operator">&gt;</span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">埋点 &gt;&gt;&gt; O长度 </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>titleLen<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">, kr长度</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>contentLen<span class="token interpolation-punctuation punctuation">}</span></span><span class="token template-punctuation string">`</span></span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+ 
+ 
+  <span class="token comment">/**
+   * 副作用
+   * 当「标题」长度变化时，上报
+   */</span>
+  <span class="token function">useEffect</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    <span class="token function">report</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token punctuation">[</span>title<span class="token punctuation">,</span> report<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><h3 id="思考我们最开始使用-usecallback-的理由"><a href="#思考我们最开始使用-usecallback-的理由" class="header-anchor">#</a> 思考我们最开始使用 useCallback 的理由</h3> <p>我认为其实最开始使用 useCallback 的理由中，只有「需要保存一个函数闭包结果，如配合 debounce、throttle 使用」这个是真正需要使用 useCallback 的，其他的都可能带来风险，比如：</p> <p>当 useCallback 和 useEffect 组合使用时，由于 useCallback 的依赖项变化也会导致 useEffect 执行，这种隐式依赖会带来BUG或隐患。</p> <p>因为在编程中，函数只是一个工具，但现在一旦某个函数使用了 useCallback ，当这个函数的依赖项变化时所有直接或间接调用这个 useCallback 的都需要回归。所以我说这是成本高、有风险的事情。</p> <p>而「希望这个useCallback函数的某个依赖项变化时，引用了我这个函数的所有 useEffect 都得重新执行一下」这个理由，我认为它是有风险的，虽有有时候你确实希望这么做，但我认为这样在设计上就不对，副作用怎么调用应该由副作用来决定，不应该由依赖的函数来影响，当你真正碰上这个场景，你应该将所有应该主动的把触发 useEffect 执行的状态都放入依赖数组中。</p> <h3 id="结论"><a href="#结论" class="header-anchor">#</a> 结论</h3> <p>在绝大多数情况下，开发者想要的仅仅只是避免函数的引用变化而已，而 useCallback 带来的隐式依赖问题会给你带来很大的麻烦，所以推荐使用 useRefCallback，把函数挂到 ref 上，这样代码更不容易留下隐患或带来问题，还可以省去维护 useCallback 依赖项的精力。</p> <p>而 useRefCallback 本质上就是帮你把函数挂在 ref 上，并方便你使用 ref.current。</p> <div class="language-js extra-class"><pre class="language-js"><code>
+<span class="token keyword">export</span> <span class="token keyword">function</span> useRefCallback<span class="token operator">&lt;</span><span class="token constant">T</span> <span class="token keyword">extends</span> <span class="token punctuation">(</span><span class="token parameter"><span class="token operator">...</span>args<span class="token operator">:</span> any<span class="token punctuation">[</span><span class="token punctuation">]</span></span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> any<span class="token operator">&gt;</span><span class="token punctuation">(</span>callback<span class="token operator">:</span> <span class="token constant">T</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">const</span> callbackRef <span class="token operator">=</span> <span class="token function">useRef</span><span class="token punctuation">(</span>callback<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  callbackRef<span class="token punctuation">.</span>current <span class="token operator">=</span> callback<span class="token punctuation">;</span>
+ 
+ 
+  <span class="token keyword">return</span> <span class="token function">useCallback</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter"><span class="token operator">...</span>args<span class="token operator">:</span> any<span class="token punctuation">[</span><span class="token punctuation">]</span></span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> callbackRef<span class="token punctuation">.</span><span class="token function">current</span><span class="token punctuation">(</span><span class="token operator">...</span>args<span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token keyword">as</span> <span class="token constant">T</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div></div> <footer class="page-edit"><div class="edit-link"><a href="https://github.com/mzmuping/myBlog/edit/master/docs/web/React/useCallback-api.md" target="_blank" rel="noopener noreferrer">在 GitHub 上编辑此页</a> <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></div> <div class="last-updated"><span class="prefix">Last Updated:</span> <span class="time">5/7/2022, 6:30:40 PM</span></div></footer> <div class="page-nav"><p class="inner"><!----> <span class="next"><a href="/myBlog/web/React/chess.html">
+        React + Ts 实现三子棋小游戏
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/myBlog/assets/js/app.8d00eada.js" defer></script><script src="/myBlog/assets/js/3.1fd96a24.js" defer></script><script src="/myBlog/assets/js/17.81610de7.js" defer></script>
+  </body>
+</html>
